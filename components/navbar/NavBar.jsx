@@ -3,72 +3,72 @@ import { useState } from "react";
 import styles from "./NavBar.module.css";
 import { IoPeopleSharp } from "react-icons/io5";
 import { GrContactInfo } from "react-icons/gr";
-import {
-  FaHistory,
-  FaUniversity,
-  FaFileContract,
-  FaChartLine,
-} from "react-icons/fa";
-import { FaPeopleGroup, FaPeopleArrows, FaPeopleLine } from "react-icons/fa6";
+import { FaHistory, FaUniversity } from "react-icons/fa";
+import LogoMee from "../logoMee/LogoMee";
+import MenuItem from "../menuItem/MenuItem";
+import { Divider, Menu, Switch } from "antd";
 
 const NavBar = () => {
-  const [isOpenBusisnes, setIsOpenBusisnes] = useState(false);
-  const [isOpenSectores, setIsOpenSectores] = useState(false);
+  const [isOpenProductos, setIsOpenProductos] = useState(false);
+  const [isOpenRespaldo, setIsOpenRespaldo] = useState(false);
 
-  const handleAboutUsHover = () => setIsOpenBusisnes(true);
-  const handleSectoresHover = () => setIsOpenSectores(true);
+  const handleProductos = () => setIsOpenProductos(true);
+  const handleRespaldoEnergia = () => setIsOpenRespaldo(true);
+  
   const handleMouseLeave = () => {
-    setIsOpenBusisnes(false);
+    setIsOpenProductos(false);
     setIsOpenSectores(false);
   };
 
   return (
     <>
       <div className={styles.navbar}>
-        <img
-          src="/Recurso 2.svg"
-          className={styles.logoSigma}
-          alt="Sigma Logotipo"
-        />
-
+        <LogoMee></LogoMee>
         <div className={styles.subnav}></div>
         <div className={styles.optionsNav}>
           <div className={styles.subnav}>
-            <button
-              className={styles.subnavbtn}
-              onMouseEnter={handleAboutUsHover}
-              onMouseLeave={handleMouseLeave}
-            >
-              PRODUCTOS
-            </button>
+            <a>
+              <button
+                className={styles.subnavbtn}
+                onMouseEnter={handleProductos}
+                onMouseLeave={handleMouseLeave}
+              >
+                PRODUCTOS
+              </button>
+            </a>
             <div
-              onMouseEnter={handleAboutUsHover}
+              onMouseEnter={handleProductos}
               onMouseLeave={handleMouseLeave}
               className={`${styles.subnavContent} ${
-                isOpenBusisnes ? styles.slidebottom : ""
+                isOpenProductos ? styles.slidebottom : ""
               }`}
             >
+           
               <div className={styles.slidebottom}>
                 <div className={styles.category}>
                   <IoPeopleSharp className={styles.icon} />
-                </div>
-              </div>
-
-              <div className={styles.slidebottom}>
-                <div className={styles.category}>
-                  <FaHistory className={styles.icon} />
-                </div>
-              </div>
-
-              <div className={styles.slidebottom}>
-                <div className={styles.category}>
-                  <FaUniversity className={styles.icon} />
+                  RESPALDO DE ENERGÍA
                 </div>
               </div>
 
               <div className={styles.slidebottom}>
                 <div className={styles.category}>
                   <GrContactInfo className={styles.icon} />
+                  CALIDAD DE ENERGÍA
+                </div>
+              </div>
+
+              <div className={styles.slidebottom}>
+                <div className={styles.category}>
+                  <FaHistory className={styles.icon} />
+                  CLIMA DE PRECISION
+                </div>
+              </div>
+
+              <div className={styles.slidebottom}>
+                <div className={styles.category}>
+                  <FaUniversity className={styles.icon} />
+                  ACCIONAMIENTO ELÉCTRICO
                 </div>
               </div>
             </div>
@@ -79,42 +79,15 @@ const NavBar = () => {
           </div>
 
           <div className={styles.subnav}>
-            <button
-              className={styles.subnavbtn}
-              onMouseEnter={handleSectoresHover}
-              onMouseLeave={handleMouseLeave}
-            >
-              NOTICIAS
-            </button>
-            <div
-              onMouseEnter={handleSectoresHover}
-              onMouseLeave={handleMouseLeave}
-              className={`${styles.subnavContent} ${
-                isOpenSectores ? styles.slidebottom : ""
-              }`}
-            >
-              <div className={styles.slidebottom}>
-                <div className={styles.category}>
-                  <FaPeopleGroup className={styles.icon} />
-                </div>
-              </div>
-
-              <div className={styles.slidebottom}>
-                <div className={styles.category}>
-                  <FaPeopleArrows className={styles.icon} />
-                </div>
-              </div>
-
-              <div className={styles.slidebottom}>
-                <div className={styles.category}>
-                  <FaPeopleLine className={styles.icon} />
-                </div>
-              </div>
-            </div>
+            <button className={styles.subnavbtn}>NOTICIAS</button>
           </div>
 
           <div className={styles.subnav}>
             <button className={styles.subnavbtn}>CONTACTO</button>
+          </div>
+
+          <div className={styles.subnav}>
+            <button className={styles.subnavbtn}>ACERCA DE CENTIEL</button>
           </div>
         </div>
       </div>

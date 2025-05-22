@@ -4,7 +4,7 @@ import { Button, Drawer, Radio, Space } from "antd";
 
 const DrawerNavbar = () => {
   const [open, setOpen] = useState(false);
-  const [placement, setPlacement] = useState("left");
+  const [placement, setPlacement] = useState("top");
   const showDrawer = () => {
     setOpen(true);
   };
@@ -14,15 +14,14 @@ const DrawerNavbar = () => {
   const onChange = (e) => {
     setPlacement(e.target.value);
   };
-  return <>
+  return (
+    <>
       <Space>
+          <Button type="primary" onClick={showDrawer}>
+            Productos
+          </Button>
         <Radio.Group value={placement} onChange={onChange}>
-          <Radio value="top">top</Radio>
-          
         </Radio.Group>
-        <Button type="primary" onClick={showDrawer}>
-          Open
-        </Button>
       </Space>
       <Drawer
         title="Basic Drawer"
@@ -32,11 +31,12 @@ const DrawerNavbar = () => {
         open={open}
         key={placement}
       >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <p>RESPALDO DE ENERGÍA</p>
+        <p>CALIDAD DE ENERGÍA</p>
+        <p>CLIMA DE PRECISION</p>
       </Drawer>
     </>
+  );
 };
 
 export default DrawerNavbar;
