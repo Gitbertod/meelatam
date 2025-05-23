@@ -59,6 +59,18 @@ const NavBar = () => {
               >
                 <GrContactInfo className={styles.icon} />
                 CALIDAD DE ENERGÍA
+                {hoveredMenu === "calidad" ? (
+                  <ul className={styles.slideRight2}>
+                    <li>Banco de condensadores</li>
+                    <li>Filtros activos</li>
+                    <li>Transformadores</li>
+                    <li>Estabilizadores de voltaje</li>
+                    <li>PDU</li>
+                    <li>STS</li>
+                  </ul>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
 
@@ -69,6 +81,17 @@ const NavBar = () => {
               >
                 <FaHistory className={styles.icon} />
                 CLIMA DE PRECISIÓN
+                {hoveredMenu === "clima" ? (
+                  <ul className={styles.slideRight3}>
+                    <li>Chillers</li>
+                    <li>Equipos perimetrales</li>
+                    <li>Equipos in row</li>
+                    <li>Equipos tipo mochila</li>
+                    <li>Aire acondicionado de precisión</li>
+                  </ul>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
 
@@ -79,6 +102,13 @@ const NavBar = () => {
               >
                 <FaUniversity className={styles.icon} />
                 ACCIONAMIENTO ELÉCTRICO
+                {hoveredMenu === "accionamiento" ? (
+                  <ul className={styles.slideRight4}>
+                    <li>Variadores de frecuencia</li>
+                  </ul>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
           </div>
