@@ -52,11 +52,12 @@
 .subnavContent {
   display: none;
   position: absolute;
+  align-items: center;
   left: 0;
   background-color: white;
   width: 100%;
   opacity: 0;
-  height: 400px;
+  height: 350px;
   color: #6e6e6e;
   transform: translateY(-50%);
   transition: opacity 600ms, transform 600ms;
@@ -114,28 +115,32 @@ a:hover .subnavContent {
 
 .optionsNav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .category {
   display: flex;
   height: 200px;
   width: 420px;
-  align-items: flex-start;
+  align-items: center;
   font-size: larger;
   padding-right: 20px;
+  justify-content: space-between;
 }
 .category:hover {
   background-color: #eee;
   transition: background-color 600ms;
   cursor: pointer;
 }
-.category2{
+.category2 {
   padding-left: 25px;
   display: flex;
   height: 50px;
   width: 420px;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
 }
-.category2:hover{
+.category2:hover {
   background-color: #eee;
   transition: background-color 600ms;
   cursor: pointer;
@@ -145,47 +150,49 @@ a:hover .subnavContent {
   animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.slideRight{
+.slideRight {
   position: absolute;
   width: 400px;
+  margin-left: 420px;
+  margin-top: 150px;
+  -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slideRight2 {
+  position: absolute;
+  width: 400px;
+  margin-top: 150px;
   margin-left: 420px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.slideRight2{
+.slideRight3 {
   position: absolute;
   width: 400px;
-  margin-top:-50px ;
+   margin-top: 50px;
   margin-left: 420px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.slideRight3{
+.slideRight4 {
   position: absolute;
   width: 400px;
-  margin-top:-100px ;
+  margin-top: -150px;
   margin-left: 420px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.slideRight4{
+.slideRight5 {
   position: absolute;
-  width: 400px;
-  margin-top:-150px ;
-  margin-left: 420px;
-  -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-.slideRight5{
-  position: absolute;
+  margin-top: 200px;
   width: 400px;
   margin-left: 425px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.overlay{
-  position:absolute;
-  display:flex;
+.overlay {
+  position: absolute;
+  display: flex;
 }
 /**/
 
@@ -215,12 +222,12 @@ a:hover .subnavContent {
 @-webkit-keyframes slide-right {
   0% {
     -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    transform: translateX(-20px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -228,12 +235,12 @@ a:hover .subnavContent {
 @keyframes slide-right {
   0% {
     -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    transform: translateX(-20px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }

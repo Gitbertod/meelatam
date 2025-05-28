@@ -6,6 +6,7 @@ import SubNavContent from "./SubNavContent";
 const NavBar = () => {
   const [hoveredMenu, setHoveredMenu] = useState("");
   const [hoveredMenu2, setHoveredMenu2] = useState("");
+  const [hoveredMenu3, setHoveredMenu3] = useState("");
 
   const handleMouseEnter2 = (menu) => () => setHoveredMenu2(menu);
   const handleMouseLeave2 = (menu) => () => setHoveredMenu2(menu);
@@ -29,6 +30,7 @@ const NavBar = () => {
       <SubNavContent
         hoveredMenu={hoveredMenu}
         hoveredMenu2={hoveredMenu2}
+        hoveredMenu3={hoveredMenu3}
         handleMouseEnter={handleMouseEnter}
         handleMouseEnter2={handleMouseEnter2}
         handleMouseLeave={handleMouseLeave}
