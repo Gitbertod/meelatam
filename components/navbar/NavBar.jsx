@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./NavBar.module.css";
 import LogoMee from "../logoMee/LogoMee";
 import SubNavContent from "./SubNavContent";
+import { HiChevronDown } from "react-icons/hi";
 
 const NavBar = () => {
   const [hoveredMenu, setHoveredMenu] = useState("");
@@ -25,7 +26,11 @@ const NavBar = () => {
             onMouseEnter={handleMouseEnter("productos")}
             onMouseLeave={handleMouseLeave}
           >
-            PRODUCTOS
+            PRODUCTOS <HiChevronDown
+  className={`${styles.iconChevron} ${
+    hoveredMenu === "productos" ? styles.iconChevronRotated : ""
+  }`}
+/>
           </button>
       <SubNavContent
         hoveredMenu={hoveredMenu}
