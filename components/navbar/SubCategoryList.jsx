@@ -1,38 +1,28 @@
-// SubCategoryList.jsx
 import React from "react";
 import styles from "./NavBar.module.css";
-import { HiChevronRight } from "react-icons/hi";
+import SubCategoryItem from "./SubCategoryItem";
 
 const SubCategoryList = ({
   subcategories,
   hoveredMenu2,
   handleMouseEnter2,
   handleMouseLeave2,
-  className
+  className,
 }) => {
   return (
     <ul className={styles[className]}>
       {subcategories.map((sub, i) => (
-        <li
+        <SubCategoryItem
           key={i}
-          onMouseEnter={sub.key ? handleMouseEnter2(sub.key) : undefined}
-          onMouseLeave={sub.key ? handleMouseLeave2 : undefined}
-          className={styles.category2}
-        >
-          {sub.label} <HiChevronRight />
-          {sub.key && hoveredMenu2 === sub.key && sub.items && (
-            <ul className={styles.slideRight5}>
-              {sub.items.map((item, j) => (
-                <li key={j} className={styles.category2}>
-                  {item}
-                </li>
-              ))}
-            </ul> 
-          )}
-        </li>
+          sub={sub}
+          hoveredMenu2={hoveredMenu2}
+          handleMouseEnter2={handleMouseEnter2}
+          handleMouseLeave2={handleMouseLeave2}
+        >esto es el item</SubCategoryItem>
       ))}
     </ul>
   );
 };
 
 export default SubCategoryList;
+
