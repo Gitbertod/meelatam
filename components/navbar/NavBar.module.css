@@ -111,10 +111,7 @@
   height: fit-content;
   line-height: 10px;
 }
-a:hover .subnavContent {
-  background-color: #eee;
-  color: #f9b03a;
-}
+
 .subnav:hover > .subnavContent,
 .subnavContent:hover {
   display: flex;
