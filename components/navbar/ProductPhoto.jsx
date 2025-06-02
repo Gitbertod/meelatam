@@ -1,9 +1,13 @@
 import React from 'react'
 import styles from './ProductPhoto.module.css';
 
-const ProductPhoto = () => {
+const ProductPhoto = ({estado3}) => {
   return (
-    <div className={styles.product}>Product Photo</div>
+    <div>
+      {}
+      <img className={styles.product} src={`/${estado3}.jpg`}/>
+      
+    </div>
   )
 }
 

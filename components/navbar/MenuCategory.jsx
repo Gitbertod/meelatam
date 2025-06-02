@@ -9,9 +9,12 @@ const MenuCategory = ({
   menu,
   hoveredMenu,
   hoveredMenu2,
+  hoveredMenu3,
   handleMouseEnter,
   handleMouseEnter2,
-  handleMouseLeave2
+  handleMouseEnter3,
+  handleMouseLeave2,
+  handleMouseLeave3
 }) => {
   const IconComponent = iconMap[menu.icon];
 
@@ -29,15 +32,18 @@ const MenuCategory = ({
             <SubCategoryList
               subcategories={menu.subcategories}
               hoveredMenu2={hoveredMenu2}
+              hoveredMenu3={hoveredMenu3}
               handleMouseEnter2={handleMouseEnter2}
+              handleMouseEnter3={handleMouseEnter3}
               handleMouseLeave2={handleMouseLeave2}
+              handleMouseLeave3={handleMouseLeave3}
               className={menu.class}
             />
           ) : (
             <ul className={styles[menu.class]}>
               {menu.items.map((item, j) => (
                 <li key={j} className={styles.category2}>
-                  {item}
+                  {item} 
                 </li>
               ))}
             </ul>

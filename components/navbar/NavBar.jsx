@@ -7,6 +7,7 @@ import { HiChevronDown } from "react-icons/hi";
 const NavBar = () => {
   const [hoveredMenu, setHoveredMenu] = useState("");
   const [hoveredMenu2, setHoveredMenu2] = useState("");
+  const [hoveredMenu3,setHoveredMenu3] = useState("")
  
 
   const handleMouseEnter2 = (menu) => () => setHoveredMenu2(menu);
@@ -14,6 +15,9 @@ const NavBar = () => {
 
   const handleMouseEnter = (menu) => () => setHoveredMenu(menu);
   const handleMouseLeave = () => setHoveredMenu("");
+
+  const handleMouseEnter3 = (menu) => () => setHoveredMenu3(menu);
+  const handleMouseLeave3 = () => setHoveredMenu3("");
 
   return (
     <div className={styles.navbar}>
@@ -35,10 +39,13 @@ const NavBar = () => {
       <SubNavContent
         hoveredMenu={hoveredMenu}
         hoveredMenu2={hoveredMenu2}
+        hoveredMenu3={hoveredMenu3}
         handleMouseEnter={handleMouseEnter}
         handleMouseEnter2={handleMouseEnter2}
+        handleMouseEnter3={handleMouseEnter3}
         handleMouseLeave={handleMouseLeave}
         handleMouseLeave2={handleMouseLeave2}
+        handleMouseLeave3={handleMouseLeave3}
       />
         </div>
 

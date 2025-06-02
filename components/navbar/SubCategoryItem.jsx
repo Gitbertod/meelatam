@@ -3,7 +3,15 @@ import styles from "./NavBar.module.css";
 import { HiChevronRight } from "react-icons/hi";
 import NestedItemList from "./NestedItemList";
 
-const SubCategoryItem = ({ sub, hoveredMenu2, handleMouseEnter2, handleMouseLeave2 }) => {
+const SubCategoryItem = ({
+  sub,
+  hoveredMenu2,
+  hoveredMenu3,
+  handleMouseEnter2,
+  handleMouseLeave2,
+  handleMouseEnter3,
+  handleMouseLeave3,
+}) => {
   const hasNestedItems = sub.key && hoveredMenu2 === sub.key && sub.items;
 
   return (
@@ -13,7 +21,14 @@ const SubCategoryItem = ({ sub, hoveredMenu2, handleMouseEnter2, handleMouseLeav
       className={styles.category2}
     >
       {sub.label} <HiChevronRight />
-      {hasNestedItems && <NestedItemList items={sub.items} />}
+      {hasNestedItems && (
+        <NestedItemList
+          hoveredMenu3={hoveredMenu3}
+          handleMouseEnter3={handleMouseEnter3}
+          handleMouseLeave3={handleMouseLeave3}
+          items={sub.items}
+        />
+      )}
     </li>
   );
 };

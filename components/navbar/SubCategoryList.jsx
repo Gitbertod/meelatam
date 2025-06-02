@@ -5,8 +5,11 @@ import SubCategoryItem from "./SubCategoryItem";
 const SubCategoryList = ({
   subcategories,
   hoveredMenu2,
+  hoveredMenu3,
   handleMouseEnter2,
+  handleMouseEnter3,
   handleMouseLeave2,
+  handleMouseLeave3,
   className,
 }) => {
   return (
@@ -16,9 +19,13 @@ const SubCategoryList = ({
           key={i}
           sub={sub}
           hoveredMenu2={hoveredMenu2}
+          hoveredMenu3={hoveredMenu3}
           handleMouseEnter2={handleMouseEnter2}
           handleMouseLeave2={handleMouseLeave2}
-        >esto es el item</SubCategoryItem>
+           handleMouseEnter3={handleMouseEnter3}
+          handleMouseLeave3={handleMouseLeave3}
+
+        />
       ))}
     </ul>
   );
