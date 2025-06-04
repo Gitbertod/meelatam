@@ -1,0 +1,23 @@
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    align-items: center;
+    color: black;
+    opacity: 0;
+}
+
+.box{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    /* background-image: url('../../public/gradientBg.png'); */
+}
+.box2{
+    
+    background-color: blue;
+    width: 50%;
+    height: 90%;
+
+}
