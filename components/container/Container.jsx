@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import styles from "./Container.module.css";
 import Hero from "../hero/Hero";
-import SectionComponent from "../sectionComponent/SectionComponent";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -32,7 +31,7 @@ const Container = () => {
   return (
     <div ref={bgContainerRef} className={styles.container}>
       <Hero ref={heroRef} />
-      <SectionComponent />
+      
     </div>
   );
 };

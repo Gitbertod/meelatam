@@ -1,23 +1,49 @@
-.container{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    height: 90%;
-    align-items: center;
-    color: black;
-    opacity: 0;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --color-bg: #f4f4f4;
+  --color-text: #1a1a1a;
 }
 
-.box{
-    background-color: brown;
-    width: 200px;
-    height: 200px;
-    /* background-image: url('../../public/gradientBg.png'); */
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
-.box2{
-    
-    background-color: blue;
-    width: 50%;
-    height: 90%;
+.container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  color: black;
+}
 
+.box {
+  background: linear-gradient(to bottom right, #ffffff, #f3f3f3);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* sombra suave */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  backdrop-filter: blur(6px); /* efecto moderno, si hay transparencia */
+  border: 1px solid rgba(200, 200, 200, 0.4); /* borde sutil */
+}
+.text {
+  font-family: "Inter", sans-serif;
+  width: 400px;
+  margin: 20px;
+  color: rgb(149, 149, 149);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-weight: 400;
+  
+  overflow: hidden;
 }
