@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 :root {
-  --font-primary: 'Inter', sans-serif;
+  --font-primary: "Inter", sans-serif;
   --color-bg: #f4f4f4;
   --color-text: #1a1a1a;
 }
@@ -16,12 +16,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .container {
-  background-color: white;
+  
   display: flex;
   justify-content: center;
   height: 100vh;
   align-items: center;
   color: black;
+  max-width: 1250px;
+  margin: 0px auto;
+}
+.textBox {
+    margin-left: 40px;
 }
 
 .box {
@@ -32,7 +37,11 @@ body {
   max-width: 1200px;
   margin: 2rem auto;
   backdrop-filter: blur(6px); /* efecto moderno, si hay transparencia */
-  border: 1px solid rgba(200, 200, 200, 0.4); /* borde sutil */
+   /* borde sutil */
+}
+.title{
+    font-size: xx-large;
+    color:#199697;
 }
 .text {
   font-family: "Inter", sans-serif;
@@ -44,6 +53,5 @@ body {
   max-width: 700px;
   margin: 0 auto 2rem;
   font-weight: 400;
-  
   overflow: hidden;
 }
