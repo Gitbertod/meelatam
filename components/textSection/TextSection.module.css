@@ -1,0 +1,76 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  margin-left: 5px;
+  min-width: 48.5%;
+  background-color: white;
+}
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 45px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+.subTitle {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  font-weight: 400;
+}
+.textContainer{
+    margin-left: 30px;
+    max-width: 90%;
+}
+.text{
+    max-width: 90%;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.btn {
+  margin-top: 20px;
+  background-color: rgb(25, 150, 151);
+  width: 160px;
+  height: 45px;
+  border-radius: 6px;
+  font-size:medium;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+}
+
+.btn:hover::before {
+  animation: shine 0.8s forwards;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
