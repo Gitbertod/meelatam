@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./TextSection.module.css";
 
-const TextSection = () => {
+const TextSection = ({title}) => {
   return (
     <div className={styles.content}>
       <div className={styles.textContainer}>
-        <h2 className={styles.title}>TITLE2</h2>
+        <h2 className={styles.title}>{title}</h2>
         <p className={styles.text}>
           Soluciones de climatización para entornos tecnológicos, industriales y
           del terciario que van más allá del concepto de estándar.
