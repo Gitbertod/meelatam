@@ -18,11 +18,14 @@
 }
 .title {
   color: gray;
-  font-size: 50px;
+  font-size: 55px;
+  line-height: 1.2;
+  letter-spacing: -1px
 }
 .text {
   color: gray;
   font-size: xx-large;
+  padding-top: 40px;
 }
 .btn {
   margin-top: 40px;

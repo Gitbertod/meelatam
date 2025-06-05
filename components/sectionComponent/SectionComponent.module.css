@@ -21,7 +21,7 @@ body {
   justify-content: center;
   height: 100vh;
   align-items: center;
-  color: black;
+  
   max-width: 1250px;
   margin: 0px auto;
 }
@@ -37,15 +37,24 @@ body {
   max-width: 1200px;
   margin: 2rem auto;
   backdrop-filter: blur(6px); /* efecto moderno, si hay transparencia */
-   /* borde sutil */
+  /* background-image: url("./cable.jpg"); */
+  background-position: center;
+  background-size:cover;
+  /* borde sutil */
+}
+
+.imageBox{
+    width: 10px;
+    height: 10px;
 }
 .title{
     font-size: xx-large;
     color:#199697;
+    
 }
 .text {
   font-family: "Inter", sans-serif;
-  width: 400px;
+  width: 100%;
   margin: 20px;
   color: rgb(149, 149, 149);
   font-size: 1.2rem;
@@ -54,4 +63,34 @@ body {
   margin: 0 auto 2rem;
   font-weight: 400;
   overflow: hidden;
+}
+.gradientText {
+  font-weight: 700;
+  font-size: 55px;
+  background: linear-gradient(90deg, #99e1e1, #c0c0c0, #199697, rgb(0, 115, 140));
+  background-size: 300% 300%;
+  animation: gradientShift 8s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.photoText{
+    font-size: xx-large;
+    z-index: 10;
+    color: white;
 }

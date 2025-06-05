@@ -23,10 +23,10 @@ const SectionComponent = () => {
         scale: 5,
       },
       {
-        x: 400,
+        x: 200,
         opacity: 1,
         rotate: 405,
-        scale: 11,
+        scale: 9,
         duration: 6,
         ease: "power3.out",
         scrollTrigger: {
@@ -62,7 +62,7 @@ const SectionComponent = () => {
     <div ref={containerRef} className={styles.container}>
       <div className={styles.textBox}>
         <div className={styles.title}>
-          <h3>25 años de experiencia</h3>
+          <h3 className={styles.gradientText}>25 años de experiencia</h3>
         </div>
         <div ref={textRef} className={styles.text}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit at
@@ -71,7 +71,10 @@ const SectionComponent = () => {
           blanditiis atque?
         </div>
       </div>
-      <div ref={boxRef} className={styles.box}></div>
+      <div ref={boxRef} className={styles.box}>
+        
+      </div>
+      
     </div>
   );
 };
