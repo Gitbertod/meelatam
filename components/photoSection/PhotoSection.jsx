@@ -23,6 +23,8 @@ const PhotoSection = ({ image, title }) => {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 80%",
+          toggleActions: "play reverse play reverse", // ← aquí
+          once: false, // ← asegura que se repita
         },
       });
 
