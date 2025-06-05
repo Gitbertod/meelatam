@@ -70,11 +70,9 @@ const SectionComponent = () => {
           Voluptatum aliquid et eum nam pariatur recusandae ducimus amet dolorem
           blanditiis atque?
         </div>
+        <button className={styles.btn}>Más información</button>
       </div>
-      <div ref={boxRef} className={styles.box}>
-        
-      </div>
-      
+      <div ref={boxRef} className={styles.box}></div>
     </div>
   );
 };
