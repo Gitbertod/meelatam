@@ -61,7 +61,7 @@ const SectionComponent = () => {
   return (
     <div ref={containerRef} className={styles.container}>
       <div className={styles.textBox}>
-        <div className={styles.title}>
+        <div>
           <h3 className={styles.gradientText}>25 años de experiencia</h3>
         </div>
         <div ref={textRef} className={styles.text}>

@@ -40,6 +40,7 @@ body {
   /* background-image: url("./cable.jpg"); */
   background-position: center;
   background-size:cover;
+  overflow: hidden;
   /* borde sutil */
 }
 
@@ -47,22 +48,19 @@ body {
     width: 10px;
     height: 10px;
 }
-.title{
-    font-size: xx-large;
-    color:#199697;
-    
-}
+
 .text {
   font-family: "Inter", sans-serif;
   width: 100%;
   margin: 20px;
-  color: rgb(149, 149, 149);
-  font-size: 1.2rem;
+  color: rgb(121, 121, 121);
+  font-size: 1.5rem;
   line-height: 1.6;
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto 2rem;
   font-weight: 400;
   overflow: hidden;
+  margin-top: 20px;
 }
 .gradientText {
   font-weight: 700;
