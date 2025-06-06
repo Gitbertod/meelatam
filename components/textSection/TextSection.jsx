@@ -60,7 +60,7 @@ const TextSection = ({ title }) => {
           Soluciones de climatización para entornos tecnológicos, industriales y
           del terciario que van más allá del concepto de estándar.
         </p>
-        <button ref={buttonRef} className={styles.btn}>Saber más</button>
+        <button  className={styles.btn}>Saber más</button>
       </div>
     </div>
   );

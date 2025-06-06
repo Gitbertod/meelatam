@@ -12,6 +12,9 @@ function App() {
   return (
     <>
       <NavBar></NavBar>
+      <SectionComponent2>
+        <LogoSVG></LogoSVG>
+      </SectionComponent2>
       <Container></Container>
       <SectionComponent />
       <SectionComponent2>
@@ -21,9 +24,6 @@ function App() {
       <SectionComponent2>
         <TextSection title={"Título aqui"} />
         <PhotoSection title={"TVA 1"} image={"./TVA_1.png"} />
-      </SectionComponent2>
-      <SectionComponent2>
-        <LogoSVG></LogoSVG>
       </SectionComponent2>
     </>
   );

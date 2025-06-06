@@ -44,7 +44,7 @@ const PhotoSection = ({ image, title }) => {
           opacity: 0,
           scale: 0.95,
           y: 20,
-          duration:5,
+          duration:3.5,
           ease: "power2.out",
           stagger: 0.2,
         },

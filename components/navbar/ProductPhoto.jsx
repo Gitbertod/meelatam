@@ -31,7 +31,7 @@ const ProductPhoto = ({ estado3 }) => {
       {visible && (
         <img
           className={styles.product}
-          src={`/${estado3}.jpg`}
+          src={`/${estado3}.png`}
           alt={estado3}
         />
       )}
