@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import NavBar from "../components/navbar/NavBar";
 import Container from "../components/container/Container";
@@ -9,13 +9,30 @@ import TextSection from "../components/textSection/TextSection";
 import LogoSVG from "../components/logoSVG/LogoSVG";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Duración total de tu animación: 2s (drawSVG) + 0.3s delay + 0.8s (fill) = 3.1s
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 3500); // 3.5 segundos
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex w-screen  h-screen justify-center ">
+        <LogoSVG />
+      </div>
+    );
+  }
+
   return (
     <>
-      <NavBar></NavBar>
-      <SectionComponent2>
-        <LogoSVG></LogoSVG>
-      </SectionComponent2>
-      <Container></Container>
+      <NavBar />
+
+      <Container />
       <SectionComponent />
       <SectionComponent2>
         <PhotoSection title={"TSE"} image={"./TSE_3.png"} />
