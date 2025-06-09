@@ -7,6 +7,7 @@ import SectionComponent2 from "../components/sectionComponent2/SectionComponent2
 import PhotoSection from "../components/photoSection/PhotoSection";
 import TextSection from "../components/textSection/TextSection";
 import LogoSVG from "../components/logoSVG/LogoSVG";
+import Footer from "../components/footer/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -42,6 +43,7 @@ function App() {
         <TextSection title={"Título aqui"} />
         <PhotoSection title={"TVA 1"} image={"./TVA_1.png"} />
       </SectionComponent2>
+      <Footer />
     </>
   );
 }

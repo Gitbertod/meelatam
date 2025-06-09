@@ -1,0 +1,31 @@
+.container {
+  min-height: 200px;
+  width: 100%;
+}
+.logoMenuContainer {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+.menu {
+  display: flex;
+  justify-content: end;
+}
+.option {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #8f8f8f
+}
+.divider {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  width: 90%;
+  margin: 20px auto 0 auto; /* separa del logoMenuContainer y lo centra */
+  margin-bottom: 100px;
+}
