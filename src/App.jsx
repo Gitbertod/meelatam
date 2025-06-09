@@ -8,6 +8,8 @@ import PhotoSection from "../components/photoSection/PhotoSection";
 import TextSection from "../components/textSection/TextSection";
 import LogoSVG from "../components/logoSVG/LogoSVG";
 import Footer from "../components/footer/Footer";
+import StatsSection from "../components/statsSection/StatsSection";
+import NewsCarousel from "../components/newsCarrousel/NewsCarousel";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -43,6 +45,8 @@ function App() {
         <TextSection title={"Título aqui"} />
         <PhotoSection title={"TVA 1"} image={"./TVA_1.png"} />
       </SectionComponent2>
+      <StatsSection></StatsSection>
+      <NewsCarousel></NewsCarousel>
       <Footer />
     </>
   );
