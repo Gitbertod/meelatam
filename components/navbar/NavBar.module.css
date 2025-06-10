@@ -13,10 +13,9 @@
   transition: background-color 300ms;
 }
 .logoMee {
-  height: 60px;
+  height: 50px;
 }
 .iconChevron {
-  
   font-size: 1.5rem;
   margin-left: 0.25rem;
   transition: transform 0.3s ease;
@@ -155,7 +154,7 @@
 .category {
   display: flex;
   height: 200px;
-  width: 420px;
+  width: 350px;
   align-items: center;
   font-size: larger;
   padding-right: 20px;
@@ -171,7 +170,7 @@
   padding-left: 25px;
   display: flex;
   height: 50px;
-  width: 420px;
+  width: 320px;
   align-items: center;
   justify-content: space-between;
 }
@@ -191,7 +190,7 @@
 .slideRight {
   position: absolute;
   width: 400px;
-  margin-left: 420px;
+  margin-left: 380px;
   margin-top: 150px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -206,7 +205,7 @@
 }
 .slideRight3 {
   position: absolute;
-  width: 400px;
+  width: 300px;
    margin-top: -70px;
   margin-left: 420px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -224,7 +223,7 @@
   position: absolute;
   margin-top: 200px;
   width: 400px;
-  margin-left: 425px;
+  margin-left: 325px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -284,6 +283,19 @@
 }
 
 /*RESPONSIVE*/
+@media(max-width: 1024px){
+  .navbar{
+
+  }
+  .category{
+   width: 55%;
+  }
+  .category2{
+    width: 250px;
+    margin-left: 0px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     height: 80px;
