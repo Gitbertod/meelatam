@@ -1,11 +1,11 @@
 import React, { useRef, useState } from "react";
 import styles from "./NavBar.module.css";
 import ProductPhoto from "./ProductPhoto";
-
+import { Link } from "react-router-dom";
 
 const NestedItemList = ({ items }) => {
   const [estado3, setEstado3] = useState("");
-  
+
   return (
     <ul className={styles.slideRight5}>
       <div className="flex">
@@ -17,13 +17,13 @@ const NestedItemList = ({ items }) => {
               onMouseEnter={() => setEstado3(item)}
               onMouseLeave={() => setEstado3("")}
             >
-              {item}
+              <Link to={item}>{item}</Link>
             </li>
           ))}
         </div>
 
         <div>
-          <ProductPhoto  estado3={estado3} />
+          <ProductPhoto estado3={estado3} />
         </div>
       </div>
     </ul>

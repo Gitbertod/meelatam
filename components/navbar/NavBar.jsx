@@ -22,7 +22,6 @@ const NavBar = () => {
   return (
     <div className={styles.navbar}>
       <LogoMee />
-
       <div className={styles.optionsNav}>
         <div className={styles.subnav}>
           <button
