@@ -5,6 +5,7 @@ import Contacto from "../views/Contacto";
 import Noticias from "../views/Noticias";
 import Servicios from "../views/Servicios"
 import ProductosCategory from "../views/ProductosCategory";
+import ProductoView from "../views/ProductoView";
 
 const AppRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AppRoutes = () => {
       <Route path="/contacto" element={<Contacto />}></Route>
       <Route path="/noticias" element={<Noticias />}></Route>
       <Route path="/productos/:categoryId" element={<ProductosCategory />}></Route>
+      <Route path="/productos/:categoryId/:subCategoryId/:productoId" element={<ProductoView />}></Route>
 
     </Routes>
   );
