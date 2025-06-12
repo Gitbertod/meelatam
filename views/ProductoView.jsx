@@ -10,8 +10,8 @@ const ProductoView = () => {
   const breadCrumbsItems = [
     { label: "Inicio", href: "/" },
     { label: "Productos", href: "/productos" },
-    { label: "Respaldo de energia", href: "/respaldo-de-energia" },
-    { label: "UPS", href: "/ups" },
+    { label: "Respaldo de energia", href: "/productos/respaldo-de-energia" },
+    { label: "UPS", href: "/productos/respaldo-de-energia/ups" },
     { label: "UPS Interactivas", href: "/UPS-Interactivas" },
   ];
   return (

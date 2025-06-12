@@ -11,6 +11,8 @@ const SubCategoryList = ({
   handleMouseLeave2,
   handleMouseLeave3,
   className,
+  menuLabel,
+  categoryId // <-- Agrega esto
 }) => {
   return (
     <ul className={styles[className]}>
@@ -22,9 +24,9 @@ const SubCategoryList = ({
           hoveredMenu3={hoveredMenu3}
           handleMouseEnter2={handleMouseEnter2}
           handleMouseLeave2={handleMouseLeave2}
-           handleMouseEnter3={handleMouseEnter3}
+          handleMouseEnter3={handleMouseEnter3}
           handleMouseLeave3={handleMouseLeave3}
-
+          categoryId={categoryId} // <-- Pasa esto
         />
       ))}
     </ul>

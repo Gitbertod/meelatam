@@ -18,6 +18,7 @@ const MenuCategory = ({
 }) => {
   const IconComponent = iconMap[menu.icon];
 
+  console.log(menu)
   return (
     <div className={styles.slidebottom}>
       <div
@@ -26,7 +27,6 @@ const MenuCategory = ({
       >
         {IconComponent && <IconComponent className={styles.icon} />}
         {menu.label} <HiChevronRight />
-
         {hoveredMenu === menu.key &&
           (menu.subcategories ? (
             <SubCategoryList
@@ -38,6 +38,8 @@ const MenuCategory = ({
               handleMouseLeave2={handleMouseLeave2}
               handleMouseLeave3={handleMouseLeave3}
               className={menu.class}
+              menuLabel={menu.label}
+              categoryId={menu.label.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-") } 
             />
           ) : (
             <ul className={styles[menu.class]}>

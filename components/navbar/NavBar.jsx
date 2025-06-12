@@ -3,12 +3,12 @@ import styles from "./NavBar.module.css";
 import LogoMee from "../logoMee/LogoMee";
 import SubNavContent from "./SubNavContent";
 import { HiChevronDown } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [hoveredMenu, setHoveredMenu] = useState("");
   const [hoveredMenu2, setHoveredMenu2] = useState("");
-  const [hoveredMenu3,setHoveredMenu3] = useState("")
- 
+  const [hoveredMenu3, setHoveredMenu3] = useState("");
 
   const handleMouseEnter2 = (menu) => () => setHoveredMenu2(menu);
   const handleMouseLeave2 = (menu) => () => setHoveredMenu2(menu);
@@ -29,32 +29,36 @@ const NavBar = () => {
             onMouseEnter={handleMouseEnter("productos")}
             onMouseLeave={handleMouseLeave}
           >
-            PRODUCTOS <HiChevronDown
-  className={`${styles.iconChevron} ${
-    hoveredMenu === "productos" ? styles.iconChevronRotated : ""
-  }`}
-/>
+            PRODUCTOS{" "}
+            <HiChevronDown
+              className={`${styles.iconChevron} ${
+                hoveredMenu === "productos" ? styles.iconChevronRotated : ""
+              }`}
+            />
           </button>
-      <SubNavContent
-        hoveredMenu={hoveredMenu}
-        hoveredMenu2={hoveredMenu2}
-        hoveredMenu3={hoveredMenu3}
-        handleMouseEnter={handleMouseEnter}
-        handleMouseEnter2={handleMouseEnter2}
-        handleMouseEnter3={handleMouseEnter3}
-        handleMouseLeave={handleMouseLeave}
-        handleMouseLeave2={handleMouseLeave2}
-        handleMouseLeave3={handleMouseLeave3}
-      />
+          <SubNavContent
+            hoveredMenu={hoveredMenu}
+            hoveredMenu2={hoveredMenu2}
+            hoveredMenu3={hoveredMenu3}
+            handleMouseEnter={handleMouseEnter}
+            handleMouseEnter2={handleMouseEnter2}
+            handleMouseEnter3={handleMouseEnter3}
+            handleMouseLeave={handleMouseLeave}
+            handleMouseLeave2={handleMouseLeave2}
+            handleMouseLeave3={handleMouseLeave3}
+          />
         </div>
 
-        {["SERVICIOS", "NOTICIAS", "CONTACTO", "ACERCA DE CENTIEL"].map(
-          (text) => (
-            <div key={text} className={styles.subnav}>
-              <button className={styles.subnavbtn}>{text}</button>
-            </div>
-          )
-        )}
+        {[
+          <Link to={"/servicios"}>SERVICIOS</Link>,
+          <Link to={"/noticias"}>NOTICIAS</Link>,
+          <Link to={"/contacto"}>CONTACTO</Link>,
+          <Link to={"/acerca-de-sentiel"}>ACERCA DE SENTIEL</Link>,
+        ].map((text) => (
+          <div key={text} className={styles.subnav}>
+            <button className={styles.subnavbtn}>{text}</button>
+          </div>
+        ))}
       </div>
     </div>
   );
