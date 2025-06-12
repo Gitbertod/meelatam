@@ -5,6 +5,7 @@ export const menuData = [
     label: "RESPALDO DE ENERGÍA",
     icon: "LiaCarBatterySolid",
     icon2:"HiChevronRight",
+    url:"respaldo-de-energia",
     subcategories: [
       {
         key: "ups",
@@ -31,6 +32,7 @@ export const menuData = [
     key: "calidad",
     label: "CALIDAD DE ENERGÍA",
     icon: "CiWavePulse1",
+    url:"calidad-de-energia",
     items: [
       "Banco de condensadores",
       "Filtros activos",
@@ -45,6 +47,7 @@ export const menuData = [
     key: "clima",
     label: "CLIMA DE PRECISIÓN",
     icon: "BsThermometerSnow",
+    url:"clima-de-precision",
     items: [
       "Chillers",
       "Equipos perimetrales",
@@ -59,6 +62,7 @@ export const menuData = [
     key: "accionamiento",
     label: "ACCIONAMIENTO ELÉCTRICO",
     icon: "MdOutlineElectricBolt",
+    url:"accionamiento-electrico",
     items: ["Variadores de frecuencia"],
     class: "slideRight4"
   }

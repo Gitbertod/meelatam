@@ -19,7 +19,6 @@ const AppRoutes = () => {
       <Route path="/productos/:categoryId" element={<ProductosCategory />} />
       <Route path="/productos/:categoryId/:subCategoryId" element={<ProductosCategory />}></Route>
       <Route path="/productos/:categoryId/:subCategoryId/:productoId" element={<ProductoView />}></Route>
-
     </Routes>
   );
 };

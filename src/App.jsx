@@ -1,14 +1,14 @@
+import React from "react";
 import "./App.css";
-import NavBar from "../components/navbar/NavBar";
 import AppRoutes from "../routes/AppRoutes";
-
+import { MenuDataProvider } from "../components/menuDataProvider/MenuDataProvider";
 
 function App() {
-  
-
   return (
     <>
-      <AppRoutes/>
+      <MenuDataProvider>
+        <AppRoutes />
+      </MenuDataProvider>
     </>
   );
 }

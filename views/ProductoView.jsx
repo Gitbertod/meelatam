@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useParams } from "react-router-dom";
 import styles from "./ProductoView.module.css";
 import Breadcrumb from "../components/breadCrumb/Breadcrumb";
 import NavBar from "../components/navbar/NavBar";
-import LogoMee from "../components/logoMee/LogoMee";
 import ButtonComponent from "../components/buttonComponent/ButtonComponent";
 import Footer from "../components/footer/Footer";
+import { MenuDataContext } from "../components/menuDataProvider/MenuDataProvider";
 
 const ProductoView = () => {
   const breadCrumbsItems = [
@@ -14,6 +15,23 @@ const ProductoView = () => {
     { label: "UPS", href: "/productos/respaldo-de-energia/ups" },
     { label: "UPS Interactivas", href: "/UPS-Interactivas" },
   ];
+
+  const menuData = useContext(MenuDataContext);
+  const { categoryId, subCategoryId, productoId } = useParams();
+
+  // Encuentra la categoría
+  const categoryObj = menuData?.find(
+    (cat) =>
+      cat.label
+        ?.normalize("NFD")
+        ?.replace(/[\u0300-\u036f]/g, "")
+        ?.toLowerCase()
+        ?.replace(/\s+/g, "-") === categoryId
+  );
+  const category = categoryObj.url   
+  // Ahora category es solo el string en minúsculas
+
+  console.log("Category:", category);
   return (
     <>
       <NavBar />
@@ -21,7 +39,10 @@ const ProductoView = () => {
         <Breadcrumb items={breadCrumbsItems} />
         <section className={styles.container}>
           <article className={styles.textContent}>
-            <h2 className={styles.title}>Título del Producto</h2>
+            <h2 className={styles.title}>
+              {category}
+            </h2>
+
             <h3 className={styles.subtitle}>
               Capacidades: 600 VA | 800 VA | 1200 VA | 1500 VA | 2000 VA
             </h3>

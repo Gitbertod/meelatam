@@ -12,6 +12,7 @@ const SubCategoryItem = ({
   handleMouseEnter3,
   handleMouseLeave3,
   categoryId, // <-- Agrega esto
+  menuItem
 }) => {
   const hasNestedItems = sub.key && hoveredMenu2 === sub.key && sub.items;
 
@@ -30,6 +31,7 @@ const SubCategoryItem = ({
           items={sub.items}
           subCategoryId={sub.key}
           categoryId={categoryId} // <-- Pasa esto
+          menuItem={menuItem}
         />
       )}
     </li>

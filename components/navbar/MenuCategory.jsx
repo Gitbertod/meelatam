@@ -18,7 +18,7 @@ const MenuCategory = ({
 }) => {
   const IconComponent = iconMap[menu.icon];
 
-  console.log(menu)
+  
   return (
     <div className={styles.slidebottom}>
       <div
@@ -39,7 +39,8 @@ const MenuCategory = ({
               handleMouseLeave3={handleMouseLeave3}
               className={menu.class}
               menuLabel={menu.label}
-              categoryId={menu.label.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-") } 
+              categoryId={menu.url}
+              menuItems={menu.items} 
             />
           ) : (
             <ul className={styles[menu.class]}>
