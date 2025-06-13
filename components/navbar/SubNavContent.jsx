@@ -1,7 +1,7 @@
 // SubNavContent.jsx
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./NavBar.module.css";
-import { menuData } from "./menuData";
+import { MenuDataContext } from "../menuDataProvider/MenuDataProvider";
 import MenuCategory from "./MenuCategory";
 
 const SubNavContent = ({
@@ -15,6 +15,8 @@ const SubNavContent = ({
   handleMouseLeave2,
   handleMouseLeave3,
 }) => {
+  const menuData = useContext(MenuDataContext);
+
   return (
     <div
       className={`${styles.subnavContent} ${
@@ -29,7 +31,7 @@ const SubNavContent = ({
           menu={menu}
           hoveredMenu={hoveredMenu}
           hoveredMenu2={hoveredMenu2}
-          hoveredMenu3={ hoveredMenu3}
+          hoveredMenu3={hoveredMenu3}
           handleMouseEnter={handleMouseEnter}
           handleMouseEnter2={handleMouseEnter2}
           handleMouseEnter3={handleMouseEnter3}

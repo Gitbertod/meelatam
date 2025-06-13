@@ -18,7 +18,6 @@ const MenuCategory = ({
 }) => {
   const IconComponent = iconMap[menu.icon];
 
-  
   return (
     <div className={styles.slidebottom}>
       <div
@@ -38,15 +37,13 @@ const MenuCategory = ({
               handleMouseLeave2={handleMouseLeave2}
               handleMouseLeave3={handleMouseLeave3}
               className={menu.class}
-              menuLabel={menu.label}
               categoryId={menu.url}
-              menuItems={menu.items} 
             />
           ) : (
             <ul className={styles[menu.class]}>
               {menu.items.map((item, j) => (
                 <li key={j} className={styles.category2}>
-                  {item} 
+                  {item}
                 </li>
               ))}
             </ul>

@@ -4,18 +4,34 @@ export const menuData = [
     key: "respaldo",
     label: "RESPALDO DE ENERGÍA",
     icon: "LiaCarBatterySolid",
-    icon2:"HiChevronRight",
-    url:"respaldo-de-energia",
+    icon2: "HiChevronRight",
+    url: "respaldo-de-energia",
     subcategories: [
       {
         key: "ups",
         label: "UPS",
-        items: [
-          "UPS Interactivas",
-          "UPS Monofásicas",
-          "UPS Trimono",
-          "UPS Trifásicas",
-          "UPS Modulares"
+        url: "ups",
+        items: [{
+          name: "UPS Interactivas",
+          url: "ups-interactivas",
+          description: "La UPS Allsai con su Línea Interactiva ofrece protección integral y alta densidad de potencia en paquetes pequeños y económicos. En comparación con las torres UPS tradicionales del mismo tamaño, la UPS Allsai es más compacta y ofrece una mayor protección contra sobretensiones y sobrecorrientes. Equipado con un estabilizador de voltaje, este UPS continuará proporcionando energía limpia y estable a los equipos conectados, mientras que su controlador de microprocesador incorporado garantiza una alta fiabilidad, ideal para cualquier aplicación doméstica o de oficina pequeña."
+        }, {
+          name: "UPS Monofásicas",
+          url: "ups-monofasicas",
+          description: "Lorem"
+        }, {
+          name: "UPS Trimono",
+          url: "ups-trimono",
+          description: ""
+        }, {
+          name: "UPS Trifásicas",
+          url: "ups-trifasicas",
+          description: ""
+        }, {
+          name: "UPS Modulares",
+          url: "ups-modulares",
+          description: ""
+        }
         ]
       },
       {
@@ -32,7 +48,7 @@ export const menuData = [
     key: "calidad",
     label: "CALIDAD DE ENERGÍA",
     icon: "CiWavePulse1",
-    url:"calidad-de-energia",
+    url: "calidad-de-energia",
     items: [
       "Banco de condensadores",
       "Filtros activos",
@@ -47,7 +63,7 @@ export const menuData = [
     key: "clima",
     label: "CLIMA DE PRECISIÓN",
     icon: "BsThermometerSnow",
-    url:"clima-de-precision",
+    url: "clima-de-precision",
     items: [
       "Chillers",
       "Equipos perimetrales",
@@ -62,7 +78,7 @@ export const menuData = [
     key: "accionamiento",
     label: "ACCIONAMIENTO ELÉCTRICO",
     icon: "MdOutlineElectricBolt",
-    url:"accionamiento-electrico",
+    url: "accionamiento-electrico",
     items: ["Variadores de frecuencia"],
     class: "slideRight4"
   }

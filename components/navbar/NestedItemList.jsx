@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import ProductPhoto from "./ProductPhoto";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NestedItemList = ({ items, subCategoryId, categoryId }) => {
   const [estado3, setEstado3] = useState("");
@@ -11,18 +11,19 @@ const NestedItemList = ({ items, subCategoryId, categoryId }) => {
       <div className="flex">
         <div>
           {items.map((item, j) => {
-            const slug = item.toLowerCase().replace(/\s+/g, "-");
-            // Ruta dinámica:
+            // Si item es un objeto, usa sus propiedades; si es string, úsalo directamente
+            const name = typeof item === "object" ? item.name : item;
+            const slug = typeof item === "object" ? item.url : item.toLowerCase().replace(/\s+/g, "-");
             const route = `/productos/${categoryId}/${subCategoryId}/${slug}`;
 
             return (
               <li
                 key={j}
                 className={styles.category2}
-                onMouseEnter={() => setEstado3(item)}
+                onMouseEnter={() => setEstado3(name)}
                 onMouseLeave={() => setEstado3("")}
               >
-                <Link to={route}>{item}</Link>
+                <Link to={route}>{name}</Link>
               </li>
             );
           })}

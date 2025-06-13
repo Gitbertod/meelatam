@@ -20,15 +20,9 @@ const ProductoView = () => {
   const { categoryId, subCategoryId, productoId } = useParams();
 
   // Encuentra la categoría
-  const categoryObj = menuData?.find(
-    (cat) =>
-      cat.label
-        ?.normalize("NFD")
-        ?.replace(/[\u0300-\u036f]/g, "")
-        ?.toLowerCase()
-        ?.replace(/\s+/g, "-") === categoryId
-  );
-  const category = categoryObj.url   
+  const categoryObj = menuData?.find((cat) => cat.url === categoryId);
+  const category = categoryObj.url;
+  const subCategory = category
   // Ahora category es solo el string en minúsculas
 
   console.log("Category:", category);
@@ -39,9 +33,7 @@ const ProductoView = () => {
         <Breadcrumb items={breadCrumbsItems} />
         <section className={styles.container}>
           <article className={styles.textContent}>
-            <h2 className={styles.title}>
-              {category}
-            </h2>
+            <h2 className={styles.title}>{category}</h2>
 
             <h3 className={styles.subtitle}>
               Capacidades: 600 VA | 800 VA | 1200 VA | 1500 VA | 2000 VA
