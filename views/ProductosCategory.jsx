@@ -1,42 +1,53 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
+import { MenuDataContext } from "../components/menuDataProvider/MenuDataProvider";
+import styles from "./ProductosCategory.module.css"; // Crea este archivo para estilos de las cards
 
 const ProductosCategory = () => {
-  const { categoryId } = useParams();
+  const { categoryId, subCategoryId, subSubCategoryId } = useParams();
+  const menuData = useContext(MenuDataContext);
 
-  const categoryData = {
-    "respaldo-de-energia": {
-      ups: ["UPS-Interactivas", "UPS-Monofásicas", "UPS-Trimono", "UPS-Trifásicas", "UPS Modulares"],
-      baterias: [],
-      inversores: [],
-      rectificadores: []
-    },
-    "calidad-de-energia": ["Banco-de-condensadores", "Filtros-Activos", "Transformadores", "Estabilizadores-de-voltaje", "PDU", "STS"],
-    "clima-de-precision": ["Chillers", "Equipos-Perimetrales", "Equipos-in-Row", "Equipos-tipo-mochila", "Aire-Acondicionado-de-Precisión"],
-    "accionamiento-Electrico": ["Variadores-de-frecuencia"]
-  };
 
-  const categoryItems = categoryData[categoryId];
+  // Encuentra la categoría
+  const categoryObj = menuData.find(cat => cat.url === categoryId);
+  // Encuentra la subcategoría
+  const subCategoryObj = categoryObj?.subcategories?.find(sub => sub.url === subCategoryId);
+  
+  // Encuentra la subSubCategoría (si existe)
+  const subSubCategoryObj = subCategoryObj?.subSubCategory?.find(subsub => subsub.url === subSubCategoryId.toLocaleLowerCase());
+ 
+  // Determina qué items mostrar
+  let itemsToShow = [];
+  if (subSubCategoryObj && Array.isArray(subSubCategoryObj.items)) {
+    itemsToShow = subSubCategoryObj.items;
+  } else if (subCategoryObj?.items && Array.isArray(subCategoryObj.items)) {
+    itemsToShow = subCategoryObj.items;
+  } else if (categoryObj?.items && Array.isArray(categoryObj.items)) {
+    itemsToShow = categoryObj.items;
+  }
 
   return (
-    <div>
-      <h2>Categoría: {categoryId}</h2>
-      {categoryItems ? (
-        <ul>
-          {Array.isArray(categoryItems)
-            ? categoryItems.map((item, index) => <li key={index}>{item}</li>)
-            : Object.entries(categoryItems).map(([subCategory, items]) => (
-                <div key={subCategory}>
-                  <h3>{subCategory}</h3>
-                  <ul>
-                    {items.length > 0 ? items.map((item, index) => <li key={index}>{item}</li>) : <li>No hay elementos disponibles</li>}
-                  </ul>
-                </div>
-              ))}
-        </ul>
-      ) : (
-        <p>No hay datos disponibles para esta categoría.</p>
-      )}
+    <div className={styles.container}>
+      <h2>
+        {subSubCategoryObj?.name ||
+         subCategoryObj?.label ||
+         categoryObj?.label ||
+         "Categoría"}
+      </h2>
+      <div className={styles.cardsWrapper}>
+        {itemsToShow.length > 0 ? (
+          itemsToShow.map((item, idx) => (
+            <div className={styles.card} key={item.url || idx}>
+              <h3>{item.name || item}</h3>
+              {item.capacidades && <p><strong>Capacidades:</strong> {item.capacidades}</p>}
+              
+              {/* Puedes agregar más campos aquí */}
+            </div>
+          ))
+        ) : (
+          <p>No hay productos para mostrar.</p>
+        )}
+      </div>
     </div>
   );
 };

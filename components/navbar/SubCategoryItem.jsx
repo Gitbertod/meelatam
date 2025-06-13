@@ -13,7 +13,10 @@ const SubCategoryItem = ({
   handleMouseLeave3,
   categoryId
 }) => {
-  const hasNestedItems = sub.key && hoveredMenu2 === sub.key && sub.items;
+  const hasNestedItems =
+    sub.key &&
+    hoveredMenu2 === sub.key &&
+    (Array.isArray(sub.subSubCategory) ? sub.subSubCategory.length > 0 : Array.isArray(sub.items) && sub.items.length > 0);
 
   return (
     <li
@@ -27,7 +30,7 @@ const SubCategoryItem = ({
           hoveredMenu3={hoveredMenu3}
           handleMouseEnter3={handleMouseEnter3}
           handleMouseLeave3={handleMouseLeave3}
-          items={sub.items}
+          items={sub.subSubCategory || sub.items}
           subCategoryId={sub.key}
           categoryId={categoryId}
         />

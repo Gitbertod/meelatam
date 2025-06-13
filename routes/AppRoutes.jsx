@@ -18,7 +18,8 @@ const AppRoutes = () => {
       <Route path="/acerca-de-centiel" element={<AcercaDeSentiel />}></Route>
       <Route path="/productos/:categoryId" element={<ProductosCategory />} />
       <Route path="/productos/:categoryId/:subCategoryId" element={<ProductosCategory />}></Route>
-      <Route path="/productos/:categoryId/:subCategoryId/:productoId" element={<ProductoView />}></Route>
+      <Route path="/productos/:categoryId/:subCategoryId/:subSubCategoryId" element={<ProductosCategory />}></Route>
+      <Route path="/productos/:categoryId/:subCategoryId/:subSubCategoryId/:productoId" element={<ProductoView />}></Route>
     </Routes>
   );
 };
