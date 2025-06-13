@@ -27,10 +27,20 @@ const ProductoView = () => {
     (sub) => sub.url === subCategoryId
   );
 
-  // Encuentra el producto
-  const productObj = subCategoryObj?.items?.find(
-    (item) => item.url === productoId
-  );
+  // Busca el producto en todos los subSubCategory de la subcategoría
+  let productObj = null;
+  if (subCategoryObj?.subSubCategory) {
+    for (const subSub of subCategoryObj.subSubCategory) {
+      if (Array.isArray(subSub.items)) {
+        productObj = subSub.items.find((item) => item.url === productoId);
+        if (productObj) break;
+      }
+    }
+  }
+  // Si no se encontró en subSubCategory, busca en items directos (por si acaso)
+  if (!productObj && Array.isArray(subCategoryObj?.items)) {
+    productObj = subCategoryObj.items.find((item) => item.url === productoId);
+  }
 
   return (
     <>
@@ -43,7 +53,7 @@ const ProductoView = () => {
               {productObj?.name || "Producto no encontrado"}
             </h2>
             <h3 className={styles.subtitle}>
-              Capacidades: 600 VA | 800 VA | 1200 VA | 1500 VA | 2000 VA
+              {productObj?.capacidades || ""}
             </h3>
             <p className={styles.description}>
               {productObj?.description ||
@@ -55,8 +65,8 @@ const ProductoView = () => {
           </article>
           <figure className={styles.imageWrapper}>
             <img
-              src="/TVA_1.png"
-              alt="Imagen del producto"
+              src={productObj?.image || "/TVA_1.png"}
+              alt={productObj?.name || "Imagen del producto"}
               className={styles.image}
             />
           </figure>

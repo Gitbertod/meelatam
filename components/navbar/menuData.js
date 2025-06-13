@@ -18,6 +18,7 @@ export const menuData = [
             {
               name: "ALLSAI E 600 VA – 2000 VA",
               url:"allsai-e-600-va-2000-va",
+              image:"/ALLSAI E 600 VA – 2000 VA.png",
               capacidades: "600 VA | 800 VA | 1200 VA | 1500 VA | 2000 VA",
               description: "La UPS Allsai con su Línea Interactiva ofrece protección integral y alta densidad de potencia en paquetes pequeños y económicos. En comparación con las torres UPS tradicionales del mismo tamaño, la UPS Allsai es más compacta y ofrece una mayor protección contra sobretensiones y sobrecorrientes. Equipado con un estabilizador de voltaje, este UPS continuará proporcionando energía limpia y estable a los equipos conectados, mientras que su controlador de microprocesador incorporado garantiza una alta fiabilidad, ideal para cualquier aplicación doméstica o de oficina pequeña.",
             }
@@ -29,18 +30,28 @@ export const menuData = [
             {
               name: "ALLSAI W PRO 1KVA – 3KVA (Rack)",
               url:"allsai-w-pro-1-kva-10-kva-rack",
+              image:"/UPS RT 2.jpeg",
               capacidades: "1 KVA | 2 KVA | 3 KVA | 6 KVA | 10 KVA",
               description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Además de contar con suficiente tiempo de autonomía como energía de reserva. Las UPS cuentan con modelo torre y tipo convertible rack/ torre(RT), este último ocupa sólo 2 - 3U de altura. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
             },
             {
               name: "ALLSAI W PRO 6KVA – 10KVA (Torre y RT)",
               url:"allsai-w-pro-1-kva-10-kva-rack",
+              image:"/ALLSAI E 600 VA – 2000 VA.png",
               capacidades: "1 KVA | 2 KVA | 3 KVA",
               description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Además de contar con suficiente tiempo de autonomía como energía de reserva.Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
             },
             {
               name: "CENTIEL ESSENTIALPOWER XST 1KVA – 3KVA (Torre)",
-              url:"allsai-w-pro-1-kva-10-kva-rack",
+              url:"centiel-essentialpower-xst-1-kva-3-kva-torre",
+              image:"/Tower 1-3K.jpg",
+              capacidades: "6 KVA | 10 KVA",
+              description: "EssentialPower la solución más flexible y confiable, ideal para dispositivos de redes pequeños, servidores, puntos de ventas, grupos de terminales de trabajo e instalaciones industriales pequeñas. El EssentialPower satisface cualquier aplicación crítica básica que demande una alta disponibilidad y flexibilidad.",
+            },
+            {
+              name: "CENTIEL ESSENTIALPOWER XST 6KVA – 10KVA (Torre)",
+              url:"centiel-essentialpower-xst-6-kva-10-kva-torre",
+              image:"/Centiel-front - low.jpg",
               capacidades: "6 KVA | 10 KVA",
               description: "EssentialPower la solución más flexible y confiable, ideal para dispositivos de redes pequeños, servidores, puntos de ventas, grupos de terminales de trabajo e instalaciones industriales pequeñas. El EssentialPower satisface cualquier aplicación crítica básica que demande una alta disponibilidad y flexibilidad.",
             },
