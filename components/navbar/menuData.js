@@ -18,7 +18,7 @@ export const menuData = [
         }, {
           name: "UPS Monofásicas",
           url: "ups-monofasicas",
-          description: "Lorem"
+          description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida entre 0.9 y 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Además de contar con suficiente tiempo de autonomía como energía de reserva.Las UPS cuentan con modelo torre y tipo convertible rack/torre (RT), este último ocupa sólo 2-3U de altura. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos."
         }, {
           name: "UPS Trimono",
           url: "ups-trimono",
