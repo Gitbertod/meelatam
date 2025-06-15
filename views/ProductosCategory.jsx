@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { MenuDataContext } from "../components/menuDataProvider/MenuDataProvider";
 import styles from "./ProductosCategory.module.css"; // Crea este archivo para estilos de las cards
 import NavBar from "../components/navbar/NavBar";
+import Footer from "../components/footer/Footer";
 
 const ProductosCategory = () => {
   const { categoryId, subCategoryId, subSubCategoryId } = useParams();
@@ -52,10 +53,10 @@ const ProductosCategory = () => {
                 <Link to={`${basePath}/${item.url}`}>
                   <img src={item.image} alt={item.name} />
                 </Link>
-                <h3>{item.name || item}</h3>
+                <strong><h3>{item.name || item}</h3></strong>
                 {item.capacidades && (
                   <p>
-                    <strong>Capacidades:</strong> {item.capacidades}
+                    Capacidades: {item.capacidades}
                   </p>
                 )}
 
@@ -67,6 +68,7 @@ const ProductosCategory = () => {
           )}
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };

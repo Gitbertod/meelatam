@@ -74,16 +74,14 @@
   transition: opacity 600ms, transform 600ms;
   z-index: 10;
 
- 
+
   align-items: start;
   gap: 2rem;
   padding: 2rem;
-
   background: linear-gradient(to right, #f9f9f9, #eaeaea);
   backdrop-filter: blur(10px);
   border-radius: 0 0 12px 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-
   color: #4a4a4a;
   opacity: 0;
   transform: translateY(-50%);
@@ -206,7 +204,7 @@
 .slideRight3 {
   position: absolute;
   width: 300px;
-   margin-top: -70px;
+  margin-top: -70px;
   margin-left: 420px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -214,14 +212,14 @@
 .slideRight4 {
   position: absolute;
   width: 400px;
-  margin-top: -150px;
+  margin-top: 150px;
   margin-left: 420px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .slideRight5 {
   position: absolute;
-  margin-top: 200px;
+  margin-top: 150px;
   width: 400px;
   margin-left: 325px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

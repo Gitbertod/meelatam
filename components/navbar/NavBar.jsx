@@ -21,7 +21,9 @@ const NavBar = () => {
 
   return (
     <div className={styles.navbar}>
+      <Link to={"/"}>
       <LogoMee />
+      </Link>
       <div className={styles.optionsNav}>
         <div className={styles.subnav}>
           <button
