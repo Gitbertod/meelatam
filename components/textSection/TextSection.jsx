@@ -6,7 +6,7 @@ import SplitText from "gsap/SplitText";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-const TextSection = ({ title }) => {
+const TextSection = ({ title, text }) => {
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
   const textRef = useRef(null);
@@ -57,8 +57,7 @@ const TextSection = ({ title }) => {
       <div className={styles.textContainer}>
         <h2 ref={titleRef} className={styles.title}>{title}</h2>
         <p ref={textRef} className={styles.text}>
-          Soluciones de climatización para entornos tecnológicos, industriales y
-          del terciario que van más allá del concepto de estándar.
+          {text}
         </p>
         <button  className={styles.btn}>Saber más</button>
       </div>

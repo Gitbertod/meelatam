@@ -165,9 +165,30 @@ export const menuData = [
           }, {
             name: "CENTIEL PREMIUM TOWER MS 80KVA – 250KVA ",
             url: "centiel-premium-tower-ms-80kva-250kva",
-            image: "/premiumTowerS2.png",
+            image: "/centielPremiumTowerMS.png",
             capacidades: "80 KVA | 100 KVA | 120 KVA | 160 KVA | 200 KVA | 250 KVA",
             description: "PremiumTower MS es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases para aplicaciones junto a equipamiento médico como Equipos de Resonancia Magnética, Tomografos computarizados, Rayos X, Ultrasonidos, entre otros. Diseñado para soportar los picos de corriente requeridos por este tipo de equipamiento, sin nececidad de sobredimensionar el UPS. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower MS ofrece escalabilidad de hasta 7.5 MW y proporciona una eficiencia energética inigualable en un diseño compacto y robusto de hasta 96,6%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. Al mismo tiempo listo para trabajar con todo tipo de baterías (Plomo ácido, NiCd, Litio, Sodio, etc).",
+          },
+          {
+            name: "CENTIEL PREMIUM TOWER 10KVA – 150KVA (Torre)(208Vac)",
+            url: "centiel-premium-tower-10kva-150kva-torre-208vac",
+            image: "/centielPremiumTower10-150.png",
+            capacidades: "10 KVA | 15 KVA | 20 KVA | 30 KVA | 40 KVA | 50 KVA | 60 KVA | 80 KVA | 100 KVA | 125 KVA | 150 KVA ",
+            description: "PremiumTower (208V) es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower (208V) provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower (208V) ofrece escalabilidad de hasta 7.5 MW y proporciona una eficiencia energética inigualable en un diseño compacto y robusto de hasta 96,6%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. Al mismo tiempo listo para trabajar con todo tipo de baterías (Plomo ácido, NiCd, Litio, Sodio, etc).",
+          },
+          {
+            name: "CENTIEL CUMULUS POWER 10KVA – 3.6MVA (Modular)",
+            url: "centiel-cumulus-power-10kva-36mva-modular",
+            image: "/Centiel_combo_front-cumulus.png",
+            capacidades: "10 KVA | 3.6 MVA",
+            description: "CumulusPower es un vérsatil UPS modular totalmente descentralizado, diseñado y fabricado en Suiza. Cuenta con módulos de 10/20/25/30/50/62.5kW y con un rango de potencia en un mismo gabinete desde 10kW a 1.500kW proporcionando máxima flexibilidad a la aplicación final. Diseñado para cumplir con las rigurosas demandas de infraestructura TI de hoy en día. Proporciona eficiencias optimizadas de carga parcial y total de hasta el 97,6% en el modo de doble conversión en línea. En el modo ECO ultraseguro, el SAI proporciona una excelente calidad de energía con una eficiencia del 99,4%. Diseñado para eliminar puntos únicos de fallas y una Arquitectura redundante y distribución activa (DARA), reduciendo con esto el riesgo por el factor humano. Soporta sobrecargas de hasta 124% de forma continua en el inversor de forma continua.",
+          },
+          {
+            name: "CENTIEL STRATUS POWER 10KVA – 3.75MVA (Modular)",
+            url: "centiel-stratus-power-10kva-375mva-modular",
+            image: "/Centiel_combo_front-cumulus.png",
+            capacidades: "10 KVA | 3.75 MVA",
+            description: "StratusPower es un UPS modular totalmente descentralizado, diseñado y fabricado en Suiza. Cuenta con módulos de 10/20/25/50/60kW y con un rango de potencia en un mismo gabinete desde 10kW a 900kW proporcionando máxima flexibilidad a la aplicación final. Proporciona eficiencias optimizadas de carga parcial y total de hasta el 97,6% en el modo de doble conversión en línea. En el modo ECO ultraseguro, el SAI proporciona una excelente calidad de energía con una eficiencia del 99,4%. Diseñado para eliminar puntos únicos de fallas y una Arquitectura redundante y distribución activa (DARA), reduciendo con esto el riesgo por el factor humano. Soporta sobrecargas de hasta 124% de forma continua en el inversor de forma continua. Sistema diseñado para un tiempo de vida útil de más de 30 años",
           },
 
           ]
@@ -177,7 +198,24 @@ export const menuData = [
       {
         key: "baterias",
         label: "Baterías",
-        items: ["Baterías test"]
+        items: [{
+            name: "ALLSAI LITIO / MONTAJE EN RACK",
+            url: "allsai-litio-montaje-en-rack",
+            image: "/litio-1.jpg",
+            voltajes:"51.2V",
+            capacidades: "10/20/30/40/50/60/80/100/200Ah",
+            description: "Las baterías de Litio Allsai para montaje en rack de 19” son de tecnología de Litio ferrofosfato de hierro ideales para aplicaciones en telecomunicaciones, Minería. Diseñadas para 6.000 ciclos, recarga ultra rápida, excelente desempeño con descargas profundas hasta el 80%, cada módulos cuenta con su propio BMS.",
+          },
+          {
+            name: "RITAR SERIE RT",
+            url: "ritar-serie-rt",
+            image: "/litio-1.jpg",
+            voltajes:"12V",
+            capacidades: "5Ah – 26Ah",
+            description: "Larga vida de diseño Baja tasa de autodescarga Buen rendimiento de descarga de alta tasa Amplio rango de temperatura de operación Aplicación: pequeños UPS, luz de emergencia, sistemas de seguridad, juguetes, médicos, etc."
+          },
+        
+        ]
       },
       { label: "Inversores" },
       { label: "Rectificadores" }
