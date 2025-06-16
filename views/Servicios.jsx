@@ -6,11 +6,15 @@ import Footer from "../components/footer/Footer";
 import SectionComponent2 from "../components/sectionComponent2/SectionComponent2";
 import TextSection from "../components/textSection/TextSection";
 import PhotoSection from "../components/photoSection/PhotoSection";
+import HeroSection from "../components/heroSection/HeroSection";
+
 
 const Servicios = () => {
   return (
     <>
       <NavBar></NavBar>
+      <HeroSection title={"SERVICIOS"}></HeroSection>
+      <div className={styles.containerHero}></div>
       <SectionComponent2>
         <TextSection
           title={"Servicio de mantenimiento de equipos críticos"}
