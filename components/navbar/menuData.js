@@ -138,30 +138,36 @@ export const menuData = [
             image: "/ALLSAI-W5-PRO-80-200KVA.png",
             capacidades: "80 KVA | 100 KVA | 120 KVA | 160 KVA | 200 KVA",
             description: "Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia y rendimiento confiable. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 304 Vac a 478 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
-          },{
+          }, {
             name: "ALLSAI W-5 PRO 10KVA – 30KVA (Rack)",
             url: "allsai-w-5-pro-10kva-30kva-rack",
             image: "/ALLSAI-W5-PRO-10-30KVA-rack.png",
             capacidades: "10 KVA | 15 KVA | 20 KVA | 30 KVA",
             description: "Para montaje en rack de 19” Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia, rendimiento confiable y para ser instalado con baterías externas. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 304 Vac a 478 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
-          },{
+          }, {
             name: "ALLSAI W-5 PRO 10KVA – 20KVA (Torre) (208Vac) (LV)",
             url: "allsai-w-5-pro-10kva-20kva-torre-208vac",
             image: "/ALLSAI-WPRO-208V.png",
             capacidades: "10 KVA | 20 KVA",
             description: "Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia y rendimiento confiable. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 166 Vac a 277 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
-          },{
+          }, {
             name: "CENTIEL PREMIUM TOWER 10KVA – 500KVA (Torre)",
             url: "centiel-premium-tower-10kva-500kva-torre",
             image: "/centielPremiunTower-10kva-500kva-Torre.jpg",
             capacidades: "10 KVA | 20 KVA | 30 KVA | 40 KVA | 60 KVA | 80 KVA | 100 KVA | 120 KVA | 160 KVA | 200 KVA | 250 KVA | 300 KVA | 400 KVA | 500 KVA",
             description: "PremiumTower es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower ofrece escalabilidad de hasta 7.5 MW y proporciona una eficiencia energética inigualable en un diseño compacto y robusto de hasta 96,6%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. ",
-          },{
+          }, {
             name: "CENTIEL PREMIUM TOWER S2 10KVA – 500KVA (Torre)",
-            url: "centiel-premium-tower-10kva-500kva-torre",
-            image: "/centielPremiunTower-10kva-500kva-Torre.jpg",
+            url: "centiel-premium-tower-s2-10kva-500kva-torre",
+            image: "/premiumTowerS2.png",
             capacidades: "10 KVA | 20 KVA | 30 KVA | 40 KVA | 60 KVA | 80 KVA ",
-            description: "PremiumTower es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower ofrece escalabilidad de hasta 7.5 MW y proporciona una eficiencia energética inigualable en un diseño compacto y robusto de hasta 96,6%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. ",
+            description: "PremiumTower S2 es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower S2 provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower S2 ofrece Back Feed Protection de forma standard en un diseño compacto y robusto de hasta 97,1%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. Con componentes diseñados para en un reemplazo por mantenimiento no menor a 15 años. Al mismo tiempo listo para trabajar con todo tipo de baterías (Plomo ácido, NiCd, Litio, Sodio, etc). Y con opción para contener hasta 240 baterías dentro del mismo UPS.",
+          }, {
+            name: "CENTIEL PREMIUM TOWER MS 80KVA – 250KVA ",
+            url: "centiel-premium-tower-ms-80kva-250kva",
+            image: "/premiumTowerS2.png",
+            capacidades: "80 KVA | 100 KVA | 120 KVA | 160 KVA | 200 KVA | 250 KVA",
+            description: "PremiumTower MS es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases para aplicaciones junto a equipamiento médico como Equipos de Resonancia Magnética, Tomografos computarizados, Rayos X, Ultrasonidos, entre otros. Diseñado para soportar los picos de corriente requeridos por este tipo de equipamiento, sin nececidad de sobredimensionar el UPS. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower MS ofrece escalabilidad de hasta 7.5 MW y proporciona una eficiencia energética inigualable en un diseño compacto y robusto de hasta 96,6%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. Al mismo tiempo listo para trabajar con todo tipo de baterías (Plomo ácido, NiCd, Litio, Sodio, etc).",
           },
 
           ]
