@@ -14,8 +14,7 @@ const Accordion = ({ title, children }) => {
     if (!isOpen) {
       gsap.to(contentRef.current, {
         height: 'auto',
-        duration: 0.4,
-        
+        duration: 0.4,    
         opacity: 1,
         paddingTop: 15,
         paddingBottom: 15,
@@ -28,8 +27,7 @@ const Accordion = ({ title, children }) => {
     } else {
       gsap.to(contentRef.current, {
         height: 0,
-        duration: 0.3,
-        
+        duration: 0.3, 
         opacity: 0,
         paddingTop: 0,
         paddingBottom: 0,
@@ -37,7 +35,6 @@ const Accordion = ({ title, children }) => {
       gsap.to(iconRef.current, {
         rotate: 0,
         duration: 0.3,
-        
       });
     }
   };

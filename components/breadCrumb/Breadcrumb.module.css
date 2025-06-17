@@ -1,11 +1,11 @@
 .breadcrumb {
   display: flex;
-  padding-top: 3rem;
+  padding: 16px 0 8px 0;
   margin-top: 5rem ;
   margin-bottom: 1.5rem;
   margin-left: 2rem;
-  font-size: 0.95rem;
-  color: #666;
+  font-size: 1rem;
+  color: #199697;
 }
 
 .list {
@@ -20,7 +20,7 @@
 .item::after {
   content: "/";
   margin-left: 0.5rem;
-  color: #ccc;
+  color: #888;
 }
 
 .item:last-child::after {
@@ -28,17 +28,19 @@
 }
 
 .link {
-  color: #818181;
+  color: #199697;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: text-decoration 0.2s;
 }
 
 .link:hover {
-  color: #009eba;
   text-decoration: underline;
 }
 
 .current {
   color: #333;
   font-weight: 500;
+}
+.separator {
+  margin: 0 24px;
 }

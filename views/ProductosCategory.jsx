@@ -4,6 +4,7 @@ import { MenuDataContext } from "../components/menuDataProvider/MenuDataProvider
 import styles from "./ProductosCategory.module.css"; // Crea este archivo para estilos de las cards
 import NavBar from "../components/navbar/NavBar";
 import Footer from "../components/footer/Footer";
+import Breadcrumb from "../components/breadCrumb/Breadcrumb";
 
 const ProductosCategory = () => {
   const { categoryId, subCategoryId, subSubCategoryId } = useParams();
@@ -39,6 +40,7 @@ const ProductosCategory = () => {
   return (
     <>
       <NavBar />
+      <Breadcrumb></Breadcrumb>
       <div className={styles.container}>
         <h2>
           {subSubCategoryObj?.name ||

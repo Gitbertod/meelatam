@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import styles from "./StatsSection.module.css";
-import { ImPowerCord, ImUserCheck, ImPower,ImUsers } from "react-icons/im";
+import { ImPowerCord, ImUserCheck, ImPower, ImUsers } from "react-icons/im";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -39,7 +39,7 @@ const StatsSection = () => {
         return (
           <div key={index} className={`${styles.stat} stat`}>
             <span className={styles.icon}>
-              <Icon size={90} />
+              <Icon />
             </span>
             <p>{stat.label}</p>
           </div>
