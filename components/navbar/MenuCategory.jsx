@@ -4,6 +4,7 @@ import styles from "./NavBar.module.css";
 import { HiChevronRight } from "react-icons/hi";
 import { iconMap } from "./MenuIcons";
 import SubCategoryList from "./SubCategoryList";
+import { Link } from "react-router-dom";
 
 const MenuCategory = ({
   menu,
@@ -18,6 +19,10 @@ const MenuCategory = ({
 }) => {
   const IconComponent = iconMap[menu.icon];
 
+  // Ruta especial para baterías
+  const isBaterias = menu.label === "Baterías";
+  const bateriasLink = "/productos/respaldo-de-energia/baterias";
+
   return (
     <div className={styles.slidebottom}>
       <div
@@ -25,7 +30,14 @@ const MenuCategory = ({
         onMouseEnter={handleMouseEnter(menu.key)}
       >
         {IconComponent && <IconComponent className={styles.icon} />}
-        {menu.label} <HiChevronRight />
+        {isBaterias ? (
+          <Link to={bateriasLink} className={styles.categoryLink}>
+            {menu.label}
+          </Link>
+        ) : (
+          menu.label
+        )}{" "}
+        <HiChevronRight />
         {hoveredMenu === menu.key &&
           (menu.subcategories ? (
             <SubCategoryList

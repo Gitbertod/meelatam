@@ -200,23 +200,79 @@ export const menuData = [
       {
         key: "baterias",
         label: "Baterías",
+        url: "baterias",
         items: [{
             name: "ALLSAI LITIO / MONTAJE EN RACK",
+            models:"LiFePO4",
             url: "allsai-litio-montaje-en-rack",
-            images: "/litio-1.jpg",
+            images: ["/litio-1.jpg"],
             voltajes:"51.2V",
             capacidades: "10/20/30/40/50/60/80/100/200Ah",
             description: "Las baterías de Litio Allsai para montaje en rack de 19” son de tecnología de Litio ferrofosfato de hierro ideales para aplicaciones en telecomunicaciones, Minería. Diseñadas para 6.000 ciclos, recarga ultra rápida, excelente desempeño con descargas profundas hasta el 80%, cada módulos cuenta con su propio BMS.",
           },
           {
             name: "RITAR SERIE RT",
+            models:"",
             url: "ritar-serie-rt",
-            images: "/litio-1.jpg",
-            voltajes:"12V",
-            capacidades: "5Ah – 26Ah",
-            description: "Larga vida de diseño Baja tasa de autodescarga Buen rendimiento de descarga de alta tasa Amplio rango de temperatura de operación Aplicación: pequeños UPS, luz de emergencia, sistemas de seguridad, juguetes, médicos, etc."
+            images: ["/ritar-rt-1.jpg"],
+            voltajes:"6V/12V",
+            capacidades: "1.3Ah~28Ah",
+            description: "Larga vida de diseño\n Baja tasa de autodescarga\n Buen rendimiento de descarga de alta tasa\n Amplio rango de temperatura de operación Aplicación: pequeños UPS, luz de emergencia, sistemas de seguridad, juguetes, médicos, etc."
           },
-        
+          {
+            name: "RITAR SERIE RA",
+            models:"",
+            url: "ritar-serie-ra",
+            images: ["/ritar-ra-3.jpg"],
+            voltajes:"12V",
+            capacidades: "33Ah – 260Ah",
+            description: "Larga vida de diseño\n Baja tasa de autodescarga\n Buen rendimiento de descarga de alta tasa\n Amplio rango de temperatura de operación Aplicación: sistemas de telecomunicaciones, sistemas de alarma y contra incendios, sistemas de emergencia, herramientas eléctricas, equipos médicos, UPS/EPS, inversores/controladores solares, etc."
+          },
+          {
+            name: "RITAR SERIE HR",
+            models:"",
+            url: "ritar-serie-hr",
+            images: ["/ritar-hr-1.jpg"],
+            voltajes:"6V/12V",
+            capacidades: "16W – 850W",
+            description: "Densidad de energía superior y salida de potencia muy alta\nBajo rendimiento de autodescarga\nAmplio rango de temperatura de operación\nLarga vida de diseño \nAdecuado para UPS/EPS, centros de datos donde se requieren cargas de alta corriente."
+          },
+          {
+            name: "ALLSAI GEL",
+            models:"",
+            url: "allsai-gel",
+            images: ["/gel-1.jpg"],
+            voltajes:"2V,4V,6V, 8V,12V",
+            capacidades: "3,5Ah a 3.150Ah",
+            description: "Las baterías ALLSAI VRLA-GEL están fabricadas con verdadera tecnología comprobada en más de un siglo de experiencia. Debido a su característica VRLA no requieren válvulas reguladas para mantenimiento."
+          },
+        {
+            name: "ALLSAI AGM",
+            models:"",
+            url: "allsai-agm",
+            images: ["/agm-1.jpg"],
+            voltajes:"2V,4V,6V, 8V,12V",
+            capacidades: " 3,5Ah a 3.150Ah",
+            description: "Las baterías ALLSAI VRLA-AGM son baterías de Plomo ácido reguladas por válvula con separadores de placa de vidrio absorbente (AGM). Son baterías de alta calidad y larga vida de 2V a 24V, y de 0.5AH a 3500AH."
+          },
+          {
+            name: "ALLSAI NIQUEL CADMIO",
+            models:"KPH, KPM, KPL",
+            url: "allsai-niquel-cadmio",
+            images: ["/niquel-cadmio-1.jpg"],
+            voltajes:"1.2V",
+            capacidades: " 3,5Ah a 3.150Ah",
+            description: "Las baterías se han convertido en la primera opción para el usuario que busca un sistema confiable, de larga vida útil bajo costos de mantenimiento."
+          },
+          {
+            name: "ALLSAI OPZ",
+            models:" OPZV, OPZS",
+            url: "allsai-opz",
+            images: ["/opz-1.jpg"],
+            voltajes:"2V, 6V, 12V",
+            capacidades: "77Ah a 3.360Ah",
+            description: "Las baterías ALLSAIde tipo estacionarias, mejor conocidas como OPZ se han convertido en un aliado indispensable en aquellos lugares donde no hay red eléctrica y existe la necesidad de alimentar ciertos consumos de tipo medio-alto de manera constante como en viviendas remotas, campings o almacenes. Se trata pues de acumuladores de 2V que puestos en serie de 6 ó 12 vasos pueden alcanzar los 12V ó 24V respectivamente."
+          },
         ]
       },
       { label: "Inversores" },
