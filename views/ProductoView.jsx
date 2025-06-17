@@ -56,8 +56,7 @@ const ProductoView = () => {
               {productObj?.capacidades || ""}
             </h3>
             <p className={styles.description}>
-              {productObj?.description ||
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ducimus sunt similique dolor quis! Rerum suscipit, sequi dolorem, nulla qui totam quaerat sapiente, sit repellat minus illo ratione vero quasi!"}
+              {productObj?.description.split('\n').map((parrafo,idx)=>(<p key={idx}>{parrafo}</p>))}
             </p>
             <a href="/ficha-tecnica.pdf" download>
               <ButtonComponent text={"Descargar ficha técnica"} />
@@ -65,7 +64,7 @@ const ProductoView = () => {
           </article>
           <figure className={styles.imageWrapper}>
             <img
-              src={productObj?.image || "/TVA_1.png"}
+              src={productObj?.images?.[0] || "/TVA_1.png"}
               alt={productObj?.name || "Imagen del producto"}
               className={styles.image}
             />

@@ -57,7 +57,7 @@ const ProductosCategory = () => {
             itemsToShow.map((item, idx) => (
               <div className={styles.card} key={item.url || idx}>
                 <Link to={`${basePath}/${item.url}`}>
-                  <img src={item.image} alt={item.name} />
+                  <img src={item.images?.[0]} alt={item.name} />
                 </Link>
                 <strong><h3>{item.name || item}</h3></strong>
                 {item.capacidades && (
