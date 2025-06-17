@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import { MenuDataContext } from "../components/menuDataProvider/MenuDataProvider";
-import styles from "./ProductosCategory.module.css"; // Crea este archivo para estilos de las cards
+import styles from "./ProductosCategory.module.css";
 import NavBar from "../components/navbar/NavBar";
 import Footer from "../components/footer/Footer";
 import Breadcrumb from "../components/breadCrumb/Breadcrumb";
@@ -19,13 +19,17 @@ const ProductosCategory = () => {
 
   // Encuentra la subSubCategoría (si existe)
   const subSubCategoryObj = subCategoryObj?.subSubCategory?.find(
-    (subsub) => subsub.url === subSubCategoryId.toLocaleLowerCase()
+    (subsub) => subsub.url === (subSubCategoryId?.toLocaleLowerCase?.() || "")
   );
 
   // Determina qué items mostrar
   let itemsToShow = [];
-  if (subSubCategoryObj && Array.isArray(subSubCategoryObj.items)) {
+  if (subSubCategoryId && subSubCategoryObj && Array.isArray(subSubCategoryObj.items)) {
+    // Si hay subSubCategoryId, muestra solo esos items
     itemsToShow = subSubCategoryObj.items;
+  } else if (subCategoryObj?.subSubCategory && Array.isArray(subCategoryObj.subSubCategory)) {
+    // Si estamos en /productos/respaldo-de-energia/ups, juntar todos los items de todas las subSubCategory
+    itemsToShow = subCategoryObj.subSubCategory.flatMap(subsub => subsub.items || []);
   } else if (subCategoryObj?.items && Array.isArray(subCategoryObj.items)) {
     itemsToShow = subCategoryObj.items;
   } else if (categoryObj?.items && Array.isArray(categoryObj.items)) {
@@ -40,7 +44,7 @@ const ProductosCategory = () => {
   return (
     <>
       <NavBar />
-      <Breadcrumb></Breadcrumb>
+      <Breadcrumb />
       <div className={styles.container}>
         <h2>
           {subSubCategoryObj?.name ||
@@ -61,7 +65,6 @@ const ProductosCategory = () => {
                     Capacidades: {item.capacidades}
                   </p>
                 )}
-
                 {/* Puedes agregar más campos aquí */}
               </div>
             ))
@@ -70,7 +73,7 @@ const ProductosCategory = () => {
           )}
         </div>
       </div>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 };
