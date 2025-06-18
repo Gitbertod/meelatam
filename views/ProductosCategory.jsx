@@ -16,7 +16,6 @@ const ProductosCategory = () => {
   const subCategoryObj = categoryObj?.subcategories?.find(
     (sub) => sub.url === subCategoryId
   );
-
   // Encuentra la subSubCategoría (si existe)
   const subSubCategoryObj = subCategoryObj?.subSubCategory?.find(
     (subsub) => subsub.url === (subSubCategoryId?.toLocaleLowerCase?.() || "")
@@ -32,6 +31,19 @@ const ProductosCategory = () => {
     itemsToShow = subCategoryObj.subSubCategory.flatMap(subsub => subsub.items || []);
   } else if (subCategoryObj?.items && Array.isArray(subCategoryObj.items)) {
     itemsToShow = subCategoryObj.items;
+  } else if (categoryObj && !subCategoryId) {
+    // Si estamos en /productos/respaldo-de-energia/ (sin subCategoryId)
+    // Juntar todos los productos de todas las subcategorías y subSubCategorías
+    itemsToShow = categoryObj.subcategories?.flatMap(subcat => {
+      if (subcat.subSubCategory) {
+        // Si tiene subSubCategory, juntar todos los items de cada subSubCategory
+        return subcat.subSubCategory.flatMap(subsub => subsub.items || []);
+      } else if (subcat.items) {
+        // Si tiene items directos
+        return subcat.items;
+      }
+      return [];
+    }) || [];
   } else if (categoryObj?.items && Array.isArray(categoryObj.items)) {
     itemsToShow = categoryObj.items;
   }

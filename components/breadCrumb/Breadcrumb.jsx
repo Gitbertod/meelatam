@@ -14,7 +14,7 @@ const Breadcrumb = () => {
 
   // Construye los breadcrumbs dinámicamente
   const crumbs = [
-    { label: "Inicio", to: " / " },
+    { label: "Inicio", to: "/" },
     ...pathnames.map((segment, idx) => {
       const to = "/" + pathnames.slice(0, idx + 1).join("/");
       return {
