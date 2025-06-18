@@ -19,7 +19,7 @@ export const menuData = [
               name: "ALLSAI E 600 VA – 2000 VA",
               url: "allsai-e-600-va-2000-va",
               images: [
-                "/Interactivo 1.png","/Interactivo 2.png"
+                "/Interactivo 1.png", "/Interactivo 2.png"
               ],
               capacidades: "600 VA | 800 VA | 1200 VA | 1500 VA | 2000 VA",
               description: "La UPS Allsai con su Línea Interactiva ofrece protección integral y alta densidad de potencia en paquetes pequeños y económicos. En comparación con las torres UPS tradicionales del mismo tamaño, la UPS Allsai es más compacta y ofrece una mayor protección contra sobretensiones y sobrecorrientes.\n Equipado con un estabilizador de voltaje, este UPS continuará proporcionando energía limpia y estable a los equipos conectados, mientras que su controlador de microprocesador incorporado garantiza una alta fiabilidad, ideal para cualquier aplicación doméstica o de oficina pequeña.",
@@ -32,14 +32,14 @@ export const menuData = [
             {
               name: "ALLSAI W PRO 1KVA – 3KVA (Rack)",
               url: "allsai-w-pro-1-kva-3-kva-rack",
-              images:["/UPS RT 2.jpeg"] ,
+              images: ["/UPS RT 2.jpeg"],
               capacidades: "1 KVA | 2 KVA | 3 KVA ",
               description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Además de contar con suficiente tiempo de autonomía como energía de reserva.\n Las UPS cuentan con modelo torre y tipo convertible rack/ torre(RT), este último ocupa sólo 2 - 3U de altura. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
             },
             {
               name: "ALLSAI W PRO 1KVA – 3KVA (Torre)",
               url: "allsai-w-pro-1-kva-3-kva-torre",
-              images:["/UPS Torre 1KVA.png"] ,
+              images: ["/UPS Torre 1KVA.png"],
               capacidades: "1 KVA | 2 KVA | 3 KVA ",
               description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas.\n Además de contar con suficiente tiempo de autonomía como energía de reserva.\n Las UPS cuentan con modelo torre y tipo convertible rack/ torre(RT), este último ocupa sólo 2 - 3U de altura. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
             },
@@ -60,7 +60,7 @@ export const menuData = [
             {
               name: "CENTIEL ESSENTIALPOWER XST 6KVA – 10KVA (Torre)",
               url: "centiel-essentialpower-xst-6-kva-10-kva-torre",
-              images:["/Centiel-front - low.jpg"] ,
+              images: ["/Centiel-front - low.jpg"],
               capacidades: "6 KVA | 10 KVA",
               description: "EssentialPower la solución más flexible y confiable, ideal para dispositivos de redes pequeños, servidores, puntos de ventas, grupos de terminales de trabajo e instalaciones industriales pequeñas. El EssentialPower satisface cualquier aplicación crítica básica que demande una alta disponibilidad y flexibilidad.",
             },
@@ -81,7 +81,7 @@ export const menuData = [
             {
               name: "CENTIEL ESSENTIALPOWER XSRT IoT Lithium-Ion 1KVA – 3KVA (Rack)",
               url: "centiel-essentialpower-xst-iot-1-kva-10-kva-torre",
-              images:["/Rack 1-3K.jpg"] ,
+              images: ["/Rack 1-3K.jpg"],
               capacidades: "1 KVA | 2 KVA | 3 KVA",
               description: "EssentialPower IoT Lithium-Ion la solución más flexible y confiable, ideal para aplicaciones IT y servidores, listo para montaje en rack de 19” pero con baterías de Litio Lithium-Ion, todo solo ocupando 3U y con FP=1. El EssentialPower IoT Lithium-Ion posee puerto Ethernet embebido que cumple con el standard IEC de ciberseguridad. Con un factor de potencia de hasta 95%.",
             },
@@ -95,7 +95,7 @@ export const menuData = [
             {
               name: "CENTIEL CUMULUS POWER X1 10KVA – 20KVA+1 (Modular)",
               url: "centiel-cumulus-power-x1-10-kva-20-kva-modular",
-              images:["/CumulusPower.png"] ,
+              images: ["/CumulusPower.png"],
               capacidades: "10 KVA | 20 KVA+1",
               description: "CumulusPower X1 es un vérsatil UPS modular totalmente descentralizado, diseñado y fabricado en Suiza. Cuenta con módulos de 10kW (3:1 y 1:1) y con un rango de potencia en un mismo gabinete desde 10kW a 20kW N+1 proporcionando máxima flexibilidad a la aplicación final. Proporciona eficiencias optimizadas de carga parcial y total de hasta el 97,1% en el modo de doble conversión en línea. En el modo ECO ultraseguro, el SAI proporciona una excelente calidad de energía con una eficiencia del 99,4%. Diseñado para eliminar puntos únicos de fallas y una Arquitectura redundante y distribución activa (DARA), reduciendo con esto el riesgo por el factor humano. Soporta sobrecargas de hasta 124% de forma continua en el inversor de forma continua.",
             },
@@ -112,7 +112,7 @@ export const menuData = [
           }, {
             name: "CENTIEL ESSENTIALPOWER XST 3:1 – 1:1 10KVA – 20KVA (Torre)",
             url: "centiel-essentialpower-xst-31-10-kva-20-kva-torre",
-            images:[ "/Centiel-Perspective low_.jpg"],
+            images: ["/Centiel-Perspective low_.jpg"],
             capacidades: "10 KVA | 15 KVA | 20 KVA",
             description: "EssentialPower la solución más flexible y confiable, ideal para dispositivos de redes pequeños, servidores, puntos de ventas, grupos de terminales de trabajo e instalaciones industriales pequeñas. El EssentialPower satisface cualquier aplicación crítica básica que demande una alta disponibilidad y flexibilidad. En su presentación son entrada trifásica y salida monofásica ó entrada y salida monofásica.",
           },
@@ -124,20 +124,20 @@ export const menuData = [
           items: [{
             name: "ALLSAI W-5 PRO 10KVA – 30KVA (Torre)",
             url: "allsai-w-5-pro-10-kva-30-kva-torre",
-            images:["/ALLSAI WPRO G5 10-30KVA.png"] ,
+            images: ["/ALLSAI WPRO G5 10-30KVA.png"],
             capacidades: "10 KVA | 15 KVA | 20 KVA | 30 KVA",
             description: "Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia y rendimiento confiable. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 304 Vac a 478 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
           }, {
             name: "ALLSAI W-5 PRO 40KVA – 60KVA (Torre)",
             url: "allsai-w-5-pro-40kva-60kva-torre",
-            images:["/ALLSAI-W5-PRO-60KVA.jpg"] ,
+            images: ["/ALLSAI-W5-PRO-60KVA.jpg"],
             capacidades: "40 KVA | 60 KVA ",
             description: "Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia y rendimiento confiable. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 304 Vac a 478 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
           },
           {
             name: "ALLSAI W-5 PRO 80KVA – 200KVA (Torre)",
             url: "allsai-w-5-pro-80kva-200kva-torre",
-            images:["/ALLSAI-W5-PRO-80-200KVA.png"] ,
+            images: ["/ALLSAI-W5-PRO-80-200KVA.png"],
             capacidades: "80 KVA | 100 KVA | 120 KVA | 160 KVA | 200 KVA",
             description: "Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia y rendimiento confiable. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 304 Vac a 478 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
           }, {
@@ -149,19 +149,19 @@ export const menuData = [
           }, {
             name: "ALLSAI W-5 PRO 10KVA – 20KVA (Torre) (208Vac) (LV)",
             url: "allsai-w-5-pro-10kva-20kva-torre-208vac",
-            images:["/ALLSAI-WPRO-208V.png"] ,
+            images: ["/ALLSAI-WPRO-208V.png"],
             capacidades: "10 KVA | 20 KVA",
             description: "Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia y rendimiento confiable. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 166 Vac a 277 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
           }, {
             name: "CENTIEL PREMIUM TOWER 10KVA – 500KVA (Torre)",
             url: "centiel-premium-tower-10kva-500kva-torre",
-            images:["/centielPremiunTower-10kva-500kva-Torre.jpg"] ,
+            images: ["/centielPremiunTower-10kva-500kva-Torre.jpg"],
             capacidades: "10 KVA | 20 KVA | 30 KVA | 40 KVA | 60 KVA | 80 KVA | 100 KVA | 120 KVA | 160 KVA | 200 KVA | 250 KVA | 300 KVA | 400 KVA | 500 KVA",
             description: "PremiumTower es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower ofrece escalabilidad de hasta 7.5 MW y proporciona una eficiencia energética inigualable en un diseño compacto y robusto de hasta 96,6%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. ",
           }, {
             name: "CENTIEL PREMIUM TOWER S2 10KVA – 500KVA (Torre)",
             url: "centiel-premium-tower-s2-10kva-500kva-torre",
-            images:["/premiumTowerS2.png"] ,
+            images: ["/premiumTowerS2.png"],
             capacidades: "10 KVA | 20 KVA | 30 KVA | 40 KVA | 60 KVA | 80 KVA ",
             description: "PremiumTower S2 es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower S2 provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower S2 ofrece Back Feed Protection de forma standard en un diseño compacto y robusto de hasta 97,1%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. Con componentes diseñados para en un reemplazo por mantenimiento no menor a 15 años. Al mismo tiempo listo para trabajar con todo tipo de baterías (Plomo ácido, NiCd, Litio, Sodio, etc). Y con opción para contener hasta 240 baterías dentro del mismo UPS.",
           }, {
@@ -174,21 +174,21 @@ export const menuData = [
           {
             name: "CENTIEL PREMIUM TOWER 10KVA – 150KVA (Torre)(208Vac)",
             url: "centiel-premium-tower-10kva-150kva-torre-208vac",
-            images:["/centielPremiumTower10-150.png"] ,
+            images: ["/centielPremiumTower10-150.png"],
             capacidades: "10 KVA | 15 KVA | 20 KVA | 30 KVA | 40 KVA | 50 KVA | 60 KVA | 80 KVA | 100 KVA | 125 KVA | 150 KVA ",
             description: "PremiumTower (208V) es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower (208V) provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower (208V) ofrece escalabilidad de hasta 7.5 MW y proporciona una eficiencia energética inigualable en un diseño compacto y robusto de hasta 96,6%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. Al mismo tiempo listo para trabajar con todo tipo de baterías (Plomo ácido, NiCd, Litio, Sodio, etc).",
           },
           {
             name: "CENTIEL CUMULUS POWER 10KVA – 3.6MVA (Modular)",
             url: "centiel-cumulus-power-10kva-36mva-modular",
-            images:["/Centiel_combo_front-cumulus.png"] ,
+            images: ["/Centiel_combo_front-cumulus.png"],
             capacidades: "10 KVA | 3.6 MVA",
             description: "CumulusPower es un vérsatil UPS modular totalmente descentralizado, diseñado y fabricado en Suiza. Cuenta con módulos de 10/20/25/30/50/62.5kW y con un rango de potencia en un mismo gabinete desde 10kW a 1.500kW proporcionando máxima flexibilidad a la aplicación final. Diseñado para cumplir con las rigurosas demandas de infraestructura TI de hoy en día. Proporciona eficiencias optimizadas de carga parcial y total de hasta el 97,6% en el modo de doble conversión en línea. En el modo ECO ultraseguro, el SAI proporciona una excelente calidad de energía con una eficiencia del 99,4%. Diseñado para eliminar puntos únicos de fallas y una Arquitectura redundante y distribución activa (DARA), reduciendo con esto el riesgo por el factor humano. Soporta sobrecargas de hasta 124% de forma continua en el inversor de forma continua.",
           },
           {
             name: "CENTIEL STRATUS POWER 10KVA – 3.75MVA (Modular)",
             url: "centiel-stratus-power-10kva-375mva-modular",
-            images:[ "/Centiel_combo_front-cumulus.png"],
+            images: ["/Centiel_combo_front-cumulus.png"],
             capacidades: "10 KVA | 3.75 MVA",
             description: "StratusPower es un UPS modular totalmente descentralizado, diseñado y fabricado en Suiza. Cuenta con módulos de 10/20/25/50/60kW y con un rango de potencia en un mismo gabinete desde 10kW a 900kW proporcionando máxima flexibilidad a la aplicación final. Proporciona eficiencias optimizadas de carga parcial y total de hasta el 97,6% en el modo de doble conversión en línea. En el modo ECO ultraseguro, el SAI proporciona una excelente calidad de energía con una eficiencia del 99,4%. Diseñado para eliminar puntos únicos de fallas y una Arquitectura redundante y distribución activa (DARA), reduciendo con esto el riesgo por el factor humano. Soporta sobrecargas de hasta 124% de forma continua en el inversor de forma continua. Sistema diseñado para un tiempo de vida útil de más de 30 años",
           },
@@ -202,81 +202,146 @@ export const menuData = [
         label: "Baterías",
         url: "baterias",
         items: [{
-            name: "ALLSAI LITIO / MONTAJE EN RACK",
-            models:"LiFePO4",
-            url: "allsai-litio-montaje-en-rack",
-            images: ["/litio-1.jpg"],
-            voltajes:"51.2V",
-            capacidades: "10/20/30/40/50/60/80/100/200Ah",
-            description: "Las baterías de Litio Allsai para montaje en rack de 19” son de tecnología de Litio ferrofosfato de hierro ideales para aplicaciones en telecomunicaciones, Minería. Diseñadas para 6.000 ciclos, recarga ultra rápida, excelente desempeño con descargas profundas hasta el 80%, cada módulos cuenta con su propio BMS.",
-          },
-          {
-            name: "RITAR SERIE RT",
-            models:"",
-            url: "ritar-serie-rt",
-            images: ["/ritar-rt-1.jpg"],
-            voltajes:"6V/12V",
-            capacidades: "1.3Ah~28Ah",
-            description: "Larga vida de diseño\n Baja tasa de autodescarga\n Buen rendimiento de descarga de alta tasa\n Amplio rango de temperatura de operación Aplicación: pequeños UPS, luz de emergencia, sistemas de seguridad, juguetes, médicos, etc."
-          },
-          {
-            name: "RITAR SERIE RA",
-            models:"",
-            url: "ritar-serie-ra",
-            images: ["/ritar-ra-3.jpg"],
-            voltajes:"12V",
-            capacidades: "33Ah – 260Ah",
-            description: "Larga vida de diseño\n Baja tasa de autodescarga\n Buen rendimiento de descarga de alta tasa\n Amplio rango de temperatura de operación Aplicación: sistemas de telecomunicaciones, sistemas de alarma y contra incendios, sistemas de emergencia, herramientas eléctricas, equipos médicos, UPS/EPS, inversores/controladores solares, etc."
-          },
-          {
-            name: "RITAR SERIE HR",
-            models:"",
-            url: "ritar-serie-hr",
-            images: ["/ritar-hr-1.jpg"],
-            voltajes:"6V/12V",
-            capacidades: "16W – 850W",
-            description: "Densidad de energía superior y salida de potencia muy alta\nBajo rendimiento de autodescarga\nAmplio rango de temperatura de operación\nLarga vida de diseño \nAdecuado para UPS/EPS, centros de datos donde se requieren cargas de alta corriente."
-          },
-          {
-            name: "ALLSAI GEL",
-            models:"",
-            url: "allsai-gel",
-            images: ["/gel-1.jpg"],
-            voltajes:"2V,4V,6V, 8V,12V",
-            capacidades: "3,5Ah a 3.150Ah",
-            description: "Las baterías ALLSAI VRLA-GEL están fabricadas con verdadera tecnología comprobada en más de un siglo de experiencia. Debido a su característica VRLA no requieren válvulas reguladas para mantenimiento."
-          },
+          name: "ALLSAI LITIO / MONTAJE EN RACK",
+          models: "LiFePO4",
+          url: "allsai-litio-montaje-en-rack",
+          images: ["/litio-1.jpg"],
+          voltajes: "51.2V",
+          capacidades: "10/20/30/40/50/60/80/100/200Ah",
+          description: "Las baterías de Litio Allsai para montaje en rack de 19” son de tecnología de Litio ferrofosfato de hierro ideales para aplicaciones en telecomunicaciones, Minería. Diseñadas para 6.000 ciclos, recarga ultra rápida, excelente desempeño con descargas profundas hasta el 80%, cada módulos cuenta con su propio BMS.",
+        },
         {
-            name: "ALLSAI AGM",
-            models:"",
-            url: "allsai-agm",
-            images: ["/agm-1.jpg"],
-            voltajes:"2V,4V,6V, 8V,12V",
-            capacidades: " 3,5Ah a 3.150Ah",
-            description: "Las baterías ALLSAI VRLA-AGM son baterías de Plomo ácido reguladas por válvula con separadores de placa de vidrio absorbente (AGM). Son baterías de alta calidad y larga vida de 2V a 24V, y de 0.5AH a 3500AH."
-          },
-          {
-            name: "ALLSAI NIQUEL CADMIO",
-            models:"KPH, KPM, KPL",
-            url: "allsai-niquel-cadmio",
-            images: ["/niquel-cadmio-1.jpg"],
-            voltajes:"1.2V",
-            capacidades: " 3,5Ah a 3.150Ah",
-            description: "Las baterías se han convertido en la primera opción para el usuario que busca un sistema confiable, de larga vida útil bajo costos de mantenimiento."
-          },
-          {
-            name: "ALLSAI OPZ",
-            models:" OPZV, OPZS",
-            url: "allsai-opz",
-            images: ["/opz-1.jpg"],
-            voltajes:"2V, 6V, 12V",
-            capacidades: "77Ah a 3.360Ah",
-            description: "Las baterías ALLSAIde tipo estacionarias, mejor conocidas como OPZ se han convertido en un aliado indispensable en aquellos lugares donde no hay red eléctrica y existe la necesidad de alimentar ciertos consumos de tipo medio-alto de manera constante como en viviendas remotas, campings o almacenes. Se trata pues de acumuladores de 2V que puestos en serie de 6 ó 12 vasos pueden alcanzar los 12V ó 24V respectivamente."
-          },
+          name: "RITAR SERIE RT",
+          models: "",
+          url: "ritar-serie-rt",
+          images: ["/ritar-rt-1.jpg"],
+          voltajes: "6V/12V",
+          capacidades: "1.3Ah~28Ah",
+          description: "Larga vida de diseño\n Baja tasa de autodescarga\n Buen rendimiento de descarga de alta tasa\n Amplio rango de temperatura de operación Aplicación: pequeños UPS, luz de emergencia, sistemas de seguridad, juguetes, médicos, etc."
+        },
+        {
+          name: "RITAR SERIE RA",
+          models: "",
+          url: "ritar-serie-ra",
+          images: ["/ritar-ra-3.jpg"],
+          voltajes: "12V",
+          capacidades: "33Ah – 260Ah",
+          description: "Larga vida de diseño\n Baja tasa de autodescarga\n Buen rendimiento de descarga de alta tasa\n Amplio rango de temperatura de operación Aplicación: sistemas de telecomunicaciones, sistemas de alarma y contra incendios, sistemas de emergencia, herramientas eléctricas, equipos médicos, UPS/EPS, inversores/controladores solares, etc."
+        },
+        {
+          name: "RITAR SERIE HR",
+          models: "",
+          url: "ritar-serie-hr",
+          images: ["/ritar-hr-1.jpg"],
+          voltajes: "6V/12V",
+          capacidades: "16W – 850W",
+          description: "Densidad de energía superior y salida de potencia muy alta\nBajo rendimiento de autodescarga\nAmplio rango de temperatura de operación\nLarga vida de diseño \nAdecuado para UPS/EPS, centros de datos donde se requieren cargas de alta corriente."
+        },
+        {
+          name: "ALLSAI GEL",
+          models: "",
+          url: "allsai-gel",
+          images: ["/gel-1.jpg"],
+          voltajes: "2V,4V,6V, 8V,12V",
+          capacidades: "3,5Ah a 3.150Ah",
+          description: "Las baterías ALLSAI VRLA-GEL están fabricadas con verdadera tecnología comprobada en más de un siglo de experiencia. Debido a su característica VRLA no requieren válvulas reguladas para mantenimiento."
+        },
+        {
+          name: "ALLSAI AGM",
+          models: "",
+          url: "allsai-agm",
+          images: ["/agm-1.jpg"],
+          voltajes: "2V,4V,6V, 8V,12V",
+          capacidades: " 3,5Ah a 3.150Ah",
+          description: "Las baterías ALLSAI VRLA-AGM son baterías de Plomo ácido reguladas por válvula con separadores de placa de vidrio absorbente (AGM). Son baterías de alta calidad y larga vida de 2V a 24V, y de 0.5AH a 3500AH."
+        },
+        {
+          name: "ALLSAI NIQUEL CADMIO",
+          models: "KPH, KPM, KPL",
+          url: "allsai-niquel-cadmio",
+          images: ["/niquel-cadmio-1.jpg"],
+          voltajes: "1.2V",
+          capacidades: " 3,5Ah a 3.150Ah",
+          description: "Las baterías se han convertido en la primera opción para el usuario que busca un sistema confiable, de larga vida útil bajo costos de mantenimiento."
+        },
+        {
+          name: "ALLSAI OPZ",
+          models: " OPZV, OPZS",
+          url: "allsai-opz",
+          images: ["/opz-1.jpg"],
+          voltajes: "2V, 6V, 12V",
+          capacidades: "77Ah a 3.360Ah",
+          description: "Las baterías ALLSAIde tipo estacionarias, mejor conocidas como OPZ se han convertido en un aliado indispensable en aquellos lugares donde no hay red eléctrica y existe la necesidad de alimentar ciertos consumos de tipo medio-alto de manera constante como en viviendas remotas, campings o almacenes. Se trata pues de acumuladores de 2V que puestos en serie de 6 ó 12 vasos pueden alcanzar los 12V ó 24V respectivamente."
+        },
+        {
+          name: "HOPPECKE GRID POWER VL",
+          models: "OPzS, POWER.BLOC OPzS",
+          url: "hoppecke-grid-power-vl",
+          images: ["/grid-power-vl-1.png"],
+          voltajes: "2V, 6V, 12V",
+          capacidades: "200 Ah a 3.000 Ah",
+          description: "La batería de red HOPPECKE | power V L es una batería de plomo-ácido estacionaria y ventilada con electrolito líquido. Su configuración con placas tubulares positivas y la protección completa de la masa activa mediante guanteletes de poliéster tejido garantizan una resistencia extremadamente alta. Por lo tanto, nuestras baterías de red | power V L son ideales para su uso en áreas con altas cargas de carga y descarga, como las aplicaciones solares, o para largos periodos de espera en áreas como las telecomunicaciones y la iluminación de seguridad.\nEl diseño del producto según DIN 40736 garantiza el más alto nivel de compatibilidad al sustituir equipos existentes y al integrarse con la ampliación de los sistemas de baterías existentes. La red eléctrica | power V L battery representa una resistencia extremadamente larga gracias a su estructura innovadora – fabricada por HOPPECKE.\nLa combinación con el sistema de recombinación aquagen alarga el intervalo entre rellenos de agua casi hasta el punto en que no se requiere mantenimiento, lo que reduce significativamente los costes operativos."
+        },
         ]
       },
-      { label: "Inversores" },
-      { label: "Rectificadores" }
+      {
+        label: "Inversores",
+        url: "inversores",
+        items: [{
+          name: "ALLSAI INVERTA SERIES",
+          capacidades: "1kVA a 200kVA",
+          url: "allsai-inverta-series",
+          images: ["/inverta-serires-1.jpg"],
+          description: "Serie DC / AC inversores son equipos producidos para suministrar la computadora y la comunicación Sistemas, llamados como carga crítica. Inversores DC / AC de la serie Inversor convierte voltajes de CC como baterías. Al voltaje de la CA con la tensión y la frecuencia deseadas y la energía de AC de suplying. El convertidor de la frecuencia de la serie de SLT es un equipo EN LÍNEA verdadero con la forma de onda sinusodial de la salida, Con sistema de transferencia estática (BYPASS) y todas las protecciones necesarias.",
+        },
+        {
+          name: "ALLSAI SERIES POWER INVERTER",
+          capacidades: "1 KVA | 2 KVA | 3 KVA | 4 KVA | 5 KVA | 6 KVA",
+          url: "allsai-series-power-inverter",
+          images: ["/inversor-1.png"],
+          description: "Inversor de onda sinusoidal pura. Inversor fuera de red. Utilizado para telecomunicaciones y servicios públicos. Se conecta con la batería.",
+        }
+        ],
+      },
+      {
+        label: "Rectificadores",
+        url: "rectificadores",
+        items: [{
+          name: "ALLSAI MODULAR",
+          url: "allsai-modular",
+          images: ["/rectificador-modular.jpg"],
+          description: "Con la plataforma modular, queremos proporcionar una solución consolidada para una amplia variedad de aplicaciones que van desde infraestructura (subestaciones), industria, telecomunicaciones, y mas. Por esta razón, la plataforma modular esta disponible en todos los voltajes comunes como 24, 48, 110, 220Vdc en la misma familia de productos.",
+        }, {
+          name: "ALLSAI SERIE SD MONOFÁSICO",
+          url: "allsai-serie-sd-modnofasico",
+          images: ["/series-sd-1.jpg"],
+          description: "Cargadores de batería Allsai fabricados con alto estándar de calidad controlado por microprocesador y diseño a medida de acuerdo al requerimiento del cliente. El control y ajuste se realiza con tiristores en puente semi-controlado. Las principales protecciones incluidas en el sistema de protección son; sobrecarga, sobre voltaje, sobre temperatura, cortocircuito y peak de corriente. Comunicación remota disponible tanto en contactos secos como Modbus en su estándar.Es capaz de operar con baterías de plomo ácido y Níquel cadmio.",
+        }, {
+          name: "ISG PME – R1",
+          url: "isg-pme-r1",
+          images: ["/rectificador-pme-r1.jpg"],
+          description: "Con el rectificador de servicio ajustable monofásico, el voltaje y la corriente se pueden ajustar continuamente según la aplicación. Tiene un módulo de alimentación que permite cargar todos los tipos de baterías habituales con una tensión de carga de hasta 300 V.",
+        }, {
+          name: "ISG PME – R3",
+          url: "isg-pme-r3",
+          images: ["/rectificador-pme-r3.jpg"],
+          description: "Debido al diseño compacto, la alta densidad de potencia, el bajo peso y las posibilidades de aplicación universal, el rectificador de servicio ajustable trifásico es parte del equipo estándar de todos los vehículos de servicio y emergencia. Sus tres módulos de potencia y las funciones integradas de la estación de energía multifuncional PME-R3 permiten cargar todos los tipos de baterías habituales con una tensión de carga de hasta 300 V.",
+        }, {
+          name: "ISG PME – VARIO",
+          url: "isg-pme-vario",
+          images: ["/rectificador-pme-vario-1.jpg"],
+          description: "Rectificador de tecnología Switching tipo autosoportado de tamaño reducido y bajo peso gracias al no uso de transformador, tecnología modular para configuración N+1, con posibilidad de alimentación monofásica y trifásica.\nDispone de comunicación remota tipo contacto seco y/o Modbus. Opcionales de LVD y Dropper. Este rectificador en una carcasa independiente proporciona una tensión de carga de 24 V a 300 V.",
+        },
+        {
+          name: "TECNED SERIE KT-CB",
+          url: "tecned-serie-kt-cb",
+          capacidades: "24Vdc – 220Vdc / 30A – 800A (o más según requerimiento)",
+          images: ["/rectificador-pme-vario-1.jpg"],
+          description: "Cargador/Rectificador Trifásico KT-CB tecnolo gía modular , de Grado Industrial y Servicio Continuo, diseñado para abastecer de corriente continua en aplicaciones críticas, donde la carga debe ser libre de distorsión de armónicas mediante filtros, aislada eléctricamente de la fuente de suministros y alimentada permanentemente con energía de calidad, debido a la importancia de su carga.\nEl equipo KT-CB está controlado por microprocesadores para administración del sistema (alarma, ajustes y medida) y sus componentes son de estado sólido, voltaje constante autoregulado, para aplicaciones de baterías Plomo-Acido, Niquel Cadmio y Litio donde sus funciones son:\nAlimentar el consumo constante de corriente (La carga).\nRecarga de baterías (Carga de igualación).\nMantener cargada la batería (Carga de flotación).\nDiseñado para aplicaciones en industrias como:\nOil & Gas\nIndustria Química\nControl de Procesos\nGeneración Eléctrica",
+        },
+
+        ]
+      }
     ],
     class: "slideRight"
   },
