@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { MenuDataContext } from "../components/menuDataProvider/MenuDataProvider";
+import { productsData } from "../src/productsData";
 import styles from "./ProductosCategory.module.css";
 import NavBar from "../components/navbar/NavBar";
 import Footer from "../components/footer/Footer";
@@ -8,50 +8,34 @@ import Breadcrumb from "../components/breadCrumb/Breadcrumb";
 
 const ProductosCategory = () => {
   const { categoryId, subCategoryId, subSubCategoryId } = useParams();
-  const menuData = useContext(MenuDataContext);
 
-  // Encuentra la categoría
-  const categoryObj = menuData.find((cat) => cat.url === categoryId);
-  // Encuentra la subcategoría
-  const subCategoryObj = categoryObj?.subcategories?.find(
-    (sub) => sub.url === subCategoryId
-  );
-  // Encuentra la subSubCategoría (si existe)
-  const subSubCategoryObj = subCategoryObj?.subSubCategory?.find(
-    (subsub) => subsub.url === (subSubCategoryId?.toLocaleLowerCase?.() || "")
-  );
+  // Filtrado de productos según los parámetros de la URL
+  let filteredProducts = productsData;
 
-  // Determina qué items mostrar
-  let itemsToShow = [];
-  if (subSubCategoryId && subSubCategoryObj && Array.isArray(subSubCategoryObj.items)) {
-    // Si hay subSubCategoryId, muestra solo esos items
-    itemsToShow = subSubCategoryObj.items;
-  } else if (subCategoryObj?.subSubCategory && Array.isArray(subCategoryObj.subSubCategory)) {
-    // Si estamos en /productos/respaldo-de-energia/ups, juntar todos los items de todas las subSubCategory
-    itemsToShow = subCategoryObj.subSubCategory.flatMap(subsub => subsub.items || []);
-  } else if (subCategoryObj?.items && Array.isArray(subCategoryObj.items)) {
-    itemsToShow = subCategoryObj.items;
-  } else if (categoryObj && !subCategoryId) {
-    // Si estamos en /productos/respaldo-de-energia/ (sin subCategoryId)
-    // Juntar todos los productos de todas las subcategorías y subSubCategorías
-    itemsToShow = categoryObj.subcategories?.flatMap(subcat => {
-      if (subcat.subSubCategory) {
-        // Si tiene subSubCategory, juntar todos los items de cada subSubCategory
-        return subcat.subSubCategory.flatMap(subsub => subsub.items || []);
-      } else if (subcat.items) {
-        // Si tiene items directos
-        return subcat.items;
-      }
-      return [];
-    }) || [];
-  } else if (categoryObj?.items && Array.isArray(categoryObj.items)) {
-    itemsToShow = categoryObj.items;
+  if (categoryId) {
+    filteredProducts = filteredProducts.filter(
+      (p) => p.category === categoryId
+    );
+  }
+  if (subCategoryId) {
+    filteredProducts = filteredProducts.filter(
+      (p) => p.subcategory === subCategoryId
+    );
+  }
+  if (subSubCategoryId) {
+    filteredProducts = filteredProducts.filter(
+      (p) => p.subsubcategory === subSubCategoryId
+    );
   }
 
-  // Construye la ruta base para el producto
-  let basePath = `/productos/${categoryId}`;
-  if (subCategoryId) basePath += `/${subCategoryId}`;
-  if (subSubCategoryId) basePath += `/${subSubCategoryId}`;
+  // Construye la ruta completa para cada producto
+  const getProductRoute = (product) => {
+    let route = `/productos/${product.category}`;
+    if (product.subcategory) route += `/${product.subcategory}`;
+    if (product.subsubcategory) route += `/${product.subsubcategory}`;
+    route += `/${product.url}`;
+    return route;
+  };
 
   return (
     <>
@@ -59,19 +43,21 @@ const ProductosCategory = () => {
       <Breadcrumb />
       <div className={styles.container}>
         <h2>
-          {subSubCategoryObj?.name ||
-            subCategoryObj?.label ||
-            categoryObj?.label ||
-            "Categoría"}
+          {subSubCategoryId ||
+            subCategoryId ||
+            categoryId ||
+            "Todos los productos"}
         </h2>
         <div className={styles.cardsWrapper}>
-          {itemsToShow.length > 0 ? (
-            itemsToShow.map((item, idx) => (
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((item, idx) => (
               <div className={styles.card} key={item.url || idx}>
-                <Link to={`${basePath}/${item.url}`}>
+                <Link to={getProductRoute(item)}>
                   <img src={item.images?.[0]} alt={item.name} />
                 </Link>
-                <strong><h3>{item.name || item}</h3></strong>
+                <strong>
+                  <h3>{item.name}</h3>
+                </strong>
                 {item.capacidades && (
                   <p>
                     Capacidades: {item.capacidades}
