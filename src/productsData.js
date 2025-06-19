@@ -259,6 +259,54 @@ export const productsData = [
     voltajes: "12V",
     capacidades: "33Ah – 260Ah",
     description: "Larga vida de diseño\n Baja tasa de autodescarga\n Buen rendimiento de descarga de alta tasa\n Amplio rango de temperatura de operación Aplicación: sistemas de telecomunicaciones, sistemas de alarma y contra incendios, sistemas de emergencia, herramientas eléctricas, equipos médicos, UPS/EPS, inversores/controladores solares, etc."
+  },{
+    name: "RITAR SERIE HR",
+    url: "ritar-serie-hr",
+    images: ["/ritar-hr-1.jpg"],
+    category: "respaldo-de-energia",
+    subcategory: "baterias",
+    voltajes: "6V/12V",
+    capacidades: "16W – 850W",
+    description: "Densidad de energía superior y salida de potencia muy alta\nBajo rendimiento de autodescarga\nAmplio rango de temperatura de operación\nLarga vida de diseño \nAdecuado para UPS/EPS, centros de datos donde se requieren cargas de alta corriente."
+  },{
+    name: "ALLSAI GEL",
+    url: "allsai-gel",
+    images: ["/gel-1.jpg"],
+    category: "respaldo-de-energia",
+    subcategory: "baterias",
+    voltajes: "2V,4V,6V, 8V,12V",
+    capacidades: "3,5Ah a 3.150Ah",
+    description: "Las baterías ALLSAI VRLA-GEL están fabricadas con verdadera tecnología comprobada en más de un siglo de experiencia. Debido a su característica VRLA no requieren válvulas reguladas para mantenimiento."
+  },{
+    name: "ALLSAI NIQUEL CADMIO",
+    url: "allsai-niquel-cadmio",
+    models:"KPH, KPM, KPL",
+    images: ["/niquel-cadmio-1.jpg"],
+    category: "respaldo-de-energia",
+    subcategory: "baterias",
+    voltajes: "1.2V",
+    capacidades: "3,5Ah a 3.150Ah",
+    description: "Las baterías se han convertido en la primera opción para el usuario que busca un sistema confiable, de larga vida útil bajo costos de mantenimiento."
+  },{
+    name: "ALLSAI OPZ",
+    url: "allsai-opz",
+    models:" OPZV, OPZS",
+    images: ["/opz-1.jpg"],
+    category: "respaldo-de-energia",
+    subcategory: "baterias",
+    voltajes: "2V, 6V, 12V",
+    capacidades: "77Ah a 3.360Ah",
+    description: "Las baterías ALLSAI de tipo estacionarias, mejor conocidas como OPZ se han convertido en un aliado indispensable en aquellos lugares donde no hay red eléctrica y existe la necesidad de alimentar ciertos consumos de tipo medio-alto de manera constante como en viviendas remotas, campings o almacenes. Se trata pues de acumuladores de 2V que puestos en serie de 6 ó 12 vasos pueden alcanzar los 12V ó 24V respectivamente."
+  },{
+    name: "HOPPECKE GRID POWER VL",
+    url: "hoppecke-grid-power-vl",
+    models:"OPzS, POWER.BLOC OPzS",
+    images: ["/grid-power-vl-1.png"],
+    category: "respaldo-de-energia",
+    subcategory: "baterias",
+    voltajes: "2V, 6V, 12V",
+    capacidades:"200 Ah a 3.000 Ah",
+    description: "La batería de red HOPPECKE | power V L es una batería de plomo-ácido estacionaria y ventilada con electrolito líquido. Su configuración con placas tubulares positivas y la protección completa de la masa activa mediante guanteletes de poliéster tejido garantizan una resistencia extremadamente alta. Por lo tanto, nuestras baterías de red | power V L son ideales para su uso en áreas con altas cargas de carga y descarga, como las aplicaciones solares, o para largos periodos de espera en áreas como las telecomunicaciones y la iluminación de seguridad.\nEl diseño del producto según DIN 40736 garantiza el más alto nivel de compatibilidad al sustituir equipos existentes y al integrarse con la ampliación de los sistemas de baterías existentes. La red eléctrica | power V L battery representa una resistencia extremadamente larga gracias a su estructura innovadora – fabricada por HOPPECKE.\nLa combinación con el sistema de recombinación aquagen alarga el intervalo entre rellenos de agua casi hasta el punto en que no se requiere mantenimiento, lo que reduce significativamente los costes operativos."
   },
   // ... (agrega aquí el resto de productos de baterías)
 
@@ -271,6 +319,14 @@ export const productsData = [
     subcategory: "inversores",
     capacidades: "1kVA a 200kVA",
     description: "Serie DC / AC inversores son equipos producidos para suministrar la computadora y la comunicación Sistemas, llamados como carga crítica. Inversores DC / AC de la serie Inversor convierte voltajes de CC como baterías. Al voltaje de la CA con la tensión y la frecuencia deseadas y la energía de AC de suplying. El convertidor de la frecuencia de la serie de SLT es un equipo EN LÍNEA verdadero con la forma de onda sinusodial de la salida, Con sistema de transferencia estática (BYPASS) y todas las protecciones necesarias.",
+  },{
+    name: "ALLSAI SERIES POWER INVERTER",
+    url: "allsai-series-power-inverter",
+    images: ["/inversor-1.png"],
+    category: "respaldo-de-energia",
+    subcategory: "inversores",
+    capacidades: "1 KVA | 2 KVA | 3 KVA | 4 KVA | 5 KVA | 6 KVA",
+    description: "Inversor de onda sinusoidal pura. Inversor fuera de red. Utilizado para telecomunicaciones y servicios públicos. Se conecta con la batería.",
   },
   // ... (agrega aquí el resto de productos de inversores, rectificadores, etc.)
 
