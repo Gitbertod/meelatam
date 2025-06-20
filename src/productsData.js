@@ -328,7 +328,40 @@ export const productsData = [
     capacidades: "1 KVA | 2 KVA | 3 KVA | 4 KVA | 5 KVA | 6 KVA",
     description: "Inversor de onda sinusoidal pura. Inversor fuera de red. Utilizado para telecomunicaciones y servicios públicos. Se conecta con la batería.",
   },
-  // ... (agrega aquí el resto de productos de inversores, rectificadores, etc.)
+  // Rectificadores
+  {
+    name: "ALLSAI MODULAR",
+    url: "allsai-modular",
+    images: ["/rectificador-modular.jpg"],
+    category: "respaldo-de-energia",
+    subcategory: "rectificadores",
+    capacidades: "1 KVA | 2 KVA | 3 KVA | 4 KVA | 5 KVA | 6 KVA",
+    description: "Con la plataforma modular, queremos proporcionar una solución consolidada para una amplia variedad de aplicaciones que van desde infraestructura (subestaciones), industria, telecomunicaciones, y mas. Por esta razón, la plataforma modular esta disponible en todos los voltajes comunes como 24, 48, 110, 220Vdc en la misma familia de productos.",
+  },{
+    name: "ALLSAI SERIE SD MONOFÁSICO",
+    url: "allsai-serie-sd-modnofasico",
+    images: ["/series-sd-1.jpg"],
+    category: "respaldo-de-energia",
+    subcategory: "rectificadores",
+    capacidades: "1 KVA | 2 KVA | 3 KVA | 4 KVA | 5 KVA | 6 KVA",
+    description: "Cargadores de batería Allsai fabricados con alto estándar de calidad controlado por microprocesador y diseño a medida de acuerdo al requerimiento del cliente. El control y ajuste se realiza con tiristores en puente semi-controlado. Las principales protecciones incluidas en el sistema de protección son; sobrecarga, sobre voltaje, sobre temperatura, cortocircuito y peak de corriente. Comunicación remota disponible tanto en contactos secos como Modbus en su estándar.Es capaz de operar con baterías de plomo ácido y Níquel cadmio.",
+  },{
+    name: "ISG PME – R1",
+    url: "isg-pme-r1",
+    images: ["/rectificador-pme-r1.jpg"],
+    category: "respaldo-de-energia",
+    subcategory: "rectificadores",
+    capacidades: "1 KVA | 2 KVA | 3 KVA | 4 KVA | 5 KVA | 6 KVA",
+    description: "Con el rectificador de servicio ajustable monofásico, el voltaje y la corriente se pueden ajustar continuamente según la aplicación. Tiene un módulo de alimentación que permite cargar todos los tipos de baterías habituales con una tensión de carga de hasta 300 V.",
+  },{
+    name: "ISG PME – R3",
+    url: "isg-pme-r3",
+    images: ["/rectificador-pme-r3.jpg"],
+    category: "respaldo-de-energia",
+    subcategory: "rectificadores",
+    capacidades: "1 KVA | 2 KVA | 3 KVA | 4 KVA | 5 KVA | 6 KVA",
+    description: "Debido al diseño compacto, la alta densidad de potencia, el bajo peso y las posibilidades de aplicación universal, el rectificador de servicio ajustable trifásico es parte del equipo estándar de todos los vehículos de servicio y emergencia. Sus tres módulos de potencia y las funciones integradas de la estación de energía multifuncional PME-R3 permiten cargar todos los tipos de baterías habituales con una tensión de carga de hasta 300 V.",
+  },
 
   // Ejemplo para productos de otras categorías:
   // {

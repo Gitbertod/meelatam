@@ -6,12 +6,13 @@ import NavBar from "../components/navbar/NavBar";
 import Footer from "../components/footer/Footer";
 import Breadcrumb from "../components/breadCrumb/Breadcrumb";
 
-const ProductosCategory = () => {
-  const { categoryId, subCategoryId, subSubCategoryId } = useParams();
+const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: staticSubCategoryId }) => {
+  const params = useParams();
+  const categoryId = staticCategoryId;
+  const subCategoryId = staticSubCategoryId || params.subCategoryId;
+  const subSubCategoryId = params.subSubCategoryId;
 
-  // Filtrado de productos según los parámetros de la URL
   let filteredProducts = productsData;
-
   if (categoryId) {
     filteredProducts = filteredProducts.filter(
       (p) => p.category === categoryId
@@ -28,7 +29,6 @@ const ProductosCategory = () => {
     );
   }
 
-  // Construye la ruta completa para cada producto
   const getProductRoute = (product) => {
     let route = `/productos/${product.category}`;
     if (product.subcategory) route += `/${product.subcategory}`;
@@ -43,10 +43,7 @@ const ProductosCategory = () => {
       <Breadcrumb />
       <div className={styles.container}>
         <h2>
-          {subSubCategoryId ||
-            subCategoryId ||
-            categoryId ||
-            "Todos los productos"}
+          {subSubCategoryId || subCategoryId || categoryId || "Todos los productos"}
         </h2>
         <div className={styles.cardsWrapper}>
           {filteredProducts.length > 0 ? (
@@ -63,7 +60,6 @@ const ProductosCategory = () => {
                     Capacidades: {item.capacidades}
                   </p>
                 )}
-                {/* Puedes agregar más campos aquí */}
               </div>
             ))
           ) : (

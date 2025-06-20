@@ -1,52 +1,29 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import styles from "./ProductoView.module.css";
 import Breadcrumb from "../components/breadCrumb/Breadcrumb";
 import NavBar from "../components/navbar/NavBar";
 import ButtonComponent from "../components/buttonComponent/ButtonComponent";
 import Footer from "../components/footer/Footer";
-import { MenuDataContext } from "../components/menuDataProvider/MenuDataProvider";
+import { productsData } from "../src/productsData";
 
-const ProductoView = () => {
-  const breadCrumbsItems = [
-    { label: "Inicio", href: "/" },
-    { label: "Productos", href: "/productos" },
-    { label: "Respaldo de energia", href: "/productos/respaldo-de-energia" },
-    { label: "UPS", href: "/productos/respaldo-de-energia/ups" },
-    { label: "UPS Interactivas", href: "/UPS-Interactivas" },
-  ];
+const ProductoView = ({ categoryId: staticCategoryId }) => {
+  const { subCategoryId, subSubCategoryId, productoId } = useParams();
+  const categoryId = staticCategoryId;
 
-  const menuData = useContext(MenuDataContext);
-  const { categoryId, subCategoryId, productoId } = useParams();
-
-  // Encuentra la categoría
-  const categoryObj = menuData?.find((cat) => cat.url === categoryId);
-
-  // Encuentra la subcategoría
-  const subCategoryObj = categoryObj?.subcategories?.find(
-    (sub) => sub.url === subCategoryId
+  const productObj = productsData.find(
+    (item) =>
+      (!categoryId || item.category === categoryId) &&
+      (!subCategoryId || item.subcategory === subCategoryId) &&
+      (!subSubCategoryId || item.subsubcategory === subSubCategoryId) &&
+      item.url === productoId
   );
-
-  // Busca el producto en todos los subSubCategory de la subcategoría
-  let productObj = null;
-  if (subCategoryObj?.subSubCategory) {
-    for (const subSub of subCategoryObj.subSubCategory) {
-      if (Array.isArray(subSub.items)) {
-        productObj = subSub.items.find((item) => item.url === productoId);
-        if (productObj) break;
-      }
-    }
-  }
-  // Si no se encontró en subSubCategory, busca en items directos (por si acaso)
-  if (!productObj && Array.isArray(subCategoryObj?.items)) {
-    productObj = subCategoryObj.items.find((item) => item.url === productoId);
-  }
-
+console.log(productObj)
   return (
     <>
       <NavBar />
       <div>
-        <Breadcrumb items={breadCrumbsItems} />
+        <Breadcrumb />
         <section className={styles.container}>
           <article className={styles.textContent}>
             <h2 className={styles.title}>
@@ -55,9 +32,14 @@ const ProductoView = () => {
             <h3 className={styles.subtitle}>
               {productObj?.capacidades || ""}
             </h3>
-            <p className={styles.description}>
-              {productObj?.description.split('\n').map((parrafo,idx)=>(<p key={idx}>{parrafo}</p>))}
-            </p>
+            <div className={styles.description}>
+              {productObj?.description
+                ? productObj.description.split('\n').map((parrafo, idx) => (
+                    <p key={idx}>{parrafo}</p>
+                  ))
+                : <p>Descripción no disponible.</p>
+              }
+            </div>
             <a href="/ficha-tecnica.pdf" download>
               <ButtonComponent text={"Descargar ficha técnica"} />
             </a>
@@ -71,7 +53,7 @@ const ProductoView = () => {
           </figure>
         </section>
       </div>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 };
