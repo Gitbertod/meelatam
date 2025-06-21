@@ -584,6 +584,21 @@ export const productsData = [
     category: "clima-de-precision",
     subcategory: "equipos-premimetrales",
     description: "Acondicionadores perimetrales por agua enfriada\nRang0o: 18kW a 33kW\nJREF CW es la nueva gama de acondicionadores perimetrales de agua enfriada para entornos tecnológicos en los que se requiere un footprint reducido con la misma potencia frigorífica suministrada. Un minucioso análisis fluidodinámico CFD ha permitido diseñar con máxima precisión todos los detalles de construcción para minimizar las pérdidas de carga en el flujo de aire y, por lo tanto, el consumo de energía de los ventiladores. Las secciones de paso de aire más amplias agilizan y simplifican las operaciones de instalación y mantenimiento gracias al aumento del espacio interior disponible.",
+  },{
+    name: "HIREF NRG",
+    url: "hiref-nrg",
+    images: ["/HIREF-NRG.jpg","/HIREF-NRG-2.jpg","/HIREF-NRG-3.jpg"],
+    category: "clima-de-precision",
+    subcategory: "equipos-premimetrales",
+    description: "Acondicionadores perimetrales de expansión directa con compresores BLDC modulantes\nRango: 10kW a 99kW\nLos acondicionadores perimetrales NRG de HiRef están diseñados para el acondicionamiento de entornos tecnológicos de alta densidad térmica en los que se requiere un control preciso de los parámetros termohigrométricos y un funcionamiento continuo. El punto fuerte de la gama NRG está representado por los compresores BLDC accionados con inverter, que siguen la carga térmica con extrema precisión. El uso de ventiladores EC (de serie), válvulas de laminación con control electrónico (de serie) y las configuraciones con sistema Dual Cooling o Free-Cooling permiten alcanzar altos rendimientos con un limitado consumo de energía, en beneficio del PUE del Data Center.",
+  },
+  {
+    name: "HIREF TREF CW",
+    url: "hiref-tref-cw",
+    images: ["/HIREF-TREF-CW.jpg"],
+    category: "clima-de-precision",
+    subcategory: "equipos-premimetrales",
+    description: "Acondicionador perimetral de agua enfriada\nRango: 22kW a 236kW\nJREF CW es la nueva gama de acondicionadores perimetrales de agua enfriada para entornos tecnológicos en los que se requiere un footprint reducido con la misma potencia frigorífica suministrada. Un minucioso análisis fluidodinámico CFD ha permitido diseñar con máxima precisión todos los detalles de construcción para minimizar las pérdidas de carga en el flujo de aire y, por lo tanto, el consumo de energía de los ventiladores. Las secciones de paso de aire más amplias agilizan y simplifican las operaciones de instalación y mantenimiento gracias al aumento del espacio interior disponible.",
   },
   // Ejemplo para productos de otras categorías:
   // {
