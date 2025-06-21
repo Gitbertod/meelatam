@@ -634,6 +634,30 @@ export const productsData = [
     category: "clima-de-precision",
     subcategory: "equipos-in-row",
     description: "Rack coolers de expansión directa combinados con unidad motocondensadora exterior\nRango: 13kW a 36kW\nLos rack cooler de la gama NRCV de HiRef son la solución ideal para la refrigeración de armarios Rack en Data Centers de pequeñas y medianas dimensiones, donde se requiere un control de precisión de los parámetros termohigrométricos ambiente 24 horas por día. Son aptos para pequeñas instalaciones donde no es posible instalar una enfriadora o cuando las condiciones del entorno no permiten la presencia de agua en el Data Center. El diseño interior y la elección de los componentes están destinados exclusivamente a obtener altos niveles de eficiencia de energía, con la finalidad de minimizar los costes de gestión de todo el sistema.",
+  },{
+    name: "HIREF HTD",
+    url: "hiref-htd",
+    images: ["/HIREF-HTD.jpg"],
+    category: "clima-de-precision",
+    subcategory: "equipos-tipo-mochila",
+    description: "Acondicionadores de expansión directa con impulsión del aire hacia abajo\nRango: 4kW a 28kW",
+    ul:"Unidades compactas de interior para ambientes tecnológicos sin…..ocupación\nPaneles de chapa galvanizada pintados al polvo RAL9002 con las…..esquinas redondeadas\nVersiones de impulsión a falso suelo, ambiente o desplazamiento\nVentilador de tratamiento de tipo de palas curvadas hacia atrás\nVentiladores de condensación de transmisión directa con palas…..curvadas hacia delant\nAcceso a todos los componentes desde el frontal\nCuadro eléctrico en compartimento separado\nMicroprocesador de control\nCompresor Scroll o rotativo\nVálvula de expansión con ecualización externa, filtro y visor de líquido\nTratamiento hidrofílico en la batería interior"
+  },{
+    name: "HIREF HTS",
+    url: "hiref-hts",
+    images: ["/HTS.jpg"],
+    category: "clima-de-precision",
+    subcategory: "equipos-tipo-mochila",
+    description: "Acondicionadores de expansión directa\nRango: 3kW a 39kW",
+    ul:"Unidad partida con motocondensador exterior y unidad interior…..evaporadora (para montaje en techo o pared)\nMicroprocesador programable\nVentilador exterior de 6 polos para un menor nivel sonoro\nVentilador interior con varias velocidades\nDoble bandeja de condensados\nRejilla de impulsión de aire ajustable\nVentiladores plug\nVersión para canales"
+  },{
+    name: "HIREF HTW",
+    url: "hiref-htw",
+    images: ["/HIREF-HTW.jpg"],
+    category: "clima-de-precision",
+    subcategory: "equipos-tipo-mochila",
+    description: "Acondicionadores de expansión directa con impulsión del aire hacia arriba\nRango: 4kW a 32kW",
+    ul:"Refrigeración de emergencia a 24Vdc o 48Vdc\nVersión a 60 Hz\nVálvula de expansión eléctrica con control electrónico\nResistencia eléctrica\nCompuerta de Free Cooling modulante con SFT® – Side Free-Cooling…..Technology, para mejorar el mantenimiento\nControl de condensación por regulación de velocidad del ventilador\nBatería condensador con tratamiento epoxy o cobre/cobre\nMicroprocesador programable\nVentiladores EC en parte evaporadora\nTarjetas de serie para protocolos: Carel / Modbus / Lonworks / Trend\nHardware HIWEB: Tarjeta Ethernet para: Bacnet / SNMP\nSoftware HIWEB: Tarjeta Ethernet para conectividad web\nModem GSM para comunicación mediante SMS\nConexión LAN de hasta 8 unidades\nControl Gráfico con pantalla táctil a color\nVersión con compresor a inverter BLDC"
   },
   // Ejemplo para productos de otras categorías:
   // {

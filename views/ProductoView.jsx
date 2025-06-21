@@ -35,28 +35,31 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
               <h3>Frecuencia: {productObj.frecuencia}</h3>
             ) : (
               ""
-            )} {productObj.frecuenciaDeResonancia ? (
-              <h3>Frecuencia de resonacia: {productObj.frecuenciaDeResonancia}</h3>
-            ) : (
-              ""
-            )}{productObj.maxCorriente ? (
-              <h3>Máx corriente: {productObj.maxCorriente}</h3>
-            ) : (
-              ""
-            )}{productObj.factorDeForma ? (
-              <h3>Factor de forma: {productObj.factorDeForma}</h3>
-            ) : (
-              ""
-            )}{productObj.peso ? (
-              <h3>Peso Neto (Kg): {productObj.peso}</h3>
+            )}{" "}
+            {productObj.frecuenciaDeResonancia ? (
+              <h3>
+                Frecuencia de resonacia: {productObj.frecuenciaDeResonancia}
+              </h3>
             ) : (
               ""
             )}
+            {productObj.maxCorriente ? (
+              <h3>Máx corriente: {productObj.maxCorriente}</h3>
+            ) : (
+              ""
+            )}
+            {productObj.factorDeForma ? (
+              <h3>Factor de forma: {productObj.factorDeForma}</h3>
+            ) : (
+              ""
+            )}
+            {productObj.peso ? <h3>Peso Neto (Kg): {productObj.peso}</h3> : ""}
             {productObj.tipoDeEnchufe ? (
               <h3>Tipo de enchufe: {productObj.tipoDeEnchufe}</h3>
             ) : (
               ""
-            )}{productObj.temperatura ? (
+            )}
+            {productObj.temperatura ? (
               <h3>Temperatura de funcionamiento: {productObj.temperatura}</h3>
             ) : (
               ""
@@ -65,12 +68,13 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
               <h3>Longitud del cable: {productObj.longitudDelCable}</h3>
             ) : (
               ""
-            )}{productObj.salida ? (
-              <h3>Salida: {productObj.salida}</h3>
-            ) : (
-              ""
-            )}{productObj.dimensiones ? (
-              <h3>Dimensiones, profundidad,x anchirax altura (mm): {productObj.dimensiones}</h3>
+            )}
+            {productObj.salida ? <h3>Salida: {productObj.salida}</h3> : ""}
+            {productObj.dimensiones ? (
+              <h3>
+                Dimensiones, profundidad,x anchirax altura (mm):{" "}
+                {productObj.dimensiones}
+              </h3>
             ) : (
               ""
             )}
@@ -96,8 +100,6 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
             ) : (
               ""
             )}
-            {productObj.normas ? <h3>Normas: {productObj.normas}</h3> : ""}
-            <br></br>
             <div className={styles.description}>
               {productObj?.description ? (
                 productObj.description.split("\n").map((parrafo, idx) => (
@@ -110,6 +112,18 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
                 <p>Descripción no disponible.</p>
               )}
             </div>
+            {productObj?.ul ? (
+              <ul>
+                {productObj.ul.split("\n").map((parrafo, idx) => (
+                  <li key={idx}>{parrafo}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>Descripción no disponible.</p>
+            )}
+            
+            {productObj.normas ? <h3>Normas: {productObj.normas}</h3> : ""}
+            <br></br>
             <a href="/ficha-tecnica.pdf" download>
               <ButtonComponent text={"Descargar ficha técnica"} />
             </a>

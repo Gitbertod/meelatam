@@ -17,7 +17,9 @@
   max-width: 700px;
   align-items: top;
 }
-
+ul{
+  list-style:disc;
+}
 .title {
   font-size: 2rem;
   font-weight: 600;
