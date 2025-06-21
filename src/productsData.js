@@ -599,6 +599,41 @@ export const productsData = [
     category: "clima-de-precision",
     subcategory: "equipos-premimetrales",
     description: "Acondicionador perimetral de agua enfriada\nRango: 22kW a 236kW\nJREF CW es la nueva gama de acondicionadores perimetrales de agua enfriada para entornos tecnológicos en los que se requiere un footprint reducido con la misma potencia frigorífica suministrada. Un minucioso análisis fluidodinámico CFD ha permitido diseñar con máxima precisión todos los detalles de construcción para minimizar las pérdidas de carga en el flujo de aire y, por lo tanto, el consumo de energía de los ventiladores. Las secciones de paso de aire más amplias agilizan y simplifican las operaciones de instalación y mantenimiento gracias al aumento del espacio interior disponible.",
+  },{
+    name: "HIREF HRCB",
+    url: "hiref-hrcb",
+    images: ["/HIREF-HRCB.jpg","/HIREF-HRCB-2.jpg","/HIREF-HRCB-3.jpg"],
+    category: "clima-de-precision",
+    subcategory: "equipos-in-row",
+    description: "Soluciones llave en mano rack+rack cooler para entornos de alta densidad\nRango: 6kW a 14kW\nAlgunas posibles configuraciones de combinación de armarios rack y acondicionadores de expansión directa, en lógica N+1: HRCB #001 – 5,9 kW 2 x HRCM 0061 rack cooler 1 x rack de servidor 51U HRCB #001 – 9,8 kW 2 x HRCM 0101 rack cooler 2 x rack de servidor 48U HRCB #001 – 14 kW 2 x NRCD 0100 o 2 x NRCV 0140 rack cooler 3 x rack de servidor 48U",
+  },{
+    name: "HIREF HRCM",
+    url: "hiref-hrcm",
+    images: ["/HIREF-HRCM.jpg","/HIREF-HRCM-2.jpg","/HIREF-HRCM-3.jpg","/HIREF-HRCM-4.jpg"],
+    category: "clima-de-precision",
+    subcategory: "equipos-in-row",
+    description: "Rack cooler monobloc de expansión directa\nRango: 6kW a 10kW\nHRCM es la nueva generación de rack coolers monobloc para aplicaciones de alta densidad de carga térmica. La versión con la sección condensadora incorporada en la máquina permite una notable reducción de los costes de instalación, debido a que no hay líneas frigoríficas. Las bridas para la canalización de los tramos para el aire de condensación están situadas en la parte superior de la unidad, facilitando aún más los trabajos de instalación. La versión monobloc, que incluye la sección evaporadora y condensadora, garantiza una instalación rápida evitando la realización de tuberías frigoríficas de conexión en la obra.\nDe esta manera los gastos de instalación son menores. Las aletas de aluminio de la batería evaporadora están tratadas con un recubrimiento hidrófilo para facilitar el drenaje de los condensados en el bandeja de acero inoxidable y para evitar que el líquido llegue al rack a través del flujo de aire. Los ventiladores utilizan motores brushless EC, tanto en el lado de evaporación como en el de condensación, lo que permite que HRCM se adapte a múltiples configuraciones de canalización y se beneficie de una alta eficiencia con cargas parciales. Un sistema de bypass del gas caliente permite adaptar la potencia frigorífica a las situaciones de baja carga térmica. Las bridas para la canalización de los tramos para el aire de condensación están situadas en la parte superior de la unidad, facilitando aún más los trabajos de instalación.",
+  },{
+    name: "HIREF MRAC",
+    url: "hiref-mrac",
+    images: ["/HIREF-MRAC.jpg","/HIREF-MRAC-2.jpg","/HIREF-MRAC-3.jpg"],
+    category: "clima-de-precision",
+    subcategory: "equipos-in-row",
+    description: "Mini rack cooler para la instalación en el interior del rack\nRango: 3.6kW a 7.9kW\nLas unidades de la familia MRAC son la solución ideal para el acondicionamiento de los armarios rack con montantes de 19″, en los que se necesite un control preciso de la temperatura interior y un funcionamiento de 24 horas por día. En la versión dividida con unidad motocondensadora exterior con refrigerante R410A, el rango se extiende hasta los 8 kW de potencia frigorífica con la versión con compresor modulante BLDC.\nUno de los puntos fuertes de la gama MRAC son las medidas compactas de las unidades: MRAC ocupa un espacio de tan solo 7 unidades rack. La ventilación es solo electrónica EC lo que garantiza una regulación eficiente del flujo de aire.",
+  },{
+    name: "HIREF NRCD",
+    url: "hiref-nrcd",
+    images: ["/HIREF-NRCD.jpg","/HIREF-NRCD-2.jpg","/HIREF-NRCD-3.jpg"],
+    category: "clima-de-precision",
+    subcategory: "equipos-in-row",
+    description: "Rack cooler de expansión directa con condensador remoto\nRango: 13kW a 48 kW\nLos rack coolers de la gama NRCD de HiRef son la solución ideal para la refrigeración de armarios Rack en Data Centers de pequeñas y medianas dimensiones, donde se requiere un control de precisión de los parámetros termohigrométricos ambiente 24 horas por día.\nSon aptos para pequeñas instalaciones donde no es posible instalar una enfriadora o cuando las condiciones del entorno no permiten la presencia de agua en el Data Center. El diseño interior y la elección de los componentes están destinados exclusivamente a obtener altos niveles de eficiencia de energía, con la finalidad de minimizar los costes de gestión de todo el sistema.",
+  },{
+    name: "HIREF NRCV",
+    url: "hiref-nrcv",
+    images: ["/HIREF-NRCV.jpg","/HIREF-NRCV-2.jpg","/HIREF-NRCV-3.jpg"],
+    category: "clima-de-precision",
+    subcategory: "equipos-in-row",
+    description: "Rack coolers de expansión directa combinados con unidad motocondensadora exterior\nRango: 13kW a 36kW\nLos rack cooler de la gama NRCV de HiRef son la solución ideal para la refrigeración de armarios Rack en Data Centers de pequeñas y medianas dimensiones, donde se requiere un control de precisión de los parámetros termohigrométricos ambiente 24 horas por día. Son aptos para pequeñas instalaciones donde no es posible instalar una enfriadora o cuando las condiciones del entorno no permiten la presencia de agua en el Data Center. El diseño interior y la elección de los componentes están destinados exclusivamente a obtener altos niveles de eficiencia de energía, con la finalidad de minimizar los costes de gestión de todo el sistema.",
   },
   // Ejemplo para productos de otras categorías:
   // {
