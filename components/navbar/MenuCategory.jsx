@@ -15,7 +15,7 @@ const MenuCategory = ({
   handleMouseEnter2,
   handleMouseEnter3,
   handleMouseLeave2,
-  handleMouseLeave3
+  handleMouseLeave3,
 }) => {
   const IconComponent = iconMap[menu.icon];
 
@@ -53,11 +53,33 @@ const MenuCategory = ({
             />
           ) : (
             <ul className={styles[menu.class]}>
-              {menu.items.map((item, j) => (
-                <li key={j} className={styles.category2}>
-                  {item}
-                </li>
-              ))}
+              {menu.items.map((item, j) => {
+                // Convierte el nombre del item a url amigable
+                const itemUrl =
+                  typeof item === "string"
+                    ? item
+                        .toLowerCase()
+                        .replace(/\s+/g, "-")
+                        .replace(/[áéíóúñ]/g, (c) => ({
+                          á: "a",
+                          é: "e",
+                          í: "i",
+                          ó: "o",
+                          ú: "u",
+                          ñ: "n",
+                        }[c]))
+                    : item.url; // Si el item es un objeto, usa su url
+
+                const linkTo = `/productos/${menu.url}/${itemUrl}`;
+
+                return (
+                  <Link to={linkTo} key={j}>
+                    <li className={styles.category2}>
+                      {typeof item === "string" ? item : item.name}
+                    </li>
+                  </Link>
+                );
+              })}
             </ul>
           ))}
       </div>

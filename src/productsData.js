@@ -497,23 +497,42 @@ export const productsData = [
     url: "allsai-pdu",
     images: ["/ALLSAI-PDU.png"],
     category: "calidad-de-energia",
-    subcategory: "PDU",
+    subcategory: "pdu",
     description: " ",
+    ul:"Proporciona distribución de energía confiable a múltiples dispositivos\nFactor de forma 1U para instalación en rack horizontal o vertical\nMediciones individuales de corriente en tiempo real (Amp)\nMedidas de potencia activa total\nCapacidad de control de encendido/apagado programado para todos los puntos de venta\nConfiguración de retardo de salidas de encendido secuencial para evitar picos altos Actual\nComunicaciones múltiples RS-232/USB y SNMP"
   },{
     name: "ALLSAI STS 2000 SERIES",
     url: "allsai-sts-2000-series",
     images: ["/STS-1.png"],
     category: "calidad-de-energia",
-    subcategory: "STS",
+    subcategory: "sts",
     description: "Los STS Allsai permiten la transferencia instantánea de fuentes de energía a la carga. De la misma manera se puede decir que es tan rápido que la carga nunca reconoce la transferencia hecha.",
+    ul:"Mayor calidad de la energía.\nMejor reducción de ruido.\nProtección contra apagón de energía.\nRedundancia de energía.\nInterruptor estático automático.\nMonitoreo remoto para fuentes de alimentación de entrada.\nFácil transferencia estática y mecánica para fuentes de entrada.\nManejo remoto de eventos de energía.\nRegistro de eventos de energía.\nCorriente de salida con capacidad hasta tp 1000% en corto tiempo.\nGabinete tipo Rack de 19”.\nOpción de intercambio en caliente.\nFabricado de acuerdo a la normas EC Directive: EN62310."
   },{
     name: "ALLSAI STS 3000 – 4000 SERIES",
     url: "allsai-sts-3000-4000-series",
     images: ["/STS-3.png"],
     category: "calidad-de-energia",
-    subcategory: "STS",
+    subcategory: "sts",
     description: "Allsai STS, permite transferencia instantánea de fuentes de alimentación a la carga. Si un poder la fuente falla, el STS cambia a la fuente de energía de respaldo tan rápido que load nunca reconoce la transferencia realizada.",
   },{
+    name: "ALLSAI MONOFÁSICO STA 1F",
+    url: "allsai-monofasico-sta-1",
+    images: ["/ALLSAI-ESTABILIZADORES-DE-VOLTAJE.jpg"],
+    category: "calidad-de-energia",
+    subcategory: "estabilizadores-de-voltaje",
+    description: "Estabilizadores de voltaje ALLSAI STA son dispositivos para el control protección y gestión de voltaje, que están diseñado a base de microprocesadores, poseen Tecnología de semiconductores de alta velocidad. Se ajustan a la tensión correcta.\nSu principal utilidad es requerida por los dispositivos industriales. Y en general para todas las instalaciones donde la tensión de la red disminuyen o aumentan excesivamente.\nSon dispositivos de gran valor en la productividad y operatividad de los sistemas. Proporciona alta eficiencia y un trabajo continuo sin interrupciones.",
+    ul:"Capacidad: 2-50kVA\nEntrada:\nTensión: 220VAC +/- 15% o +/- 20%\nFrecuencia: 50Hz +/- 5%\nSalida:\nTensión: 220VAC\nFrecuencia: 50Hz +/- 5%\nEficiencia: >97%"
+  },{
+    name: "ALLSAI TRIFÁSICO STA 3F",
+    url: "allsai-trifasico-sta-3f",
+    images: ["/ALLSAI-ESTABILIZADORES-DE-VOLTAJE-2.jpg"],
+    category: "calidad-de-energia",
+    subcategory: "estabilizadores-de-voltaje",
+    description: "Estabilizadores de voltaje ALLSAI STA son dispositivos para el control protección y gestión de voltaje, que están diseñado a base de microprocesadores, poseen Tecnología de semiconductores de alta velocidad. Se ajustan a la tensión correcta.\nSu principal utilidad es requerida por los dispositivos industriales. Y en general para todas las instalaciones donde la tensión de la red disminuyen o aumentan excesivamente.\nSon dispositivos de gran valor en la productividad y operatividad de los sistemas. Proporciona alta eficiencia y un trabajo continuo sin interrupciones.",
+    ul:"Capacidad: 10-400kVA\nEntrada:\nTensión: 380VAC +/- 15% o +/- 20%\nFrecuencia: 50Hz +/- 5%\nSalida:\nTensión: 380VAC\nFrecuencia: 50Hz +/- 5%\nEficiencia: >97%"
+  },
+  {
     name: "HIREF MHA",
     url: "hiref-mha",
     images: ["/HIREF-MHA.jpg"],
