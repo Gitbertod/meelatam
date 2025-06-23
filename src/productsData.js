@@ -658,14 +658,77 @@ export const productsData = [
     subcategory: "equipos-tipo-mochila",
     description: "Acondicionadores de expansión directa con impulsión del aire hacia arriba\nRango: 4kW a 32kW",
     ul:"Refrigeración de emergencia a 24Vdc o 48Vdc\nVersión a 60 Hz\nVálvula de expansión eléctrica con control electrónico\nResistencia eléctrica\nCompuerta de Free Cooling modulante con SFT® – Side Free-Cooling…..Technology, para mejorar el mantenimiento\nControl de condensación por regulación de velocidad del ventilador\nBatería condensador con tratamiento epoxy o cobre/cobre\nMicroprocesador programable\nVentiladores EC en parte evaporadora\nTarjetas de serie para protocolos: Carel / Modbus / Lonworks / Trend\nHardware HIWEB: Tarjeta Ethernet para: Bacnet / SNMP\nSoftware HIWEB: Tarjeta Ethernet para conectividad web\nModem GSM para comunicación mediante SMS\nConexión LAN de hasta 8 unidades\nControl Gráfico con pantalla táctil a color\nVersión con compresor a inverter BLDC"
+  },{
+    name: "AIRSYS FREECOOL INTELLIGENT",
+    url: "airsys-freecool-intelligent",
+    images: ["/AIRSYS-FREECOOL.jpg"],
+    category: "clima-de-precision",
+    subcategory: "aire-acondicionado-de-precision",
+    description: "Capacidad: 1000 a 3450 m3/h\nFREECOOL intelligent se aplica en shelters y pequeños data center. La unidad introduce aire fresco al aire libre con temperatura más baja para enfriar la sala de equipos. Al usar la unidad FREECOOL, las horas de funcionamiento de otras unidades de aire acondicionado pueden reducirse en gran medida, logrando un ahorro de energía de alrededor del 30 ~ 90% ",
+    ul:"Alta eficiencia energética\nBuen diseño de estructura y mantenimiento sencillo Estructura fuerte a prueba de corrosión\nDimensiones más pequeñas\nInstalación flexible\nControl al otro aire acondicionado\nProtección completamente automática\nRecomendado para: Base de telecomunicaciones. Dispositivos electrónicos de tecnología avanzada que cambian de habitación\nEstación de distribución de energía\nCentro de control de procesos industriales."
+  },{
+    name: "AIRSYS METROCOOL",
+    url: "airsys-metrocool",
+    images: ["/AIRSYS-METROCOOL.jpg"],
+    category: "clima-de-precision",
+    subcategory: "aire-acondicionado-de-precision",
+    description: "Capacidad: 5.2kW  a 13.0 kW\nLa unidad METROCOOL está especialmente diseñada para entornos industriales, soporta altas temperaturas, contaminación fuerte y demanda de trabajo continua y ofrece alta eficiencia, estricta protección contra incendios, varias fuentes de alimentación y condiciones de trabajo ampliamente con alta confiabilidad.",
+    ul:"Alta fiabilidad\nResistencia a altas temperaturas\nA prueba de corrosión\nIncombustible\nBuen diseño de estructura y fácil mantenimiento.\nResistencias eléctricas\nCondensador especial\nTarjeta de conversión de protocolo de comunicación\nVarias fuentes de alimentación\nComo requisito del cliente, las siguientes fuentes de energía están disponibles.\n230/1/50 | 208 ~ 230/1/60 | 415/3/50 | 208 ~ 230/3/60 | 460/3/60\nDispositivo de enfriamiento por inyección líquida\nTarjeta de comunicación\nKits de montaje en pared"
+  },{
+    name: "AIRSYS MINICOOL",
+    url: "airsys-minicool",
+    images: ["/AIRSYS-MINICOOL.jpg"],
+    category: "clima-de-precision",
+    subcategory: "aire-acondicionado-de-precision",
+    description: "Capacidad: 3.2kW a 13.4kW\nMINICOOL está especialmente diseñado para pequeñas salas de máquinas de comunicación, refugios de comunicaciones móviles, salas de equipos eléctricos, salas de instrumentos precisos, centros de procesamiento y fabricación precisos, etc. que tienen estrictas demandas de temperatura, humedad y limpieza.",
+    ul:"Alta relación de calor sensible\nVarios tipos de instalación (montaje en pared y vertical)\nAmplio rango de trabajo (-30 ° C ~ 45 ° C)\nLa estructura es lo suficientemente fuerte como para poder transportar en caminos de baja pendiente.\nTratamiento anticorrosión\nLos marcos y paneles de la unidad están hechos de chapa de acero galvanizado y recubiertos con un revestimiento de protección anticorrosión que es anticorrosión."
+  },{
+    name: "AIRSYS MOBILECOOL INDOOR",
+    url: "airsys-mobilecool-indor",
+    images: ["/AIRSYS-MOBILECOOL-INDOOR.jpg"],
+    category: "clima-de-precision",
+    subcategory: "aire-acondicionado-de-precision",
+    description: "Capacidad: 3.4kW a 13.4kW\nMobilecool Indoor es una unidad especial de control de temperatura de estación base de telecomunicaciones tipo paquete que cumple con los requisitos en aspectos de alta eficiencia y ahorro de energía, varias fuentes de alimentación, refrigerantes ecológicos, diversas condiciones de instalación, amplio alcance de trabajo y seguridad del producto, etc.",
+    ul:"Operación de ahorro de energía\nSistema de enfriamiento gratuito incorporado, que funciona cuando la temperatura exterior es inferior a la temperatura ambiente.\nModo de suministro de aire inferior y delantero\nFácil mantenimiento\nLa estructura es lo suficientemente fuerte como para poder transportarse en caminos de baja pendiente.\nDoble fuente de enfriamiento\nEquipado con un sistema de enfriamiento mecánico y un sistema de enfriamiento gratuito de serie El enfriamiento sin aire fresco está diseñado para ser la principal fuente de enfriamiento.\nAlta relación de calor sensible: superior a 0.9.\nAmplio rango de trabajo （-30 ° C ~ 53 ° C）"
+  },{
+    name: "AIRSYS MOBILECOOL OUTDOOR",
+    url: "airsys-mobilecool-outdoor",
+    images: ["/AIRSYS-MOBILECOOL-OUTDOOR.jpg"],
+    category: "clima-de-precision",
+    subcategory: "aire-acondicionado-de-precision",
+    description: "Capacidad: 3.5kW a 13.6kW\nMobilecool Outdoor es un acondicionador de aire especial de estaciones de telecomunicaciones tipo paquete que cumple con los requisitos en aspectos de alta eficiencia y ahorro de energía, varias fuentes de alimentación, refrigerantes ecológicos, diversas condiciones de instalación, amplio alcance de trabajo y seguridad del producto, etc.",
+    ul:"Operación de ahorro de energía\nModo de suministro de aire inferior y delantero\nFácil mantenimiento\nLa estructura es lo suficientemente fuerte como para poder transportarse en caminos de baja pendiente.\nDoble fuente de enfriamiento\nAlta relación de calor sensible: superior a 0.9.\nAmplio rango de trabajo （-30 ° C ~ 53 ° C）\nModo de trabajo con alternancia automática\nModo confort\nControl de humedad\nEjecución de registro de datos\nLa tarjeta de comunicación RS485 estándar permite la descarga automática de registros."
+  },{
+    name: "ALLSAI VARIADOR DE FRECUENCIA 200 SERIES",
+    url: "allsai-variador-de-frecuencia-200-series",
+    images: ["/VARIADOR-DE-FRECUENCIA-ALLSAI-200.jpg"],
+    category: "accionamiento-electrico",
+    subcategory: "variadores-de-frecuencia",
+    description: "Los Variadores de Frecuencia Allsai Modelo MD200 son flexibles para ayudarle a optimizar todos sus procesos, además de confiables para reducir en múltiples industrias las paradas inesperadas. Nuestros variadores de frecuencia ofrecen:",
+    ul:"Amplio rango de voltaje de operación en dos fases 200-240Vac con potencias entre 0.4 ~ 2.2kW y en tres fases 380-480Vac y en potencia desde 0.4kW ~ 3.7kW.\nFiltro EMC Interno.\nOperación en ambiente de alta temperatura, hasta 45°C.\nProtección mejorada para aumentar la confiabilidad contra la humedad y el polvo.\nCumple con EN61800-3 Categoria C2 2do ambiente.\nComunicación Modbus. (CANlink opcional)\nModo de Instalación Flexible."
+  },{
+    name: "ALLSAI VARIADOR DE FRECUENCIA 290 SERIES",
+    url: "allsai-variador-de-frecuencia-290-series",
+    images: ["/VARIADOR-DE-FRECUENCIA-ALLSAI-200.jpg"],
+    category: "accionamiento-electrico",
+    subcategory: "variadores-de-frecuencia",
+    description: "Los Variadores de Frecuencia Allsai Modelo MD290 son flexibles para ayudarle a optimizar todos sus procesos, además de confiables para reducir en múltiples industrias las paradas inesperadas. Nuestros variadores de frecuencia ofrecen:",
+    ul:"Amplio rango de voltaje de operación en tres fases 380-480Vac y en potencia\ndesde 18.5kW ~ 500kW.\nOperación en ambiente con alta temperatura, hasta 45°C aproximadamente.\nReactancia de salida AC.\nSoftware simplificado basado en PC para inicio y respaldo.\nAlta protección contra la humedad y el polvo.\nConstruido con Reactor DC EN61800-3 Categoría C2 2do Ambiente. (Con filtro externo)."
+  },{
+    name: "ALLSAI VARIADOR DE FRECUENCIA 310 SERIES",
+    url: "allsai-variador-de-frecuencia-310-series",
+    images: ["/VARIADOR-DE-FRECUENCIA-ALLSAI-200.jpg"],
+    category: "accionamiento-electrico",
+    subcategory: "variadores-de-frecuencia",
+    description: "Los Variadores de Frecuencia Allsai Modelo MD310 son flexibles para ayudarle a optimizar todos sus procesos, además de confiables para reducir en múltiples industrias las paradas inesperadas.Nuestros variadores de frecuencia ofrecen:",
+    ul:"Amplio rango de voltaje de operación en tres fases 380-480Vac y en potencia desde 0.4kW ~ 18.5kW.\nOperación en ambiente con alta temperatura, hasta 45°C aproximadamente.\nModbus RTU o CANlink opcional.\nFrecuencia oscilante.\nCambio entre múltiples motores."
+  },{
+    name: "ALLSAI VARIADOR DE FRECUENCIA 500 SERIES",
+    url: "allsai-variador-de-frecuencia-500-series",
+    images: ["/VARIADOR-DE-FRECUENCIA-ALLSAI-200.jpg"],
+    category: "accionamiento-electrico",
+    subcategory: "variadores-de-frecuencia",
+    description: "Los Variadores de Frecuencia Allsai Modelo MD500 son flexibles para ayudarle a optimizar todos sus procesos, además de confiables para reducir en múltiples industrias las paradas inesperadas. Nuestros variadores de frecuencia ofrecen:",
+    ul:"Amplio rango de voltaje de operación en tres fases 380-480Vac y en potencia desde 18.5kW ~ 450kW.\nOperación en ambiente con alta temperatura, hasta 45°C.\nReactancia de salida AC.\nSoftware simplificado basado en PC para inicio y respaldo.\nAltísima fiabilidad.\nConstruido con Reactor DC EN61800-3 Categoría C2 2do Ambiente. (Con filtro externo)."
   },
-  // Ejemplo para productos de otras categorías:
-  // {
-  //   name: "Producto X",
-  //   url: "producto-x",
-  //   images: ["/producto-x-1.jpg"],
-  //   category: "calidad-de-energia",
-  //   subcategory: "banco-de-condensadores",
-  //   description: "...",
-  // }
 ];
