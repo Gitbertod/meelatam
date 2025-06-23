@@ -29,6 +29,7 @@ const AppRoutes = () => {
       <Route path="/productos/clima-de-precision/:subCategoryId/" element={<ProductosCategory />} />
       <Route path="/productos/clima-de-precision" element={<ProductosCategory categoryId="clima-de-precision" />} />
       <Route path="/productos/accionamiento-electrico/:subCategoryId/" element={<ProductosCategory />} />
+      <Route path="/productos/accionamiento-electrico/" element={<ProductosCategory categoryId="accionamiento-electrico"  />} />
       <Route path="/productos/:subSubCategoryId" element={<ProductosCategory />} />
       <Route path="/productos/:subSubCategoryId/:productoId" element={<ProductoView />} />
       <Route path="/productos/:param" element={<ProductosSwitch />} />

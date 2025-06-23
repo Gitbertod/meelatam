@@ -94,3 +94,23 @@ ul{
     font-size: 1rem;
   }
 }
+/*SWIPER*/
+.carousel {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.thumbs {
+  width: 100%;
+  margin-top: 10px;
+}
+.thumbImage {
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 2px solid #eee;
+  transition: border 0.2s;
+}
+.swiper-slide-thumb-active .thumbImage {
+  border: 2px solid #007bff;
+}

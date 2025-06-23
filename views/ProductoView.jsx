@@ -7,6 +7,8 @@ import ButtonComponent from "../components/buttonComponent/ButtonComponent";
 import Footer from "../components/footer/Footer";
 import { productsData } from "../src/productsData";
 
+
+
 const ProductoView = ({ categoryId: staticCategoryId }) => {
   const { subCategoryId, subSubCategoryId, productoId } = useParams();
   const categoryId = staticCategoryId;
