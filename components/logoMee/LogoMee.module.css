@@ -8,5 +8,6 @@
 @media (max-width: 1024px) {
   .logoMee {
     width: 150px;
+    margin-left: 0px;
   }
 }

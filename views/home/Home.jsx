@@ -10,6 +10,8 @@ import TextSection from "../../components/textSection/TextSection";
 import NewsCarousel from "../../components/newsCarrousel/NewsCarousel";
 import StatsSection from "../../components/statsSection/StatsSection";
 import Footer from "../../components/footer/Footer";
+import { Button } from "flowbite-react";
+
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -45,6 +47,7 @@ const Home = () => {
         <PhotoSection title={"TVA 1"} image={"./TVA_1.png"} />
       </SectionComponent2>
       <StatsSection></StatsSection>
+      
       <NewsCarousel></NewsCarousel>
       <Footer />
     </>

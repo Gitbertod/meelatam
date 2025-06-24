@@ -74,7 +74,6 @@
   transition: opacity 600ms, transform 600ms;
   z-index: 10;
 
-
   align-items: start;
   gap: 2rem;
   padding: 2rem;
@@ -88,7 +87,7 @@
   transition: opacity 600ms ease, transform 600ms ease;
 }
 .subnavContent::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -141,7 +140,7 @@
   color: black;
 }
 .navbar:hover a {
-  color: black;
+  color: #949494;
 }
 
 .optionsNav {
@@ -152,7 +151,7 @@
 .category {
   display: flex;
   height: 200px;
-  width: 350px;
+  width: 100%;
   align-items: center;
   font-size: larger;
   padding-right: 20px;
@@ -165,10 +164,9 @@
   cursor: pointer;
 }
 .category2 {
-  padding-left: 25px;
   display: flex;
   height: 50px;
-  width: 320px;
+  width: 300px;
   align-items: center;
   justify-content: space-between;
 }
@@ -178,7 +176,6 @@
   cursor: pointer;
 }
 .slidebottom {
-  
   -webkit-animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -187,19 +184,22 @@
 }
 .slideRight {
   position: absolute;
-  width: 400px;
-  margin-left: 380px;
+  width: 100%;
+  margin-left: 350px;
   margin-top: 150px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .slideRight2 {
   position: absolute;
-  width: 100px;
+  width: 240px;
   margin-top: 50px;
-  margin-left: 420px;
+  margin-left: 350px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slideRight2 a{
+  width: 100%;
 }
 .slideRight3 {
   position: absolute;
@@ -211,15 +211,15 @@
 }
 .slideRight4 {
   position: absolute;
-  width: 400px;
+  width: 100%;
   margin-left: 420px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .slideRight5 {
   position: absolute;
-  margin-top: 150px;
-  width: 300px;
+  margin-top: 200px;
+  width: 200px;
   margin-left: 325px;
   -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -278,20 +278,62 @@
     opacity: 1;
   }
 }
-
+.productoyPhotoContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.productoyPhotoContainer li {
+  width: 250px;
+}
 /*RESPONSIVE*/
-@media(max-width: 1024px){
- 
-  .category{
-   width: 55%;
+@media (max-width: 1024px) {
+  .category {
+    width: 100%;
   }
-  .category2{
-    width: 250px;
+  .category2 {
+    width: 300px;
     margin-left: 0px;
   }
+  .productoyPhotoContainer {
+    display: flex;
+    justify-content: start;
+  }
+  .productoyPhotoContainer .category2 {
+    width: 180px;
+  }
+  .slideRight{
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+  }
+  .slideRight li{
+    width: 160px;
+  }
+  .slideRight2{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+  .slideRight5 {
+    position: absolute;
+    margin-top: 200px;
+    width: 450px;
+    margin-left: 150px;
+    -webkit-animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .slideRight5 a {
+    width: 100%;
+  }
+  .category2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
 }
 
-@media (max-width: 768px) {
+@media (max-width: 970px) {
   .navbar {
     height: 80px;
   }

@@ -1,0 +1,14 @@
+.icon {
+    margin: 0px auto;
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+    z-index: 10;
+}
+.burgerButon{
+    background-color: #199697;
+    padding: 12px
+}
+.drawerLightBg {
+  background-color: #f8fafc; /* Un color claro, puedes cambiarlo */
+}

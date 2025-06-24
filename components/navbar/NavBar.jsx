@@ -4,6 +4,7 @@ import LogoMee from "../logoMee/LogoMee";
 import SubNavContent from "./SubNavContent";
 import { HiChevronDown } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import { DrawerNavbar } from "../drawerNavbar/DrawerNavbar";
 
 const NavBar = () => {
   const [hoveredMenu, setHoveredMenu] = useState("");
@@ -22,7 +23,7 @@ const NavBar = () => {
   return (
     <div className={styles.navbar}>
       <Link to={"/"}>
-      <LogoMee />
+        <LogoMee />
       </Link>
       <div className={styles.optionsNav}>
         <div className={styles.subnav}>
@@ -62,6 +63,7 @@ const NavBar = () => {
           </div>
         ))}
       </div>
+      <DrawerNavbar></DrawerNavbar>
     </div>
   );
 };

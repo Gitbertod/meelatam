@@ -8,7 +8,7 @@ const NestedItemList = ({ items, subCategoryId, categoryId }) => {
 
   return (
     <ul className={styles.slideRight5}>
-      <div className="flex">
+      <div className={styles.productoyPhotoContainer}>
         <div>
           {items.map((item, j) => {
             // Si item es un objeto, usa sus propiedades; si es string, úsalo directamente
