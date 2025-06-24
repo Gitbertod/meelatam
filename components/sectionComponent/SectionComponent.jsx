@@ -13,33 +13,29 @@ const SectionComponent = () => {
   const containerRef = useRef();
 
   useGSAP(() => {
-    // Box animation con ScrollTrigger
-    gsap.fromTo(
-      boxRef.current,
-      {
-        x: -1000,
-        opacity: 0,
-        rotate: 0,
-        scale: 5,
-      },
-      {
-        x: 200,
-        opacity: 1,
-        rotate: 405,
-        scale: 9,
-        duration: 6,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: boxRef.current,
-          start: "top bottom",
-          end: "top top",
-          scrub: true,
-          // para ver los puntos de activación (puedes quitarlo luego)
-        },
-      }
-    );
+    // Animación de la caja solo en escritorio
+    if (window.innerWidth > 900) {
+      gsap.fromTo(
+        boxRef.current,
+        { x: -1000, opacity: 0, rotate: 0, scale: 5 },
+        {
+          x: 200,
+          opacity: 1,
+          rotate: 405,
+          scale: 9,
+          duration: 6,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: boxRef.current,
+            start: "top bottom",
+            end: "top top",
+            scrub: true,
+          },
+        }
+      );
+    }
 
-    // Text animation con SplitText y ScrollTrigger
+    // Animación de texto en todos los dispositivos
     const split = new SplitText(textRef.current, {
       type: "lines,words",
     });

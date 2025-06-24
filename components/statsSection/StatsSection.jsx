@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const StatsSection = () => {
   const container = useRef();
+  const statRefs = useRef([]);
 
   const stats = [
     { icon: ImPowerCord, label: "22 Filiales" },
@@ -18,10 +19,10 @@ const StatsSection = () => {
   ];
 
   useGSAP(() => {
-    gsap.from(".stat", {
+    gsap.from(statRefs.current, {
       scrollTrigger: {
         trigger: container.current,
-        start: "top 80%", // cuando el top del container llega al 80% del viewport
+        start: "top 80%",
         toggleActions: "play none none none",
       },
       opacity: 0,
@@ -37,7 +38,11 @@ const StatsSection = () => {
       {stats.map((stat, index) => {
         const Icon = stat.icon;
         return (
-          <div key={index} className={`${styles.stat} stat`}>
+          <div
+            key={index}
+            className={styles.stat}
+            ref={el => (statRefs.current[index] = el)}
+          >
             <span className={styles.icon}>
               <Icon />
             </span>

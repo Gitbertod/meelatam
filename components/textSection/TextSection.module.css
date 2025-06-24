@@ -74,3 +74,36 @@
     left: 125%;
   }
 }
+
+@media (max-width: 900px) {
+  .content {
+    min-width: 100%;
+    margin: 8px 0;
+    padding: 0 8px;
+  }
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .subTitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .textContainer {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 0;
+  }
+  .text {
+    font-size: 1.1rem;
+    max-width: 100%;
+    text-align: center;
+  }
+  .btn {
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+    display: block;
+    font-size: 1rem;
+  }
+}
