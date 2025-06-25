@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./ProductoView.module.css";
 import Breadcrumb from "../components/breadCrumb/Breadcrumb";
@@ -7,11 +7,14 @@ import ButtonComponent from "../components/buttonComponent/ButtonComponent";
 import { productsData } from "../src/productsData";
 import FooterComponent from "../components/footer/FooterComponent";
 
-
-
 const ProductoView = ({ categoryId: staticCategoryId }) => {
   const { subCategoryId, subSubCategoryId, productoId } = useParams();
   const categoryId = staticCategoryId;
+
+  // Scroll al top al montar el componente
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const productObj = productsData.find(
     (item) =>
@@ -126,7 +129,7 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
             
             {productObj.normas ? <h3>Normas: {productObj.normas}</h3> : ""}
             <br></br>
-            <a href="/ficha-tecnica.pdf" download>
+            <a href={`/docs/${productObj.pdf}`} target="_blank" rel="noopener noreferrer">
               <ButtonComponent text={"Descargar ficha técnica"} />
             </a>
           </article>

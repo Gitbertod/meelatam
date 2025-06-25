@@ -9,6 +9,7 @@ export const productsData = [
     subsubcategory: "ups-interactivas",
     capacidades: "600 VA | 800 VA | 1200 VA | 1500 VA | 2000 VA",
     description: "La UPS Allsai con su Línea Interactiva ofrece protección integral y alta densidad de potencia en paquetes pequeños y económicos. En comparación con las torres UPS tradicionales del mismo tamaño, la UPS Allsai es más compacta y ofrece una mayor protección contra sobretensiones y sobrecorrientes.\n Equipado con un estabilizador de voltaje, este UPS continuará proporcionando energía limpia y estable a los equipos conectados, mientras que su controlador de microprocesador incorporado garantiza una alta fiabilidad, ideal para cualquier aplicación doméstica o de oficina pequeña.",
+    pdf:"Linea Interactiva ALLSAI_Nueva Brochure.pdf"
   },
   // UPS Monofásicas
   {
