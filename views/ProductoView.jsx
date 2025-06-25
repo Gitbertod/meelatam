@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
+import gsap from "gsap";
 import styles from "./ProductoView.module.css";
 import Breadcrumb from "../components/breadCrumb/Breadcrumb";
 import NavBar from "../components/navbar/NavBar";
@@ -11,9 +12,36 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
   const { subCategoryId, subSubCategoryId, productoId } = useParams();
   const categoryId = staticCategoryId;
 
-  // Scroll al top al montar el componente
+  const contentRef = useRef(null);
+  const imageRef = useRef(null);
+
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    // Animación al montar el componente
+    gsap.fromTo(
+      contentRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        delay: 0.2,
+      }
+    );
+
+    gsap.fromTo(
+      imageRef.current,
+      { opacity: 0, x: 50 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power3.out",
+        delay: 0.4,
+      }
+    );
   }, []);
 
   const productObj = productsData.find(
@@ -23,100 +51,59 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
       (!subSubCategoryId || item.subsubcategory === subSubCategoryId) &&
       item.url === productoId
   );
-  console.log(productObj);
+
   return (
     <>
       <NavBar />
       <div>
         <Breadcrumb />
         <section className={styles.container}>
-          <article className={styles.textContent}>
+          <article className={styles.textContent} ref={contentRef}>
             <h2 className={styles.title}>
               {productObj?.name || "Producto no encontrado"}
             </h2>
             <h3 className={styles.subtitle}>{productObj?.capacidades || ""}</h3>
-            {productObj.tension ? <h3>Tensión: {productObj.tension}</h3> : ""}
-            {productObj.frecuencia ? (
-              <h3>Frecuencia: {productObj.frecuencia}</h3>
-            ) : (
-              ""
-            )}{" "}
-            {productObj.frecuenciaDeResonancia ? (
-              <h3>
-                Frecuencia de resonacia: {productObj.frecuenciaDeResonancia}
-              </h3>
-            ) : (
-              ""
+            {productObj.tension && <h3>Tensión: {productObj.tension}</h3>}
+            {productObj.frecuencia && <h3>Frecuencia: {productObj.frecuencia}</h3>}
+            {productObj.frecuenciaDeResonancia && (
+              <h3>Frecuencia de resonancia: {productObj.frecuenciaDeResonancia}</h3>
             )}
-            {productObj.maxCorriente ? (
-              <h3>Máx corriente: {productObj.maxCorriente}</h3>
-            ) : (
-              ""
-            )}
-            {productObj.factorDeForma ? (
-              <h3>Factor de forma: {productObj.factorDeForma}</h3>
-            ) : (
-              ""
-            )}
-            {productObj.peso ? <h3>Peso Neto (Kg): {productObj.peso}</h3> : ""}
-            {productObj.tipoDeEnchufe ? (
-              <h3>Tipo de enchufe: {productObj.tipoDeEnchufe}</h3>
-            ) : (
-              ""
-            )}
-            {productObj.temperatura ? (
+            {productObj.maxCorriente && <h3>Máx corriente: {productObj.maxCorriente}</h3>}
+            {productObj.factorDeForma && <h3>Factor de forma: {productObj.factorDeForma}</h3>}
+            {productObj.peso && <h3>Peso Neto (Kg): {productObj.peso}</h3>}
+            {productObj.tipoDeEnchufe && <h3>Tipo de enchufe: {productObj.tipoDeEnchufe}</h3>}
+            {productObj.temperatura && (
               <h3>Temperatura de funcionamiento: {productObj.temperatura}</h3>
-            ) : (
-              ""
             )}
-            {productObj.tipoDeEnchufe ? (
+            {productObj.tipoDeEnchufe && (
               <h3>Longitud del cable: {productObj.longitudDelCable}</h3>
-            ) : (
-              ""
             )}
-            {productObj.salida ? <h3>Salida: {productObj.salida}</h3> : ""}
-            {productObj.dimensiones ? (
+            {productObj.salida && <h3>Salida: {productObj.salida}</h3>}
+            {productObj.dimensiones && (
               <h3>
-                Dimensiones, profundidad,x anchirax altura (mm):{" "}
-                {productObj.dimensiones}
+                Dimensiones, profundidad x anchura x altura (mm): {productObj.dimensiones}
               </h3>
-            ) : (
-              ""
             )}
-            {productObj.conmutacion ? (
-              <h3>Conmutacion: {productObj.conmutacion}</h3>
-            ) : (
-              ""
+            {productObj.conmutacion && <h3>Conmutación: {productObj.conmutacion}</h3>}
+            {productObj.potencia && <h3>Potencia: {productObj.potencia}</h3>}
+            {productObj.numeroDeEtapas && <h3>Número de etapas: {productObj.numeroDeEtapas}</h3>}
+            {productObj.maxPotenciaPara1Panel && (
+              <h3>Máxima potencia para 1 panel: {productObj.maxPotenciaPara1Panel}</h3>
             )}
-            {productObj.potencia ? (
-              <h3>Potencia: {productObj.potencia}</h3>
-            ) : (
-              ""
-            )}
-            {productObj.numeroDeEtapas ? (
-              <h3>Numero de etapas: {productObj.numeroDeEtapas}</h3>
-            ) : (
-              ""
-            )}
-            {productObj.maxPotenciaPara1Panel ? (
-              <h3>
-                Máxima potencia para 1 panel: {productObj.maxPotenciaPara1Panel}
-              </h3>
-            ) : (
-              ""
-            )}
+
             <div className={styles.description}>
               {productObj?.description ? (
                 productObj.description.split("\n").map((parrafo, idx) => (
-                  <>
-                    <p key={idx}>{parrafo}</p>
-                    <br></br>
-                  </>
+                  <React.Fragment key={idx}>
+                    <p>{parrafo}</p>
+                    <br />
+                  </React.Fragment>
                 ))
               ) : (
                 <p>Descripción no disponible.</p>
               )}
             </div>
+
             {productObj?.ul ? (
               <ul>
                 {productObj.ul.split("\n").map((parrafo, idx) => (
@@ -126,14 +113,19 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
             ) : (
               <p>Descripción no disponible.</p>
             )}
-            
-            {productObj.normas ? <h3>Normas: {productObj.normas}</h3> : ""}
-            <br></br>
-            <a href={`/docs/${productObj.pdf}`} target="_blank" rel="noopener noreferrer">
+
+            {productObj.normas && <h3>Normas: {productObj.normas}</h3>}
+
+            <br />
+            <a
+              href={`/docs/${productObj.pdf}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ButtonComponent text={"Descargar ficha técnica"} />
             </a>
           </article>
-          <figure className={styles.imageWrapper}>
+          <figure className={styles.imageWrapper} ref={imageRef}>
             <img
               src={productObj?.images?.[0] || "/TVA_1.png"}
               alt={productObj?.name || "Imagen del producto"}
@@ -148,3 +140,4 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
 };
 
 export default ProductoView;
+
