@@ -25,6 +25,7 @@ const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: static
     });
   }, [productsData]);
 
+  console.log(uniqueProducts)
   // 2. Filtrado memoizado para evitar duplicados
   const filteredProducts = useMemo(() => {
     let result = uniqueProducts;

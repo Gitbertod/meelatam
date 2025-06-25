@@ -40,12 +40,12 @@ const Home = () => {
       <Container />
       <SectionComponent />
       <SectionComponent2>
-        <PhotoSection title={"TSE"} image={"./TSE_3.png"} />
-        <TextSection title={"Título aqui"} />
+        <PhotoSection title={"HIREF XSW"} image={"./TSE_3.png"} subtitle={"XSW es la gama de enfriadoras condensadas por agua con compresores scroll de HiRef."}/>
+        <TextSection title={"Título aqui"} text={"XSW es la gama de enfriadoras condensadas por agua con compresores scroll de HiRef."} />
       </SectionComponent2>
       <SectionComponent2>
-        <TextSection title={"Título aqui"} />
-        <PhotoSection title={"TVA 1"} image={"./TVA_1.png"} />
+        <TextSection title={"Título aqui"} text={"TVX es el nuevo estándar de enfriadoras condensadas por aire diseñadas para los procesos de eficiencia energética y, al mismo tiempo, respetuosas del medio ambiente"}/>
+        <PhotoSection title={"HIREF TVX"}  image={"./TVA_1.png"} subtitle={"Enfriadoras de líquido condensadas por aire con compresores de tornillo modulantes"} />
       </SectionComponent2>
       <StatsSection></StatsSection>
       

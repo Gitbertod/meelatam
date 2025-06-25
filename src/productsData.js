@@ -21,6 +21,7 @@ export const productsData = [
     subsubcategory: "ups-monofasicas",
     capacidades: "1 KVA | 2 KVA | 3 KVA ",
     description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Además de contar con suficiente tiempo de autonomía como energía de reserva.\n Las UPS cuentan con modelo torre y tipo convertible rack/ torre(RT), este último ocupa sólo 2 - 3U de altura. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
+    pdf:"WPRO 110 1-10KVA.pdf"
   },
   {
     name: "ALLSAI W PRO 1KVA – 3KVA (Torre)",
@@ -30,6 +31,7 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "1 KVA | 2 KVA | 3 KVA ",
+    pdf:"ALLSAI WPRO G3 1-3KVA.pdf",
     description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas.\n Además de contar con suficiente tiempo de autonomía como energía de reserva.\n Las UPS cuentan con modelo torre y tipo convertible rack/ torre(RT), este último ocupa sólo 2 - 3U de altura. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
   },
   {
@@ -40,6 +42,7 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "6 KVA | 10 KVA",
+    pdf:"W Pro 6-10kVA Monofasica.pdf",
     description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas.\n Además de contar con suficiente tiempo de autonomía como energía de reserva.Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
   },
    {
@@ -50,6 +53,7 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: " 1 KVA | 2 KVA | 3 KVA ",
+    pdf:"Centiel_brochure_Essential XST 1-3K.pdf",
     description: "EssentialPower la solución más flexible y confiable, ideal para dispositivos de redes pequeños, servidores, puntos de ventas, grupos de terminales de trabajo e instalaciones industriales pequeñas. El EssentialPower satisface cualquier aplicación crítica básica que demande una alta disponibilidad y flexibilidad.",
   },
   {
@@ -60,6 +64,7 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "6 KVA | 10 KVA",
+    pdf:"Centiel_brochure_Essential XST 6-10K.pdf",
     description: "EssentialPower la solución más flexible y confiable, ideal para dispositivos de redes pequeños, servidores, puntos de ventas, grupos de terminales de trabajo e instalaciones industriales pequeñas. El EssentialPower satisface cualquier aplicación crítica básica que demande una alta disponibilidad y flexibilidad.",
   },
   {
@@ -70,17 +75,30 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "1 KVA | 2 KVA | 3 KVA | 6 KVA | 10 KVA",
+    pdf:"Centiel_brochure_Essential XSRT 1-10K.pdf",
     description: "EssentialPower la solución más flexible y confiable, ideal para dispositivos de redes pequeños, servidores, puntos de ventas, grupos de terminales de trabajo e instalaciones industriales pequeñas. El EssentialPower satisface cualquier aplicación crítica básica que demande una alta disponibilidad y flexibilidad.",
   },
    {
     name: "CENTIEL ESSENTIALPOWER XST IoT 1KVA – 10KVA ",
     url: "centiel-essentialpower-xst-iot-1-kva-10-kva-torre",
-    images: ["/Rack 1-3K.jpg"],
+    images: ["/essentialPowerXST-IoT.jpg"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
+    pdf:"Centiel_brochure_Essential XST IoT 1-20K.pdf",
     capacidades: "1 KVA | 2 KVA | 3 KVA | 6 KVA | 10 KVA",
     description: "EssentialPower IoT la solución más flexible y confiable, ideal para aplicaciones IT y servidores. El EssentialPower IoT posee puerto Ethernet embebido que cumple con el standard IEC de ciberseguridad. Con un factor de potencia de hasta 95%.",
+  },
+  {
+    name: "CENTIEL ESSENTIALPOWER XST IoT 1KVA – 10KVA (Rack)",
+    url: "centiel-essentialpower-xst-iot-1-kva-10-kva-rack",
+    images: ["/Essential PowerXS_IOT_RT1.jpg"],
+    category: "respaldo-de-energia",
+    subcategory: "ups",
+    subsubcategory: "ups-monofasicas",
+    capacidades: " 1 KVA | 2 KVA | 3 KVA | 6 KVA | 10 KVA ",
+    pdf:"Essential PowerXS_IOT_RT1-10KVA.pdf",
+    description: "EssentialPower IoT la solución más flexible y confiable, ideal para aplicaciones IT y servidores, listo para montaje en rack de 19”. El EssentialPower IoT posee puerto Ethernet embebido que cumple con el standard IEC de ciberseguridad. Con un factor de potencia de hasta 95%.",
   },
   {
     name: "CENTIEL ESSENTIALPOWER XSRT IoT Lithium-Ion 1KVA – 3KVA (Rack)",

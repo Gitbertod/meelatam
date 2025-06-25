@@ -1,16 +1,20 @@
 import React from "react";
 import styles from "./SearchBar.module.css";
+import { FiSearch } from "react-icons/fi";
 
 const SearchBar = ({ value, onChange }) => (
-  <div style={{ margin: "20px 0", textAlign: "center" }}>
+  <div className={styles.searchBarWrapper}>
     <input
       type="text"
       placeholder="Buscar producto por nombre..."
       value={value}
       onChange={onChange}
-      className={styles.container}
+      className={styles.input}
       autoComplete="off"
     />
+    <span className={styles.icon}>
+      <FiSearch />
+    </span>
   </div>
 );
 

@@ -6,7 +6,7 @@ import SplitText from "gsap/SplitText";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-const PhotoSection = ({ image, title }) => {
+const PhotoSection = ({ image, title, subtitle }) => {
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
   const h3Ref = useRef(null);
@@ -58,7 +58,7 @@ const PhotoSection = ({ image, title }) => {
   return (
     <div ref={sectionRef} className={styles.photo}>
       <h2 ref={titleRef} className={styles.title}>{title}</h2>
-      <h3 ref={h3Ref}>Bombas de calor, Enfriadoras de líquido</h3>
+      <h3 ref={h3Ref}>{subtitle}</h3>
       <button ref={buttonRef} className={styles.btn}>Más información</button>
       <img ref={imageRef} src={image} alt="Sección" />
     </div>
