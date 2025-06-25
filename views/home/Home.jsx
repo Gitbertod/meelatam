@@ -9,8 +9,9 @@ import PhotoSection from "../../components/photoSection/PhotoSection";
 import TextSection from "../../components/textSection/TextSection";
 import NewsCarousel from "../../components/newsCarrousel/NewsCarousel";
 import StatsSection from "../../components/statsSection/StatsSection";
-import Footer from "../../components/footer/Footer";
+import Footer from "../../components/footer/FooterComponent";
 import { Button } from "flowbite-react";
+import FooterComponent from "../../components/footer/FooterComponent";
 
 
 const Home = () => {
@@ -49,7 +50,7 @@ const Home = () => {
       <StatsSection></StatsSection>
       
       <NewsCarousel></NewsCarousel>
-      <Footer />
+      
     </>
   );
 };

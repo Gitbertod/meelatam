@@ -4,8 +4,8 @@ import styles from "./ProductoView.module.css";
 import Breadcrumb from "../components/breadCrumb/Breadcrumb";
 import NavBar from "../components/navbar/NavBar";
 import ButtonComponent from "../components/buttonComponent/ButtonComponent";
-import Footer from "../components/footer/Footer";
 import { productsData } from "../src/productsData";
+import FooterComponent from "../components/footer/FooterComponent";
 
 
 
@@ -139,7 +139,7 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
           </figure>
         </section>
       </div>
-      <Footer />
+      <FooterComponent />
     </>
   );
 };

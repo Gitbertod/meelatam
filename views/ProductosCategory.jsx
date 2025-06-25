@@ -3,8 +3,9 @@ import { useParams, Link } from "react-router-dom";
 import { productsData } from "../src/productsData";
 import styles from "./ProductosCategory.module.css";
 import NavBar from "../components/navbar/NavBar";
-import Footer from "../components/footer/Footer";
+import Footer from "../components/footer/FooterComponent";
 import Breadcrumb from "../components/breadCrumb/Breadcrumb";
+import FooterComponent from "../components/footer/FooterComponent";
 
 const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: staticSubCategoryId }) => {
   const params = useParams();
@@ -101,7 +102,7 @@ const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: static
           )}
         </div>
       </div>
-      <Footer />
+      <FooterComponent />
     </>
   );
 };
