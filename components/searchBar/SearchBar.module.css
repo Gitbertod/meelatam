@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px 18px;
+  border-radius: 24px;
+  border: 1.5px solid #e0e0e0;
+  background: #fafbfc;
+  font-size: 1rem;
+  color: #222;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(25, 150, 151, 0.04);
+  outline: none;
+}
+
+.container:focus {
+  border-color: #199697;
+  background: #fff;
+  box-shadow: 0 0 0 2px #b2e4e4;
+}
+
+.container::placeholder {
+  color: #aaa;
+  opacity: 1;
+  font-weight: 400;
+}
+
+.searchInput:focus {
+  border-color: #199697;
+  background: #fff;
+  color: #222;
+}
+
+input:focus {
+  outline: none;
+  border-color: #199697; /* o el color que prefieras */
+  box-shadow: 0 0 0 2px #b2e4e4; /* opcional, para un efecto suave */
+  background-color: #fff; /* asegura fondo blanco en focus */
+  color: #222; /* asegura texto oscuro */
+}

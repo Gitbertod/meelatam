@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import { productsData } from "../src/productsData";
 import styles from "./ProductosCategory.module.css";
 import NavBar from "../components/navbar/NavBar";
-import Footer from "../components/footer/FooterComponent";
-import Breadcrumb from "../components/breadCrumb/Breadcrumb";
 import FooterComponent from "../components/footer/FooterComponent";
+import Breadcrumb from "../components/breadCrumb/Breadcrumb";
+import SearchBar from "../components/searchBar/SearchBar";
 
 const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: staticSubCategoryId }) => {
   const params = useParams();
@@ -15,22 +15,30 @@ const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: static
 
   const [search, setSearch] = useState("");
 
-  let filteredProducts = productsData;
-  if (categoryId) {
-    filteredProducts = filteredProducts.filter(
-      (p) => p.category === categoryId
-    );
-  }
-  if (subCategoryId) {
-    filteredProducts = filteredProducts.filter(
-      (p) => p.subcategory === subCategoryId
-    );
-  }
-  if (subSubCategoryId) {
-    filteredProducts = filteredProducts.filter(
-      (p) => p.subsubcategory === subSubCategoryId
-    );
-  }
+  // 1. Elimina duplicados por url
+  const uniqueProducts = useMemo(() => {
+    const seen = new Set();
+    return productsData.filter((item) => {
+      if (seen.has(item.url)) return false;
+      seen.add(item.url);
+      return true;
+    });
+  }, [productsData]);
+
+  // 2. Filtrado memoizado para evitar duplicados
+  const filteredProducts = useMemo(() => {
+    let result = uniqueProducts;
+    if (categoryId) {
+      result = result.filter((p) => p.category === categoryId);
+    }
+    if (subCategoryId) {
+      result = result.filter((p) => p.subcategory === subCategoryId);
+    }
+    if (subSubCategoryId) {
+      result = result.filter((p) => p.subsubcategory === subSubCategoryId);
+    }
+    return result;
+  }, [uniqueProducts, categoryId, subCategoryId, subSubCategoryId]);
 
   // Función para normalizar texto (quita tildes y pasa a minúsculas)
   function normalize(str) {
@@ -63,23 +71,8 @@ const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: static
         <h2>
           {subSubCategoryId || subCategoryId || categoryId || "Todos los productos"}
         </h2>
-        {/* Barra de búsqueda */}
-        <div style={{ margin: "20px 0", textAlign: "center" }}>
-          <input
-            type="text"
-            placeholder="Buscar producto por nombre..."
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            style={{
-              padding: "8px 16px",
-              borderRadius: "6px",
-              border: "1px solid #ccc",
-              width: "100%",
-              maxWidth: "350px",
-              fontSize: "1rem"
-            }}
-          />
-        </div>
+        {/* Barra de búsqueda modularizada */}
+        <SearchBar value={search} onChange={e => setSearch(e.target.value)} />
         <div className={styles.cardsWrapper}>
           {searchedProducts.length > 0 ? (
             searchedProducts.map((item, idx) => (
