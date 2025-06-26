@@ -80,6 +80,7 @@
   .title {
     font-size: 2rem;
     text-align: center;
+    word-break: break-word;
   }
   .photo {
     min-width: 100%;

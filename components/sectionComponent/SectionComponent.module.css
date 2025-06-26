@@ -21,12 +21,12 @@ body {
   justify-content: center;
   min-height: 100vh;
   align-items: center;
-  
+  align-content: center;
   max-width: 1250px;
   margin: 0px auto;
 }
 .textBox {
-    margin-left: 40px;
+  justify-content: flex-start;
 }
 
 .box {
@@ -34,38 +34,31 @@ body {
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(248, 74, 74, 0.1); /* sombra suave */
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 2rem auto;
   backdrop-filter: blur(6px); /* efecto moderno, si hay transparencia */
   /* background-image: url("./cable.jpg"); */
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   overflow: hidden;
   /* borde sutil */
 }
 
-.imageBox{
-    width: 10px;
-    height: 10px;
+.imageBox {
+  width: 10px;
+  height: 10px;
 }
 
-.text {
-  font-family: "Inter", sans-serif;
-  width: 100%;
-  margin: 20px;
-  color: rgb(121, 121, 121);
-  font-size: 1.5rem;
-  line-height: 1.6;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  font-weight: 400;
-  overflow: hidden;
-  margin-top: 20px;
-}
 .gradientText {
   font-weight: 700;
   font-size: 55px;
-  background: linear-gradient(90deg, #99e1e1, #c0c0c0, #199697, rgb(0, 115, 140));
+  background: linear-gradient(
+    90deg,
+    #99e1e1,
+    #c0c0c0,
+    #199697,
+    rgb(0, 115, 140)
+  );
   background-size: 300% 300%;
   animation: gradientShift 8s ease-in-out infinite;
   -webkit-background-clip: text;
@@ -74,6 +67,19 @@ body {
   color: transparent;
   line-height: 1.2;
   letter-spacing: -1px;
+}
+.text {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  margin: 20px;
+  color: rgb(121, 121, 121);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+  overflow: hidden;
+  margin-top: 20px;
 }
 
 @keyframes gradientShift {
@@ -87,10 +93,10 @@ body {
     background-position: 0% 50%;
   }
 }
-.photoText{
-    font-size: xx-large;
-    z-index: 10;
-    color: white;
+.photoText {
+  font-size: xx-large;
+  z-index: 10;
+  color: white;
 }
 
 .btn {
@@ -132,5 +138,47 @@ body {
   }
   100% {
     left: 125%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    width: 900px;
+    margin: 0px;
+  }
+
+  .gradientText {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 35px;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+  .textBox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    width: 400px;
+  }
+}
+@media (max-width: 900px) {
+  .gradientText {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .box {
+    display: none;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+  .textBox {
+    margin-left: 0px;
+    width: 400px;
+    margin: 0px auto;
   }
 }

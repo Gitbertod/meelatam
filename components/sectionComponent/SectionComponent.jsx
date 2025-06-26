@@ -12,98 +12,79 @@ const SectionComponent = () => {
   const textRef = useRef();
   const containerRef = useRef();
 
-  // Detecta si es escritorio
-  const isDesktop = window.innerWidth > 900;
-
   useGSAP(() => {
-    // Animación de la caja solo en escritorio
-    if (isDesktop) {
-      gsap.fromTo(
-        boxRef.current,
-        { x: -1000, opacity: 0, rotate: 0, scale: 5 },
-        {
-          x: 200,
-          opacity: 1,
-          rotate: 405,
-          scale: 9,
-          duration: 6,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: boxRef.current,
-            start: "top bottom",
-            end: "top top",
-            scrub: true,
-          },
-        }
-      );
-    }
+    const mm = gsap.matchMedia();
 
-    // Animación de texto en todos los dispositivos
-    const split = new SplitText(textRef.current, {
-      type: "lines,words",
-    });
-
-    gsap.from(split.words, {
-      opacity: 0,
-      y: 30,
-      duration: 1,
-      stagger: 0.05,
-      ease: "sine.out",
-      scrollTrigger: {
-        trigger: textRef.current,
-        start: "top 85%",
-        toggleActions: "play none none none",
+    mm.add(
+      {
+        // Escritorio
+        isDesktop: "(min-width: 901px)",
+        // Móvil/tablet
+        isMobile: "(max-width: 900px)",
       },
-    });
+      (context) => {
+        const { isDesktop, isMobile } = context.conditions;
+
+        // Animación de la caja solo en escritorio
+        if (isDesktop && boxRef.current) {
+          gsap.fromTo(
+            boxRef.current,
+            { x: -1000, opacity: 0, rotate: 0, scale: 5 },
+            {
+              x: 200,
+              opacity: 1,
+              rotate: 405,
+              scale: 9,
+              duration: 6,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: boxRef.current,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+              },
+            }
+          );
+        }
+
+        // Animación de texto en todos los dispositivos (ajusta valores para mobile)
+        const split = new SplitText(textRef.current, {
+          type: "lines,words",
+        });
+
+        gsap.from(split.words, {
+          opacity: 0,
+          y: isMobile ? 15 : 30,
+          duration: isMobile ? 0.7 : 1,
+          stagger: isMobile ? 0.03 : 0.05,
+          ease: "sine.out",
+          scrollTrigger: {
+            trigger: textRef.current,
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+    );
+
+    return () => mm.revert();
   }, []);
 
   return (
     <div ref={containerRef} className={styles.container}>
-      <div
-        className={styles.textBox}
-        style={{
-          width: "100%",
-          marginLeft: isDesktop ? 40 : 0,
-        }}
-      >
+      <div className={styles.textBox}>
         <div>
-          <h3
-            className={styles.gradientText}
-            style={{
-              fontSize: isDesktop ? 55 : 32,
-              textAlign: isDesktop ? "left" : "center",
-            }}
-          >
-            25 años de experiencia
-          </h3>
+          <h3 className={styles.gradientText}>25 años de experiencia</h3>
         </div>
-        <div
-          ref={textRef}
-          className={styles.text}
-          style={{
-            fontSize: isDesktop ? "1.5rem" : "1.1rem",
-            textAlign: isDesktop ? "left" : "center",
-            margin: isDesktop ? "20px auto 2rem" : "16px 0 1.5rem 0",
-          }}
-        >
+        <div ref={textRef} className={styles.text}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit at
           facere distinctio laborum reprehenderit sunt nostrum temporibus vitae?
           Voluptatum aliquid et eum nam pariatur recusandae ducimus amet dolorem
           blanditiis atque?
         </div>
-        <button
-          className={styles.btn}
-          style={{
-            width: isDesktop ? 200 : "100%",
-            maxWidth: isDesktop ? 200 : 300,
-            margin: isDesktop ? "40px 0 0 0" : "24px auto 0 auto",
-            display: "block",
-          }}
-        >
-          Más información
-        </button>
+        <button className={styles.btn}>Más información</button>
       </div>
-      {isDesktop && <div ref={boxRef} className={styles.box}></div>}
+      <div ref={boxRef} className={styles.box}></div>
     </div>
   );
 };

@@ -41,3 +41,21 @@
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
+.responsiveTitle {
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: start;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  text-transform: none;
+  color: gray;
+  word-break: break-word;
+}
+
+@media (max-width: 600px) {
+  .responsiveTitle {
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
+    text-align: left;
+  }
+}

@@ -56,6 +56,14 @@ const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: static
     normalize(item.name).includes(normalize(search))
   );
 
+  // Utilidad para mostrar el título sin guiones y con la primera letra en mayúscula
+  function formatTitle(str) {
+    if (!str) return "Todos los productos";
+    return str
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (l) => l.toUpperCase());
+  }
+
   const getProductRoute = (product) => {
     let route = `/productos/${product.category}`;
     if (product.subcategory) route += `/${product.subcategory}`;
@@ -69,8 +77,8 @@ const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: static
       <NavBar />
       <Breadcrumb />
       <div className={styles.container}>
-        <h2>
-          {subSubCategoryId || subCategoryId || categoryId || "Todos los productos"}
+        <h2 className={styles.responsiveTitle}>
+          {formatTitle(subSubCategoryId || subCategoryId || categoryId || "Todos los productos")}
         </h2>
         {/* Barra de búsqueda modularizada */}
         <SearchBar value={search} onChange={e => setSearch(e.target.value)} />
