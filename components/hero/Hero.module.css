@@ -1,12 +1,14 @@
 .heroContainer {
   display: flex;
-  
+  margin-top: 80px;
+  min-height: 800px;
 }
 
 .heroImage {
   width: 25%;
   height: 25%;
   margin-left: 200px;
+  
   padding-top: 80px;
 }
 .containerText {

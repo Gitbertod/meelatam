@@ -12,9 +12,12 @@ const SectionComponent = () => {
   const textRef = useRef();
   const containerRef = useRef();
 
+  // Detecta si es escritorio
+  const isDesktop = window.innerWidth > 900;
+
   useGSAP(() => {
     // Animación de la caja solo en escritorio
-    if (window.innerWidth > 900) {
+    if (isDesktop) {
       gsap.fromTo(
         boxRef.current,
         { x: -1000, opacity: 0, rotate: 0, scale: 5 },
@@ -56,19 +59,51 @@ const SectionComponent = () => {
 
   return (
     <div ref={containerRef} className={styles.container}>
-      <div className={styles.textBox}>
+      <div
+        className={styles.textBox}
+        style={{
+          width: "100%",
+          marginLeft: isDesktop ? 40 : 0,
+        }}
+      >
         <div>
-          <h3 className={styles.gradientText}>25 años de experiencia</h3>
+          <h3
+            className={styles.gradientText}
+            style={{
+              fontSize: isDesktop ? 55 : 32,
+              textAlign: isDesktop ? "left" : "center",
+            }}
+          >
+            25 años de experiencia
+          </h3>
         </div>
-        <div ref={textRef} className={styles.text}>
+        <div
+          ref={textRef}
+          className={styles.text}
+          style={{
+            fontSize: isDesktop ? "1.5rem" : "1.1rem",
+            textAlign: isDesktop ? "left" : "center",
+            margin: isDesktop ? "20px auto 2rem" : "16px 0 1.5rem 0",
+          }}
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit at
           facere distinctio laborum reprehenderit sunt nostrum temporibus vitae?
           Voluptatum aliquid et eum nam pariatur recusandae ducimus amet dolorem
           blanditiis atque?
         </div>
-        <button className={styles.btn}>Más información</button>
+        <button
+          className={styles.btn}
+          style={{
+            width: isDesktop ? 200 : "100%",
+            maxWidth: isDesktop ? 200 : 300,
+            margin: isDesktop ? "40px 0 0 0" : "24px auto 0 auto",
+            display: "block",
+          }}
+        >
+          Más información
+        </button>
       </div>
-      <div ref={boxRef} className={styles.box}></div>
+      {isDesktop && <div ref={boxRef} className={styles.box}></div>}
     </div>
   );
 };

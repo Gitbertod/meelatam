@@ -4,6 +4,7 @@
   line-height: 1.2;
   letter-spacing: -1px;
   font-weight: 700;
+  text-align: center;
 }
 .photo {
   display: flex;
@@ -16,12 +17,18 @@
   min-height: 48%;
   background-color: rgb(255, 255, 255);
   background: linear-gradient(to bottom right, #ffffff, #e1e1e1);
+  box-sizing: border-box;
 }
 .photo img {
   margin-top: 40px;
   justify-content: center;
-  height: 600px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 rgba(25, 150, 151, 0.1);
+  transition: max-width 0.2s, max-height 0.2s;
 }
 .btn {
   margin-top: 20px;
@@ -29,7 +36,7 @@
   width: 160px;
   height: 45px;
   border-radius: 6px;
-  font-size:medium;
+  font-size: medium;
   color: white;
   border: none;
   cursor: pointer;
@@ -65,5 +72,28 @@
   }
   100% {
     left: 125%;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .photo {
+    min-width: 100%;
+  }
+  .photo img {
+    margin-top: 24px;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .btn {
+    width: 100%;
+    max-width: 220px;
+    font-size: 1rem;
   }
 }
