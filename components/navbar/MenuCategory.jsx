@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./NavBar.module.css";
 import { HiChevronRight } from "react-icons/hi";
-import { iconMap } from "./MenuIcons";
+import { iconMap } from "./menuIcons";
 import SubCategoryList from "./SubCategoryList";
 import { Link } from "react-router-dom";
 
