@@ -137,7 +137,7 @@ ul {
   }
   .image, .mainSwiper {
     max-width: 95vw;
-    max-height: 320px;
+    max-height: 800px;
   }
   .thumbImage {
     max-width: 70px;
@@ -166,7 +166,7 @@ ul {
   }
   .image, .mainSwiper {
     max-width: 98vw;
-    max-height: 200px;
+    max-height: 500px;
   }
   .thumbImage {
     max-width: 48px;
