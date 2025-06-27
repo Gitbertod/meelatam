@@ -67,6 +67,13 @@ ul {
   background: #f7f7f7;
   box-shadow: 0 2px 16px rgba(25, 150, 151, 0.08);
   margin-bottom: 0.5rem;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+.image:hover {
+  transform: scale(1.15);
+  z-index: 2;
+  box-shadow: 0 8px 32px rgba(25,150,151,0.18);
 }
 
 /* Swiper styles */

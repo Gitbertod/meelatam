@@ -9,14 +9,14 @@ import { productsData } from "../src/productsData";
 import FooterComponent from "../components/footer/FooterComponent";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { FreeMode, Navigation, Thumbs, Zoom } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-
+import "swiper/css/zoom";
 
 const ProductoView = ({ categoryId: staticCategoryId }) => {
   const { subCategoryId, subSubCategoryId, productoId } = useParams();
@@ -151,16 +151,19 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
               spaceBetween={10}
               navigation={true}
               thumbs={{ swiper: thumbsSwiper }}
-              modules={[FreeMode, Navigation, Thumbs]}
+              modules={[FreeMode, Navigation, Thumbs, Zoom]}
+              zoom={true}
               className={styles.mainSwiper}
             >
               {images.map((img, idx) => (
                 <SwiperSlide key={idx}>
-                  <img
-                    src={img}
-                    alt={productObj?.name || "Imagen del producto"}
-                    className={styles.image}
-                  />
+                  <div className="swiper-zoom-container">
+                    <img
+                      src={img}
+                      alt={productObj?.name || "Imagen del producto"}
+                      className={styles.image}
+                    />
+                  </div>
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -199,7 +202,6 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
     </>
   );
 };
-
 
 export default ProductoView;
 
