@@ -5,6 +5,7 @@
   letter-spacing: -1px;
   font-weight: 700;
   text-align: center;
+  padding-top: 40px;
 }
 .photo {
   display: flex;
