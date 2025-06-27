@@ -10,6 +10,5 @@
   .container {
     width: 100vw;
     flex-direction: column;
-    margin: 0px auto;
   }
 }

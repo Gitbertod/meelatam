@@ -10,8 +10,7 @@
   padding: 20px;
   width: 100vw;           /* Ocupa todo el ancho de la ventana */
   max-width: 100vw;       /* No sobrepasa el ancho de la ventana */
-  box-sizing: border-box;
-  margin-left: calc(50% - 50vw); /* Centra el fondo a pantalla completa */
+  box-sizing: border-box; 
 }
 
 .stat {
