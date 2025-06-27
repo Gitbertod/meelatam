@@ -144,7 +144,7 @@ body {
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
-    width: 900px;
+    width: 100vw;
     margin: 0px;
   }
 
@@ -160,6 +160,7 @@ body {
   .textBox {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     margin-left: 0px;
     width: 400px;
   }
