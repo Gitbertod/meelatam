@@ -1,10 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import styles from "./NewsCarousel.module.css";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Pagination } from "swiper/modules";
 
-gsap.registerPlugin(ScrollTrigger);
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
 
 const news = [
   {
@@ -30,21 +31,29 @@ const news = [
 ];
 
 const NewsCarousel = () => {
-
   return (
     <section className={styles.carousel}>
       <h2 className={styles.heading}>Últimas Noticias</h2>
-      <div className={styles.wrapper}>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        freeMode={true}
+        pagination={{ clickable: true }}
+        modules={[FreeMode, Pagination]}
+        className="mySwiper"
+      >
         {news.map((item, idx) => (
-          <div key={idx} className={`${styles.card} newsCard`}>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-            <a href={item.link} className={styles.button}>
-              Leer más
-            </a>
-          </div>
+          <SwiperSlide key={idx}>
+            <div className={styles.card}>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+              <a href={item.link} className={styles.button}>
+                Leer más
+              </a>
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 };
