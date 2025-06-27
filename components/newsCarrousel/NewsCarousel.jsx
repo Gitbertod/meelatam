@@ -41,6 +41,16 @@ const NewsCarousel = () => {
         pagination={{ clickable: true }}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
+        breakpoints={{
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+          900: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
       >
         {news.map((item, idx) => (
           <SwiperSlide key={idx}>
