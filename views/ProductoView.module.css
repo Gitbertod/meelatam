@@ -2,115 +2,167 @@
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  padding: 7rem;
+  padding: 5rem 3rem 3rem 3rem;
   padding-top: 80px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+  background: #fff;
+  margin-bottom: 50px;
 }
 
 .textContent {
   flex: 1;
   min-width: 300px;
   max-width: 700px;
-  align-items: top;
+  align-items: flex-start;
+  padding-right: 2rem;
 }
-ul{
-  list-style:disc;
+
+ul {
+  list-style: disc inside;
+  margin-bottom: 1.5rem;
 }
+
 .title {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.2rem;
+  font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: -1px;
 }
 
 .subtitle {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 500;
-  color: #555;
+  color: #199697;
   margin-bottom: 1rem;
 }
 
 .description {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 1.5rem;
 }
 
 .imageWrapper {
   flex: 1;
   display: flex;
-  justify-content: center;
-  min-width: 250px;
+  flex-direction: column;
+  align-items: center;
+  min-width: 260px;
+  max-width: 480px;
+  gap: 1rem;
 }
 
 .image {
-  max-width: 100%;
-  max-height: 550px;
-  border-radius: 8px;
+  width: 100%;
+  max-width: 420px;
+  max-height: 420px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: #f7f7f7;
+  box-shadow: 0 2px 16px rgba(25, 150, 151, 0.08);
+  margin-bottom: 0.5rem;
 }
 
-/* 🌐 Responsive Design */
+/* Swiper styles */
+.mainSwiper {
+  width: 100%;
+  border-radius: 12px;
+  background: #f7f7f7;
+  margin-bottom: 0.5rem;
+}
 
-/* Tablets */
+.thumbsSwiper {
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 4px;
+}
+
+.thumbImage {
+  height: 60px;
+  width: 100%;
+  max-width: 90px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 2px solid #eee;
+  transition: border 0.2s, box-shadow 0.2s;
+  background: #fafbfc;
+}
+
+.swiper-slide-thumb-active .thumbImage {
+  border: 2px solid #199697;
+  box-shadow: 0 2px 8px rgba(25, 150, 151, 0.12);
+}
+
+/* Cambia el color de las flechas de navegación del Swiper */
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: #199697 !important;
+  fill: #199697 !important;
+  stroke: #199697 !important;
+  /* Opcional: mejora la visibilidad en fondos claros */
+  text-shadow: 0 2px 8px rgba(25, 150, 151, 0.08);
+}
+
+/* Responsive Design */
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
     text-align: center;
-    padding: 1.5rem;
+    padding: 2rem 0.5rem;
+    gap: 2rem;
   }
-
   .textContent {
     order: 2;
+    padding-right: 0;
+    max-width: 100vw;
   }
-
   .imageWrapper {
     order: 1;
     margin-bottom: 1.5rem;
+    max-width: 100vw;
+  }
+  .image, .mainSwiper {
+    max-width: 95vw;
+    max-height: 320px;
+  }
+  .thumbImage {
+    max-width: 70px;
+    height: 50px;
   }
 }
 
-/* Smartphones */
 @media (max-width: 600px) {
-  .title {
-    font-size: 1.5rem;
+  .container {
+    padding: 1rem 0.2rem;
+    gap: 1.2rem;
   }
-
+  .title {
+    font-size: 1.3rem;
+  }
   .subtitle {
     font-size: 1rem;
   }
-
   .description {
-    font-size: 0.95rem;
+    font-size: 0.97rem;
   }
-
   .btn {
     width: 100%;
     padding: 0.75rem;
     font-size: 1rem;
   }
-}
-/*SWIPER*/
-.carousel {
-  width: 100%;
-  margin-bottom: 10px;
-}
-.thumbs {
-  width: 100%;
-  margin-top: 10px;
-}
-.thumbImage {
-  height: 60px;
-  object-fit: cover;
-  cursor: pointer;
-  border-radius: 4px;
-  border: 2px solid #eee;
-  transition: border 0.2s;
-}
-.swiper-slide-thumb-active .thumbImage {
-  border: 2px solid #007bff;
+  .image, .mainSwiper {
+    max-width: 98vw;
+    max-height: 200px;
+  }
+  .thumbImage {
+    max-width: 48px;
+    height: 36px;
+  }
 }

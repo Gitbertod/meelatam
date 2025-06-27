@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import gsap from "gsap";
 import styles from "./ProductoView.module.css";
@@ -8,12 +8,25 @@ import ButtonComponent from "../components/buttonComponent/ButtonComponent";
 import { productsData } from "../src/productsData";
 import FooterComponent from "../components/footer/FooterComponent";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+
+
 const ProductoView = ({ categoryId: staticCategoryId }) => {
   const { subCategoryId, subSubCategoryId, productoId } = useParams();
   const categoryId = staticCategoryId;
 
   const contentRef = useRef(null);
   const imageRef = useRef(null);
+
+  // Estado para los thumbs
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -51,6 +64,12 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
       (!subSubCategoryId || item.subsubcategory === subSubCategoryId) &&
       item.url === productoId
   );
+
+  // Si no hay imágenes, usa una por defecto
+  const images =
+    productObj?.images && productObj.images.length > 0
+      ? productObj.images
+      : ["/TVA_1.png"];
 
   return (
     <>
@@ -126,11 +145,53 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
             </a>
           </article>
           <figure className={styles.imageWrapper} ref={imageRef}>
-            <img
-              src={productObj?.images?.[0] || "/TVA_1.png"}
-              alt={productObj?.name || "Imagen del producto"}
-              className={styles.image}
-            />
+            {/* Swiper principal */}
+            <Swiper
+              style={{ width: "100%", marginBottom: 16 }}
+              spaceBetween={10}
+              navigation={true}
+              thumbs={{ swiper: thumbsSwiper }}
+              modules={[FreeMode, Navigation, Thumbs]}
+              className={styles.mainSwiper}
+            >
+              {images.map((img, idx) => (
+                <SwiperSlide key={idx}>
+                  <img
+                    src={img}
+                    alt={productObj?.name || "Imagen del producto"}
+                    className={styles.image}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            {/* Swiper de miniaturas */}
+            <Swiper
+              onSwiper={setThumbsSwiper}
+              spaceBetween={10}
+              slidesPerView={Math.min(images.length, 5)}
+              freeMode={true}
+              watchSlidesProgress={true}
+              modules={[FreeMode, Navigation, Thumbs]}
+              className={styles.thumbsSwiper}
+              style={{ marginTop: 8 }}
+            >
+              {images.map((img, idx) => (
+                <SwiperSlide key={idx}>
+                  <img
+                    src={img}
+                    alt={`Miniatura ${idx + 1}`}
+                    className={styles.thumbImage}
+                    style={{
+                      height: 60,
+                      objectFit: "cover",
+                      borderRadius: 6,
+                      border: "2px solid #eee",
+                      cursor: "pointer",
+                    }}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </figure>
         </section>
       </div>
@@ -138,6 +199,7 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
     </>
   );
 };
+
 
 export default ProductoView;
 

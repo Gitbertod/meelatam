@@ -94,7 +94,7 @@ const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: static
                 </strong>
                 {item.subcategory && (
                   <p>
-                    {item.subcategory.charAt(0).toUpperCase() + item.subcategory.slice(1)}
+                    {item.subcategory.toUpperCase() }
                   </p>
                 )}
               </div>

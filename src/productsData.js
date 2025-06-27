@@ -15,7 +15,7 @@ export const productsData = [
   {
     name: "ALLSAI W PRO 1KVA – 3KVA (Rack)",
     url: "allsai-w-pro-1-kva-3-kva-rack",
-    images: ["/UPS RT 2.jpeg"],
+    images: ["/UPS RT 2.jpeg","/UPS RT 2.jpeg"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
