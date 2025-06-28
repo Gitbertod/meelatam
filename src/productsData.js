@@ -48,7 +48,7 @@ export const productsData = [
    {
     name: "CENTIEL ESSENTIALPOWER XST 1KVA – 3KVA (Torre)",
     url: "centiel-essentialpower-xst-1-kva-3-kva-torre",
-    images: ["/centielEssentialPowerXST1KVA-3KVA.png"],
+    images: ["/centielEssentialPowerXST1KVA-3KVA.png","/Tower 1-3K-2.jpg"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",

@@ -13,5 +13,6 @@
   background-color: #f8fafc; /* Un color claro, puedes cambiarlo */
 }
 .textMenu{
-    color:rgb(141, 141, 141)
+    color:rgb(141, 141, 141);
+    list-style: none;
 }

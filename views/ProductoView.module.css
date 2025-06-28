@@ -70,12 +70,6 @@ ul {
   transition: transform 0.3s cubic-bezier(.4,2,.6,1);
 }
 
-.image:hover {
-  transform: scale(1.15);
-  z-index: 2;
-  box-shadow: 0 8px 32px rgba(25,150,151,0.18);
-}
-
 /* Swiper styles */
 .mainSwiper {
   width: 100%;
@@ -152,12 +146,15 @@ ul {
   }
   .title {
     font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .subtitle {
     font-size: 1rem;
   }
   .description {
     font-size: 0.97rem;
+   
   }
   .btn {
     width: 100%;
@@ -172,4 +169,7 @@ ul {
     max-width: 48px;
     height: 36px;
   }
+}:global([data-testid="flowbite-sidebar-item-group"] li::marker) {
+  content: none !important;
+  display: none !important;
 }
