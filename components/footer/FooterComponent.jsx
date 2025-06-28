@@ -13,10 +13,10 @@ const FooterComponent = () => {
           </div>
           
           <FooterLinkGroup className={styles.option}>
-            <FooterLink href="/servicios">SERVICIOS</FooterLink>
-            <FooterLink href="/noticias">NOTICIAS</FooterLink>
-            <FooterLink href="/contacto">CONTACTO</FooterLink>
-            <FooterLink href="/acerca-de-sentiel">ACERCA DE CENTIEL</FooterLink>
+            <FooterLink href="/servicios">Servicios</FooterLink>
+            <FooterLink href="/noticias">Noticias</FooterLink>
+            <FooterLink href="/contacto">Contacto</FooterLink>
+            <FooterLink href="/acerca-de-sentiel">Acerca de sentiel</FooterLink>
           </FooterLinkGroup>
         </div>
         <FooterDivider className={styles.divider}/>

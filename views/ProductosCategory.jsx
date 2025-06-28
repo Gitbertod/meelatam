@@ -7,7 +7,10 @@ import FooterComponent from "../components/footer/FooterComponent";
 import Breadcrumb from "../components/breadCrumb/Breadcrumb";
 import SearchBar from "../components/searchBar/SearchBar";
 
-const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: staticSubCategoryId }) => {
+const ProductosCategory = ({
+  categoryId: staticCategoryId,
+  subCategoryId: staticSubCategoryId,
+}) => {
   const params = useParams();
   const categoryId = staticCategoryId;
   const subCategoryId = staticSubCategoryId || params.subCategoryId;
@@ -25,7 +28,7 @@ const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: static
     });
   }, [productsData]);
 
-  console.log(uniqueProducts)
+  console.log(uniqueProducts);
   // 2. Filtrado memoizado para evitar duplicados
   const filteredProducts = useMemo(() => {
     let result = uniqueProducts;
@@ -47,7 +50,7 @@ const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: static
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "") // quita tildes
-      .replace(/\s+/g, " ")            // quita espacios extra
+      .replace(/\s+/g, " ") // quita espacios extra
       .trim();
   }
 
@@ -59,9 +62,7 @@ const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: static
   // Utilidad para mostrar el título sin guiones y con la primera letra en mayúscula
   function formatTitle(str) {
     if (!str) return "Todos los productos";
-    return str
-      .replace(/-/g, " ")
-      .replace(/\b\w/g, (l) => l.toUpperCase());
+    return str.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
   }
 
   const getProductRoute = (product) => {
@@ -77,11 +78,22 @@ const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: static
       <NavBar />
       <Breadcrumb />
       <div className={styles.container}>
-        <h2 className={styles.responsiveTitle}>
-          {formatTitle(subSubCategoryId || subCategoryId || categoryId || "Todos los productos")}
-        </h2>
+        <div className={styles.flexHeader}>
+          <h2 className={styles.responsiveTitle}>
+            {formatTitle(
+              subSubCategoryId ||
+                subCategoryId ||
+                categoryId ||
+                "Todos los productos"
+            )}
+          </h2>
+          <div className={styles.resultCount}>
+            Mostrando: <span>{searchedProducts.length}</span> resultado
+            {searchedProducts.length !== 1 ? "s" : ""}
+          </div>
+        </div>
         {/* Barra de búsqueda modularizada */}
-        <SearchBar value={search} onChange={e => setSearch(e.target.value)} />
+        <SearchBar value={search} onChange={(e) => setSearch(e.target.value)} />
         <div className={styles.cardsWrapper}>
           {searchedProducts.length > 0 ? (
             searchedProducts.map((item, idx) => (
@@ -92,11 +104,7 @@ const ProductosCategory = ({ categoryId: staticCategoryId, subCategoryId: static
                 <strong>
                   <h3>{item.name}</h3>
                 </strong>
-                {item.subcategory && (
-                  <p>
-                    {item.subcategory.toUpperCase() }
-                  </p>
-                )}
+                {item.subcategory && <p>{item.subcategory.toUpperCase()}</p>}
               </div>
             ))
           ) : (

@@ -52,10 +52,43 @@
   word-break: break-word;
 }
 
+.resultCount {
+  font-size: 1.1rem;
+  color: #888;
+  margin-left: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.resultCount span {
+  color: #199697;
+  font-weight: 600;
+}
+
+.flexHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+
 @media (max-width: 600px) {
   .responsiveTitle {
     font-size: 1.3rem;
     padding-left: 0.5rem;
     text-align: left;
+  }
+  .resultCount {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .flexHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 }

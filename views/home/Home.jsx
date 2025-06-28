@@ -48,7 +48,7 @@ const Home = () => {
       <StatsSection></StatsSection>
       
       <NewsCarousel></NewsCarousel>
-      
+      <FooterComponent></FooterComponent>
     </>
   );
 };

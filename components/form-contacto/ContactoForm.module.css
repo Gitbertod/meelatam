@@ -1,0 +1,183 @@
+/*ContactoForm.module*/
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+  }
+  
+  form {
+    width: 580px;
+    min-width: 380px;
+    margin: 0 auto 20px auto;
+    padding: 24px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+.button{
+  background-color: rgb(58, 155, 177);
+  color:#ffffff;
+  padding-left:25px;
+  padding-right:25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+ 
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .error {
+    border-color: #e74c3c;
+  }
+  
+  .errorMsg {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  .formTitle {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+  }
+
+  .field {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .optional {
+    font-size: 0.95em;
+    color: #aaa;
+    font-weight: 400;
+  }
+
+  .select {
+    background: #e8eeef;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1rem;
+    color: #384047;
+    margin-bottom: 0;
+    transition: border 0.2s;
+    height: 100%;
+  }
+
+  .contactOptions {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 0.3rem;
+  }
+
+  .contactBox {
+    display: flex;
+    align-items: center;
+    background: #f4f7f8;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    transition: border 0.2s, box-shadow 0.2s;
+    font-weight: 500;
+    font-size: 1rem;
+    user-select: none;
+  }
+
+  .contactBox input[type="checkbox"] {
+    accent-color: #199697;
+    margin-right: 0.7em;
+    width: 1.1em;
+    height: 1.1em;
+  }
+
+  .contactBox:has(input:checked) {
+    border: 1.5px solid #199697;
+    box-shadow: 0 2px 8px rgba(25,150,151,0.07);
+    background: #e6f7f7;
+  }
+
+  .boxLabel {
+    color: #199697;
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+  @media (max-width: 700px) {
+    .form {
+      width: 100%;
+      padding: 10px 4vw;
+      min-width: unset;
+    }
+    .formTitle {
+      font-size: 1.2rem;
+    }
+    .contactOptions {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .contactBox {
+      width: 100%;
+      justify-content: flex-start;
+      font-size: 0.98rem;
+      padding: 0.7rem 1rem;
+    }
+  }
+
+

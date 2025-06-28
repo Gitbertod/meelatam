@@ -77,10 +77,11 @@ const SectionComponent = () => {
           <h3 className={styles.gradientText}>25 años de experiencia</h3>
         </div>
         <div ref={textRef} className={styles.text}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit at
-          facere distinctio laborum reprehenderit sunt nostrum temporibus vitae?
-          Voluptatum aliquid et eum nam pariatur recusandae ducimus amet dolorem
-          blanditiis atque?
+          Desde 1998, hemos enfocado nuestros esfuerzos en gestionar proyectos,
+          proveer soluciones y servicios de mantenimiento de equipamiento crítico
+          en las áreas de respaldo de energía, calidad de energía, accionamiento
+          eléctrico y climatización de precisión e industrial para Chile, Perú y
+          Brasil.
         </div>
         <button className={styles.btn}>Más información</button>
       </div>
