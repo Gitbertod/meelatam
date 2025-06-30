@@ -56,7 +56,7 @@ const NavBar = () => {
           <Link to={"/servicios"}>Servicios</Link>,
           <Link to={"/noticias"}>Noticias</Link>,
           <Link to={"/contacto"}>Contacto</Link>,
-          <Link to={"/acerca-de-nosotros"}>Acerca de nosotros</Link>,
+          <Link to={"/acerca-de-nosotros"}>Nosotros</Link>,
           <Link to={"/acerca-de-sentiel"}>Acerca de Sentiel</Link>,
         ].map((text) => (
           <div key={text} className={styles.subnav}>

@@ -248,6 +248,7 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
     capacidades: "10 KVA | 3.6 MVA",
+    pdf:"/Centiel_brochure_Cumulus_Power_EN_WEB_19012020.pdf",
     description: "CumulusPower es un vérsatil UPS modular totalmente descentralizado, diseñado y fabricado en Suiza. Cuenta con módulos de 10/20/25/30/50/62.5kW y con un rango de potencia en un mismo gabinete desde 10kW a 1.500kW proporcionando máxima flexibilidad a la aplicación final. Diseñado para cumplir con las rigurosas demandas de infraestructura TI de hoy en día. Proporciona eficiencias optimizadas de carga parcial y total de hasta el 97,6% en el modo de doble conversión en línea. En el modo ECO ultraseguro, el SAI proporciona una excelente calidad de energía con una eficiencia del 99,4%. Diseñado para eliminar puntos únicos de fallas y una Arquitectura redundante y distribución activa (DARA), reduciendo con esto el riesgo por el factor humano. Soporta sobrecargas de hasta 124% de forma continua en el inversor de forma continua.",
   },{
     name: "CENTIEL STRATUS POWER 10KVA – 3.75MVA (Modular)",

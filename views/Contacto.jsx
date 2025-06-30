@@ -9,7 +9,7 @@ const Contacto = () => {
   return (
     <>
       <NavBar />
-      <HeroSection title={"CONTACTO"}></HeroSection>
+      <HeroSection title={"CONTACTO"} backgroundImage={"heroContact.jpg"}></HeroSection>
 
       <ContactoForm />
       <Location></Location>

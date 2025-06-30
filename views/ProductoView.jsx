@@ -83,14 +83,24 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
             </h2>
             <h3 className={styles.subtitle}>{productObj?.capacidades || ""}</h3>
             {productObj.tension && <h3>Tensión: {productObj.tension}</h3>}
-            {productObj.frecuencia && <h3>Frecuencia: {productObj.frecuencia}</h3>}
-            {productObj.frecuenciaDeResonancia && (
-              <h3>Frecuencia de resonancia: {productObj.frecuenciaDeResonancia}</h3>
+            {productObj.frecuencia && (
+              <h3>Frecuencia: {productObj.frecuencia}</h3>
             )}
-            {productObj.maxCorriente && <h3>Máx corriente: {productObj.maxCorriente}</h3>}
-            {productObj.factorDeForma && <h3>Factor de forma: {productObj.factorDeForma}</h3>}
+            {productObj.frecuenciaDeResonancia && (
+              <h3>
+                Frecuencia de resonancia: {productObj.frecuenciaDeResonancia}
+              </h3>
+            )}
+            {productObj.maxCorriente && (
+              <h3>Máx corriente: {productObj.maxCorriente}</h3>
+            )}
+            {productObj.factorDeForma && (
+              <h3>Factor de forma: {productObj.factorDeForma}</h3>
+            )}
             {productObj.peso && <h3>Peso Neto (Kg): {productObj.peso}</h3>}
-            {productObj.tipoDeEnchufe && <h3>Tipo de enchufe: {productObj.tipoDeEnchufe}</h3>}
+            {productObj.tipoDeEnchufe && (
+              <h3>Tipo de enchufe: {productObj.tipoDeEnchufe}</h3>
+            )}
             {productObj.temperatura && (
               <h3>Temperatura de funcionamiento: {productObj.temperatura}</h3>
             )}
@@ -100,14 +110,21 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
             {productObj.salida && <h3>Salida: {productObj.salida}</h3>}
             {productObj.dimensiones && (
               <h3>
-                Dimensiones, profundidad x anchura x altura (mm): {productObj.dimensiones}
+                Dimensiones, profundidad x anchura x altura (mm):{" "}
+                {productObj.dimensiones}
               </h3>
             )}
-            {productObj.conmutacion && <h3>Conmutación: {productObj.conmutacion}</h3>}
+            {productObj.conmutacion && (
+              <h3>Conmutación: {productObj.conmutacion}</h3>
+            )}
             {productObj.potencia && <h3>Potencia: {productObj.potencia}</h3>}
-            {productObj.numeroDeEtapas && <h3>Número de etapas: {productObj.numeroDeEtapas}</h3>}
+            {productObj.numeroDeEtapas && (
+              <h3>Número de etapas: {productObj.numeroDeEtapas}</h3>
+            )}
             {productObj.maxPotenciaPara1Panel && (
-              <h3>Máxima potencia para 1 panel: {productObj.maxPotenciaPara1Panel}</h3>
+              <h3>
+                Máxima potencia para 1 panel: {productObj.maxPotenciaPara1Panel}
+              </h3>
             )}
 
             <div className={styles.description}>
@@ -136,13 +153,17 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
             {productObj.normas && <h3>Normas: {productObj.normas}</h3>}
 
             <br />
-            <a
-              href={`/docs/${productObj.pdf}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <ButtonComponent text={"Descargar ficha técnica"} />
-            </a>
+            {productObj.pdf ? (
+              <a
+                href={`/docs/${productObj.pdf}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ButtonComponent text={"Descargar ficha técnica"} />
+              </a>
+            ) : (
+              ""
+            )}
           </article>
           <figure className={styles.imageWrapper} ref={imageRef}>
             {/* Swiper principal */}
@@ -204,4 +225,3 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
 };
 
 export default ProductoView;
-
