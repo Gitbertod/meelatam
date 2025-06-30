@@ -1,6 +1,6 @@
 .hero {
   background-attachment: fixed;
-  background-size:contain;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -11,45 +11,50 @@
   justify-content: center;
   min-height: 300px;
   background-color: #f4f4f4; /* Fondo para bordes vacíos */
- 
+  flex-direction: column;
 }
 
 .overlay {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
   max-width: 100%;
-  padding-left: 40px;
 }
 
 .title {
-  color:rgb(100, 100, 100);
+  color: rgb(100, 100, 100);
   font-size: 4rem;
   text-align: start;
   max-width: 800px;
   font-weight: 700;
   line-height: 1.2;
-  
+  padding-left: 40px;
 }
-.parrafo{
-  color:rgb(100, 100, 100);
+.parrafo {
+  color: rgb(100, 100, 100);
   max-width: 600px;
   font-size: 25px;
-  
- 
+  padding-left: 40px;
+}
+
+.trianguloRectangulo {
+  width: 0;
+  height: 0;
+  border-bottom: 80px solid #199697; /* altura y color */
+  border-right: 120px solid transparent; /* base */
 }
 
 /* Responsive */
 @media (max-width: 900px) {
   .hero {
-    min-height: 200px;
+    min-height: 300px;
   }
   .title {
     font-size: 2.2rem;
-    margin-left: 20px;
+    
     max-width: 95vw;
   }
 }
@@ -57,18 +62,18 @@
 @media (max-width: 600px) {
   .hero {
     background-size: cover;
-    min-height: 140px;
+    min-height: 250px;
     height: 38vw;
   }
   .title {
-    font-size: 1.2rem;
-    margin-left: 10px;
+    font-size: 2.2rem;
+    
     max-width: 98vw;
   }
 }
 
 .heroFadeIn {
-  animation: heroFadeInAnim 1.2s cubic-bezier(.4,0,1,1) both;
+  animation: heroFadeInAnim 1.2s cubic-bezier(0.4, 0, 1, 1) both;
 }
 
 @keyframes heroFadeInAnim {

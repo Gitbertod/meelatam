@@ -1,5 +1,5 @@
-.containerHero{
-    background-image: src("./cable.jpg");
+.containerHero {
+  background-image: src("./cable.jpg");
 }
 .wrapper {
   max-width: 1200px;
@@ -21,10 +21,41 @@
   grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
+.gifContainer {
+  background-color: white;
+}
 
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  min-height: 100vh;
+}
+.title {
+  font-size: 45px;
+}
+.parrafo {
+  max-width: 1200px;
+  font-size: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 /* Responsivo: 1 columna en pantallas pequeñas */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  .parrafo {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }

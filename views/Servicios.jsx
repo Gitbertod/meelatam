@@ -8,30 +8,46 @@ import PhotoSection from "../components/photoSection/PhotoSection";
 import HeroSection from "../components/heroSection/HeroSection";
 import FooterComponent from "../components/footer/FooterComponent";
 
-
 const Servicios = () => {
   return (
     <>
       <NavBar></NavBar>
-      <HeroSection title={"SERVICIOS"} backgroundImage={"/heroService.jpg"} parafo={"Nuestro equipo descentralizado, es capaz de acudir en tu ayuda desde las distintas localidades donde nos encontramos ubicados, contando con plena autonomía y tiempos de respuesta eficientes."}></HeroSection>
+      <HeroSection
+        title={"SERVICIOS"}
+        backgroundImage={"/heroService.jpg"}
+        parafo={
+          "Nuestro equipo descentralizado, es capaz de acudir en tu ayuda desde las distintas localidades donde nos encontramos ubicados, contando con plena autonomía y tiempos de respuesta eficientes."
+        }
+      ></HeroSection>
       <div className={styles.containerHero}></div>
-      <SectionComponent2>
-        <TextSection
-          title={"Servicio de mantenimiento de equipos críticos"}
-          text={
-            <p>
-              Hemos confeccionado un protocolo de mantenimiento que sigue la
-              pauta de mantención del fabricante e incorpora actividades
-              adicionales propias de la experiencia de más de 25 años de nuestra
-              compañía, imprimiéndole el sello único de MEE. Nuestro equipo
-              descentralizado, es capaz de acudir en tu ayuda desde las
-              distintas localidades donde nos encontramos ubicados, contando con
-              plena autonomía y tiempos de respuesta eficientes.
-            </p>
-          }
-        />
-        <PhotoSection title={"TVA 1"} image={"./TVA_1.png"} />
-      </SectionComponent2>
+      <div className={styles.infoContainer}>
+        <h2 className={styles.title}>
+          Servicio de mantenimiento de equipos críticos
+        </h2>
+        <p className={styles.parrafo}>
+          Hemos confeccionado un protocolo de mantenimiento que sigue la pauta
+          de mantención del fabricante e incorpora actividades adicionales
+          propias de la experiencia de más de 25 años de nuestra compañía,
+          imprimiéndole el sello único de MEE. Nuestro equipo descentralizado,
+          es capaz de acudir en tu ayuda desde las distintas localidades donde
+          nos encontramos ubicados, contando con plena autonomía y tiempos de
+          respuesta eficientes.
+        </p>
+        <div className={styles.gifContainer}>
+          <img
+            src="/herramientas-para-reparar.gif"
+            alt="Animación de servicio"
+            style={{
+              width: "100%",
+              maxWidth: "300px",
+              display: "block",
+              margin: "0 auto",
+            }}
+          />
+        </div>
+      </div>
+
+      
       <div className={styles.wrapper}>
         <h2 className={styles.heading}>SERVICIOS DE ASISTENCIA TÉCNICA</h2>
         <div className={styles.grid}>
@@ -102,7 +118,7 @@ const Servicios = () => {
           </Accordion>
         </div>
       </div>
-      <FooterComponent/>
+      <FooterComponent />
     </>
   );
 };
