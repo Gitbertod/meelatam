@@ -8,27 +8,40 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 const news = [
-  {
-    title: "Lanzamiento de nuevo producto",
-    description: "Descubre las características del nuevo inversor solar.",
-    link: "#",
-  },
-  {
-    title: "Centiel en ExpoSolar",
-    description: "Nuestra participación en la feria internacional de energía.",
-    link: "#",
-  },
-  {
-    title: "Nueva alianza estratégica",
-    description: "Unimos fuerzas con una empresa líder del sector.",
-    link: "#",
-  },
-  {
-    title: "Certificación internacional",
-    description: "Hemos obtenido la certificación ISO 9001.",
-    link: "#",
-  },
-];
+    {
+        foto: "/casodeExito1.jpg",
+        title: "Aeropuerto Internacional Jorge Chavez",
+        description: "Planta de combustible",
+        link:"/MEE_Caso_Exito_AIJCH Combustible_compressed.pdf",
+    },
+    {
+        foto: "/casodeExito2.jpg",
+        title: "Aeropuerto Internacional Jorge Chavez",
+        description: "Lado Aire",
+        link:"MEE_Caso_Exito_AIJCH Lado Aire I_compressed.pdf",
+    },
+    {
+        foto: "/casodeExito3.jpg",
+        title: "Aeropuerto Internacional Jorge Chavez",
+        description: "Sub-Estaciones",
+        link:"MEE_Caso_Exito_AIJCH Rectificadores_compressed.pdf",
+    }, {
+        foto: "/casodeExito4.jpg",
+        title: "Aeropuerto Internacional Jorge Chavez",
+        description: "Servicios I",
+        link:"/MEE_Caso_Exito_AIJCH Servicios I_compressed.pdf",
+    }, {
+        foto: "/casodeExito5.jpg",
+        title: "Aeropuerto Internacional Jorge Chavez",
+        description: "Servicios II",
+        link:"/MEE_Caso_Exito_AIJCH Servicios II_compressed.pdf",
+    }, {
+        foto: "/casodeExito6.jpg",
+        link:"/MEE_Caso_Exito_Hospital PNP.pdf",
+        title: "Hospital Nacional de la Policía Nacional del Perú",
+        description: "Caso de éxito MEE Perú"
+    }
+]
 
 const NewsCarousel = () => {
   return (
@@ -55,9 +68,10 @@ const NewsCarousel = () => {
         {news.map((item, idx) => (
           <SwiperSlide key={idx}>
             <div className={styles.card}>
+              <img src={item.foto}></img>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-              <a href={item.link} className={styles.button}>
+              <a href={`/news/${item.link}`} className={styles.button} target="_blank">
                 Leer más
               </a>
             </div>

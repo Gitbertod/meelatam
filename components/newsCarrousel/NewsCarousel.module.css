@@ -34,7 +34,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
+.card img{
+  border-radius: 8px;
+}
 .button {
   margin-top: 1rem;
   display: inline-block;

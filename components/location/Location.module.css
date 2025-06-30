@@ -1,0 +1,67 @@
+.locationCard {
+  width: 100%;
+  max-width: 720px;
+  margin: 32px auto 0 auto;
+  padding: 24px 20px;
+  background: #f4f7f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(25,150,151,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #199697;
+  margin-bottom: 0.2rem;
+  letter-spacing: -0.5px;
+}
+
+.map {
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border: none;
+  width: 100%;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.icon {
+  color: #199697;
+  font-size: 1.2rem;
+}
+
+.infoText {
+  color: #384047;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .locationCard {
+    max-width: 100%;
+    padding: 16px 6vw;
+  }
+  .map {
+    height: 160px;
+  }
+}
