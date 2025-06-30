@@ -13,7 +13,7 @@ const Servicios = () => {
   return (
     <>
       <NavBar></NavBar>
-      <HeroSection title={"SERVICIOS"}></HeroSection>
+      <HeroSection title={"SERVICIOS"} backgroundImage={"/heroService.jpg"} parafo={"Nuestro equipo descentralizado, es capaz de acudir en tu ayuda desde las distintas localidades donde nos encontramos ubicados, contando con plena autonomía y tiempos de respuesta eficientes."}></HeroSection>
       <div className={styles.containerHero}></div>
       <SectionComponent2>
         <TextSection
