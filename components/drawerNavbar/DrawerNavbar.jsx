@@ -12,6 +12,7 @@ import {
   TextInput,
 } from "flowbite-react";
 import { useState } from "react";
+import { FaToolbox } from "react-icons/fa";
 import {
   HiChartPie,
   HiClipboard,
@@ -26,6 +27,10 @@ import {
 import styles from "./DrawerNavbar.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import LogoMee from "../logoMee/LogoMee";
+import { MdMail } from "react-icons/md";
+
+
+
 export function DrawerNavbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -63,20 +68,23 @@ export function DrawerNavbar() {
                     <SidebarItem href="/productos"  icon={HiCollection} className={styles.textMenu}>
                       Productos
                     </SidebarItem>
-                    <SidebarItem href="/servicios" icon={HiUsers} className={styles.textMenu}>
+                    <SidebarItem href="/servicios" icon={FaToolbox} className={styles.textMenu}>
                       Servicios
+                    </SidebarItem>
+                    <SidebarItem href="/acerca-de-nosotros" icon={HiUsers} className={styles.textMenu}>
+                      Nosotros
                     </SidebarItem>
                     <SidebarItem href="/acerca-de-sentiel" icon={HiPencil} className={styles.textMenu}>
                       Acerca de Sentiel
                     </SidebarItem>
                     <SidebarItem
-                      href="https://github.com/themesberg/flowbite-react/"
+                      href="/noticias"
                       icon={HiClipboard}
                       className={styles.textMenu}
                     >
                       Noticias
                     </SidebarItem>
-                    <SidebarItem href="/contacto" icon={HiLogin} className={styles.textMenu}>
+                    <SidebarItem href="/contacto" icon={MdMail} className={styles.textMenu}>
                       Contacto
                     </SidebarItem>
                   </SidebarItemGroup>

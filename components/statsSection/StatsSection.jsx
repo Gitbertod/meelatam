@@ -12,10 +12,10 @@ const StatsSection = () => {
   const statRefs = useRef([]);
 
   const stats = [
-    { icon: ImPowerCord, label: "22 Filiales" },
-    { icon: ImUserCheck, label: "2000+ Empleados" },
-    { icon: ImUsers, label: "2000+ Empleados" },
-    { icon: ImPower, label: "15 Años de experiencia" },
+    { icon: ImPowerCord, label: "55 Colaboradores" },
+    { icon: ImUsers, label: "25 años de experiencia" },
+    { icon: ImUserCheck, label: "300 Proyectos Anuales" },
+    { icon: ImPower, label: "+500 productos" },
   ];
 
   useGSAP(() => {
