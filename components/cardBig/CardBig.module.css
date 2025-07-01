@@ -7,7 +7,8 @@
   border: 1px solid #eee;
   border-radius: 8px;
   padding: 1rem;
-  width: 300px;
+  max-width: 450px;
+  min-width: 300px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -15,12 +16,16 @@
 }
 .card img{
   max-height: 300px;
+  border-radius: 8px;
 }
 .card p{
   color: gray;
 }
-.card h3 {
+.card h2 {
   margin-top: 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: #199697;
 }
 .card:hover {
   transform: translateY(-8px) scale(1.02);
