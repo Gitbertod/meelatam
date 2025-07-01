@@ -4,6 +4,7 @@ import Home from "../views/home/Home";
 import Contacto from "../views/Contacto";
 import Noticias from "../views/Noticias";
 import Servicios from "../views/Servicios"
+import Nosotros from "../views/Nosotros";
 import ProductosCategory from "../views/ProductosCategory";
 import ProductoView from "../views/ProductoView";
 import AcercaDeSentiel from "../views/AcercaDeSentiel";
