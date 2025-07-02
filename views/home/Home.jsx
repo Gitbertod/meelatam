@@ -10,6 +10,7 @@ import TextSection from "../../components/textSection/TextSection";
 import NewsCarousel from "../../components/newsCarrousel/NewsCarousel";
 import StatsSection from "../../components/statsSection/StatsSection";
 import FooterComponent from "../../components/footer/FooterComponent";
+import BubbleGrid from "../../components/bubbleGrid/BubbleGrid";
 
 
 const Home = () => {
@@ -32,6 +33,14 @@ const Home = () => {
     );
   }
 
+const icons = [
+  { image: "/casodeExito1.jpg", alt: "Mail" },
+  { image: "/casodeExito2.jpg", alt: "Music" },
+  { image: "/casodeExito3.jpg", alt: "Calendar" },
+  { image: "/casodeExito4.jpg", alt: "Maps" },
+  { image: "/casodeExito5.jpg", alt: "Photos" },
+];
+
   return (
     <>
       <NavBar />
@@ -48,7 +57,8 @@ const Home = () => {
       <StatsSection></StatsSection>
       
       <NewsCarousel></NewsCarousel>
-      <FooterComponent></FooterComponent>
+      <BubbleGrid items={icons}></BubbleGrid>
+      
     </>
   );
 };

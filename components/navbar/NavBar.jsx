@@ -58,8 +58,8 @@ const NavBar = () => {
           <Link to={"/contacto"}>Contacto</Link>,
           <Link to={"/acerca-de-nosotros"}>Nosotros</Link>,
           <Link to={"/acerca-de-sentiel"}>Acerca de Sentiel</Link>,
-        ].map((text) => (
-          <div key={text} className={styles.subnav}>
+        ].map((text, idx) => (
+          <div key={idx} className={styles.subnav}>
             <button className={styles.subnavbtn}>{text}</button>
           </div>
         ))}
