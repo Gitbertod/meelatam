@@ -16,7 +16,7 @@ const Noticias = () => {
       ></HeroSection>
       <CardsWraper>
         {news.map((e) => (
-          <CardBig title={e.title} description={e.description} foto={e.foto} />
+          <CardBig title={e.title} description={e.description} foto={e.foto} link={`/news/${e.link}`} />
         ))}
       </CardsWraper>
       <FooterComponent></FooterComponent>
