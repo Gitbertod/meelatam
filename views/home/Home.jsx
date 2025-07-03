@@ -10,7 +10,8 @@ import TextSection from "../../components/textSection/TextSection";
 import NewsCarousel from "../../components/newsCarrousel/NewsCarousel";
 import StatsSection from "../../components/statsSection/StatsSection";
 import FooterComponent from "../../components/footer/FooterComponent";
-import BubbleGrid from "../../components/bubbleGrid/BubbleGrid";
+import MultipleSwiper from "../../components/multipleSwiper/MultipleSwiper";
+
 
 
 const Home = () => {
@@ -54,10 +55,11 @@ const icons = [
         <TextSection title={"Título aqui"} text={"TVX es el nuevo estándar de enfriadoras condensadas por aire diseñadas para los procesos de eficiencia energética y, al mismo tiempo, respetuosas del medio ambiente"}/>
         <PhotoSection title={"HIREF TVX"}  image={"./TVA_1.png"} subtitle={"Enfriadoras de líquido condensadas por aire con compresores de tornillo modulantes"} />
       </SectionComponent2>
+      <MultipleSwiper></MultipleSwiper>
       <StatsSection></StatsSection>
       
       <NewsCarousel></NewsCarousel>
-      <BubbleGrid items={icons}></BubbleGrid>
+      {/* <BubbleGrid items={icons}></BubbleGrid> */}
       
     </>
   );
