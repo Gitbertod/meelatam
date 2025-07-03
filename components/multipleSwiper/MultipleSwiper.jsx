@@ -81,7 +81,7 @@ const MultipleSwiper = () => {
           {clientes.map((c) => (
             <SwiperSlide key={c}>
               <img
-                src={`/LogosClientes/${c}`}
+                src={`/logosClientes/${c}`}
                 alt={c}
                 style={{
                   width: "100%",
@@ -123,7 +123,7 @@ const MultipleSwiper = () => {
           {clientes2.map((c) => (
             <SwiperSlide key={c}>
               <img
-                src={`/LogosClientes/${c}`}
+                src={`/logosClientes/${c}`}
                 alt={c}
                 style={{
                   width: "100%",
@@ -164,7 +164,7 @@ const MultipleSwiper = () => {
           {clientes3.map((c) => (
             <SwiperSlide key={c}>
               <img
-                src={`/LogosClientes/${c}`}
+                src={`/logosClientes/${c}`}
                 alt={c}
                 style={{
                   width: "100%",
@@ -206,7 +206,7 @@ const MultipleSwiper = () => {
           {clientes4.map((c) => (
             <SwiperSlide key={c}>
               <img
-                src={`/LogosClientes/${c}`}
+                src={`/logosClientes/${c}`}
                 alt={c}
                 style={{
                   width: "100%",
