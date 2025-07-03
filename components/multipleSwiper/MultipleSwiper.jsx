@@ -210,7 +210,8 @@ const MultipleSwiper = () => {
                 alt={c}
                 style={{
                   width: "100%",
-                  maxHeight: "100px",
+                  maxHeight: "150px",
+                  minHeight:"150px",
                   objectFit: "contain",
                   margin: "0 auto",
                   display: "block",

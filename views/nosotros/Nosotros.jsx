@@ -7,6 +7,7 @@ import PhotoSection from "../../components/photoSection/PhotoSection";
 import styles from "./Nosotros.module.css";
 import StatsSection from "../../components/statsSection/StatsSection";
 import FooterComponent from "../../components/footer/FooterComponent";
+import CardParallax from "../../components/cardParallax/CardParallax";
 
 const Nosotros = () => {
   return (
@@ -17,6 +18,7 @@ const Nosotros = () => {
         parafo={"¡ENCONTRAR UNA SOLUCIÓN PERMANENTE ES NUESTRO OBJETIVO!"}
         backgroundImage={"/heroNews.jpg"}
       ></HeroSection>
+      <CardParallax></CardParallax>
       <div className="flex justify-center h-vh flex-col md:flex-row">
         <div className={styles.containerText}>
           <h2>
