@@ -60,6 +60,7 @@ const icons = [
       
       <NewsCarousel></NewsCarousel>
       {/* <BubbleGrid items={icons}></BubbleGrid> */}
+      <FooterComponent></FooterComponent>
       
     </>
   );

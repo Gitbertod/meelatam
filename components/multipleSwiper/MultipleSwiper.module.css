@@ -35,3 +35,13 @@
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0.2rem 0.2rem;
+    border-radius: 8px;
+  }
+  .heading {
+    font-size: 1.1rem;
+  }
+}
