@@ -3,7 +3,7 @@
   background-size:cover;
   background-position: center;
   background-repeat:repeat-y;
-  height: 100vh; /* puedes usar 100dvh si solo quieres altura del viewport visual */
+  min-height: 100vh; /* puedes usar 100dvh si solo quieres altura del viewport visual */
   width: 100vw;
   margin-bottom: 100px;
    /* evita barras si hay animaciones de scale */
