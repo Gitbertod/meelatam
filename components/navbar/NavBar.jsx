@@ -32,7 +32,7 @@ const NavBar = () => {
             onMouseEnter={handleMouseEnter("productos")}
             onMouseLeave={handleMouseLeave}
           >
-            PRODUCTOS{" "}
+            Productos{" "}
             <HiChevronDown
               className={`${styles.iconChevron} ${
                 hoveredMenu === "productos" ? styles.iconChevronRotated : ""
@@ -57,7 +57,7 @@ const NavBar = () => {
           <Link to={"/noticias"}>Noticias</Link>,
           <Link to={"/contacto"}>Contacto</Link>,
           <Link to={"/acerca-de-nosotros"}>Nosotros</Link>,
-          <Link to={"/acerca-de-sentiel"}>Acerca de Sentiel</Link>,
+          <Link to={"/acerca-de-sentiel"}>Acerca de Centiel</Link>,
         ].map((text, idx) => (
           <div key={idx} className={styles.subnav}>
             <button className={styles.subnavbtn}>{text}</button>

@@ -9,6 +9,13 @@ import StatsSection from "../../components/statsSection/StatsSection";
 import FooterComponent from "../../components/footer/FooterComponent";
 import CardParallax from "../../components/cardParallax/CardParallax";
 import AboutText from "../../components/aboutText/AboutText";
+import MultipleSwiper from "../../components/multipleSwiper/MultipleSwiper";
+import {
+  partners,
+  partners2,
+  partners3,
+  partners4,
+} from "../../components/multipleSwiper/logos";
 
 const Nosotros = () => {
   return (
@@ -25,6 +32,19 @@ const Nosotros = () => {
       </div>
       <CardParallax />
       <StatsSection />
+      <MultipleSwiper
+        items={partners}
+        folder={"/logosPartners"}
+        title={"Nuestros partners"}
+      />
+      <MultipleSwiper
+        items={partners2}
+        folder={"/logosPartners"}
+        reverse={true}
+      />
+      <MultipleSwiper items={partners3} folder={"/logosPartners"} />
+      <MultipleSwiper items={partners4} folder={"/logosPartners"} reverse={true}/>
+
       <FooterComponent />
     </>
   );
