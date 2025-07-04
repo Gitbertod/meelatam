@@ -74,8 +74,8 @@ export function DrawerNavbar() {
                     <SidebarItem href="/acerca-de-nosotros" icon={HiUsers} className={styles.textMenu}>
                       Nosotros
                     </SidebarItem>
-                    <SidebarItem href="/acerca-de-sentiel" icon={HiPencil} className={styles.textMenu}>
-                      Acerca de Sentiel
+                    <SidebarItem href="/acerca-de-centiel" icon={HiPencil} className={styles.textMenu}>
+                      Acerca de Centiel
                     </SidebarItem>
                     <SidebarItem
                       href="/noticias"
