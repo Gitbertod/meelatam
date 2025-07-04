@@ -43,7 +43,11 @@ const Nosotros = () => {
         reverse={true}
       />
       <MultipleSwiper items={partners3} folder={"/logosPartners"} />
-      <MultipleSwiper items={partners4} folder={"/logosPartners"} reverse={true}/>
+      <MultipleSwiper
+        items={partners4}
+        folder={"/logosPartners"}
+        reverse={true}
+      />
 
       <FooterComponent />
     </>

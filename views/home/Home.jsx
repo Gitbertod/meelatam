@@ -13,6 +13,8 @@ import FooterComponent from "../../components/footer/FooterComponent";
 import MultipleSwiper from "../../components/multipleSwiper/MultipleSwiper";
 import { clientes, clientes2,clientes3,clientes4 } from "../../components/multipleSwiper/logos";
 
+
+
 const Home = () => {
   const [loading, setLoading] = useState(true);
 
@@ -28,7 +30,7 @@ const Home = () => {
   if (loading) {
     return (
       <div className="flex w-screen  h-screen justify-center ">
-        <LogoSVG />
+        <LogoSVG/>
       </div>
     );
   }
