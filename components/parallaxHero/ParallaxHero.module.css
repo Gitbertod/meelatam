@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+.parallaxHeroRoot {
+  width: 100vw;
+  max-height: 140vh;
+  background: #111b29;
+  font-family: "Montserrat", sans-serif;
+  font-size: 99px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallaxHeroMain {
+  margin-top: 80px;
+  position: fixed;
+  width: 100vw;
+  max-width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.parallaxHeroScrollDist {
+  width: 100vw;
+  height: 200vh;
+  position: relative;
+  z-index: 0;
+}
+
+.parallaxHeroText {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}

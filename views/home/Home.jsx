@@ -79,6 +79,7 @@ const Home = () => {
         />
       </SectionComponent2>
       <MultipleSwiper
+        title="Clientes que han confiado en nosotros"
         items={clientes}
         folder={"/logosClientes"}
         reverse={true}

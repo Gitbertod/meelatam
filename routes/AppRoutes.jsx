@@ -7,7 +7,7 @@ import Servicios from "../views/Servicios"
 import Nosotros from "../views/nosotros/Nosotros";
 import ProductosCategory from "../views/ProductosCategory";
 import ProductoView from "../views/ProductoView";
-import AcercaDeSentiel from "../views/AcercaDeSentiel";
+import AcercaDeCentiel from "../views/AcercaDeCentiel";
 import ProductosSwitch from "../components/productSwitch/ProductSwitch";
 
 const AppRoutes = () => {
@@ -18,7 +18,7 @@ const AppRoutes = () => {
       <Route path="/contacto" element={<Contacto />}></Route>
       <Route path="/noticias" element={<Noticias />}></Route>
       <Route path="/acerca-de-nosotros" element={<Nosotros />}></Route>
-      <Route path="/acerca-de-centiel" element={<AcercaDeSentiel />}></Route>
+      <Route path="/acerca-de-centiel" element={<AcercaDeCentiel />}></Route>
       <Route path="/productos/respaldo-de-energia" element={<ProductosCategory categoryId="respaldo-de-energia" />} />
       <Route path="/productos/respaldo-de-energia/ups" element={<ProductosCategory categoryId="respaldo-de-energia" subCategoryId="ups" />} />
       <Route path="/productos/respaldo-de-energia/ups/:subSubCategoryId" element={<ProductosCategory categoryId="respaldo-de-energia" subCategoryId="ups" />} />
