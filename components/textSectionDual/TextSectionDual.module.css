@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.title{
+    font-size: 35px;
+    color: rgb(185, 13, 13);
+    margin-left: 80px;
+}
+.parrafo{
+    max-width: 700px;
+    min-width: 370px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}

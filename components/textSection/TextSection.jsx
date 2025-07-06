@@ -59,7 +59,7 @@ const TextSection = ({ title, text }) => {
         <p ref={textRef} className={styles.text}>
           {text}
         </p>
-        <button  className={styles.btn}>Saber más</button>
+        
       </div>
     </div>
   );
