@@ -16,3 +16,12 @@
     color:rgb(141, 141, 141);
     list-style: none;
 }
+.drawerLightBg .textMenu {
+  list-style: none !important;
+}
+.drawerLightBg ul,
+.drawerLightBg ul li {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}

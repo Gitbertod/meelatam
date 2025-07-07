@@ -124,7 +124,7 @@ const ParallaxHero = () => {
             width="100%"
             height="800"
           />
-          <text className={styles.parallaxHeroText} fill="#fff" x="200" y="200">
+          <text className={styles.parallaxHeroText} fill="#fff" x="250" y="200">
             Compañia Suiza
           </text>
           <polyline
@@ -135,14 +135,36 @@ const ParallaxHero = () => {
 
           <g mask="url(#m)">
             <rect fill="#fff" width="100%" height="100%" />
-            <text
-              x="200"
-              y="200"
-              fill="#e20b14"
-              className={styles.parallaxHeroText}
+            <foreignObject
+              x="0"
+              y="150"
+              width="1200"
+              height="200"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
             >
-              Con un equipo muy experimentado
-            </text>
+              <div
+                xmlns="http://www.w3.org/1999/xhtml"
+                style={{
+                  width: "100%",
+                  color: "#e20b14",
+                  fontFamily: "'Inter', sans-serif",
+                  fontWeight: 500,
+                  fontSize: "45px",
+                  textAlign: "center",
+                  lineHeight: 1.1,
+                  padding: "0 16px",
+                  boxSizing: "border-box",
+                  wordBreak: "break-word",
+                }}
+                className={styles.parallaxHeroText}
+              >
+                Con un equipo muy experimentado
+              </div>
+            </foreignObject>
           </g>
 
           <rect

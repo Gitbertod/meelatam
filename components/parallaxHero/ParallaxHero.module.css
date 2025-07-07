@@ -39,6 +39,7 @@
 
 @media (max-width: 600px) {
   .parallaxHeroText {
-    font-size: 28vw; /* Muy grande y adaptable en móviles */
+    font-size: 20vw !important; /* Más razonable para móviles */
+    padding: 0 4vw;
   }
 }
