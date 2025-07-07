@@ -1,29 +1,30 @@
 import React from "react";
-import NavBar from "../components/navbar/NavBar";
-import ParallaxHero from "../components/parallaxHero/ParallaxHero";
-import SectionComponent2 from "../components/sectionComponent2/SectionComponent2";
-import PhotoSection from "../components/photoSection/PhotoSection";
-import TextSection from "../components/textSection/TextSection";
-import CardParallax from "../components/cardParallax/CardParallax";
-import TextSectionDual from "../components/textSectionDual/TextSectionDual";
-import FooterComponent from "../components/footer/FooterComponent";
+import NavBar from "../../components/navbar/NavBar";
+import ParallaxHero from "../../components/parallaxHero/ParallaxHero";
+import SectionComponent2 from "../../components/sectionComponent2/SectionComponent2";
+import PhotoSection from "../../components/photoSection/PhotoSection";
+import TextSection from "../../components/textSection/TextSection";
+import CardParallax from "../../components/cardParallax/CardParallax";
+import TextSectionDual from "../../components/textSectionDual/TextSectionDual";
+import FooterComponent from "../../components/footer/FooterComponent";
+import styles from "./AcercaDeCentiel.module.css"
 
 const AcercaDeCentiel = () => {
   const myCards = [
     {
-      title: "Filippo Marbach",
+      tittle: "Filippo Marbach",
       subtitle: "Fundador",
       img: "/AcercaDeCentiel/Centiel_Founder_3-1.jpg",
       text: "Filippo comenzó su carrera profesional en el equipo de Investigación y Desarrollo de Invertomatic en 1984. En 1993, él cofundó Newave SA, el fabricante de SAIS suizo, donde él desempeñó los cargos de director de tecnología y director de operaciones, al igual que como miembro de junta de la compañía. En 1996, Filippo y su equipo diseñaron el primer SAIS sin transformador de tres fases del mundo. En el 2000, esto fue seguido por el diseño del primer y verdadero SAIS modular de tres fases. Él subsecuentemente lideró el equipo que diseñó la tecnología SAIS modular de tres fases de segunda y de tercera generación del mercado. En 2007, Newave fue listado en la bolsa de valores suiza y Filippo continuó manteniendo el cargo de director de operaciones y miembro de la junta de directores. En febrero de 2012, Newave fue adquirido por ABB, y luego Filippo dejó la compañía una vez que fue satisfactoriamente integrada a ABB. En 2015, Filippo cofundó Centiel SA. En este cargo, él continuó innovando la tecnología SAIS diseñando el SAIS modular de tres fases de cuarta generación del mercado y una gama completamente nueva de SAIS sin transformadores de tres fases que lideró el mercado global en términos de disponibilidad y eficiencia operativa.",
     },
     {
-      title: "Gerardo Lecuona",
+      tittle: "Gerardo Lecuona",
       subtitle: "Cofundador, director de ventas, miembro de junta.",
       img: "/AcercaDeCentiel/Centiel_Founder_Gerardo_Lecuona.jpg",
       text: "Gerardo Lecuona estudió ingeniería electrónica en la Universidad de Guadalajara, México. Él tiene una licenciatura en diseño de sistemas integrados del Instituto de Aprendizaje Avanzado e Investigación en Suecia y una maestría en administración de empresas de Milan Polytechnic. En 2008, Gerardo se unió a Newave SA, el fabricante suizo de SAIS como un ingeniero de investigación y desarrollo, y comenzó a desarrollar suministros energéticos modulares sin interrupciones. Tomando a finales de 2010 el cargo de jefe de proyecto, Gerardo participó en el diseño de la tecnología SAIS modular de tres fases de tercera generación y una gran variedad de suministros de energía sin transformadores ininterrumpidos. En 2012 Gerardo fue el encargado de dirigir el departamento de Investigación y Desarrollo en Newave SA. En febrero de 2012, Newave fue adquirido por ABB, y en 2013 Gerardo fue asignado para liderar la división de tecnología como el director en tecnología para SAIS, y gestionó satisfactoriamente la integración con ABB. En 2015, Gerardo cofundó Centiel. En su papel como director de ventas globales, Gerardo está llevando al marcado la tecnología vanguardista de Centiel y está formando a Centiel como una de las marcas comerciales más innovadoras como fabricantes de SAIS.",
     },
     {
-      title: "David Bond",
+      tittle: "David Bond",
       subtitle:
         "Miembro de junta de Centiel SA y presidente de Centiel Ltd., la subsidiaria de Reino Unido de Centiel SA.",
       img: "/AcercaDeCentiel/Centiel_Founder_2-1.jpg",
@@ -36,7 +37,8 @@ const AcercaDeCentiel = () => {
       <NavBar></NavBar>
       <ParallaxHero />
       <SectionComponent2 style={{ minHeight: "50vh" }}>
-        <TextSectionDual
+        <div className={styles.mainContainer}>
+          <TextSectionDual
           tittle={"Centiel Group SA"}
           parrafo1="CENTIEL es una compañía suiza de innovación tecnológica con un equipo
                   muy experimentado de diseñadores, quienes desarrollaron los 3 primeros
@@ -56,6 +58,8 @@ const AcercaDeCentiel = () => {
           trabajo, el cual es un instrumento crítico de nuestro programa de
           desarrollo de personal."
         />
+        </div>
+        
       </SectionComponent2>
       <SectionComponent2>
         {/* <CardParallax cards={myCards} /> */}

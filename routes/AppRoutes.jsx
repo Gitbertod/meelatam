@@ -7,7 +7,7 @@ import Servicios from "../views/Servicios"
 import Nosotros from "../views/nosotros/Nosotros";
 import ProductosCategory from "../views/ProductosCategory";
 import ProductoView from "../views/ProductoView";
-import AcercaDeCentiel from "../views/AcercaDeCentiel";
+import AcercaDeCentiel from "../views/acercaDeCentiel/AcercaDeCentiel";
 import ProductosSwitch from "../components/productSwitch/ProductSwitch";
 
 const AppRoutes = () => {

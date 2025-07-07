@@ -1,7 +1,4 @@
 
-.mainContainer{
-background-color:#f4f4f4; 
-}
 .container {
   display: flex;
   flex-wrap: wrap;
