@@ -31,9 +31,14 @@
 }
 
 .parallaxHeroText {
-  display: flex;
-  justify-content: center;
   font-size: 40px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  
+}
+
+@media (max-width: 600px) {
+  .parallaxHeroText {
+    font-size: 28vw; /* Muy grande y adaptable en móviles */
+  }
 }

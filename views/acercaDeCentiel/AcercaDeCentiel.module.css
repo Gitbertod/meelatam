@@ -5,3 +5,7 @@
   background-color: #f4f4f4;
   width: 100%;
 }
+
+.mainContainer > :first-child {
+  margin-top: 50px;
+}

@@ -5,7 +5,7 @@ background-color:#f4f4f4;
 .container {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   gap: 24px;
   margin-left: 40px;
   margin-right: 40px;
@@ -16,14 +16,18 @@ background-color:#f4f4f4;
 .title {
   font-size: 35px;
   color: #e20b14;
-  margin-left: 80px;
+  margin-left: 40px;
 }
-
+.subtitulo{
+  color: #828282;
+  margin-left: 40px;
+}
 .parrafo {
   max-width: 700px;
   min-width: 370px;
   margin-left: 40px;
   margin-right: 40px;
+  padding-right: 40px;
   margin-top: 20px;
 }
 

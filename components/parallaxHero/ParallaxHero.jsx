@@ -124,7 +124,7 @@ const ParallaxHero = () => {
             width="100%"
             height="800"
           />
-          <text className={styles.parallaxHeroText} fill="#fff" x="250" y="200">
+          <text className={styles.parallaxHeroText} fill="#fff" x="200" y="200">
             Compañia Suiza
           </text>
           <polyline
@@ -136,7 +136,7 @@ const ParallaxHero = () => {
           <g mask="url(#m)">
             <rect fill="#fff" width="100%" height="100%" />
             <text
-              x="250"
+              x="200"
               y="200"
               fill="#e20b14"
               className={styles.parallaxHeroText}
