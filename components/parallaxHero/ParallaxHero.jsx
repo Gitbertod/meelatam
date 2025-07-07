@@ -138,7 +138,7 @@ const ParallaxHero = () => {
             <text
               x="250"
               y="200"
-              fill="#162a43"
+              fill="#e20b14"
               className={styles.parallaxHeroText}
             >
               Con un equipo muy experimentado

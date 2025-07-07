@@ -16,7 +16,7 @@ const FooterComponent = () => {
             <FooterLink href="/servicios">Servicios</FooterLink>
             <FooterLink href="/noticias">Noticias</FooterLink>
             <FooterLink href="/contacto">Contacto</FooterLink>
-            <FooterLink href="/acerca-de-sentiel">Acerca de sentiel</FooterLink>
+            <FooterLink href="/acerca-de-centiel">Acerca de Centiel</FooterLink>
           </FooterLinkGroup>
         </div>
         <FooterDivider className={styles.divider}/>
