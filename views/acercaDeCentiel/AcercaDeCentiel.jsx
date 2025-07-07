@@ -8,6 +8,7 @@ import CardParallax from "../../components/cardParallax/CardParallax";
 import TextSectionDual from "../../components/textSectionDual/TextSectionDual";
 import FooterComponent from "../../components/footer/FooterComponent";
 import styles from "./AcercaDeCentiel.module.css";
+import SectionComponent from "../../components/sectionComponent/SectionComponent";
 
 const AcercaDeCentiel = () => {
   const myCards = [
@@ -86,6 +87,7 @@ const AcercaDeCentiel = () => {
           parrafo1="David comenzó su carrera profesional en la industria de los SAIS en 1988, cuando se unió a Fiskars UK (ahora parte de Eaton) como director de servicios técnicos, responsable de todas las actividades post-venta, incluyendo el campo de servicio, gestión de proyecto y servicio de ventas. En 1996, él fue el director cofundador de Uninterruptible Power Supplies Ltd. (UPSL) y en 2005 él dirigió una compra de acciones para entonces volverse el director administrativo de la compañía. A finales de 2008, UPSL fue vendido a la compañía estadounidense, Kohler, y David pasó hasta mediados de 2010 ayudando a integrar UPSL con Kohler. Después de dejar UPSL, David se unió al fabricante de SAIS suizo, Newave, como su director general. En 2012, Newave fue adquirido por ABB y David participó en roles importantes en las etapas de procesamiento e integración de la adquisición. Después de dejar Newave/ABB, David tomó el cargo de director administrativo de Reino Unido para Emerson Network Power (ahora Vertiv) y como director administrativo de Reino Unido para Benning Power Electronics. Desde su jubilación del campo de la gerencia ejecutiva a finales de 2017, David se ha vuelto el director no ejecutivo de la subsidiaria de Reino Unido de Centiel SA, Centiel Ltd., y ha sido designado para la junta de Centiel SA."
         />
       </SectionComponent2>
+      
       <FooterComponent></FooterComponent>
     </>
   );

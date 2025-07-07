@@ -147,7 +147,7 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
                 ))}
               </ul>
             ) : (
-              <p>Descripción no disponible.</p>
+              ""
             )}
 
             {productObj.normas && <h3>Normas: {productObj.normas}</h3>}

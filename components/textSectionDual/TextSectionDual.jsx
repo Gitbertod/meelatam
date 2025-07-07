@@ -3,11 +3,10 @@ import styles from "./TextSectionDual.module.css";
 
 const TextSectionDual = ({ tittle, parrafo1, parrafo2, foto, subtitulo }) => {
   return (
-    <section >
-      
+    <section>
       <div className={styles.container}>
         <div className={styles.photoFrame}>
-          <img src={foto} alt="" className={styles.image} />
+          {foto ? <img src={foto} alt="" className={styles.image} /> : ""}
         </div>
         <div>
           <h2 className={styles.title}>{tittle}</h2>

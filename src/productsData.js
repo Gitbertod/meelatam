@@ -15,7 +15,7 @@ export const productsData = [
   {
     name: "ALLSAI W PRO 1KVA – 3KVA (Rack)",
     url: "allsai-w-pro-1-kva-3-kva-rack",
-    images: ["/UPS RT 2.jpeg","/UPS RT 2.jpeg"],
+    images: ["/UPS RT 1.jpeg","/UPS RT 2.jpeg"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
@@ -26,7 +26,7 @@ export const productsData = [
   {
     name: "ALLSAI W PRO 1KVA – 3KVA (Torre)",
     url: "allsai-w-pro-1-kva-3-kva-torre",
-    images: ["/UPS Torre 1KVA.png"],
+    images: ["/UPS Torre 1KVA.png","/UPS Torre 2KVA.png"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
@@ -37,7 +37,7 @@ export const productsData = [
   {
     name: "ALLSAI W PRO 6KVA – 10KVA (Torre y RT)",
     url: "allsai-w-pro-6-kva-10-kva-rack",
-    images: ["/UPS 6-10KVA Front.png"],
+    images: ["/UPS 6-10KVA Front.png","/UPS 6-10KVA RT.png"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
@@ -238,6 +238,7 @@ export const productsData = [
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
+    pdf:"Brochure_PremiumTower_311023_ES_208v_web.pdf",
     capacidades: "10 KVA | 15 KVA | 20 KVA | 30 KVA | 40 KVA | 50 KVA | 60 KVA | 80 KVA | 100 KVA | 125 KVA | 150 KVA ",
     description: "PremiumTower (208V) es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower (208V) provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower (208V) ofrece escalabilidad de hasta 7.5 MW y proporciona una eficiencia energética inigualable en un diseño compacto y robusto de hasta 96,6%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. Al mismo tiempo listo para trabajar con todo tipo de baterías (Plomo ácido, NiCd, Litio, Sodio, etc).",
   },{
@@ -258,6 +259,7 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
     capacidades: "10 KVA | 3.75 MVA",
+    pdf:"C00_CE_23001_Centiel_BRO_Stratus-Power-2023_Short_Version_WEB-1-min.pdf",
     description: "StratusPower es un UPS modular totalmente descentralizado, diseñado y fabricado en Suiza. Cuenta con módulos de 10/20/25/50/60kW y con un rango de potencia en un mismo gabinete desde 10kW a 900kW proporcionando máxima flexibilidad a la aplicación final. Proporciona eficiencias optimizadas de carga parcial y total de hasta el 97,6% en el modo de doble conversión en línea. En el modo ECO ultraseguro, el SAI proporciona una excelente calidad de energía con una eficiencia del 99,4%. Diseñado para eliminar puntos únicos de fallas y una Arquitectura redundante y distribución activa (DARA), reduciendo con esto el riesgo por el factor humano. Soporta sobrecargas de hasta 124% de forma continua en el inversor de forma continua. Sistema diseñado para un tiempo de vida útil de más de 30 años",
   },
   // ... (agrega aquí el resto de productos de ups-monofasicas, ups-trimono, ups-trifasicas, etc.)
