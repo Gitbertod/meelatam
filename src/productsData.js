@@ -305,7 +305,79 @@ export const productsData = [
     subcategory: "baterias",
     voltajes: "12V",
     capacidades: "33Ah – 260Ah",
-    description: "Larga vida de diseño\n Baja tasa de autodescarga\n Buen rendimiento de descarga de alta tasa\n Amplio rango de temperatura de operación Aplicación: sistemas de telecomunicaciones, sistemas de alarma y contra incendios, sistemas de emergencia, herramientas eléctricas, equipos médicos, UPS/EPS, inversores/controladores solares, etc."
+    description: "Larga vida de diseño\n Baja tasa de autodescarga\n Buen rendimiento de descarga de alta tasa\n Amplio rango de temperatura de operación Aplicación: sistemas de telecomunicaciones, sistemas de alarma y contra incendios, sistemas de emergencia, herramientas eléctricas, equipos médicos, UPS/EPS, inversores/controladores solares, etc.",
+    table: {
+      fichasTecnicas: ["RA1233.pdf", "RA1240.pdf", "RA1255.pdf", "RA1280.pdf", "RA12100.pdf", "RA12150.pdf", "RA12200.pdf", "RA1233G.pdf", "RA1240G.pdf", "RA1255G.pdf", "RA12100G.pdf"],
+      modelosDeBateria: ["RA12-33", "RA12-40", "RA12-55", "RA12-80", "RA12-100", "RA12-150", "RA12-200", "RA12-33G", "RA12-40", "RA12-55G", "RA12-100G"],
+      voltajeNominal: ["12V", "12V", "12V", "12V", "12V", "12V", "12V", "12V", "12V", "12V", "12V"],
+      capacidad: ["33Ah", "40Ah", "55Ah", "80Ah", "100Ah", "150Ah", "200Ah", "33Ah", "40Ah", "55Ah", "100Ah"],
+      largo: [
+        "195",
+        "198",
+        "229",
+        "350",
+        "328",
+        "483",
+        "522",
+        "195",
+        "198",
+        "229",
+        "328"
+      ],
+      ancho: [
+        "130",
+        "166",
+        "138",
+        "167",
+        "172",
+        "170",
+        "240",
+        "130",
+        "166",
+        "138",
+        "172"
+      ],
+      altura: [
+        "155",
+        "169",
+        "211",
+        "182",
+        "215",
+        "241",
+        "219",
+        "155",
+        "169",
+        "211",
+        "215"
+      ],
+      alturaTotal: [
+        "168",
+        "169",
+        "216",
+        "182",
+        "220",
+        "241",
+        "224",
+        "168",
+        "169",
+        "216",
+        "220"
+      ],
+      peso: [
+        "9.6",
+        "11.5",
+        "15.5",
+        "21.5",
+        "27.5",
+        "41.5",
+        "56.5",
+        "9.0",
+        "11.4",
+        "15.5",
+        "28.5"
+      ]
+    }
+
   }, {
     name: "RITAR SERIE HR",
     url: "ritar-serie-hr",
@@ -314,7 +386,18 @@ export const productsData = [
     subcategory: "baterias",
     voltajes: "6V/12V",
     capacidades: "16W – 850W",
-    description: "Densidad de energía superior y salida de potencia muy alta\nBajo rendimiento de autodescarga\nAmplio rango de temperatura de operación\nLarga vida de diseño \nAdecuado para UPS/EPS, centros de datos donde se requieren cargas de alta corriente."
+    description: "Densidad de energía superior y salida de potencia muy alta\nBajo rendimiento de autodescarga\nAmplio rango de temperatura de operación\nLarga vida de diseño \nAdecuado para UPS/EPS, centros de datos donde se requieren cargas de alta corriente.",
+    table: {
+      fichasTecnicas: ["HR12280W.pdf", "HR12380W.pdf"],
+      modelosDeBateria: ["HR12-280W", "HR12-380W"],
+      voltajeNominal: ["12V", "12V"],
+      maximaCorrienteDescarga: ["750W", "1000A"],
+      largo: ["260", "328"],
+      ancho: ["169", "172"],
+      altura: ["211", "215"],
+      alturaTotal: ["216", "220"],
+      peso: ["24.5", "29.0"]
+    }
   }, {
     name: "ALLSAI GEL",
     url: "allsai-gel",
