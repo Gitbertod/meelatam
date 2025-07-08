@@ -9,51 +9,51 @@ export const productsData = [
     subsubcategory: "ups-interactivas",
     capacidades: "600 VA | 800 VA | 1200 VA | 1500 VA | 2000 VA",
     description: "La UPS Allsai con su Línea Interactiva ofrece protección integral y alta densidad de potencia en paquetes pequeños y económicos. En comparación con las torres UPS tradicionales del mismo tamaño, la UPS Allsai es más compacta y ofrece una mayor protección contra sobretensiones y sobrecorrientes.\n Equipado con un estabilizador de voltaje, este UPS continuará proporcionando energía limpia y estable a los equipos conectados, mientras que su controlador de microprocesador incorporado garantiza una alta fiabilidad, ideal para cualquier aplicación doméstica o de oficina pequeña.",
-    pdf:"Linea Interactiva ALLSAI_Nueva Brochure.pdf"
+    pdf: "Linea Interactiva ALLSAI_Nueva Brochure.pdf"
   },
   // UPS Monofásicas
   {
     name: "ALLSAI W PRO 1KVA – 3KVA (Rack)",
     url: "allsai-w-pro-1-kva-3-kva-rack",
-    images: ["/UPS RT 1.jpeg","/UPS RT 2.jpeg"],
+    images: ["/UPS RT 1.jpeg", "/UPS RT 2.jpeg"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "1 KVA | 2 KVA | 3 KVA ",
     description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Además de contar con suficiente tiempo de autonomía como energía de reserva.\n Las UPS cuentan con modelo torre y tipo convertible rack/ torre(RT), este último ocupa sólo 2 - 3U de altura. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
-    pdf:"WPRO 110 1-10KVA.pdf"
+    pdf: "WPRO 110 1-10KVA.pdf"
   },
   {
     name: "ALLSAI W PRO 1KVA – 3KVA (Torre)",
     url: "allsai-w-pro-1-kva-3-kva-torre",
-    images: ["/UPS Torre 1KVA.png","/UPS Torre 2KVA.png"],
+    images: ["/UPS Torre 1KVA.png", "/UPS Torre 2KVA.png"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "1 KVA | 2 KVA | 3 KVA ",
-    pdf:"ALLSAI WPRO G3 1-3KVA.pdf",
+    pdf: "ALLSAI WPRO G3 1-3KVA.pdf",
     description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas.\n Además de contar con suficiente tiempo de autonomía como energía de reserva.\n Las UPS cuentan con modelo torre y tipo convertible rack/ torre(RT), este último ocupa sólo 2 - 3U de altura. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
   },
   {
     name: "ALLSAI W PRO 6KVA – 10KVA (Torre y RT)",
     url: "allsai-w-pro-6-kva-10-kva-rack",
-    images: ["/UPS 6-10KVA Front.png","/UPS 6-10KVA RT.png"],
+    images: ["/UPS 6-10KVA Front.png", "/UPS 6-10KVA RT.png"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "6 KVA | 10 KVA",
-    pdf:"W Pro 6-10kVA Monofasica.pdf",
+    pdf: "W Pro 6-10kVA Monofasica.pdf",
     description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas.\n Además de contar con suficiente tiempo de autonomía como energía de reserva.Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
   },
-   {
+  {
     name: "CENTIEL ESSENTIALPOWER XST 1KVA – 3KVA (Torre)",
     url: "centiel-essentialpower-xst-1-kva-3-kva-torre",
-    images: ["/centielEssentialPowerXST1KVA-3KVA.png","/Tower 1-3K-2.jpg"],
+    images: ["/centielEssentialPowerXST1KVA-3KVA.png", "/Tower 1-3K-2.jpg"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: " 1 KVA | 2 KVA | 3 KVA ",
-    pdf:"Centiel_brochure_Essential XST 1-3K.pdf",
+    pdf: "Centiel_brochure_Essential XST 1-3K.pdf",
     description: "EssentialPower la solución más flexible y confiable, ideal para dispositivos de redes pequeños, servidores, puntos de ventas, grupos de terminales de trabajo e instalaciones industriales pequeñas. El EssentialPower satisface cualquier aplicación crítica básica que demande una alta disponibilidad y flexibilidad.",
   },
   {
@@ -64,7 +64,7 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "6 KVA | 10 KVA",
-    pdf:"Centiel_brochure_Essential XST 6-10K.pdf",
+    pdf: "Centiel_brochure_Essential XST 6-10K.pdf",
     description: "EssentialPower la solución más flexible y confiable, ideal para dispositivos de redes pequeños, servidores, puntos de ventas, grupos de terminales de trabajo e instalaciones industriales pequeñas. El EssentialPower satisface cualquier aplicación crítica básica que demande una alta disponibilidad y flexibilidad.",
   },
   {
@@ -75,17 +75,17 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "1 KVA | 2 KVA | 3 KVA | 6 KVA | 10 KVA",
-    pdf:"Centiel_brochure_Essential XSRT 1-10K.pdf",
+    pdf: "Centiel_brochure_Essential XSRT 1-10K.pdf",
     description: "EssentialPower la solución más flexible y confiable, ideal para dispositivos de redes pequeños, servidores, puntos de ventas, grupos de terminales de trabajo e instalaciones industriales pequeñas. El EssentialPower satisface cualquier aplicación crítica básica que demande una alta disponibilidad y flexibilidad.",
   },
-   {
+  {
     name: "CENTIEL ESSENTIALPOWER XST IoT 1KVA – 10KVA ",
     url: "centiel-essentialpower-xst-iot-1-kva-10-kva-torre",
     images: ["/essentialPowerXST-IoT.jpg"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
-    pdf:"Centiel_brochure_Essential XST IoT 1-20K.pdf",
+    pdf: "Centiel_brochure_Essential XST IoT 1-20K.pdf",
     capacidades: "1 KVA | 2 KVA | 3 KVA | 6 KVA | 10 KVA",
     description: "EssentialPower IoT la solución más flexible y confiable, ideal para aplicaciones IT y servidores. El EssentialPower IoT posee puerto Ethernet embebido que cumple con el standard IEC de ciberseguridad. Con un factor de potencia de hasta 95%.",
   },
@@ -97,7 +97,7 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: " 1 KVA | 2 KVA | 3 KVA | 6 KVA | 10 KVA ",
-    pdf:"Essential PowerXS_IOT_RT1-10KVA.pdf",
+    pdf: "Essential PowerXS_IOT_RT1-10KVA.pdf",
     description: "EssentialPower IoT la solución más flexible y confiable, ideal para aplicaciones IT y servidores, listo para montaje en rack de 19”. El EssentialPower IoT posee puerto Ethernet embebido que cumple con el standard IEC de ciberseguridad. Con un factor de potencia de hasta 95%.",
   },
   {
@@ -108,7 +108,7 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "1 KVA | 2 KVA | 3 KVA",
-    pdf:"Centiel_brochure XSRT 1-3K IoT RT Lithium-Ion.pdf" ,
+    pdf: "Centiel_brochure XSRT 1-3K IoT RT Lithium-Ion.pdf",
     description: "EssentialPower IoT Lithium-Ion la solución más flexible y confiable, ideal para aplicaciones IT y servidores, listo para montaje en rack de 19” pero con baterías de Litio Lithium-Ion, todo solo ocupando 3U y con FP=1. El EssentialPower IoT Lithium-Ion posee puerto Ethernet embebido que cumple con el standard IEC de ciberseguridad. Con un factor de potencia de hasta 95%.",
   },
   {
@@ -119,9 +119,9 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "1 KVA | 2 KVA | 3 KVA | 6 KVA | 10 KVA",
-    pdf:"WPRO 110 1-10KVA.pdf" ,
-    description:"Allsai W Pro / 110Vac es una UPS en línea de doble conversión con tecnología de alta densidad, en su versión LV (Low Voltage), con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Además de contar con suficiente tiempo de autonomía como energía de reserva. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos donde los niveles de tensión están entre 110Vac y 127Vac.",
-  },{
+    pdf: "WPRO 110 1-10KVA.pdf",
+    description: "Allsai W Pro / 110Vac es una UPS en línea de doble conversión con tecnología de alta densidad, en su versión LV (Low Voltage), con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Además de contar con suficiente tiempo de autonomía como energía de reserva. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos donde los niveles de tensión están entre 110Vac y 127Vac.",
+  }, {
     name: "CENTIEL CUMULUS POWER X1 10KVA – 20KVA+1 (Modular)",
     url: "centiel-cumulus-power-x1-10-kva-20-kva-modular",
     images: ["/CumulusPower X1.jpg"],
@@ -129,9 +129,9 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "10 KVA | 20 KVA+1",
-    pdf:"E00_CE_23005_Centiel_BRO_Cumulus-Power-2023_web.pdf",
-    description:"CumulusPower X1 es un vérsatil UPS modular totalmente descentralizado, diseñado y fabricado en Suiza. Cuenta con módulos de 10kW (3:1 y 1:1) y con un rango de potencia en un mismo gabinete desde 10kW a 20kW N+1 proporcionando máxima flexibilidad a la aplicación final. Proporciona eficiencias optimizadas de carga parcial y total de hasta el 97,1% en el modo de doble conversión en línea. En el modo ECO ultraseguro, el SAI proporciona una excelente calidad de energía con una eficiencia del 99,4%. Diseñado para eliminar puntos únicos de fallas y una Arquitectura redundante y distribución activa (DARA), reduciendo con esto el riesgo por el factor humano. Soporta sobrecargas de hasta 124% de forma continua en el inversor de forma continua.",
-  },{
+    pdf: "E00_CE_23005_Centiel_BRO_Cumulus-Power-2023_web.pdf",
+    description: "CumulusPower X1 es un vérsatil UPS modular totalmente descentralizado, diseñado y fabricado en Suiza. Cuenta con módulos de 10kW (3:1 y 1:1) y con un rango de potencia en un mismo gabinete desde 10kW a 20kW N+1 proporcionando máxima flexibilidad a la aplicación final. Proporciona eficiencias optimizadas de carga parcial y total de hasta el 97,1% en el modo de doble conversión en línea. En el modo ECO ultraseguro, el SAI proporciona una excelente calidad de energía con una eficiencia del 99,4%. Diseñado para eliminar puntos únicos de fallas y una Arquitectura redundante y distribución activa (DARA), reduciendo con esto el riesgo por el factor humano. Soporta sobrecargas de hasta 124% de forma continua en el inversor de forma continua.",
+  }, {
     name: "ALLSAI W PRO 3:1 – 1:1 6KVA – 20KVA (Torre)",
     url: "allsai-w-pro-31-6-kva-20-kva-torre",
     images: ["/UPS Trimono.png"],
@@ -139,9 +139,9 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-trimono",
     capacidades: "6 KVA | 10 KVA | 15 KVA | 20 KVA",
-    pdf:"W Pro 31 11 6-20kVA Trimono.pdf",
-    description:"Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, DSP, factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Además de contar con suficiente tiempo de autonomía como energía de reserva.Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
-  },{
+    pdf: "W Pro 31 11 6-20kVA Trimono.pdf",
+    description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, DSP, factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Además de contar con suficiente tiempo de autonomía como energía de reserva.Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
+  }, {
     name: "CENTIEL ESSENTIALPOWER XST 3:1 – 1:1 10KVA – 20KVA (Torre)",
     url: "centiel-essentialpower-xst-31-10-kva-20-kva-torre",
     images: ["/Centiel-Perspective low_.jpg"],
@@ -149,9 +149,9 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-trimono",
     capacidades: "10 KVA | 15 KVA | 20 KVA",
-    pdf:"Centiel_brochure_Essential XST 31 10-20K.pdf",
+    pdf: "Centiel_brochure_Essential XST 31 10-20K.pdf",
     description: "EssentialPower la solución más flexible y confiable, ideal para dispositivos de redes pequeños, servidores, puntos de ventas, grupos de terminales de trabajo e instalaciones industriales pequeñas. El EssentialPower satisface cualquier aplicación crítica básica que demande una alta disponibilidad y flexibilidad. En su presentación son entrada trifásica y salida monofásica ó entrada y salida monofásica.",
-  },{
+  }, {
     name: "ALLSAI W-5 PRO 10KVA – 30KVA (Torre)",
     url: "allsai-w-5-pro-10-kva-30-kva-torre",
     images: ["/ALLSAI-W5-PRO-10KVA-30kva.jpg"],
@@ -159,9 +159,9 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
     capacidades: "10 KVA | 15 KVA | 20 KVA | 30 KVA",
-    pdf:"ALLSAI WPRO G5 10-30KVA.pdf",
+    pdf: "ALLSAI WPRO G5 10-30KVA.pdf",
     description: "Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia y rendimiento confiable. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 304 Vac a 478 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
-  },{
+  }, {
     name: "ALLSAI W-5 PRO 40KVA – 60KVA (Torre)",
     url: "allsai-w-5-pro-40kva-60kva-torre",
     images: ["/ALLSAI-W5-PRO-60KVA-foto2.jpg"],
@@ -169,19 +169,19 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
     capacidades: "40 KVA | 60 KVA ",
-    pdf:"2025 ALLSAI W5PRO 60KVA 33_compressed.pdf",
+    pdf: "2025 ALLSAI W5PRO 60KVA 33_compressed.pdf",
     description: "Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia y rendimiento confiable. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 304 Vac a 478 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
-  },{
+  }, {
     name: "ALLSAI W-5 PRO 80KVA – 200KVA (Torre)",
     url: "allsai-w-5-pro-80kva-200kva-torre",
     images: ["/ALLSAI W-5 PRO 80KVA – 200KVA (Torre).jpg"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
-    pdf:"ALLSAIW-5 PR0 80-200KVA 3_3.pdf",
+    pdf: "ALLSAIW-5 PR0 80-200KVA 3_3.pdf",
     capacidades: "80 KVA | 100 KVA | 120 KVA | 160 KVA | 200 KVA",
-    description:  "Para montaje en rack de 19” Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia, rendimiento confiable y para ser instalado con baterías externas. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 304 Vac a 478 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
-  },{
+    description: "Para montaje en rack de 19” Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia, rendimiento confiable y para ser instalado con baterías externas. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 304 Vac a 478 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
+  }, {
     name: "ALLSAI W-5 PRO 10KVA – 30KVA (Rack)",
     url: "allsai-w-5-pro-10kva-30kva-rack",
     images: ["/ALLSAI-W5-PRO-10-30KVA-rack.png"],
@@ -189,9 +189,9 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
     capacidades: "10 KVA | 15 KVA | 20 KVA | 30 KVA",
-    pdf:"ALLSAI WPRO G5 RT 10-30KVA.pdf",
-    description:  "Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia y rendimiento confiable. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 166 Vac a 277 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
-  },{
+    pdf: "ALLSAI WPRO G5 RT 10-30KVA.pdf",
+    description: "Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia y rendimiento confiable. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 166 Vac a 277 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
+  }, {
     name: "ALLSAI W-5 PRO 10KVA – 20KVA (Torre) (208Vac) (LV)",
     url: "allsai-w-5-pro-10kva-20kva-torre-208vac",
     images: ["/ALLSAI-WPRO-208V.png"],
@@ -199,49 +199,49 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
     capacidades: "10 KVA | 20 KVA",
-    pdf:"2024 ALLSAI WPRO TRIFASICOS 208V 10-20KVA_compressed.pdf",
-    description:  "Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia y rendimiento confiable. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 166 Vac a 277 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
-  },{
+    pdf: "2024 ALLSAI WPRO TRIFASICOS 208V 10-20KVA_compressed.pdf",
+    description: "Allsai W-5 ofrece tecnología de doble conversión en línea y control DSP, asegurando eficiencia y rendimiento confiable. Con corrección activa del factor de potencia (APFC) de hasta 0,99 y un rango de voltaje de entrada de 166 Vac a 277 Vac, se adapta a diversas condiciones eléctricas. Su ventilador de velocidad variable garantiza un funcionamiento fresco y silencioso, mientras que recupera el 90% de su capacidad. Es una UPS con factor de potencia de salida 1, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Cuenta con pantalla de LED táctil. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
+  }, {
     name: "CENTIEL PREMIUM TOWER 10KVA – 500KVA (Torre)",
     url: "centiel-premium-tower-10kva-500kva-torre",
     images: ["/centielPremiunTower-10kva-500kva-Torre.jpg"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
-    pdf:"Brochure_PremiumTower_140623_ES_web.pdf",
+    pdf: "Brochure_PremiumTower_140623_ES_web.pdf",
     capacidades: "10 KVA | 20 KVA | 30 KVA | 40 KVA | 60 KVA | 80 KVA | 100 KVA | 120 KVA | 160 KVA | 200 KVA | 250 KVA | 300 KVA | 400 KVA | 500 KVA",
-    description:  "PremiumTower es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower ofrece escalabilidad de hasta 7.5 MW y proporciona una eficiencia energética inigualable en un diseño compacto y robusto de hasta 96,6%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. ",
-  },{
+    description: "PremiumTower es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower ofrece escalabilidad de hasta 7.5 MW y proporciona una eficiencia energética inigualable en un diseño compacto y robusto de hasta 96,6%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. ",
+  }, {
     name: "CENTIEL PREMIUM TOWER S2 10KVA – 500KVA (Torre)",
     url: "centiel-premium-tower-s2-10kva-500kva-torre",
     images: ["/premiumTowerS2.png"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
-    pdf:"E01_CE_25009_Centiel_BRO_Premium-Tower-S2.pdf",
+    pdf: "E01_CE_25009_Centiel_BRO_Premium-Tower-S2.pdf",
     capacidades: "10 KVA | 20 KVA | 30 KVA | 40 KVA | 60 KVA | 80 KVA ",
     description: "PremiumTower S2 es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower S2 provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower S2 ofrece Back Feed Protection de forma standard en un diseño compacto y robusto de hasta 97,1%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. Con componentes diseñados para en un reemplazo por mantenimiento no menor a 15 años. Al mismo tiempo listo para trabajar con todo tipo de baterías (Plomo ácido, NiCd, Litio, Sodio, etc). Y con opción para contener hasta 240 baterías dentro del mismo UPS.",
-  },{
+  }, {
     name: "CENTIEL PREMIUM TOWER MS 80KVA – 250KVA ",
     url: "centiel-premium-tower-ms-80kva-250kva",
     images: ["/centielPremiumTowerMs80kva-250kv.png"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
-    pdf:"Brochure_PT-MedicalSpecial_050521_EN_web.pdf",
+    pdf: "Brochure_PT-MedicalSpecial_050521_EN_web.pdf",
     capacidades: "80 KVA | 100 KVA | 120 KVA | 160 KVA | 200 KVA | 250 KVA",
     description: "PremiumTower MS es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases para aplicaciones junto a equipamiento médico como Equipos de Resonancia Magnética, Tomografos computarizados, Rayos X, Ultrasonidos, entre otros. Diseñado para soportar los picos de corriente requeridos por este tipo de equipamiento, sin nececidad de sobredimensionar el UPS. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower MS ofrece escalabilidad de hasta 7.5 MW y proporciona una eficiencia energética inigualable en un diseño compacto y robusto de hasta 96,6%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. Al mismo tiempo listo para trabajar con todo tipo de baterías (Plomo ácido, NiCd, Litio, Sodio, etc).",
-  },{
+  }, {
     name: "CENTIEL PREMIUM TOWER 10KVA – 150KVA (Torre)(208Vac)",
     url: "centiel-premium-tower-10kva-150kva-torre-208vac",
     images: ["/centielPremiumTower10-150.png"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
-    pdf:"Brochure_PremiumTower_311023_ES_208v_web.pdf",
+    pdf: "Brochure_PremiumTower_311023_ES_208v_web.pdf",
     capacidades: "10 KVA | 15 KVA | 20 KVA | 30 KVA | 40 KVA | 50 KVA | 60 KVA | 80 KVA | 100 KVA | 125 KVA | 150 KVA ",
     description: "PremiumTower (208V) es UPS diseñado y fabricado en suiza, sin interrupciones de doble conversión en línea de tres fases. Configurable como un UPS autónomo o como sistema paralelo de múltiples gabinetes, el PremiumTower (208V) provee la mejor flexibilidad para el crecimiento futuro. El PremiumTower (208V) ofrece escalabilidad de hasta 7.5 MW y proporciona una eficiencia energética inigualable en un diseño compacto y robusto de hasta 96,6%. Con una alta densidad de energía y BUS DC flexible para una optimización en el dimensionamiento de los bancos de baterías. Al mismo tiempo listo para trabajar con todo tipo de baterías (Plomo ácido, NiCd, Litio, Sodio, etc).",
-  },{
+  }, {
     name: "CENTIEL CUMULUS POWER 10KVA – 3.6MVA (Modular)",
     url: "centiel-cumulus-power-10kva-36mva-modular",
     images: ["/Centiel_combo_front-cumulus.png"],
@@ -249,9 +249,9 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
     capacidades: "10 KVA | 3.6 MVA",
-    pdf:"/Centiel_brochure_Cumulus_Power_EN_WEB_19012020.pdf",
+    pdf: "/Centiel_brochure_Cumulus_Power_EN_WEB_19012020.pdf",
     description: "CumulusPower es un vérsatil UPS modular totalmente descentralizado, diseñado y fabricado en Suiza. Cuenta con módulos de 10/20/25/30/50/62.5kW y con un rango de potencia en un mismo gabinete desde 10kW a 1.500kW proporcionando máxima flexibilidad a la aplicación final. Diseñado para cumplir con las rigurosas demandas de infraestructura TI de hoy en día. Proporciona eficiencias optimizadas de carga parcial y total de hasta el 97,6% en el modo de doble conversión en línea. En el modo ECO ultraseguro, el SAI proporciona una excelente calidad de energía con una eficiencia del 99,4%. Diseñado para eliminar puntos únicos de fallas y una Arquitectura redundante y distribución activa (DARA), reduciendo con esto el riesgo por el factor humano. Soporta sobrecargas de hasta 124% de forma continua en el inversor de forma continua.",
-  },{
+  }, {
     name: "CENTIEL STRATUS POWER 10KVA – 3.75MVA (Modular)",
     url: "centiel-stratus-power-10kva-375mva-modular",
     images: ["/Centiel_combo_front-cumulus.png"],
@@ -259,7 +259,7 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
     capacidades: "10 KVA | 3.75 MVA",
-    pdf:"C00_CE_23001_Centiel_BRO_Stratus-Power-2023_Short_Version_WEB-1-min.pdf",
+    pdf: "C00_CE_23001_Centiel_BRO_Stratus-Power-2023_Short_Version_WEB-1-min.pdf",
     description: "StratusPower es un UPS modular totalmente descentralizado, diseñado y fabricado en Suiza. Cuenta con módulos de 10/20/25/50/60kW y con un rango de potencia en un mismo gabinete desde 10kW a 900kW proporcionando máxima flexibilidad a la aplicación final. Proporciona eficiencias optimizadas de carga parcial y total de hasta el 97,6% en el modo de doble conversión en línea. En el modo ECO ultraseguro, el SAI proporciona una excelente calidad de energía con una eficiencia del 99,4%. Diseñado para eliminar puntos únicos de fallas y una Arquitectura redundante y distribución activa (DARA), reduciendo con esto el riesgo por el factor humano. Soporta sobrecargas de hasta 124% de forma continua en el inversor de forma continua. Sistema diseñado para un tiempo de vida útil de más de 30 años",
   },
   // ... (agrega aquí el resto de productos de ups-monofasicas, ups-trimono, ups-trifasicas, etc.)
@@ -274,6 +274,7 @@ export const productsData = [
     modelos: "LiFePO4",
     voltajes: "51.2V",
     capacidades: "10/20/30/40/50/60/80/100/200Ah",
+    pdf: "Fichas-baterias-allsai-LITIO.pdf",
     description: "Las baterías de Litio Allsai para montaje en rack de 19” son de tecnología de Litio ferrofosfato de hierro ideales para aplicaciones en telecomunicaciones, Minería. Diseñadas para 6.000 ciclos, recarga ultra rápida, excelente desempeño con descargas profundas hasta el 80%, cada módulos cuenta con su propio BMS.",
   },
   {
@@ -284,8 +285,19 @@ export const productsData = [
     subcategory: "baterias",
     voltajes: "6V/12V",
     capacidades: "1.3Ah~28Ah",
-    description: "Larga vida de diseño\n Baja tasa de autodescarga\n Buen rendimiento de descarga de alta tasa\n Amplio rango de temperatura de operación Aplicación: pequeños UPS, luz de emergencia, sistemas de seguridad, juguetes, médicos, etc."
-  },{
+    description: "Larga vida de diseño\n Baja tasa de autodescarga\n Buen rendimiento de descarga de alta tasa\n Amplio rango de temperatura de operación Aplicación: pequeños UPS, luz de emergencia, sistemas de seguridad, juguetes, médicos, etc.",
+    table: {
+      fichasTecnicas: ["RT1250.pdf", "RT1270.pdf", "RT1290.pdf", "RT12120.pdf", "RT12180.pdf", "RT12260.pdf",],
+      modelosDeBateria: ["RT1250", "RT1270", "RT1290", "RT12120", "RT12180", "RT12260",],
+      voltajeNominal: ["12V", "12V", "12V", "12V", "12V", "12V",],
+      capacidad: ["5Ah", "7Ah", "9Ah", "12Ah", "18Ah", "26Ah",],
+      largo: ["90", "151", "151", "151", "181", "166",],
+      ancho: ["70", "65", "65", "98", "77", "176"],
+      altura: ["101", "94", "90", "93.5", "95", "167", "125"],
+      alturaTotal: ["107", "100", "101", "101", "167", "125",],
+      peso: ["1.35", "1.95", "2.3", "3.5", "5", "90", "7.4",]
+    }
+  }, {
     name: "RITAR SERIE RA",
     url: "ritar-serie-ra",
     images: ["/ritar-ra-3.jpg"],
@@ -294,7 +306,7 @@ export const productsData = [
     voltajes: "12V",
     capacidades: "33Ah – 260Ah",
     description: "Larga vida de diseño\n Baja tasa de autodescarga\n Buen rendimiento de descarga de alta tasa\n Amplio rango de temperatura de operación Aplicación: sistemas de telecomunicaciones, sistemas de alarma y contra incendios, sistemas de emergencia, herramientas eléctricas, equipos médicos, UPS/EPS, inversores/controladores solares, etc."
-  },{
+  }, {
     name: "RITAR SERIE HR",
     url: "ritar-serie-hr",
     images: ["/ritar-hr-1.jpg"],
@@ -303,7 +315,7 @@ export const productsData = [
     voltajes: "6V/12V",
     capacidades: "16W – 850W",
     description: "Densidad de energía superior y salida de potencia muy alta\nBajo rendimiento de autodescarga\nAmplio rango de temperatura de operación\nLarga vida de diseño \nAdecuado para UPS/EPS, centros de datos donde se requieren cargas de alta corriente."
-  },{
+  }, {
     name: "ALLSAI GEL",
     url: "allsai-gel",
     images: ["/gel-1.jpg"],
@@ -312,35 +324,35 @@ export const productsData = [
     voltajes: "2V,4V,6V, 8V,12V",
     capacidades: "3,5Ah a 3.150Ah",
     description: "Las baterías ALLSAI VRLA-GEL están fabricadas con verdadera tecnología comprobada en más de un siglo de experiencia. Debido a su característica VRLA no requieren válvulas reguladas para mantenimiento."
-  },{
+  }, {
     name: "ALLSAI NIQUEL CADMIO",
     url: "allsai-niquel-cadmio",
-    models:"KPH, KPM, KPL",
+    models: "KPH, KPM, KPL",
     images: ["/niquel-cadmio-1.jpg"],
     category: "respaldo-de-energia",
     subcategory: "baterias",
     voltajes: "1.2V",
     capacidades: "3,5Ah a 3.150Ah",
     description: "Las baterías se han convertido en la primera opción para el usuario que busca un sistema confiable, de larga vida útil bajo costos de mantenimiento."
-  },{
+  }, {
     name: "ALLSAI OPZ",
     url: "allsai-opz",
-    models:" OPZV, OPZS",
+    models: " OPZV, OPZS",
     images: ["/opz-1.jpg"],
     category: "respaldo-de-energia",
     subcategory: "baterias",
     voltajes: "2V, 6V, 12V",
     capacidades: "77Ah a 3.360Ah",
     description: "Las baterías ALLSAI de tipo estacionarias, mejor conocidas como OPZ se han convertido en un aliado indispensable en aquellos lugares donde no hay red eléctrica y existe la necesidad de alimentar ciertos consumos de tipo medio-alto de manera constante como en viviendas remotas, campings o almacenes. Se trata pues de acumuladores de 2V que puestos en serie de 6 ó 12 vasos pueden alcanzar los 12V ó 24V respectivamente."
-  },{
+  }, {
     name: "HOPPECKE GRID POWER VL",
     url: "hoppecke-grid-power-vl",
-    models:"OPzS, POWER.BLOC OPzS",
+    models: "OPzS, POWER.BLOC OPzS",
     images: ["/grid-power-vl-1.png"],
     category: "respaldo-de-energia",
     subcategory: "baterias",
     voltajes: "2V, 6V, 12V",
-    capacidades:"200 Ah a 3.000 Ah",
+    capacidades: "200 Ah a 3.000 Ah",
     description: "La batería de red HOPPECKE | power V L es una batería de plomo-ácido estacionaria y ventilada con electrolito líquido. Su configuración con placas tubulares positivas y la protección completa de la masa activa mediante guanteletes de poliéster tejido garantizan una resistencia extremadamente alta. Por lo tanto, nuestras baterías de red | power V L son ideales para su uso en áreas con altas cargas de carga y descarga, como las aplicaciones solares, o para largos periodos de espera en áreas como las telecomunicaciones y la iluminación de seguridad.\nEl diseño del producto según DIN 40736 garantiza el más alto nivel de compatibilidad al sustituir equipos existentes y al integrarse con la ampliación de los sistemas de baterías existentes. La red eléctrica | power V L battery representa una resistencia extremadamente larga gracias a su estructura innovadora – fabricada por HOPPECKE.\nLa combinación con el sistema de recombinación aquagen alarga el intervalo entre rellenos de agua casi hasta el punto en que no se requiere mantenimiento, lo que reduce significativamente los costes operativos."
   },
   // ... (agrega aquí el resto de productos de baterías)
@@ -354,7 +366,7 @@ export const productsData = [
     subcategory: "inversores",
     capacidades: "1kVA a 200kVA",
     description: "Serie DC / AC inversores son equipos producidos para suministrar la computadora y la comunicación Sistemas, llamados como carga crítica. Inversores DC / AC de la serie Inversor convierte voltajes de CC como baterías. Al voltaje de la CA con la tensión y la frecuencia deseadas y la energía de AC de suplying. El convertidor de la frecuencia de la serie de SLT es un equipo EN LÍNEA verdadero con la forma de onda sinusodial de la salida, Con sistema de transferencia estática (BYPASS) y todas las protecciones necesarias.",
-  },{
+  }, {
     name: "ALLSAI SERIES POWER INVERTER",
     url: "allsai-series-power-inverter",
     images: ["/inversor-1.png"],
@@ -372,7 +384,7 @@ export const productsData = [
     subcategory: "rectificadores",
     capacidades: "1 KVA | 2 KVA | 3 KVA | 4 KVA | 5 KVA | 6 KVA",
     description: "Con la plataforma modular, queremos proporcionar una solución consolidada para una amplia variedad de aplicaciones que van desde infraestructura (subestaciones), industria, telecomunicaciones, y mas. Por esta razón, la plataforma modular esta disponible en todos los voltajes comunes como 24, 48, 110, 220Vdc en la misma familia de productos.",
-  },{
+  }, {
     name: "ALLSAI SERIE SD TRIFÁSICO",
     url: "allsai-serie-sd-trifafasico",
     images: ["/series-sd-1.jpg"],
@@ -389,7 +401,7 @@ export const productsData = [
     subcategory: "rectificadores",
     capacidades: "12Vdc – 220Vdc / 10A – 500A (o más según requerimiento)",
     description: "Cargadores de batería Allsai fabricados con alto estándar de calidad controlado por microprocesador y diseño a medida de acuerdo al requerimiento del cliente. El control y ajuste se realiza con tiristores en puente semi-controlado. Las principales protecciones incluidas en el sistema de protección son; sobrecarga, sobre voltaje, sobre temperatura, cortocircuito y peak de corriente. Comunicación remota disponible tanto en contactos secos como Modbus en su estándar.Es capaz de operar con baterías de plomo ácido y Níquel cadmio.",
-  },{
+  }, {
     name: "ISG PME – R1",
     url: "isg-pme-r1",
     images: ["/rectificador-pme-r1.jpg"],
@@ -397,7 +409,7 @@ export const productsData = [
     subcategory: "rectificadores",
     capacidades: "1 KVA | 2 KVA | 3 KVA | 4 KVA | 5 KVA | 6 KVA",
     description: "Con el rectificador de servicio ajustable monofásico, el voltaje y la corriente se pueden ajustar continuamente según la aplicación. Tiene un módulo de alimentación que permite cargar todos los tipos de baterías habituales con una tensión de carga de hasta 300 V.",
-  },{
+  }, {
     name: "ISG PME – R3",
     url: "isg-pme-r3",
     images: ["/rectificador-pme-r3.jpg"],
@@ -405,7 +417,7 @@ export const productsData = [
     subcategory: "rectificadores",
     capacidades: "1 KVA | 2 KVA | 3 KVA | 4 KVA | 5 KVA | 6 KVA",
     description: "Debido al diseño compacto, la alta densidad de potencia, el bajo peso y las posibilidades de aplicación universal, el rectificador de servicio ajustable trifásico es parte del equipo estándar de todos los vehículos de servicio y emergencia. Sus tres módulos de potencia y las funciones integradas de la estación de energía multifuncional PME-R3 permiten cargar todos los tipos de baterías habituales con una tensión de carga de hasta 300 V.",
-  },{
+  }, {
     name: "ISG PME – VARIO",
     url: "isg-pme-vario",
     images: ["/rectificador-pme-vario-1.jpg"],
@@ -413,7 +425,7 @@ export const productsData = [
     subcategory: "rectificadores",
     capacidades: "1 KVA | 2 KVA | 3 KVA | 4 KVA | 5 KVA | 6 KVA",
     description: "Rectificador de tecnología Switching tipo autosoportado de tamaño reducido y bajo peso gracias al no uso de transformador, tecnología modular para configuración N+1, con posibilidad de alimentación monofásica y trifásica.\nDispone de comunicación remota tipo contacto seco y/o Modbus. Opcionales de LVD y Dropper. Este rectificador en una carcasa independiente proporciona una tensión de carga de 24 V a 300 V.",
-  },{
+  }, {
     name: "TECNED SERIE KT-CB",
     url: "tecned-serie-kt-cb",
     images: ["/kt-cb-tecned.jpg"],
@@ -421,7 +433,7 @@ export const productsData = [
     subcategory: "rectificadores",
     capacidades: "24Vdc – 220Vdc / 30A – 800A (o más según requerimiento)",
     description: "Cargador/Rectificador Trifásico KT-CB tecnolo gía modular , de Grado Industrial y Servicio Continuo, diseñado para abastecer de corriente continua en aplicaciones críticas, donde la carga debe ser libre de distorsión de armónicas mediante filtros, aislada eléctricamente de la fuente de suministros y alimentada permanentemente con energía de calidad, debido a la importancia de su carga.\nEl equipo KT-CB está controlado por microprocesadores para administración del sistema (alarma, ajustes y medida) y sus componentes son de estado sólido, voltaje constante autoregulado, para aplicaciones de baterías Plomo-Acido, Niquel Cadmio y Litio donde sus funciones son:\nAlimentar el consumo constante de corriente (La carga).\nRecarga de baterías (Carga de igualación).\nMantener cargada la batería (Carga de flotación).\nDiseñado para aplicaciones en industrias como:\nOil & Gas\nIndustria Química\nControl de Procesos\nGeneración Eléctrica",
-  },{
+  }, {
     name: "ALLSAI TIPO PAD MOUNTED MT",
     url: "allsai-tipo-pad-mounted-mt",
     images: ["/ALLSAI-TRANSFORMADOR-PAD-MOUNTED.jpg"],
@@ -429,7 +441,7 @@ export const productsData = [
     subcategory: "transformadores",
     capacidades: null,
     description: "Los transformadores son elementos eléctricos que permiten aumentar o disminuir los niveles de tensión los de tipo pad mounted son una solución compacta y segura que integra una celda de media tensión, un transformador y una celda de baja tensión, todo en un solo conjunto pero con compartimentos debidamente separados. En el lado de media tensión se consideran codos aislados y fusibles para alimentar y proteger el transformador respectivamente. En el compartimento de baja tensión se puede instalar un interruptor termomagnético o como alternativa un conjunto de seccionadores con fusibles.",
-  },{
+  }, {
     name: "ALLSAI TIPO SECO MT",
     url: "allsai-tipo-seco-mt",
     images: ["/ALLSAI-TRANSFORMADOR-SECO.jpg"],
@@ -437,7 +449,7 @@ export const productsData = [
     subcategory: "transformadores",
     capacidades: null,
     description: "Los transformadores son elementos eléctricos que permiten aumentar o disminuir los niveles de tensión, los de tipo seco son equipos que utilizan el aire ambiente como medio de refrigeración – así como de aislamiento – de sus devanados y demás componentes.",
-  },{
+  }, {
     name: "ALLSAI TIPO SUMERGIDO EN ACEITE MT",
     url: "allsai-tipo-sumergido-en-aceite-mt",
     images: ["/ALLSAI-TRANSFORMADOR-SUMERGIDO-EN-ACEITE-TRIFASICO.jpeg"],
@@ -446,7 +458,7 @@ export const productsData = [
     capacidades: null,
     description: "Los transformadores son elementos eléctricos que permiten aumentar o disminuir los niveles de tensión, los del tipo sumergido en aceite e caracterizan en que su circuito magnético y arrollamientos están completamente sumergidos en aceite. Éste es utilizado como líquido aislante, puede ser de silicona, mineral, éster o vegetal y su elección dependerá de las necesidades del cliente y del tipo de instalación.",
   },
-{
+  {
     name: "TRANSFORMADORES DE AISLAMIENTO 3:3",
     url: "transformadores-de-aislamiento-aceite-3-3",
     images: ["/transformadorGalvanicoTrifasico.jpg"],
@@ -454,7 +466,7 @@ export const productsData = [
     subcategory: "transformadores",
     capacidades: "según requerimiento",
     description: "Acondiciona sistemas trifásicos para equipos mineros e industriales. Aislamiento galvánico entre primario y secundario, con excelente atenuación ante perturbaciones eléctricas",
-  },{
+  }, {
     name: "TRANSFORMADORES DE AISLAMIENTO 1:1/3:1",
     url: "transformadores-de-aislamiento-1-1-3-1",
     images: ["/transformadorGalvanicoMonofasico.jpg"],
@@ -462,7 +474,7 @@ export const productsData = [
     subcategory: "transformadores",
     capacidades: "según requerimiento",
     description: "Acondiciona sistemas monofásicos para equipos mineros e industriales. Aislamiento galvánico entre primario y secundario, con excelente atenuación ante perturbaciones eléctricas",
-  },{
+  }, {
     name: "ALLSAI APF",
     url: "transformadores-de-aislamiento-1-1-3-1",
     images: ["/ALLSAI-FILTROS-ACTIVOS.jpg"],
@@ -470,102 +482,102 @@ export const productsData = [
     subcategory: "filtros-activos",
     capacidades: null,
     description: "Los filtros de potencia activa (APF) son filtros que pueden realizar el trabajo de eliminación de armónicos. Los filtros de potencia activa se pueden utilizar para filtrar armónicos en el sistema de potencia que están significativamente por debajo de la frecuencia de conmutación del filtro. Los filtros de potencia activa se utilizan para filtrar armónicos de orden superior e inferior en el sistema de potencia.",
-  },{
+  }, {
     name: "AKTIF MT SME-CC",
-    tension:"hasta 40,5 kV",
-    frecuencia:"50Hz/60Hz",
-    potencia:"Depende de la solicitud",
-    numeroDeEtapas:"Depende de la solicitud",
-    normas:"IEC 60871-1, IEC 60076-6, IEC 62271-200",
+    tension: "hasta 40,5 kV",
+    frecuencia: "50Hz/60Hz",
+    potencia: "Depende de la solicitud",
+    numeroDeEtapas: "Depende de la solicitud",
+    normas: "IEC 60871-1, IEC 60076-6, IEC 62271-200",
     url: "aktif-mt-sme-cc",
     images: ["/AKTIF-MT-SME-CC.jpg"],
     category: "calidad-de-energia",
     subcategory: "banco-de-condensadores",
     capacidades: null,
     description: "Los bancos de condensadores con carcasa metálica de la serie SME-CC han sido diseñados para uso en interiores o exteriores. Los bancos de capacitores con gabinete metálico de la serie SME.CC consisten en celdas con gabinete metálico de la serie SME que tienen pruebas de tipo de acuerdo con el estándar IEC 62271-200. El sistema de compensación con gabinete metálico de la serie SME.CC consiste en el condensador, el reactor limitador de corriente o los reactores de filtro de armónicos y los elementos de protección, control y conmutación que contiene.\nCampos generales de uso;\n– Aplicaciones de banco de condensadores\n– Aplicaciones de filtro de armónicos desafinados – Aplicaciones de filtro de armónicossintonizados\nLos bancos de condensadores/bancos de filtros de metal de la serie SME-CC están diseñados en dos tipos, como se muestra a continuación;\n– Tipo fijo para cargas fijas como transformadores y motores\n– Tipo automático para cargas cambiantes",
-  },{
+  }, {
     name: "AKTIF SERIE BC",
-    tension:" 380V … 960V",
-    frecuencia:"50Hz / 60Hz",
-    maxPotenciaPara1Panel:5,
-    normas:"EN 61439-1/2, EN 60831-1/2, EN 60076-6, EN 60529, EN 60255-1, EN 60947-4-1",
+    tension: " 380V … 960V",
+    frecuencia: "50Hz / 60Hz",
+    maxPotenciaPara1Panel: 5,
+    normas: "EN 61439-1/2, EN 60831-1/2, EN 60076-6, EN 60529, EN 60255-1, EN 60947-4-1",
     url: "aktif-serie-bc",
     images: ["/AKTIF-SERIE-BC.png"],
     category: "calidad-de-energia",
     subcategory: "banco-de-condensadores",
     description: "Los bancos de capacitores de la serie BC consisten en bastidores de compensación de la serie C5 y relés de control de potencia reactiva digital de alta tecnología.\nLos bancos de condensadores de la serie BC se pueden diseñar fácilmente de acuerdo con la potencia deseada gracias a sus bastidores que tienen un diseño modular. Ese diseño modular brinda soluciones rápidas y efectivas en el período de instalación, mantenimiento y desarrollo del sistema.\nLas baterías de condensadores de la serie BC encienden/apagan los pasos de forma suave e instantánea gracias a los relés digitales de control de potencia reactiva de alta tecnología. El relé determina encender/apagar los condensadores de acuerdo con los cálculos de retroalimentación según los valores provenientes de CT y VT.",
-  },{
+  }, {
     name: "AKTIF SERIE BF",
-    tension:"380V … 960 V",
-    frecuencia:"50Hz / 60Hz",
-    frecuenciaDeResonancia:"134HZ … 215 Hz (y otras frecuencias opcionales)",
-    normas:"EN 61439-1/2, EN 60831-1/2, EN 60076-6, EN 60529, EN 60255-1, EN 60947-4-1",
+    tension: "380V … 960 V",
+    frecuencia: "50Hz / 60Hz",
+    frecuenciaDeResonancia: "134HZ … 215 Hz (y otras frecuencias opcionales)",
+    normas: "EN 61439-1/2, EN 60831-1/2, EN 60076-6, EN 60529, EN 60255-1, EN 60947-4-1",
     url: "aktif-serie-bf",
     images: ["/AKTIF-SERIE-BF.png"],
     category: "calidad-de-energia",
     subcategory: "banco-de-condensadores",
     description: "Los bancos de capacitores de la serie BF consisten en bastidores de compensación de la serie C7 y relés de control de potencia reactiva digital de alta tecnología.\nLos bancos de condensadores de la serie BF se pueden diseñar fácilmente de acuerdo con la potencia deseada gracias a sus bastidores que tienen un diseño modular. Ese diseño modular brinda soluciones rápidas y efectivas en el período de instalación, mantenimiento y desarrollo del sistema.\nLas baterías de condensadores de la serie BF encienden/apagan los pasos de forma suave e instantánea gracias a los relés digitales de control de potencia reactiva de alta tecnología. El relé determina encender/apagar los condensadores de acuerdo con los cálculos de retroalimentación según los valores provenientes de CT y VT.\nEn los bancos de capacitores de la serie BF, los reactores de filtro de armónicos se han conectado en serie antes que las unidades de capacitores, para proteger las unidades de capacitores contra flujos de corriente armónicos peligrosos y armónicos de voltaje y para eliminar los posibles efectos de resonancia en paralelo del banco de capacitores.",
-  },{
+  }, {
     name: "AKTIF SERIE BFs",
-    tension:"380 v … 960 V",
-    frecuencia:"50Hz / 60Hz",
-    frecuenciaDeResonancia:"134HZ … 215 Hz",
-    maxCorriente:"1,5 In",
-    conmutacion:"Tiristor",
-    normas:"EN 61439-1/2, EN 60831-1/2, EN 60076-6, EN 60529, EN 60255-1, EN 60947-4-1",
+    tension: "380 v … 960 V",
+    frecuencia: "50Hz / 60Hz",
+    frecuenciaDeResonancia: "134HZ … 215 Hz",
+    maxCorriente: "1,5 In",
+    conmutacion: "Tiristor",
+    normas: "EN 61439-1/2, EN 60831-1/2, EN 60076-6, EN 60529, EN 60255-1, EN 60947-4-1",
     url: "aktif-serie-bfs",
     images: ["/AKTIF-SERIE-BFs.png"],
     category: "calidad-de-energia",
     subcategory: "banco-de-condensadores",
     description: "Los bancos de condensadores de la serie BFs consisten en interruptores de tiristores, bastidores de compensación de la serie C7s y relés de control del factor de potencia reactiva digital de alta tecnología.\nLos bancos de condensadores de la serie BFs se pueden diseñar fácilmente de acuerdo con la potencia deseada gracias a sus bastidores que tienen un diseño modular. Ese diseño modular proporciona soluciones rápidas y efectivas en el período de instalación, mantenimiento y desarrollo del sistema.\nLas baterías de condensadores de la serie BFs encienden/apagan los pasos de forma suave e instantánea gracias a los relés digitales de control de potencia reactiva de alta tecnología. El relé determina encender/apagar los condensadores de acuerdo con los cálculos de retroalimentación según los valores provenientes de CT y VT. En las baterías de condensadores de la serie BFs, las reactancias de filtro de armónicos se han conectado en serie antes que las unidades de condensadores, para proteger las unidades de condensadores contra flujos de corriente armónicos peligrosos y armónicos de tensión y para eliminar los posibles efectos de resonancia paralela del sistema de compensación.\nLos bancos de capacitores controlados por tiristor de la serie BF están diseñados para suministrar la potencia reactiva necesaria al permitir una conmutación muy rápida de acuerdo con la necesidad de cambios rápidos de carga. Los módulos de conmutación de tiristores evitan las corrientes de irrupción en la operación.",
-  },{
+  }, {
     name: "ALLSAI PDU",
-    tension:"220/230/240 VAC",
-    factorDeForma:"1U",
-    frecuencia:"50Hz / 60Hz",
-    tipoDeEnchufe:"1 conector IEC (16 A) y 1 cable de enchufe",
+    tension: "220/230/240 VAC",
+    factorDeForma: "1U",
+    frecuencia: "50Hz / 60Hz",
+    tipoDeEnchufe: "1 conector IEC (16 A) y 1 cable de enchufe",
     longitudDelCable: "1,8 m",
-    dimensiones:" 250 x 430 x 44",
-    salida:"8 x enchufes IEC 10A",
-    peso:"3.5",
-    temperatura:"20-90 % HR @ 0- 50 °C (sin condensación)",
+    dimensiones: " 250 x 430 x 44",
+    salida: "8 x enchufes IEC 10A",
+    peso: "3.5",
+    temperatura: "20-90 % HR @ 0- 50 °C (sin condensación)",
     url: "allsai-pdu",
     images: ["/ALLSAI-PDU.png"],
     category: "calidad-de-energia",
     subcategory: "pdu",
     description: " ",
-    ul:"Proporciona distribución de energía confiable a múltiples dispositivos\nFactor de forma 1U para instalación en rack horizontal o vertical\nMediciones individuales de corriente en tiempo real (Amp)\nMedidas de potencia activa total\nCapacidad de control de encendido/apagado programado para todos los puntos de venta\nConfiguración de retardo de salidas de encendido secuencial para evitar picos altos Actual\nComunicaciones múltiples RS-232/USB y SNMP"
-  },{
+    ul: "Proporciona distribución de energía confiable a múltiples dispositivos\nFactor de forma 1U para instalación en rack horizontal o vertical\nMediciones individuales de corriente en tiempo real (Amp)\nMedidas de potencia activa total\nCapacidad de control de encendido/apagado programado para todos los puntos de venta\nConfiguración de retardo de salidas de encendido secuencial para evitar picos altos Actual\nComunicaciones múltiples RS-232/USB y SNMP"
+  }, {
     name: "ALLSAI STS 2000 SERIES",
     url: "allsai-sts-2000-series",
     images: ["/STS-1.png"],
     category: "calidad-de-energia",
     subcategory: "sts",
     description: "Los STS Allsai permiten la transferencia instantánea de fuentes de energía a la carga. De la misma manera se puede decir que es tan rápido que la carga nunca reconoce la transferencia hecha.",
-    ul:"Mayor calidad de la energía.\nMejor reducción de ruido.\nProtección contra apagón de energía.\nRedundancia de energía.\nInterruptor estático automático.\nMonitoreo remoto para fuentes de alimentación de entrada.\nFácil transferencia estática y mecánica para fuentes de entrada.\nManejo remoto de eventos de energía.\nRegistro de eventos de energía.\nCorriente de salida con capacidad hasta tp 1000% en corto tiempo.\nGabinete tipo Rack de 19”.\nOpción de intercambio en caliente.\nFabricado de acuerdo a la normas EC Directive: EN62310."
-  },{
+    ul: "Mayor calidad de la energía.\nMejor reducción de ruido.\nProtección contra apagón de energía.\nRedundancia de energía.\nInterruptor estático automático.\nMonitoreo remoto para fuentes de alimentación de entrada.\nFácil transferencia estática y mecánica para fuentes de entrada.\nManejo remoto de eventos de energía.\nRegistro de eventos de energía.\nCorriente de salida con capacidad hasta tp 1000% en corto tiempo.\nGabinete tipo Rack de 19”.\nOpción de intercambio en caliente.\nFabricado de acuerdo a la normas EC Directive: EN62310."
+  }, {
     name: "ALLSAI STS 3000 – 4000 SERIES",
     url: "allsai-sts-3000-4000-series",
     images: ["/STS-3.png"],
     category: "calidad-de-energia",
     subcategory: "sts",
     description: "Allsai STS, permite transferencia instantánea de fuentes de alimentación a la carga. Si un poder la fuente falla, el STS cambia a la fuente de energía de respaldo tan rápido que load nunca reconoce la transferencia realizada.",
-  },{
+  }, {
     name: "ALLSAI MONOFÁSICO STA 1F",
     url: "allsai-monofasico-sta-1",
     images: ["/ALLSAI-ESTABILIZADORES-DE-VOLTAJE.jpg"],
     category: "calidad-de-energia",
     subcategory: "estabilizadores-de-voltaje",
     description: "Estabilizadores de voltaje ALLSAI STA son dispositivos para el control protección y gestión de voltaje, que están diseñado a base de microprocesadores, poseen Tecnología de semiconductores de alta velocidad. Se ajustan a la tensión correcta.\nSu principal utilidad es requerida por los dispositivos industriales. Y en general para todas las instalaciones donde la tensión de la red disminuyen o aumentan excesivamente.\nSon dispositivos de gran valor en la productividad y operatividad de los sistemas. Proporciona alta eficiencia y un trabajo continuo sin interrupciones.",
-    ul:"Capacidad: 2-50kVA\nEntrada:\nTensión: 220VAC +/- 15% o +/- 20%\nFrecuencia: 50Hz +/- 5%\nSalida:\nTensión: 220VAC\nFrecuencia: 50Hz +/- 5%\nEficiencia: >97%"
-  },{
+    ul: "Capacidad: 2-50kVA\nEntrada:\nTensión: 220VAC +/- 15% o +/- 20%\nFrecuencia: 50Hz +/- 5%\nSalida:\nTensión: 220VAC\nFrecuencia: 50Hz +/- 5%\nEficiencia: >97%"
+  }, {
     name: "ALLSAI TRIFÁSICO STA 3F",
     url: "allsai-trifasico-sta-3f",
     images: ["/ALLSAI-ESTABILIZADORES-DE-VOLTAJE-2.jpg"],
     category: "calidad-de-energia",
     subcategory: "estabilizadores-de-voltaje",
     description: "Estabilizadores de voltaje ALLSAI STA son dispositivos para el control protección y gestión de voltaje, que están diseñado a base de microprocesadores, poseen Tecnología de semiconductores de alta velocidad. Se ajustan a la tensión correcta.\nSu principal utilidad es requerida por los dispositivos industriales. Y en general para todas las instalaciones donde la tensión de la red disminuyen o aumentan excesivamente.\nSon dispositivos de gran valor en la productividad y operatividad de los sistemas. Proporciona alta eficiencia y un trabajo continuo sin interrupciones.",
-    ul:"Capacidad: 10-400kVA\nEntrada:\nTensión: 380VAC +/- 15% o +/- 20%\nFrecuencia: 50Hz +/- 5%\nSalida:\nTensión: 380VAC\nFrecuencia: 50Hz +/- 5%\nEficiencia: >97%"
+    ul: "Capacidad: 10-400kVA\nEntrada:\nTensión: 380VAC +/- 15% o +/- 20%\nFrecuencia: 50Hz +/- 5%\nSalida:\nTensión: 380VAC\nFrecuencia: 50Hz +/- 5%\nEficiencia: >97%"
   },
   {
     name: "HIREF MHA",
@@ -574,52 +586,52 @@ export const productsData = [
     category: "clima-de-precision",
     subcategory: "chillers",
     description: "Enfriadoras de líquido condensadas por aire con compresores Scroll BLDC inverter\nRango: 23 kW a 309 kW\nMHA es la gama HiRef de enfriadoras de líquido condensadas por aire que utiliza una combinación de compresores Scroll ON/OFF y de compresores moduladores BLDC (Brushless DC-inverter). Gracias a un control puntual de la potencia frigorífica dispensada, basado en el logro del máximo rendimiento o de la máxima eficiencia energética de sistema, los costes de gestión de la instalación se reducen al mínimo.",
-  },{
+  }, {
     name: "HIREF MHW",
     url: "hiref-mhw",
     images: ["/HIREF-MHW-2.jpg"],
     category: "clima-de-precision",
     subcategory: "chillers",
     description: "Enfriadoras de líquido condensadas por agua con compresores Scroll BLDC inverter\nRango: 56kW a 169 kW\nMHW es la última generación de enfriadoras de líquido, condensadas por agua, de HiRef, fabricadas con una combinación de compresores Scroll ON/OFF y modulantes BLDC. El software de control, desarrollado en la parte interior, permite una modulación continua de la capacidad frigorífica, corrientes de arranque reducidas y la posibilidad de evitar la instalación de acumuladores térmicos para el sistema.",
-  },{
+  }, {
     name: "HIREF TSE",
     url: "hiref-tse",
     images: ["/HIREF-TSE.jpg"],
     category: "clima-de-precision",
     subcategory: "chillers",
     description: "Enfriadoras de líquido con compresores scroll y condensador remoto (motoevaporadoras)\nRango: 47kW a 706 kW\nTSE es la gama HiRef de enfriadoras de líquido con condensador remoto y compresores scroll. Estas unidades motoevaporadoras están disponibles en diferentes versiones frigoríficas (Efficiency Packs), en numerosos tamaños de potencia y con dos equipamientos diferentes de emisión sonora para una versatilidad de aplicación en diferentes contextos de instalación.",
-  },{
+  }, {
     name: "HIREF TSX",
     url: "hiref-tsx",
     images: ["/HIREF-TSX.jpg"],
     category: "clima-de-precision",
     subcategory: "chillers",
     description: "Enfriadoras de líquido condensadas por aire con compresores Scroll\nRango: 50kW a 1310 kW\nTSX es la gama de enfriadoras de líquido condensadas por aire de HiRef con compresores de tipo scroll. El dimensionamiento y la elección de cada componente está focalizado en la moderación del consumo energético con una óptica de ahorro de energía no solo de la máquina enfriadora en particular sino de todo el sistema de instalación.",
-  },{
+  }, {
     name: "HIREF TTX",
     url: "hiref-ttx",
     images: ["/HIREF-TTX.png"],
     category: "clima-de-precision",
     subcategory: "chillers",
     description: "Enfriadoras de líquido condensadas por aire con compresores centrífugos sin aceite\nRango: 281kW a 1057 kW\nTTX representa la solución más innovadora y eficiente en enfriadoras condensadas por aire. El punto clave para aprovechar al máximo las mayores eficiencias, especialmente con cargas parciales, es el compresor centrífugo sin aceite combinado con nuevos intercambiadores inundados de tamaño pequeño (aproximación mínima entre agua y refrigerante y reducción de la carga de refrigerante en comparación con los intercambiadores inundados tradicionales).",
-  },{
+  }, {
     name: "HIREF TVX",
     url: "hiref-tvx",
-    images: ["/HIREF-TVX.jpg","HIREF-TVX-2.jpg","HIREF-TVX-3.jpg","HIREF-TVX-4.jpg","HIREF-TVX-5.jpg","HIREF-TVX-6.jpg"],
+    images: ["/HIREF-TVX.jpg", "HIREF-TVX-2.jpg", "HIREF-TVX-3.jpg", "HIREF-TVX-4.jpg", "HIREF-TVX-5.jpg", "HIREF-TVX-6.jpg"],
     category: "clima-de-precision",
     subcategory: "chillers",
     description: "Enfriadoras de líquido condensadas por aire con compresores de tornillo modulantes\nRango: 384kW a 1410 kW\nTVX es el nuevo estándar de enfriadoras condensadas por aire diseñadas para los procesos de eficiencia energética y, al mismo tiempo, respetuosas del medio ambiente. El bajo impacto medioambiental se obtiene gracias al uso de los nuevos refrigerantes HFO de bajo GWP (Potencial de Calentamiento Global), mientras que las relaciones más altas de eficiencia/dimensiones se logran gracias a la configuración particular en V de las baterías de intercambio térmico y a sus dimensiones, la más alta entre las enfriadoras del mercado.",
-  },{
+  }, {
     name: "HIREF XSW",
     url: "hiref-xsw",
-    images: ["/HIREF-XSW.jpg","/HIREF-XSW-2.jpg","/HIREF-XSW-3.jpg","/HIREF-XSW-4.jpg"],
+    images: ["/HIREF-XSW.jpg", "/HIREF-XSW-2.jpg", "/HIREF-XSW-3.jpg", "/HIREF-XSW-4.jpg"],
     category: "clima-de-precision",
     subcategory: "chillers",
     description: "Enfriadoras de líquido condensadas por agua con compresores Scroll\nRango: 54kW a 808 kW\nXSW es la gama de enfriadoras condensadas por agua con compresores scroll de HiRef. Las numerosas configuraciones frigoríficas, junto con las soluciones constructivas especiales, hacen que las numerosas unidades XSW sean aptas para diferentes necesidades de instalación: redundancia, eficiencia con cargas parciales, espacios disponibles reducidos en el local técnico, bajos niveles de ruido, gestión de los auxiliares de la instalación, facilidad de instalación.",
-  },{
+  }, {
     name: "HIREF XTW",
     url: "hiref-xtw",
-    images: ["/HIREF-XTW.png","/HIREF-XTW-2-600x878.png","/HIREF-XTW-3.jpg","/HIREF-XTW-4.jpg"],
+    images: ["/HIREF-XTW.png", "/HIREF-XTW-2-600x878.png", "/HIREF-XTW-3.jpg", "/HIREF-XTW-4.jpg"],
     category: "clima-de-precision",
     subcategory: "chillers",
     description: "Enfriadoras condensas por agua\nRango: 338kW a 1161 kW\nXTW representa la solución más innovadora y eficiente de enfriadoras condensadas por agua. Una meticulosa selección de los componentes y del diseño de la máquina, ha conducido a una solución con numerosas ventajas, tanto desde el punto de vista de las prestaciones energéticas, como de la reducción de las emisiones sonoras.",
@@ -627,25 +639,25 @@ export const productsData = [
   {
     name: "HIREF XVW",
     url: "hiref-xvw",
-    images: ["/HIREF-XVW.jpg","/HIREF-XVW-2.jpg","/HIREF-XVW-3.jpg"],
+    images: ["/HIREF-XVW.jpg", "/HIREF-XVW-2.jpg", "/HIREF-XVW-3.jpg"],
     category: "clima-de-precision",
     subcategory: "chillers",
     description: "Enfriadoras de líquido condensadas por agua con compresores de tornillo\nRango: 428kW a 1644 kW\nXVW es la gama de chiller condensados por agua de HiRef con compresores de tornillo e intercambiadores de haz de tubos. El uso del nuevo refrigerante R1234ze, con un valor muy bajo de GWP (Global Warming Potential), y con elevados niveles de eficiencia energética, sobre todo con cargas parciales, se traducen en valores reducidos del TEWI (Total Equivalent Warming Impact) del sistema.\nEl amplio rango de potencia cubierto por la gama y las diferentes versiones disponibles permiten hacer frente a las exigencias más variadas eligiendo entre funcionamiento solo en el modo chiller con torre evaporativa o Dry Cooler y funcionamiento en bomba de calor para altas o bajas temperaturas.",
-  },{
+  }, {
     name: "HIREF JREF CW",
     url: "hiref-jref-cw",
     images: ["/HIREF-JREF-CW.jpg"],
     category: "clima-de-precision",
     subcategory: "equipos-perimetrales",
     description: "Acondicionadores perimetrales por agua enfriada\nRang0o: 18kW a 33kW\nJREF CW es la nueva gama de acondicionadores perimetrales de agua enfriada para entornos tecnológicos en los que se requiere un footprint reducido con la misma potencia frigorífica suministrada. Un minucioso análisis fluidodinámico CFD ha permitido diseñar con máxima precisión todos los detalles de construcción para minimizar las pérdidas de carga en el flujo de aire y, por lo tanto, el consumo de energía de los ventiladores. Las secciones de paso de aire más amplias agilizan y simplifican las operaciones de instalación y mantenimiento gracias al aumento del espacio interior disponible.",
-  },{
+  }, {
     name: "HIREF NRG",
     url: "hiref-nrg",
-    images: ["/HIREF-NRG.jpg","/HIREF-NRG-2.jpg","/HIREF-NRG-3.jpg"],
+    images: ["/HIREF-NRG.jpg", "/HIREF-NRG-2.jpg", "/HIREF-NRG-3.jpg"],
     category: "clima-de-precision",
     subcategory: "equipos-perimetrales",
     description: "Acondicionadores perimetrales de expansión directa con compresores BLDC modulantes\nRango: 10kW a 99kW\nLos acondicionadores perimetrales NRG de HiRef están diseñados para el acondicionamiento de entornos tecnológicos de alta densidad térmica en los que se requiere un control preciso de los parámetros termohigrométricos y un funcionamiento continuo. El punto fuerte de la gama NRG está representado por los compresores BLDC accionados con inverter, que siguen la carga térmica con extrema precisión. El uso de ventiladores EC (de serie), válvulas de laminación con control electrónico (de serie) y las configuraciones con sistema Dual Cooling o Free-Cooling permiten alcanzar altos rendimientos con un limitado consumo de energía, en beneficio del PUE del Data Center.",
-    ul:"Eficiencia máxima de instalación con los compresores BLDC y los ventiladores EC\nBaterías evaporadoras con tratamiento hidrófilo\nAcceso completo desde el frente de la unidad"
+    ul: "Eficiencia máxima de instalación con los compresores BLDC y los ventiladores EC\nBaterías evaporadoras con tratamiento hidrófilo\nAcceso completo desde el frente de la unidad"
   },
   {
     name: "HIREF TREF CW",
@@ -654,136 +666,136 @@ export const productsData = [
     category: "clima-de-precision",
     subcategory: "equipos-perimetrales",
     description: "Acondicionador perimetral de agua enfriada\nRango: 22kW a 236kW\nJREF CW es la nueva gama de acondicionadores perimetrales de agua enfriada para entornos tecnológicos en los que se requiere un footprint reducido con la misma potencia frigorífica suministrada. Un minucioso análisis fluidodinámico CFD ha permitido diseñar con máxima precisión todos los detalles de construcción para minimizar las pérdidas de carga en el flujo de aire y, por lo tanto, el consumo de energía de los ventiladores. Las secciones de paso de aire más amplias agilizan y simplifican las operaciones de instalación y mantenimiento gracias al aumento del espacio interior disponible.",
-  },{
+  }, {
     name: "HIREF HRCB",
     url: "hiref-hrcb",
-    images: ["/HIREF-HRCB.jpg","/HIREF-HRCB-2.jpg","/HIREF-HRCB-3.jpg"],
+    images: ["/HIREF-HRCB.jpg", "/HIREF-HRCB-2.jpg", "/HIREF-HRCB-3.jpg"],
     category: "clima-de-precision",
     subcategory: "equipos-in-row",
     description: "Soluciones llave en mano rack+rack cooler para entornos de alta densidad\nRango: 6kW a 14kW\nAlgunas posibles configuraciones de combinación de armarios rack y acondicionadores de expansión directa, en lógica N+1: HRCB #001 – 5,9 kW 2 x HRCM 0061 rack cooler 1 x rack de servidor 51U HRCB #001 – 9,8 kW 2 x HRCM 0101 rack cooler 2 x rack de servidor 48U HRCB #001 – 14 kW 2 x NRCD 0100 o 2 x NRCV 0140 rack cooler 3 x rack de servidor 48U",
-  },{
+  }, {
     name: "HIREF HRCM",
     url: "hiref-hrcm",
-    images: ["/HIREF-HRCM.jpg","/HIREF-HRCM-2.jpg","/HIREF-HRCM-3.jpg","/HIREF-HRCM-4.jpg"],
+    images: ["/HIREF-HRCM.jpg", "/HIREF-HRCM-2.jpg", "/HIREF-HRCM-3.jpg", "/HIREF-HRCM-4.jpg"],
     category: "clima-de-precision",
     subcategory: "equipos-in-row",
     description: "Rack cooler monobloc de expansión directa\nRango: 6kW a 10kW\nHRCM es la nueva generación de rack coolers monobloc para aplicaciones de alta densidad de carga térmica. La versión con la sección condensadora incorporada en la máquina permite una notable reducción de los costes de instalación, debido a que no hay líneas frigoríficas. Las bridas para la canalización de los tramos para el aire de condensación están situadas en la parte superior de la unidad, facilitando aún más los trabajos de instalación. La versión monobloc, que incluye la sección evaporadora y condensadora, garantiza una instalación rápida evitando la realización de tuberías frigoríficas de conexión en la obra.\nDe esta manera los gastos de instalación son menores. Las aletas de aluminio de la batería evaporadora están tratadas con un recubrimiento hidrófilo para facilitar el drenaje de los condensados en el bandeja de acero inoxidable y para evitar que el líquido llegue al rack a través del flujo de aire. Los ventiladores utilizan motores brushless EC, tanto en el lado de evaporación como en el de condensación, lo que permite que HRCM se adapte a múltiples configuraciones de canalización y se beneficie de una alta eficiencia con cargas parciales. Un sistema de bypass del gas caliente permite adaptar la potencia frigorífica a las situaciones de baja carga térmica. Las bridas para la canalización de los tramos para el aire de condensación están situadas en la parte superior de la unidad, facilitando aún más los trabajos de instalación.",
-  },{
+  }, {
     name: "HIREF MRAC",
     url: "hiref-mrac",
-    images: ["/HIREF-MRAC.jpg","/HIREF-MRAC-2.jpg","/HIREF-MRAC-3.jpg"],
+    images: ["/HIREF-MRAC.jpg", "/HIREF-MRAC-2.jpg", "/HIREF-MRAC-3.jpg"],
     category: "clima-de-precision",
     subcategory: "equipos-in-row",
     description: "Mini rack cooler para la instalación en el interior del rack\nRango: 3.6kW a 7.9kW\nLas unidades de la familia MRAC son la solución ideal para el acondicionamiento de los armarios rack con montantes de 19″, en los que se necesite un control preciso de la temperatura interior y un funcionamiento de 24 horas por día. En la versión dividida con unidad motocondensadora exterior con refrigerante R410A, el rango se extiende hasta los 8 kW de potencia frigorífica con la versión con compresor modulante BLDC.\nUno de los puntos fuertes de la gama MRAC son las medidas compactas de las unidades: MRAC ocupa un espacio de tan solo 7 unidades rack. La ventilación es solo electrónica EC lo que garantiza una regulación eficiente del flujo de aire.",
-  },{
+  }, {
     name: "HIREF NRCD",
     url: "hiref-nrcd",
-    images: ["/HIREF-NRCD.jpg","/HIREF-NRCD-2.jpg","/HIREF-NRCD-3.jpg"],
+    images: ["/HIREF-NRCD.jpg", "/HIREF-NRCD-2.jpg", "/HIREF-NRCD-3.jpg"],
     category: "clima-de-precision",
     subcategory: "equipos-in-row",
     description: "Rack cooler de expansión directa con condensador remoto\nRango: 13kW a 48 kW\nLos rack coolers de la gama NRCD de HiRef son la solución ideal para la refrigeración de armarios Rack en Data Centers de pequeñas y medianas dimensiones, donde se requiere un control de precisión de los parámetros termohigrométricos ambiente 24 horas por día.\nSon aptos para pequeñas instalaciones donde no es posible instalar una enfriadora o cuando las condiciones del entorno no permiten la presencia de agua en el Data Center. El diseño interior y la elección de los componentes están destinados exclusivamente a obtener altos niveles de eficiencia de energía, con la finalidad de minimizar los costes de gestión de todo el sistema.",
-  },{
+  }, {
     name: "HIREF NRCV",
     url: "hiref-nrcv",
-    images: ["/HIREF-NRCV.jpg","/HIREF-NRCV-2.jpg","/HIREF-NRCV-3.jpg"],
+    images: ["/HIREF-NRCV.jpg", "/HIREF-NRCV-2.jpg", "/HIREF-NRCV-3.jpg"],
     category: "clima-de-precision",
     subcategory: "equipos-in-row",
     description: "Rack coolers de expansión directa combinados con unidad motocondensadora exterior\nRango: 13kW a 36kW\nLos rack cooler de la gama NRCV de HiRef son la solución ideal para la refrigeración de armarios Rack en Data Centers de pequeñas y medianas dimensiones, donde se requiere un control de precisión de los parámetros termohigrométricos ambiente 24 horas por día. Son aptos para pequeñas instalaciones donde no es posible instalar una enfriadora o cuando las condiciones del entorno no permiten la presencia de agua en el Data Center. El diseño interior y la elección de los componentes están destinados exclusivamente a obtener altos niveles de eficiencia de energía, con la finalidad de minimizar los costes de gestión de todo el sistema.",
-  },{
+  }, {
     name: "HIREF HTD",
     url: "hiref-htd",
     images: ["/HIREF-HTD.jpg"],
     category: "clima-de-precision",
     subcategory: "equipos-tipo-mochila",
     description: "Acondicionadores de expansión directa con impulsión del aire hacia abajo\nRango: 4kW a 28kW",
-    ul:"Unidades compactas de interior para ambientes tecnológicos sin…..ocupación\nPaneles de chapa galvanizada pintados al polvo RAL9002 con las…..esquinas redondeadas\nVersiones de impulsión a falso suelo, ambiente o desplazamiento\nVentilador de tratamiento de tipo de palas curvadas hacia atrás\nVentiladores de condensación de transmisión directa con palas…..curvadas hacia delant\nAcceso a todos los componentes desde el frontal\nCuadro eléctrico en compartimento separado\nMicroprocesador de control\nCompresor Scroll o rotativo\nVálvula de expansión con ecualización externa, filtro y visor de líquido\nTratamiento hidrofílico en la batería interior"
-  },{
+    ul: "Unidades compactas de interior para ambientes tecnológicos sin…..ocupación\nPaneles de chapa galvanizada pintados al polvo RAL9002 con las…..esquinas redondeadas\nVersiones de impulsión a falso suelo, ambiente o desplazamiento\nVentilador de tratamiento de tipo de palas curvadas hacia atrás\nVentiladores de condensación de transmisión directa con palas…..curvadas hacia delant\nAcceso a todos los componentes desde el frontal\nCuadro eléctrico en compartimento separado\nMicroprocesador de control\nCompresor Scroll o rotativo\nVálvula de expansión con ecualización externa, filtro y visor de líquido\nTratamiento hidrofílico en la batería interior"
+  }, {
     name: "HIREF HTS",
     url: "hiref-hts",
     images: ["/HTS.jpg"],
     category: "clima-de-precision",
     subcategory: "equipos-tipo-mochila",
     description: "Acondicionadores de expansión directa\nRango: 3kW a 39kW",
-    ul:"Unidad partida con motocondensador exterior y unidad interior…..evaporadora (para montaje en techo o pared)\nMicroprocesador programable\nVentilador exterior de 6 polos para un menor nivel sonoro\nVentilador interior con varias velocidades\nDoble bandeja de condensados\nRejilla de impulsión de aire ajustable\nVentiladores plug\nVersión para canales"
-  },{
+    ul: "Unidad partida con motocondensador exterior y unidad interior…..evaporadora (para montaje en techo o pared)\nMicroprocesador programable\nVentilador exterior de 6 polos para un menor nivel sonoro\nVentilador interior con varias velocidades\nDoble bandeja de condensados\nRejilla de impulsión de aire ajustable\nVentiladores plug\nVersión para canales"
+  }, {
     name: "HIREF HTW",
     url: "hiref-htw",
     images: ["/HIREF-HTW.jpg"],
     category: "clima-de-precision",
     subcategory: "equipos-tipo-mochila",
     description: "Acondicionadores de expansión directa con impulsión del aire hacia arriba\nRango: 4kW a 32kW",
-    ul:"Refrigeración de emergencia a 24Vdc o 48Vdc\nVersión a 60 Hz\nVálvula de expansión eléctrica con control electrónico\nResistencia eléctrica\nCompuerta de Free Cooling modulante con SFT® – Side Free-Cooling…..Technology, para mejorar el mantenimiento\nControl de condensación por regulación de velocidad del ventilador\nBatería condensador con tratamiento epoxy o cobre/cobre\nMicroprocesador programable\nVentiladores EC en parte evaporadora\nTarjetas de serie para protocolos: Carel / Modbus / Lonworks / Trend\nHardware HIWEB: Tarjeta Ethernet para: Bacnet / SNMP\nSoftware HIWEB: Tarjeta Ethernet para conectividad web\nModem GSM para comunicación mediante SMS\nConexión LAN de hasta 8 unidades\nControl Gráfico con pantalla táctil a color\nVersión con compresor a inverter BLDC"
-  },{
+    ul: "Refrigeración de emergencia a 24Vdc o 48Vdc\nVersión a 60 Hz\nVálvula de expansión eléctrica con control electrónico\nResistencia eléctrica\nCompuerta de Free Cooling modulante con SFT® – Side Free-Cooling…..Technology, para mejorar el mantenimiento\nControl de condensación por regulación de velocidad del ventilador\nBatería condensador con tratamiento epoxy o cobre/cobre\nMicroprocesador programable\nVentiladores EC en parte evaporadora\nTarjetas de serie para protocolos: Carel / Modbus / Lonworks / Trend\nHardware HIWEB: Tarjeta Ethernet para: Bacnet / SNMP\nSoftware HIWEB: Tarjeta Ethernet para conectividad web\nModem GSM para comunicación mediante SMS\nConexión LAN de hasta 8 unidades\nControl Gráfico con pantalla táctil a color\nVersión con compresor a inverter BLDC"
+  }, {
     name: "AIRSYS FREECOOL INTELLIGENT",
     url: "airsys-freecool-intelligent",
     images: ["/AIRSYS-FREECOOL.jpg"],
     category: "clima-de-precision",
     subcategory: "aire-acondicionado-de-precision",
     description: "Capacidad: 1000 a 3450 m3/h\nFREECOOL intelligent se aplica en shelters y pequeños data center. La unidad introduce aire fresco al aire libre con temperatura más baja para enfriar la sala de equipos. Al usar la unidad FREECOOL, las horas de funcionamiento de otras unidades de aire acondicionado pueden reducirse en gran medida, logrando un ahorro de energía de alrededor del 30 ~ 90% ",
-    ul:"Alta eficiencia energética\nBuen diseño de estructura y mantenimiento sencillo Estructura fuerte a prueba de corrosión\nDimensiones más pequeñas\nInstalación flexible\nControl al otro aire acondicionado\nProtección completamente automática\nRecomendado para: Base de telecomunicaciones. Dispositivos electrónicos de tecnología avanzada que cambian de habitación\nEstación de distribución de energía\nCentro de control de procesos industriales."
-  },{
+    ul: "Alta eficiencia energética\nBuen diseño de estructura y mantenimiento sencillo Estructura fuerte a prueba de corrosión\nDimensiones más pequeñas\nInstalación flexible\nControl al otro aire acondicionado\nProtección completamente automática\nRecomendado para: Base de telecomunicaciones. Dispositivos electrónicos de tecnología avanzada que cambian de habitación\nEstación de distribución de energía\nCentro de control de procesos industriales."
+  }, {
     name: "AIRSYS METROCOOL",
     url: "airsys-metrocool",
     images: ["/AIRSYS-METROCOOL.jpg"],
     category: "clima-de-precision",
     subcategory: "aire-acondicionado-de-precision",
     description: "Capacidad: 5.2kW  a 13.0 kW\nLa unidad METROCOOL está especialmente diseñada para entornos industriales, soporta altas temperaturas, contaminación fuerte y demanda de trabajo continua y ofrece alta eficiencia, estricta protección contra incendios, varias fuentes de alimentación y condiciones de trabajo ampliamente con alta confiabilidad.",
-    ul:"Alta fiabilidad\nResistencia a altas temperaturas\nA prueba de corrosión\nIncombustible\nBuen diseño de estructura y fácil mantenimiento.\nResistencias eléctricas\nCondensador especial\nTarjeta de conversión de protocolo de comunicación\nVarias fuentes de alimentación\nComo requisito del cliente, las siguientes fuentes de energía están disponibles.\n230/1/50 | 208 ~ 230/1/60 | 415/3/50 | 208 ~ 230/3/60 | 460/3/60\nDispositivo de enfriamiento por inyección líquida\nTarjeta de comunicación\nKits de montaje en pared"
-  },{
+    ul: "Alta fiabilidad\nResistencia a altas temperaturas\nA prueba de corrosión\nIncombustible\nBuen diseño de estructura y fácil mantenimiento.\nResistencias eléctricas\nCondensador especial\nTarjeta de conversión de protocolo de comunicación\nVarias fuentes de alimentación\nComo requisito del cliente, las siguientes fuentes de energía están disponibles.\n230/1/50 | 208 ~ 230/1/60 | 415/3/50 | 208 ~ 230/3/60 | 460/3/60\nDispositivo de enfriamiento por inyección líquida\nTarjeta de comunicación\nKits de montaje en pared"
+  }, {
     name: "AIRSYS MINICOOL",
     url: "airsys-minicool",
     images: ["/AIRSYS-MINICOOL.jpg"],
     category: "clima-de-precision",
     subcategory: "aire-acondicionado-de-precision",
     description: "Capacidad: 3.2kW a 13.4kW\nMINICOOL está especialmente diseñado para pequeñas salas de máquinas de comunicación, refugios de comunicaciones móviles, salas de equipos eléctricos, salas de instrumentos precisos, centros de procesamiento y fabricación precisos, etc. que tienen estrictas demandas de temperatura, humedad y limpieza.",
-    ul:"Alta relación de calor sensible\nVarios tipos de instalación (montaje en pared y vertical)\nAmplio rango de trabajo (-30 ° C ~ 45 ° C)\nLa estructura es lo suficientemente fuerte como para poder transportar en caminos de baja pendiente.\nTratamiento anticorrosión\nLos marcos y paneles de la unidad están hechos de chapa de acero galvanizado y recubiertos con un revestimiento de protección anticorrosión que es anticorrosión."
-  },{
+    ul: "Alta relación de calor sensible\nVarios tipos de instalación (montaje en pared y vertical)\nAmplio rango de trabajo (-30 ° C ~ 45 ° C)\nLa estructura es lo suficientemente fuerte como para poder transportar en caminos de baja pendiente.\nTratamiento anticorrosión\nLos marcos y paneles de la unidad están hechos de chapa de acero galvanizado y recubiertos con un revestimiento de protección anticorrosión que es anticorrosión."
+  }, {
     name: "AIRSYS MOBILECOOL INDOOR",
     url: "airsys-mobilecool-indor",
     images: ["/AIRSYS-MOBILECOOL-INDOOR.jpg"],
     category: "clima-de-precision",
     subcategory: "aire-acondicionado-de-precision",
     description: "Capacidad: 3.4kW a 13.4kW\nMobilecool Indoor es una unidad especial de control de temperatura de estación base de telecomunicaciones tipo paquete que cumple con los requisitos en aspectos de alta eficiencia y ahorro de energía, varias fuentes de alimentación, refrigerantes ecológicos, diversas condiciones de instalación, amplio alcance de trabajo y seguridad del producto, etc.",
-    ul:"Operación de ahorro de energía\nSistema de enfriamiento gratuito incorporado, que funciona cuando la temperatura exterior es inferior a la temperatura ambiente.\nModo de suministro de aire inferior y delantero\nFácil mantenimiento\nLa estructura es lo suficientemente fuerte como para poder transportarse en caminos de baja pendiente.\nDoble fuente de enfriamiento\nEquipado con un sistema de enfriamiento mecánico y un sistema de enfriamiento gratuito de serie El enfriamiento sin aire fresco está diseñado para ser la principal fuente de enfriamiento.\nAlta relación de calor sensible: superior a 0.9.\nAmplio rango de trabajo （-30 ° C ~ 53 ° C）"
-  },{
+    ul: "Operación de ahorro de energía\nSistema de enfriamiento gratuito incorporado, que funciona cuando la temperatura exterior es inferior a la temperatura ambiente.\nModo de suministro de aire inferior y delantero\nFácil mantenimiento\nLa estructura es lo suficientemente fuerte como para poder transportarse en caminos de baja pendiente.\nDoble fuente de enfriamiento\nEquipado con un sistema de enfriamiento mecánico y un sistema de enfriamiento gratuito de serie El enfriamiento sin aire fresco está diseñado para ser la principal fuente de enfriamiento.\nAlta relación de calor sensible: superior a 0.9.\nAmplio rango de trabajo （-30 ° C ~ 53 ° C）"
+  }, {
     name: "AIRSYS MOBILECOOL OUTDOOR",
     url: "airsys-mobilecool-outdoor",
     images: ["/AIRSYS-MOBILECOOL-OUTDOOR.jpg"],
     category: "clima-de-precision",
     subcategory: "aire-acondicionado-de-precision",
     description: "Capacidad: 3.5kW a 13.6kW\nMobilecool Outdoor es un acondicionador de aire especial de estaciones de telecomunicaciones tipo paquete que cumple con los requisitos en aspectos de alta eficiencia y ahorro de energía, varias fuentes de alimentación, refrigerantes ecológicos, diversas condiciones de instalación, amplio alcance de trabajo y seguridad del producto, etc.",
-    ul:"Operación de ahorro de energía\nModo de suministro de aire inferior y delantero\nFácil mantenimiento\nLa estructura es lo suficientemente fuerte como para poder transportarse en caminos de baja pendiente.\nDoble fuente de enfriamiento\nAlta relación de calor sensible: superior a 0.9.\nAmplio rango de trabajo （-30 ° C ~ 53 ° C）\nModo de trabajo con alternancia automática\nModo confort\nControl de humedad\nEjecución de registro de datos\nLa tarjeta de comunicación RS485 estándar permite la descarga automática de registros."
-  },{
+    ul: "Operación de ahorro de energía\nModo de suministro de aire inferior y delantero\nFácil mantenimiento\nLa estructura es lo suficientemente fuerte como para poder transportarse en caminos de baja pendiente.\nDoble fuente de enfriamiento\nAlta relación de calor sensible: superior a 0.9.\nAmplio rango de trabajo （-30 ° C ~ 53 ° C）\nModo de trabajo con alternancia automática\nModo confort\nControl de humedad\nEjecución de registro de datos\nLa tarjeta de comunicación RS485 estándar permite la descarga automática de registros."
+  }, {
     name: "ALLSAI VARIADOR DE FRECUENCIA 200 SERIES",
     url: "allsai-variador-de-frecuencia-200-series",
     images: ["/VARIADOR-DE-FRECUENCIA-ALLSAI-200.jpg"],
     category: "accionamiento-electrico",
     subcategory: "variadores-de-frecuencia",
     description: "Los Variadores de Frecuencia Allsai Modelo MD200 son flexibles para ayudarle a optimizar todos sus procesos, además de confiables para reducir en múltiples industrias las paradas inesperadas. Nuestros variadores de frecuencia ofrecen:",
-    ul:"Amplio rango de voltaje de operación en dos fases 200-240Vac con potencias entre 0.4 ~ 2.2kW y en tres fases 380-480Vac y en potencia desde 0.4kW ~ 3.7kW.\nFiltro EMC Interno.\nOperación en ambiente de alta temperatura, hasta 45°C.\nProtección mejorada para aumentar la confiabilidad contra la humedad y el polvo.\nCumple con EN61800-3 Categoria C2 2do ambiente.\nComunicación Modbus. (CANlink opcional)\nModo de Instalación Flexible."
-  },{
+    ul: "Amplio rango de voltaje de operación en dos fases 200-240Vac con potencias entre 0.4 ~ 2.2kW y en tres fases 380-480Vac y en potencia desde 0.4kW ~ 3.7kW.\nFiltro EMC Interno.\nOperación en ambiente de alta temperatura, hasta 45°C.\nProtección mejorada para aumentar la confiabilidad contra la humedad y el polvo.\nCumple con EN61800-3 Categoria C2 2do ambiente.\nComunicación Modbus. (CANlink opcional)\nModo de Instalación Flexible."
+  }, {
     name: "ALLSAI VARIADOR DE FRECUENCIA 290 SERIES",
     url: "allsai-variador-de-frecuencia-290-series",
     images: ["/VARIADOR-DE-FRECUENCIA-ALLSAI-200.jpg"],
     category: "accionamiento-electrico",
     subcategory: "variadores-de-frecuencia",
     description: "Los Variadores de Frecuencia Allsai Modelo MD290 son flexibles para ayudarle a optimizar todos sus procesos, además de confiables para reducir en múltiples industrias las paradas inesperadas. Nuestros variadores de frecuencia ofrecen:",
-    ul:"Amplio rango de voltaje de operación en tres fases 380-480Vac y en potencia\ndesde 18.5kW ~ 500kW.\nOperación en ambiente con alta temperatura, hasta 45°C aproximadamente.\nReactancia de salida AC.\nSoftware simplificado basado en PC para inicio y respaldo.\nAlta protección contra la humedad y el polvo.\nConstruido con Reactor DC EN61800-3 Categoría C2 2do Ambiente. (Con filtro externo)."
-  },{
+    ul: "Amplio rango de voltaje de operación en tres fases 380-480Vac y en potencia\ndesde 18.5kW ~ 500kW.\nOperación en ambiente con alta temperatura, hasta 45°C aproximadamente.\nReactancia de salida AC.\nSoftware simplificado basado en PC para inicio y respaldo.\nAlta protección contra la humedad y el polvo.\nConstruido con Reactor DC EN61800-3 Categoría C2 2do Ambiente. (Con filtro externo)."
+  }, {
     name: "ALLSAI VARIADOR DE FRECUENCIA 310 SERIES",
     url: "allsai-variador-de-frecuencia-310-series",
     images: ["/VARIADOR-DE-FRECUENCIA-ALLSAI-200.jpg"],
     category: "accionamiento-electrico",
     subcategory: "variadores-de-frecuencia",
     description: "Los Variadores de Frecuencia Allsai Modelo MD310 son flexibles para ayudarle a optimizar todos sus procesos, además de confiables para reducir en múltiples industrias las paradas inesperadas.Nuestros variadores de frecuencia ofrecen:",
-    ul:"Amplio rango de voltaje de operación en tres fases 380-480Vac y en potencia desde 0.4kW ~ 18.5kW.\nOperación en ambiente con alta temperatura, hasta 45°C aproximadamente.\nModbus RTU o CANlink opcional.\nFrecuencia oscilante.\nCambio entre múltiples motores."
-  },{
+    ul: "Amplio rango de voltaje de operación en tres fases 380-480Vac y en potencia desde 0.4kW ~ 18.5kW.\nOperación en ambiente con alta temperatura, hasta 45°C aproximadamente.\nModbus RTU o CANlink opcional.\nFrecuencia oscilante.\nCambio entre múltiples motores."
+  }, {
     name: "ALLSAI VARIADOR DE FRECUENCIA 500 SERIES",
     url: "allsai-variador-de-frecuencia-500-series",
     images: ["/VARIADOR-DE-FRECUENCIA-ALLSAI-200.jpg"],
     category: "accionamiento-electrico",
     subcategory: "variadores-de-frecuencia",
     description: "Los Variadores de Frecuencia Allsai Modelo MD500 son flexibles para ayudarle a optimizar todos sus procesos, además de confiables para reducir en múltiples industrias las paradas inesperadas. Nuestros variadores de frecuencia ofrecen:",
-    ul:"Amplio rango de voltaje de operación en tres fases 380-480Vac y en potencia desde 18.5kW ~ 450kW.\nOperación en ambiente con alta temperatura, hasta 45°C.\nReactancia de salida AC.\nSoftware simplificado basado en PC para inicio y respaldo.\nAltísima fiabilidad.\nConstruido con Reactor DC EN61800-3 Categoría C2 2do Ambiente. (Con filtro externo)."
+    ul: "Amplio rango de voltaje de operación en tres fases 380-480Vac y en potencia desde 18.5kW ~ 450kW.\nOperación en ambiente con alta temperatura, hasta 45°C.\nReactancia de salida AC.\nSoftware simplificado basado en PC para inicio y respaldo.\nAltísima fiabilidad.\nConstruido con Reactor DC EN61800-3 Categoría C2 2do Ambiente. (Con filtro externo)."
   },
 ];

@@ -10,6 +10,7 @@ import FooterComponent from "../components/footer/FooterComponent";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs, Zoom } from "swiper/modules";
+import TableHeadComponent from "../components/table/TableHeadComponent";
 
 // Import Swiper styles
 import "swiper/css";
@@ -217,6 +218,8 @@ const ProductoView = ({ categoryId: staticCategoryId }) => {
               ))}
             </Swiper>
           </figure>
+          {productObj.table ?<TableHeadComponent table={productObj.table}/> : ""}
+          
         </section>
       </div>
       <FooterComponent />
