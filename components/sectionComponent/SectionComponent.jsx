@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import AnimatedBg from "../animatedMee/AnimatedMee";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -24,28 +25,6 @@ const SectionComponent = () => {
       },
       (context) => {
         const { isDesktop, isMobile } = context.conditions;
-
-        // Animación de la caja solo en escritorio
-        if (isDesktop && boxRef.current) {
-          gsap.fromTo(
-            boxRef.current,
-            { x: -1000, opacity: 0, rotate: 0, scale: 5 },
-            {
-              x: 200,
-              opacity: 1,
-              rotate: 405,
-              scale: 9,
-              duration: 6,
-              ease: "power3.out",
-              scrollTrigger: {
-                trigger: boxRef.current,
-                start: "top bottom",
-                end: "top top",
-                scrub: true,
-              },
-            }
-          );
-        }
 
         // Animación de texto en todos los dispositivos (ajusta valores para mobile)
         const split = new SplitText(textRef.current, {
@@ -78,14 +57,16 @@ const SectionComponent = () => {
         </div>
         <div ref={textRef} className={styles.text}>
           Desde 1998, hemos enfocado nuestros esfuerzos en gestionar proyectos,
-          proveer soluciones y servicios de mantenimiento de equipamiento crítico
-          en las áreas de respaldo de energía, calidad de energía, accionamiento
-          eléctrico y climatización de precisión e industrial para Chile, Perú y
-          Brasil.
+          proveer soluciones y servicios de mantenimiento de equipamiento
+          crítico en las áreas de respaldo de energía, calidad de energía,
+          accionamiento eléctrico y climatización de precisión e industrial para
+          Chile, Perú y Brasil.
         </div>
         <button className={styles.btn}>Más información</button>
       </div>
-      <div ref={boxRef} className={styles.box}></div>
+      <AnimatedBg></AnimatedBg>
+
+      
     </div>
   );
 };

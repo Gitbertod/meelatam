@@ -14,7 +14,6 @@ import MultipleSwiper from "../../components/multipleSwiper/MultipleSwiper";
 import { clientes, clientes2,clientes3,clientes4 } from "../../components/multipleSwiper/logos";
 
 
-
 const Home = () => {
   const [loading, setLoading] = useState(true);
 
@@ -48,6 +47,8 @@ const Home = () => {
       <NavBar />
       <Container />
       <SectionComponent />
+      
+      
       <SectionComponent2>
         <PhotoSection
           title={"HIREF XSW"}
@@ -55,13 +56,13 @@ const Home = () => {
           subtitle={
             "XSW es la gama de enfriadoras condensadas por agua con compresores scroll de HiRef."
           }
-        />
+          />
         <TextSection
           title={"Título aqui"}
           text={
             "XSW es la gama de enfriadoras condensadas por agua con compresores scroll de HiRef."
           }
-        />
+          />
       </SectionComponent2>
       <SectionComponent2>
         <TextSection
@@ -102,7 +103,7 @@ const Home = () => {
       <StatsSection></StatsSection>
 
       <NewsCarousel></NewsCarousel>
-      {/* <BubbleGrid items={icons}></BubbleGrid> */}
+     
       <FooterComponent></FooterComponent>
     </>
   );
