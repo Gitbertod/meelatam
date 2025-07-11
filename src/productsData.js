@@ -266,6 +266,18 @@ export const productsData = [
 
   // Baterías
   {
+    name: "ALLSAI AGM",
+    url: "allsai-agm",
+    images: ["/6545-1.jpg"],
+    category: "respaldo-de-energia",
+    subcategory: "baterias",
+    modelos: "LiFePO4",
+    voltajes: "51.2V",
+    capacidades: "10/20/30/40/50/60/80/100/200Ah",
+    pdf: "Fichas-Baterias-Allsai-AGM.pdf",
+    description: "Baterías Allsai VRLA-AGM son baterías de plomo-ácido reguladas por válvula, diseñadas con separadores de placa de vidrio absorbente (AGM) que garantizan un rendimiento excepcional. Estas baterías de alta calidad ofrecen una larga vida útil y están disponibles en un rango de voltajes de 2V a 24V, así como en capacidades que van desde 0.5AH hasta 3500AH.",
+  },
+  {
     name: "ALLSAI LITIO / MONTAJE EN RACK",
     url: "allsai-litio-montaje-en-rack",
     images: ["/litio-1.jpg"],
@@ -311,71 +323,11 @@ export const productsData = [
       modelosDeBateria: ["RA12-33", "RA12-40", "RA12-55", "RA12-80", "RA12-100", "RA12-150", "RA12-200", "RA12-33G", "RA12-40", "RA12-55G", "RA12-100G"],
       voltajeNominal: ["12V", "12V", "12V", "12V", "12V", "12V", "12V", "12V", "12V", "12V", "12V"],
       capacidad: ["33Ah", "40Ah", "55Ah", "80Ah", "100Ah", "150Ah", "200Ah", "33Ah", "40Ah", "55Ah", "100Ah"],
-      largo: [
-        "195",
-        "198",
-        "229",
-        "350",
-        "328",
-        "483",
-        "522",
-        "195",
-        "198",
-        "229",
-        "328"
-      ],
-      ancho: [
-        "130",
-        "166",
-        "138",
-        "167",
-        "172",
-        "170",
-        "240",
-        "130",
-        "166",
-        "138",
-        "172"
-      ],
-      altura: [
-        "155",
-        "169",
-        "211",
-        "182",
-        "215",
-        "241",
-        "219",
-        "155",
-        "169",
-        "211",
-        "215"
-      ],
-      alturaTotal: [
-        "168",
-        "169",
-        "216",
-        "182",
-        "220",
-        "241",
-        "224",
-        "168",
-        "169",
-        "216",
-        "220"
-      ],
-      peso: [
-        "9.6",
-        "11.5",
-        "15.5",
-        "21.5",
-        "27.5",
-        "41.5",
-        "56.5",
-        "9.0",
-        "11.4",
-        "15.5",
-        "28.5"
-      ]
+      largo: ["195","198","229","350","328","483","522","195","198","229","328"],
+      ancho: ["130","166","138","167","172","170","240","130","166","138","172"],
+      altura: ["155","169","211","182","215","241","219","155","169","211","215"],
+      alturaTotal: ["168","169","216","182","220","241","224","168","169","216","220"],
+      peso: ["9.6","11.5","15.5","21.5","27.5","41.5","56.5","9.0","11.4","15.5","28.5"]
     }
 
   }, {
@@ -418,7 +370,7 @@ export const productsData = [
     capacidades: "3,5Ah a 3.150Ah",
     description: "Las baterías se han convertido en la primera opción para el usuario que busca un sistema confiable, de larga vida útil bajo costos de mantenimiento."
   }, {
-    name: "ALLSAI OPZ",
+    name: "ALLSAI OPzS",
     url: "allsai-opz",
     models: " OPZV, OPZS",
     images: ["/opz-1.jpg"],
@@ -426,6 +378,19 @@ export const productsData = [
     subcategory: "baterias",
     voltajes: "2V, 6V, 12V",
     capacidades: "77Ah a 3.360Ah",
+    pdf: "Fichas-baterias-allsai-OPZ.pdf",
+    description: "Las baterías ALLSAI de tipo estacionarias, mejor conocidas como OPZ se han convertido en un aliado indispensable en aquellos lugares donde no hay red eléctrica y existe la necesidad de alimentar ciertos consumos de tipo medio-alto de manera constante como en viviendas remotas, campings o almacenes. Se trata pues de acumuladores de 2V que puestos en serie de 6 ó 12 vasos pueden alcanzar los 12V ó 24V respectivamente."
+  },
+  {
+    name: "ALLSAI OPzV",
+    url: "allsai-opzv",
+    models: " OPZV, OPZS",
+    images: ["/Baterias-opzv.jpg"],
+    category: "respaldo-de-energia",
+    subcategory: "baterias",
+    voltajes: "2V, 6V, 12V",
+    capacidades: "77Ah a 3.360Ah",
+    pdf: "Fichas-baterias-allsai-OPZ.pdf",
     description: "Las baterías ALLSAI de tipo estacionarias, mejor conocidas como OPZ se han convertido en un aliado indispensable en aquellos lugares donde no hay red eléctrica y existe la necesidad de alimentar ciertos consumos de tipo medio-alto de manera constante como en viviendas remotas, campings o almacenes. Se trata pues de acumuladores de 2V que puestos en serie de 6 ó 12 vasos pueden alcanzar los 12V ó 24V respectivamente."
   }, {
     name: "HOPPECKE GRID POWER VL",
