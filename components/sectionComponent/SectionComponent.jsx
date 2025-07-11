@@ -64,7 +64,11 @@ const SectionComponent = () => {
         </div>
         <button className={styles.btn}>Más información</button>
       </div>
+      <div>
       <AnimatedBg></AnimatedBg>
+      
+
+      </div>
 
       
     </div>
