@@ -438,6 +438,7 @@ export const productsData = [
     images: ["/series-sd-1.jpg"],
     category: "respaldo-de-energia",
     subcategory: "rectificadores",
+    pdf:"Cargador de Baterias Serie SD Trifasico.pdf",
     capacidades: "12Vdc – 220Vdc / 10A – 500A (o más según requerimiento)",
     description: "Cargadores de batería con entrada trifásica Allsai fabricados con alto estándar de calidad controlado por microprocesador y diseño a medida de acuerdo al requerimiento del cliente. El control y ajuste se realiza con tiristores en puente semi-controlado. Las principales protecciones incluidas en el sistema de protección son; sobrecarga, sobre voltaje, sobre temperatura, cortocircuito y peak de corriente. Comunicación remota disponible tanto en contactos secos como Modbus en su estándar.Es capaz de operar con baterías de plomo ácido y Níquel cadmio.",
   },

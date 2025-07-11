@@ -1,12 +1,58 @@
-# React + Vite
+# 🌐 SPA Corporativa – MEE Perú
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una **aplicación web de una sola página (SPA)** desarrollada para la empresa **MEE Perú**, con enfoque en rendimiento, diseño responsivo y escalabilidad.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ [React + Vite](https://vitejs.dev/) – Framework moderno para interfaces reactivas
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) – Utilidades para estilos rápidos y responsivos
+- 🧩 CSS Modules – Estilizado modular y reutilizable
+- GSAP JavaScript animation library
 
-## Expanding the ESLint configuration
+## 📸 Capturas de pantalla
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Vista Principal | Menú desplegable |
+|-----------------|------------------|
+| ![Captura 1](./public/captura1.jpg) | ![Captura 2](./public/captura2.jpg) |
+
+---
+
+## 🛠️ Instalación y uso
+
+Sigue los siguientes pasos para correr el proyecto localmente:
+
+```bash
+# 1. Clona este repositorio
+git clone https://github.com/Gitbertod/meelatam
+
+# 2. Ingresa a la carpeta del proyecto
+cd meelatam
+
+# 3. Instala las dependencias
+npm install
+
+# 4. Inicia el entorno de desarrollo
+npm run dev
+```
+
+## ✨ Características principales
+
+- Interfaz responsiva
+- Diseño modular con CSS Modules
+- Navegación fluida tipo SPA
+- Código limpio y mantenible
+- Animaciones Modernas y fluidas para mejora de UI 
+
+---
+
+## 👨‍💻 Autor
+
+**Gilberto Javier Díaz Pimentel** – [@Gitbertod](https://github.com/Gitbertod)
+
+---
+
+## 📃 Licencia
+
+Este proyecto fue desarrollado exclusivamente para la empresa **MEE Perú**. No se permite su distribución sin autorización.
+
+---
