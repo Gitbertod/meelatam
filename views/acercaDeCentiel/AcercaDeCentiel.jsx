@@ -88,6 +88,7 @@ const AcercaDeCentiel = () => {
         />
       </SectionComponent2>
       
+      
       <FooterComponent></FooterComponent>
     </>
   );

@@ -71,7 +71,6 @@ export const menuData = [
       "Equipos in row",
       "Equipos tipo mochila",
       "Aire acondicionado de precisión",
-      "STS"
     ],
     class: "slideRight3"
   },

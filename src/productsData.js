@@ -476,9 +476,10 @@ export const productsData = [
   }, {
     name: "TECNED SERIE KT-CB",
     url: "tecned-serie-kt-cb",
-    images: ["/kt-cb-tecned.jpg"],
+    images: ["/2021-img-gr-sh.png"],
     category: "respaldo-de-energia",
     subcategory: "rectificadores",
+    pdf: "KT-CB TECNED MODULAR.pdf",
     capacidades: "24Vdc – 220Vdc / 30A – 800A (o más según requerimiento)",
     description: "Cargador/Rectificador Trifásico KT-CB tecnolo gía modular , de Grado Industrial y Servicio Continuo, diseñado para abastecer de corriente continua en aplicaciones críticas, donde la carga debe ser libre de distorsión de armónicas mediante filtros, aislada eléctricamente de la fuente de suministros y alimentada permanentemente con energía de calidad, debido a la importancia de su carga.\nEl equipo KT-CB está controlado por microprocesadores para administración del sistema (alarma, ajustes y medida) y sus componentes son de estado sólido, voltaje constante autoregulado, para aplicaciones de baterías Plomo-Acido, Niquel Cadmio y Litio donde sus funciones son:\nAlimentar el consumo constante de corriente (La carga).\nRecarga de baterías (Carga de igualación).\nMantener cargada la batería (Carga de flotación).\nDiseñado para aplicaciones en industrias como:\nOil & Gas\nIndustria Química\nControl de Procesos\nGeneración Eléctrica",
   }, {
