@@ -11,7 +11,7 @@ Este proyecto es una **aplicación web de una sola página (SPA)** desarrollada 
 
 ## 📸 Capturas de pantalla
 
-| Vista Principal | Menú desplegable |
+| Vista Principal | Vista Nosotros |
 |-----------------|------------------|
 | ![Captura 1](./public/captura1.jpg) | ![Captura 2](./public/captura2.jpg) |
 
