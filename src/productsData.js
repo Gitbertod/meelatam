@@ -580,7 +580,16 @@ export const productsData = [
     category: "calidad-de-energia",
     subcategory: "banco-de-condensadores",
     description: "Los bancos de condensadores de la serie BFs consisten en interruptores de tiristores, bastidores de compensación de la serie C7s y relés de control del factor de potencia reactiva digital de alta tecnología.\nLos bancos de condensadores de la serie BFs se pueden diseñar fácilmente de acuerdo con la potencia deseada gracias a sus bastidores que tienen un diseño modular. Ese diseño modular proporciona soluciones rápidas y efectivas en el período de instalación, mantenimiento y desarrollo del sistema.\nLas baterías de condensadores de la serie BFs encienden/apagan los pasos de forma suave e instantánea gracias a los relés digitales de control de potencia reactiva de alta tecnología. El relé determina encender/apagar los condensadores de acuerdo con los cálculos de retroalimentación según los valores provenientes de CT y VT. En las baterías de condensadores de la serie BFs, las reactancias de filtro de armónicos se han conectado en serie antes que las unidades de condensadores, para proteger las unidades de condensadores contra flujos de corriente armónicos peligrosos y armónicos de tensión y para eliminar los posibles efectos de resonancia paralela del sistema de compensación.\nLos bancos de capacitores controlados por tiristor de la serie BF están diseñados para suministrar la potencia reactiva necesaria al permitir una conmutación muy rápida de acuerdo con la necesidad de cambios rápidos de carga. Los módulos de conmutación de tiristores evitan las corrientes de irrupción en la operación.",
-  }, {
+  }, 
+  {
+    name: "ALLSAI APF",
+    url: "allsai-apf",
+    images: ["/ALLSAI-FILTROS-ACTIVOS.jpg"],
+    category: "calidad-de-energia",
+    subcategory: "filtros-activos",
+    description: "Los filtros de potencia activa (APF) son filtros que pueden realizar el trabajo de eliminación de armónicos. Los filtros de potencia activa se pueden utilizar para filtrar armónicos en el sistema de potencia que están significativamente por debajo de la frecuencia de conmutación del filtro. Los filtros de potencia activa se utilizan para filtrar armónicos de orden superior e inferior en el sistema de potencia.",
+  }, 
+  {
     name: "ALLSAI PDU",
     tension: "220/230/240 VAC",
     factorDeForma: "1U",
