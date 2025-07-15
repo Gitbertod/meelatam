@@ -35,7 +35,7 @@
 .btn {
   margin-top: 40px;
   background-color: #199697;
-  width: 160px;
+  min-width: 160px;
   height: 45px;
   border-radius: 6px;
   font-size:medium;
