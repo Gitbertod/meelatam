@@ -21,7 +21,7 @@ export const productsData = [
     subsubcategory: "ups-monofasicas",
     capacidades: "1 KVA | 2 KVA | 3 KVA ",
     description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas. Además de contar con suficiente tiempo de autonomía como energía de reserva.\n Las UPS cuentan con modelo torre y tipo convertible rack/ torre(RT), este último ocupa sólo 2 - 3U de altura. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
-    pdf: "WPRO 110 1-10KVA.pdf"
+    pdf: "ALLSAI WPRO RT G3 1-3KVA.pdf"
   },
   {
     name: "ALLSAI W PRO 1KVA – 3KVA (Torre)",
@@ -587,7 +587,17 @@ export const productsData = [
     images: ["/ALLSAI-FILTROS-ACTIVOS.jpg"],
     category: "calidad-de-energia",
     subcategory: "filtros-activos",
+    pdf:"APFintroduction_compressed.pdf",
     description: "Los filtros de potencia activa (APF) son filtros que pueden realizar el trabajo de eliminación de armónicos. Los filtros de potencia activa se pueden utilizar para filtrar armónicos en el sistema de potencia que están significativamente por debajo de la frecuencia de conmutación del filtro. Los filtros de potencia activa se utilizan para filtrar armónicos de orden superior e inferior en el sistema de potencia.",
+  }, 
+  {
+    name: "FILTRO ACTIVO-CIRCUTOR",
+    url: "filtro-activo-circutor",
+    images: ["/circutor.jpg"],
+    category: "calidad-de-energia",
+    subcategory: "filtros-activos",
+    
+    description: "Los filtros de potencia activa (CIRCUTOR) son filtros que pueden realizar el trabajo de eliminación de armónicos. Estpan diseñados para reducir corrientes armónicas, compensar potencia reactiva y equilibrar corrientes de fase de instalaciones eléctricas. Se presentan en armarios compactos compatibles para instalaciones de 3 y 4 hilos.",
   }, 
   {
     name: "ALLSAI PDU",
