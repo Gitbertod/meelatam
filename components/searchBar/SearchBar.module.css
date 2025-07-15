@@ -75,7 +75,7 @@ input:focus {
 .icon {
   position: absolute;
   right: 16px;
-  top: 50%;
+  top: 33%;
   transform: translateY(-50%);
   color: #199697;
   font-size: 1.3rem;
