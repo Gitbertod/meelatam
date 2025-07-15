@@ -1,6 +1,7 @@
 "use client";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 import styles from "./Location.module.css";
 import LogoMee from "../logoMee/LogoMee";
 
@@ -8,7 +9,7 @@ export function Location() {
   return (
     <div className={styles.locationCard}>
       <h5 className={styles.title}>Lima, Perú</h5>
-      
+
       <iframe
         id="inlineFrameExample"
         title="Ubicación en Google Maps"
@@ -20,21 +21,25 @@ export function Location() {
         loading="lazy"
         style={{ border: 0 }}
       ></iframe>
-      <h5 className={styles.subtitle}><LogoMee></LogoMee></h5>
+      <h5 className={styles.subtitle}>
+        <LogoMee></LogoMee>
+      </h5>
       <div className={styles.infoRow}>
         <FaLocationDot className={styles.icon} />
         <p className={styles.infoText}>
-          Jr. Camino Real 1801, Mz. B, Lt. 04 (Parque Industrial I). Santiago de Surco – Lima. Perú
+          Jr. Camino Real 1801, Mz. B, Lt. 04 (Parque Industrial San Pedrito I).
+          Santiago de Surco – Lima. Perú
         </p>
       </div>
       <div className={styles.infoRow}>
         <BsFillTelephoneFill className={styles.icon} />
-        <a
-          href="tel:+51 1 717 4517"
-          className={styles.infoText}
-        >
+        <a href="tel:+51 1 717 4517" className={styles.infoText}>
           +51(01)6117100
         </a>
+      </div>
+      <div className={styles.infoRow}>
+        <MdEmail className={styles.icon} />
+        <a href="mailto:contacto@meelatam.com">contacto@meelatam.com</a>
       </div>
     </div>
   );

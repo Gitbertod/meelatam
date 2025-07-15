@@ -3,6 +3,7 @@ import React, { useRef, forwardRef, useImperativeHandle } from "react";
 import styles from "./Hero.module.css";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(SplitText);
 
@@ -39,9 +40,12 @@ const Hero = forwardRef((props, ref) => {
           Somos expertos en respaldo de energía
         </h2>
         <h3 ref={h3Ref} className={`${styles.text} animeMe`}>
-          Contamos con la categoría de respaldo energético más variada y amplia del mercado.
+          Contamos con la categoría de respaldo energético más variada y amplia
+          del mercado.
         </h3>
-        <button className={styles.btn}>Más información</button>
+        <Link to={"/acerca-de-nosotros"}>
+          <button className={styles.btn}>Más información</button>
+        </Link>
       </div>
     </div>
   );

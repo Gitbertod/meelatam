@@ -75,7 +75,7 @@ const ParallaxHero = () => {
             <g className="cloud1">
               <rect fill="#fff" width="100%" height="801" y="799" />
               <image
-                xlinkHref="https://assets.codepen.io/721952/cloud1Mask.jpg"
+                xlinkHref="/AcercaDeCentiel/cloud1Mask.jpg"
                 width="100%"
                 height="800"
               />
@@ -84,49 +84,51 @@ const ParallaxHero = () => {
 
           <image
             className="sky"
-            xlinkHref="https://assets.codepen.io/721952/sky.jpg"
+            xlinkHref="/AcercaDeCentiel/sky.jpg"
             width="100%"
             height="590"
           />
           <image
             className="mountBg"
-            xlinkHref="https://assets.codepen.io/721952/mountBg.png"
+            xlinkHref="/AcercaDeCentiel/mountBg.webp"
             width="1200"
             height="800"
           />
           <image
             className="mountMg"
-            xlinkHref="https://assets.codepen.io/721952/mountMg.png"
+            xlinkHref="/AcercaDeCentiel/mountMg.png"
             width="1200"
             height="800"
           />
           <image
             className="cloud2"
-            xlinkHref="https://assets.codepen.io/721952/cloud2.png"
+            xlinkHref="/AcercaDeCentiel/cloud2.webp"
             width="1200"
             height="800"
           />
           <image
             className="mountFg"
-            xlinkHref="https://assets.codepen.io/721952/mountFg.png"
+            xlinkHref="/AcercaDeCentiel/mountFg.png"
             width="1200"
             height="800"
           />
           <image
             className="cloud1"
-            xlinkHref="https://assets.codepen.io/721952/cloud1.png"
+            xlinkHref="/AcercaDeCentiel/cloud1.png"
             width="1200"
             height="800"
           />
           <image
             className="cloud3"
-            xlinkHref="https://assets.codepen.io/721952/cloud3.png"
+            xlinkHref="/AcercaDeCentiel/cloud3.png"
             width="100%"
             height="800"
           />
+          
           <text className={styles.parallaxHeroText} fill="#fff" x="250" y="200">
             Compañia Suiza
           </text>
+          {/* <image xlinkHref="/AcercaDeCentiel/suiza.svg" width="100" height="380"/> */}
           <polyline
             className="arrow"
             fill="#fff"

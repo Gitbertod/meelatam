@@ -5,6 +5,7 @@ import gsap from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import AnimatedBg from "../animatedMee/AnimatedMee";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -62,7 +63,9 @@ const SectionComponent = () => {
           accionamiento eléctrico y climatización de precisión e industrial para
           Chile, Perú y Brasil.
         </div>
-        <button className={styles.btn}>Más información</button>
+         <Link to={"/acerca-de-nosotros"}>
+          <button className={styles.btn}>Más información</button>
+        </Link>
       </div>
       <div>
       <AnimatedBg></AnimatedBg>
