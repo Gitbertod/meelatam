@@ -31,7 +31,7 @@ export const productsData = [
     subcategory: "ups",
     subsubcategory: "ups-monofasicas",
     capacidades: "1 KVA | 2 KVA | 3 KVA ",
-    pdf: "ALLSAI WPRO G3 1-3KVA.pdf",
+    pdf: "ALLSAI WPRO RT G3 1-3KVA.pdf",
     description: "Allsai W Pro es una UPS en línea de doble conversión con tecnología de alta densidad, con factor de potencia de entrada (PFC), factor de potencia de salida 0.9, ofrece altos niveles de fiabilidad y protección para aplicaciones críticas.\n Además de contar con suficiente tiempo de autonomía como energía de reserva.\n Las UPS cuentan con modelo torre y tipo convertible rack/ torre(RT), este último ocupa sólo 2 - 3U de altura. Las aplicaciones más comunes son sistemas informáticos de procesamiento de datos, equipos de telecomunicaciones y misión sistemas críticos.",
   },
   {
@@ -244,7 +244,7 @@ export const productsData = [
   }, {
     name: "CENTIEL CUMULUS POWER 10KVA – 3.6MVA (Modular)",
     url: "centiel-cumulus-power-10kva-36mva-modular",
-    images: ["/Centiel_combo_front-cumulus.png"],
+    images: ["/Centiel_combo_front-cumulus.png","/CAB-CP300B-E-B0.jpg","/CAB_CP900.png","/UR050-in-a-cabinet.jpg","/UR100-E-C0.jpg","/UR025-E-C0.jpg","/Front_View_Modules.jpg"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
@@ -254,7 +254,7 @@ export const productsData = [
   }, {
     name: "CENTIEL STRATUS POWER 10KVA – 3.75MVA (Modular)",
     url: "centiel-stratus-power-10kva-375mva-modular",
-    images: ["/Centiel_combo_front-cumulus.png"],
+    images: ["/SP375B-angle.png", "/SP1125B-Angle.png", "/SP750B-front.png","/SP1500B-front.png", "/CAB-SR060-E-2S-C0_angle.png", "/SM50-62.png", "/CAB-SR120-E-4S-C1_angle.png", "/SM-M_angle_dx.png"],
     category: "respaldo-de-energia",
     subcategory: "ups",
     subsubcategory: "ups-trifasicas",
@@ -323,11 +323,11 @@ export const productsData = [
       modelosDeBateria: ["RA12-33", "RA12-40", "RA12-55", "RA12-80", "RA12-100", "RA12-150", "RA12-200", "RA12-33G", "RA12-40", "RA12-55G", "RA12-100G"],
       voltajeNominal: ["12V", "12V", "12V", "12V", "12V", "12V", "12V", "12V", "12V", "12V", "12V"],
       capacidad: ["33Ah", "40Ah", "55Ah", "80Ah", "100Ah", "150Ah", "200Ah", "33Ah", "40Ah", "55Ah", "100Ah"],
-      largo: ["195","198","229","350","328","483","522","195","198","229","328"],
-      ancho: ["130","166","138","167","172","170","240","130","166","138","172"],
-      altura: ["155","169","211","182","215","241","219","155","169","211","215"],
-      alturaTotal: ["168","169","216","182","220","241","224","168","169","216","220"],
-      peso: ["9.6","11.5","15.5","21.5","27.5","41.5","56.5","9.0","11.4","15.5","28.5"]
+      largo: ["195", "198", "229", "350", "328", "483", "522", "195", "198", "229", "328"],
+      ancho: ["130", "166", "138", "167", "172", "170", "240", "130", "166", "138", "172"],
+      altura: ["155", "169", "211", "182", "215", "241", "219", "155", "169", "211", "215"],
+      alturaTotal: ["168", "169", "216", "182", "220", "241", "224", "168", "169", "216", "220"],
+      peso: ["9.6", "11.5", "15.5", "21.5", "27.5", "41.5", "56.5", "9.0", "11.4", "15.5", "28.5"]
     }
 
   }, {
@@ -434,11 +434,11 @@ export const productsData = [
     description: "Con la plataforma modular, queremos proporcionar una solución consolidada para una amplia variedad de aplicaciones que van desde infraestructura (subestaciones), industria, telecomunicaciones, y mas. Por esta razón, la plataforma modular esta disponible en todos los voltajes comunes como 24, 48, 110, 220Vdc en la misma familia de productos.",
   }, {
     name: "ALLSAI SERIE SD TRIFÁSICO",
-    url: "allsai-serie-sd-trifafasico",
-    images: ["/series-sd-1.jpg"],
+    url: "allsai-serie-sd-trifasico",
+    images: ["/rectificadorAllsaiSd.jpg","/rectificadorAllsaiSd2.jpg"],
     category: "respaldo-de-energia",
     subcategory: "rectificadores",
-    pdf:"Cargador de Baterias Serie SD Trifasico.pdf",
+    pdf: "Cargador de Baterias Serie SD Trifasico.pdf",
     capacidades: "12Vdc – 220Vdc / 10A – 500A (o más según requerimiento)",
     description: "Cargadores de batería con entrada trifásica Allsai fabricados con alto estándar de calidad controlado por microprocesador y diseño a medida de acuerdo al requerimiento del cliente. El control y ajuste se realiza con tiristores en puente semi-controlado. Las principales protecciones incluidas en el sistema de protección son; sobrecarga, sobre voltaje, sobre temperatura, cortocircuito y peak de corriente. Comunicación remota disponible tanto en contactos secos como Modbus en su estándar.Es capaz de operar con baterías de plomo ácido y Níquel cadmio.",
   },
@@ -450,7 +450,16 @@ export const productsData = [
     subcategory: "rectificadores",
     capacidades: "12Vdc – 220Vdc / 10A – 500A (o más según requerimiento)",
     description: "Cargadores de batería Allsai fabricados con alto estándar de calidad controlado por microprocesador y diseño a medida de acuerdo al requerimiento del cliente. El control y ajuste se realiza con tiristores en puente semi-controlado. Las principales protecciones incluidas en el sistema de protección son; sobrecarga, sobre voltaje, sobre temperatura, cortocircuito y peak de corriente. Comunicación remota disponible tanto en contactos secos como Modbus en su estándar.Es capaz de operar con baterías de plomo ácido y Níquel cadmio.",
-  }, {
+  }, 
+  {
+    name: "OmnionPower",
+    url: "omnion-power",
+    images: ["/omnionPower.jpg"],
+    category: "respaldo-de-energia",
+    subcategory: "rectificadores",
+    pdf:"integritas-system-type-2_ds_compressed.pdf",
+    description: "Sistemas de alimentación DC compactas con amplia gama de salidas y potencias, totalmente adaptable según el requerimiento o exigencias del proyecto; incluyendo contrtolador inteligente. Proporcina una alta densidad de energía con la posibilidad de crecimiento según la necesidad.",
+  },{
     name: "ISG PME – R1",
     url: "isg-pme-r1",
     images: ["/rectificador-pme-r1.jpg"],
@@ -580,25 +589,25 @@ export const productsData = [
     category: "calidad-de-energia",
     subcategory: "banco-de-condensadores",
     description: "Los bancos de condensadores de la serie BFs consisten en interruptores de tiristores, bastidores de compensación de la serie C7s y relés de control del factor de potencia reactiva digital de alta tecnología.\nLos bancos de condensadores de la serie BFs se pueden diseñar fácilmente de acuerdo con la potencia deseada gracias a sus bastidores que tienen un diseño modular. Ese diseño modular proporciona soluciones rápidas y efectivas en el período de instalación, mantenimiento y desarrollo del sistema.\nLas baterías de condensadores de la serie BFs encienden/apagan los pasos de forma suave e instantánea gracias a los relés digitales de control de potencia reactiva de alta tecnología. El relé determina encender/apagar los condensadores de acuerdo con los cálculos de retroalimentación según los valores provenientes de CT y VT. En las baterías de condensadores de la serie BFs, las reactancias de filtro de armónicos se han conectado en serie antes que las unidades de condensadores, para proteger las unidades de condensadores contra flujos de corriente armónicos peligrosos y armónicos de tensión y para eliminar los posibles efectos de resonancia paralela del sistema de compensación.\nLos bancos de capacitores controlados por tiristor de la serie BF están diseñados para suministrar la potencia reactiva necesaria al permitir una conmutación muy rápida de acuerdo con la necesidad de cambios rápidos de carga. Los módulos de conmutación de tiristores evitan las corrientes de irrupción en la operación.",
-  }, 
+  },
   {
     name: "ALLSAI APF",
     url: "allsai-apf",
     images: ["/ALLSAI-FILTROS-ACTIVOS.jpg"],
     category: "calidad-de-energia",
     subcategory: "filtros-activos",
-    pdf:"APFintroduction_compressed.pdf",
+    pdf: "APFintroduction_compressed.pdf",
     description: "Los filtros de potencia activa (APF) son filtros que pueden realizar el trabajo de eliminación de armónicos. Los filtros de potencia activa se pueden utilizar para filtrar armónicos en el sistema de potencia que están significativamente por debajo de la frecuencia de conmutación del filtro. Los filtros de potencia activa se utilizan para filtrar armónicos de orden superior e inferior en el sistema de potencia.",
-  }, 
+  },
   {
     name: "FILTRO ACTIVO-CIRCUTOR",
     url: "filtro-activo-circutor",
     images: ["/circutor.jpg"],
     category: "calidad-de-energia",
     subcategory: "filtros-activos",
-    
+
     description: "Los filtros de potencia activa (CIRCUTOR) son filtros que pueden realizar el trabajo de eliminación de armónicos. Estpan diseñados para reducir corrientes armónicas, compensar potencia reactiva y equilibrar corrientes de fase de instalaciones eléctricas. Se presentan en armarios compactos compatibles para instalaciones de 3 y 4 hilos.",
-  }, 
+  },
   {
     name: "ALLSAI PDU",
     tension: "220/230/240 VAC",
