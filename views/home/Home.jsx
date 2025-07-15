@@ -51,31 +51,31 @@ const Home = () => {
       
       <SectionComponent2>
         <PhotoSection
-          title={"HIREF XSW"}
-          image={"./TSE_3.png"}
+          title={"Stratus Power"}
+          image={"./stratusPowerHome.png"}
           subtitle={
-            "XSW es la gama de enfriadoras condensadas por agua con compresores scroll de HiRef."
+            "Nueva línea de UPS modular de Centiel de hasta 97,6% de eficiencia, sistema diseñado para un tiempo de vida útil de 30 años. "
           }
           />
         <TextSection
-          title={"Título aqui"}
+          title={"Stratus Power"}
           text={
-            "XSW es la gama de enfriadoras condensadas por agua con compresores scroll de HiRef."
+            "Capacidad de sobre carga continúa de 124% de su capacidad nominal y con un rango de potencia en un mismo gabinete desde 10kW hasta 900kW, BUS DC Flexible entre 17-50 baterías con capacidad para trabajar con una amplia variedad de baterías (VRLA, NiCd, Litio, Sodio, etc) y con opciones de manejar de forma interna hasta 320 baterías VRLA."
           }
           />
       </SectionComponent2>
       <SectionComponent2>
         <TextSection
-          title={"Título aqui"}
+          title={"PremiumTower S2"}
           text={
-            "TVX es el nuevo estándar de enfriadoras condensadas por aire diseñadas para los procesos de eficiencia energética y, al mismo tiempo, respetuosas del medio ambiente"
+            "Nueva línea de UPS standalone de Centiel de hasta 97,1% de eficiencia, con componentes diseñados para reemplazo por mantenimiento no menor a 15 años."
           }
         />
         <PhotoSection
-          title={"HIREF TVX"}
-          image={"./TVA_1.png"}
+          title={"PremiumTower S2"}
+          image={"./premiumTowerS2.png"}
           subtitle={
-            "Enfriadoras de líquido condensadas por aire con compresores de tornillo modulantes"
+            "Backfeed protection de forma standard, BUS DC Flexible entre 17-50 baterías con capacidad para trabajar con una amplia variedad de baterías (VRLA, NiCd, Litio, Sodio, etc) y con opciones de manejar de forma interna hasta 240 baterías VRLA."
           }
         />
       </SectionComponent2>
