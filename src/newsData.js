@@ -31,5 +31,15 @@ export const news = [
         link:"/MEE_Caso_Exito_Hospital PNP.pdf",
         title: "Hospital Nacional de la Policía Nacional del Perú",
         description: "Caso de éxito MEE Perú"
+    }, {
+        foto: "/casodeExito7.jpg",
+        link:"MEE_Caso_Exito_CELEPSA_compressed.pdf",
+        title:"Caso de éxito CELEPSA",
+        description:"Banco de baterías Hoppecke para servicios auxiliares en Central Hidroeléctrica El Platanal"
+    }, {
+        foto: "/casodeExito8.jpg",
+        link:"MEE_Caso_Exito_KALLPA_compressed.pdf",
+        title:"Caso de éxito KALLPA",
+        description:"Cargador - Rectificador y Banco de baterías para servicios auxiliares en Planta de generación"
     }
 ]
