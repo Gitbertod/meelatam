@@ -2,13 +2,12 @@ import React from "react";
 import Accordion from "../components/accordion/Accordion";
 import styles from "./Servicios.module.css";
 import NavBar from "../components/navbar/NavBar";
-import SectionComponent2 from "../components/sectionComponent2/SectionComponent2";
-import TextSection from "../components/textSection/TextSection";
-import PhotoSection from "../components/photoSection/PhotoSection";
 import HeroSection from "../components/heroSection/HeroSection";
 import FooterComponent from "../components/footer/FooterComponent";
 
 const Servicios = () => {
+  
+
   return (
     <>
       <NavBar></NavBar>

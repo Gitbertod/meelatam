@@ -9,9 +9,12 @@ import ProductosCategory from "../views/ProductosCategory";
 import ProductoView from "../views/ProductoView";
 import AcercaDeCentiel from "../views/acercaDeCentiel/AcercaDeCentiel";
 import ProductosSwitch from "../components/productSwitch/ProductSwitch";
+import ScrollToTop from "../components/scrollToTop/ScrollToTop";
 
 const AppRoutes = () => {
   return (
+    <>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/servicios" element={<Servicios />}></Route>
@@ -42,6 +45,8 @@ const AppRoutes = () => {
       <Route path="/productos/:categoryId" element={<ProductosCategory />} />
       <Route path="/productos" element={<ProductosCategory />} />
     </Routes>
+    
+    </>
   );
 };
 
