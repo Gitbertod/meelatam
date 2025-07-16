@@ -89,15 +89,22 @@ const AcercaDeCentiel = () => {
       </SectionComponent2>
       <SectionComponent2>
         <TextSectionDual
-          tittle="Esteban Maquieira M. (Team Latam) "
-          subtitulo="Director Centiel Latinoamérica"
+          tittle="Esteban Maquieira M. "
+          subtitulo="Director Centiel Latinoamérica (Team Latam) "
           foto="/AcercaDeCentiel/esteban.jpg"
           parrafo1="Mas de 20 años de experiencia en el rubro UPS. Conocimiento de marcas como Newave - ABB y Centiel"
-        />
+        >
+          <section className={styles.section}>
+          <button className={styles.button}>
+            <a href="https://www.centiel.com/" target="blank">
+              Ir a
+              <img src="/centiel_logo.svg" />
+            </a>
+          </button>
+        </section>
+        </TextSectionDual>
+        
       </SectionComponent2>
-      <section>
-        <button>Ir a Centiel</button>
-      </section>
 
       <FooterComponent></FooterComponent>
     </>

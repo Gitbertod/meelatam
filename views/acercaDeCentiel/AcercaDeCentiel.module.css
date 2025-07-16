@@ -9,3 +9,20 @@
 .mainContainer > :first-child {
   margin-top: 50px;
 }
+
+.button {
+  width: 200px;
+  color: gray;
+  margin: 0px auto;
+  cursor: pointer;
+  z-index: 1;
+}
+.section{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section a{
+  font-size: 20px;
+}

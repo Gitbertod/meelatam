@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./TextSectionDual.module.css";
 
-const TextSectionDual = ({ tittle, parrafo1, parrafo2, foto, subtitulo }) => {
+const TextSectionDual = ({ tittle, parrafo1, parrafo2, foto, subtitulo, children }) => {
   return (
     <section>
       <div className={styles.container}>
@@ -15,6 +15,7 @@ const TextSectionDual = ({ tittle, parrafo1, parrafo2, foto, subtitulo }) => {
           {parrafo2 && <p className={styles.parrafo}>{parrafo2}</p>}
         </div>
       </div>
+        {children}
     </section>
   );
 };
