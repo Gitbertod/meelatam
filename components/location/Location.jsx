@@ -34,7 +34,7 @@ export function Location() {
       <div className={styles.infoRow}>
         <BsFillTelephoneFill className={styles.icon} />
         <a href="tel:+51 1 717 4517" className={styles.infoText}>
-          +51(01)6117100
+          +51(01) 717 45 17
         </a>
       </div>
       <div className={styles.infoRow}>
