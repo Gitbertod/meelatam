@@ -11,6 +11,7 @@ import NewsCarousel from "../../components/newsCarrousel/NewsCarousel";
 import StatsSection from "../../components/statsSection/StatsSection";
 import FooterComponent from "../../components/footer/FooterComponent";
 import MultipleSwiper from "../../components/multipleSwiper/MultipleSwiper";
+import PhotoSection2 from "../../components/photoSection2/PhotoSection2";
 import {
   clientes,
   clientes2,
@@ -53,20 +54,7 @@ const Home = () => {
       <SectionComponent />
 
       <SectionComponent2>
-        <div
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <img
-            src="./UPS 6-10KVA RT.jpg"
-            style={{ maxWidth: "70%", height: "auto" }}
-          ></img>
-        </div>
+        <PhotoSection2 image={"./CentielStratusP.jpg"}></PhotoSection2>
 
         <TextSection
           title={"StratusPower"}
@@ -92,20 +80,7 @@ const Home = () => {
           }
         /> */}
 
-        <div
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <img
-            src="./centielPremiumT.jpg"
-            style={{ maxWidth: "70%", height: "auto" }}
-          ></img>
-        </div>
+        <PhotoSection2 image={"./centielPremiumT.jpg"}/>
       </SectionComponent2>
       <MultipleSwiper
         title="Clientes que han confiado en nosotros"
