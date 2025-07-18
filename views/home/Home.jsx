@@ -11,8 +11,12 @@ import NewsCarousel from "../../components/newsCarrousel/NewsCarousel";
 import StatsSection from "../../components/statsSection/StatsSection";
 import FooterComponent from "../../components/footer/FooterComponent";
 import MultipleSwiper from "../../components/multipleSwiper/MultipleSwiper";
-import { clientes, clientes2,clientes3,clientes4 } from "../../components/multipleSwiper/logos";
-
+import {
+  clientes,
+  clientes2,
+  clientes3,
+  clientes4,
+} from "../../components/multipleSwiper/logos";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -29,7 +33,7 @@ const Home = () => {
   if (loading) {
     return (
       <div className="flex w-screen  h-screen justify-center ">
-        <LogoSVG/>
+        <LogoSVG />
       </div>
     );
   }
@@ -47,37 +51,61 @@ const Home = () => {
       <NavBar />
       <Container />
       <SectionComponent />
-      
-      
+
       <SectionComponent2>
-        <PhotoSection
-          title={"Stratus Power"}
-          image={"./stratusPowerHome.png"}
-          subtitle={
-            "Nueva línea de UPS modular de Centiel de hasta 97,6% de eficiencia, sistema diseñado para un tiempo de vida útil de 30 años. "
-          }
-          />
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
+          <img
+            src="./UPS 6-10KVA RT.jpg"
+            style={{ maxWidth: "70%", height: "auto" }}
+          ></img>
+        </div>
+
         <TextSection
-          title={"Stratus Power"}
+          title={"StratusPower"}
           text={
-            "Capacidad de sobre carga continúa de 124% de su capacidad nominal y con un rango de potencia en un mismo gabinete desde 10kW hasta 900kW, BUS DC Flexible entre 17-50 baterías con capacidad para trabajar con una amplia variedad de baterías (VRLA, NiCd, Litio, Sodio, etc) y con opciones de manejar de forma interna hasta 320 baterías VRLA."
+            "Nueva línea de UPS modular de Centiel de hasta 97,6% de eficiencia, sistema diseñado para un tiempo de vida útil de 30 años. Capacidad de sobre carga continúa de 124% de su capacidad nominal y con un rango de potencia en un mismo gabinete desde 10kW hasta 900kW, BUS DC Flexible entre 17-50 baterías con capacidad para trabajar con una amplia variedad de baterías (VRLA, NiCd, Litio, Sodio, etc) y con opciones de manejar de forma interna hasta 320 baterías VRLA."
           }
-          />
+          linkBtn="/productos/respaldo-de-energia/ups/ups-trifasicas/centiel-stratus-power-10kva-375mva-modular"
+        />
       </SectionComponent2>
       <SectionComponent2>
         <TextSection
           title={"PremiumTower S2"}
           text={
-            "Nueva línea de UPS standalone de Centiel de hasta 97,1% de eficiencia, con componentes diseñados para reemplazo por mantenimiento no menor a 15 años."
+            "Backfeed protection de forma standard, BUS DC Flexible entre 17-50 baterías con capacidad para trabajar con una amplia variedad de baterías (VRLA, NiCd, Litio, Sodio, etc) y con opciones de manejar de forma interna hasta 240 baterías VRLA. Nueva línea de UPS standalone de Centiel de hasta 97,1% de eficiencia, con componentes diseñados para reemplazo por mantenimiento no menor a 15 años."
           }
+          linkBtn="/productos/respaldo-de-energia/ups/ups-trifasicas/centiel-premium-tower-s2-10kva-500kva-torre"
         />
-        <PhotoSection
+        {/* <PhotoSection
           title={"PremiumTower S2"}
           image={"./premiumTowerS2.png"}
           subtitle={
             "Backfeed protection de forma standard, BUS DC Flexible entre 17-50 baterías con capacidad para trabajar con una amplia variedad de baterías (VRLA, NiCd, Litio, Sodio, etc) y con opciones de manejar de forma interna hasta 240 baterías VRLA."
           }
-        />
+        /> */}
+
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
+          <img
+            src="./centielPremiumT.jpg"
+            style={{ maxWidth: "70%", height: "auto" }}
+          ></img>
+        </div>
       </SectionComponent2>
       <MultipleSwiper
         title="Clientes que han confiado en nosotros"
@@ -103,7 +131,7 @@ const Home = () => {
       <StatsSection></StatsSection>
 
       <NewsCarousel></NewsCarousel>
-     
+
       <FooterComponent></FooterComponent>
     </>
   );

@@ -3,10 +3,11 @@ import styles from "./TextSection.module.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitText from "gsap/SplitText";
-
+import ButtonComponent from "../buttonComponent/ButtonComponent";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-const TextSection = ({ title, text }) => {
+const TextSection = ({ title, text, linkBtn }) => {
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
   const textRef = useRef(null);
@@ -53,15 +54,24 @@ const TextSection = ({ title, text }) => {
   }, []);
 
   return (
-    <div ref={sectionRef} className={styles.content}>
-      <div className={styles.textContainer}>
-        <h2 ref={titleRef} className={styles.title}>{title}</h2>
-        <p ref={textRef} className={styles.text}>
-          {text}
-        </p>
-        
+    <>
+      <div ref={sectionRef} className={styles.content}>
+        <div className={styles.centielLogo}>
+          <img src="/centiel_logo.svg" />
+        </div>
+        <div className={styles.textContainer}>
+          <h2 ref={titleRef} className={styles.title}>
+            {title}
+          </h2>
+          <p ref={textRef} className={styles.text}>
+            {text}
+          </p>
+          <Link to={linkBtn}>
+            <ButtonComponent text="Más información" />
+          </Link>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

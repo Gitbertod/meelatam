@@ -36,7 +36,7 @@ body {
   padding: 2rem;
   max-width: 1000px;
   margin: 2rem auto;
-  backdrop-filter: blur(6px); /* efecto moderno, si hay transparencia */
+  backdrop-filter: blur(6px); 
   /* background-image: url("./cable.jpg"); */
   background-position: center;
   background-size: cover;
