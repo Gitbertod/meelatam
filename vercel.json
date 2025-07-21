@@ -8,7 +8,7 @@
           "value": "meelatam.com"
         }
       ],
-      "destination": "https://www.meelatam.com/:1",
+      "destination": "https://www.meelatam.com/$1",
       "permanent": true
     }
   ],
@@ -19,3 +19,4 @@
     }
   ]
 }
+
