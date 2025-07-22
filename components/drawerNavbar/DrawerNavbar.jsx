@@ -28,8 +28,7 @@ import styles from "./DrawerNavbar.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import LogoMee from "../logoMee/LogoMee";
 import { MdMail } from "react-icons/md";
-
-
+import { Link } from "react-router-dom";
 
 export function DrawerNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,28 +64,60 @@ export function DrawerNavbar() {
               <div>
                 <SidebarItems>
                   <SidebarItemGroup>
-                    <SidebarItem href="/productos"  icon={HiCollection} className={styles.textMenu}>
-                      Productos
-                    </SidebarItem>
-                    <SidebarItem href="/servicios" icon={FaToolbox} className={styles.textMenu}>
-                      Servicios
-                    </SidebarItem>
-                    <SidebarItem href="/acerca-de-nosotros" icon={HiUsers} className={styles.textMenu}>
-                      Nosotros
-                    </SidebarItem>
-                    <SidebarItem href="/acerca-de-centiel" icon={HiPencil} className={styles.textMenu}>
-                      Acerca de Centiel
-                    </SidebarItem>
-                    <SidebarItem
-                      href="/noticias"
-                      icon={HiClipboard}
-                      className={styles.textMenu}
-                    >
-                      Noticias
-                    </SidebarItem>
-                    <SidebarItem href="/contacto" icon={MdMail} className={styles.textMenu}>
-                      Contacto
-                    </SidebarItem>
+                    <Link to={"/productos"}>
+                      <SidebarItem
+                        href="/productos"
+                        icon={HiCollection}
+                        className={styles.textMenu}
+                      >
+                        Productos
+                      </SidebarItem>
+                    </Link>
+                    <Link to={"/servicios"}>
+                      <SidebarItem
+                        href="/servicios"
+                        icon={FaToolbox}
+                        className={styles.textMenu}
+                      >
+                        Servicios
+                      </SidebarItem>
+                    </Link>
+                    <Link to={"/acerca-de-nosotros"}>
+                      <SidebarItem
+                        href="/acerca-de-nosotros"
+                        icon={HiUsers}
+                        className={styles.textMenu}
+                      >
+                        Nosotros
+                      </SidebarItem>
+                    </Link>
+                    <Link to={"/acerca-de-centiel"}>
+                      <SidebarItem
+                        href="/acerca-de-centiel"
+                        icon={HiPencil}
+                        className={styles.textMenu}
+                      >
+                        Acerca de Centiel
+                      </SidebarItem>
+                    </Link>
+                    <Link to={"/noticias"}>
+                      <SidebarItem
+                        href="/noticias"
+                        icon={HiClipboard}
+                        className={styles.textMenu}
+                      >
+                        Noticias
+                      </SidebarItem>
+                    </Link>
+                    <Link to={"/contacto"}>
+                      <SidebarItem
+                        href="/contacto"
+                        icon={MdMail}
+                        className={styles.textMenu}
+                      >
+                        Contacto
+                      </SidebarItem>
+                    </Link>
                   </SidebarItemGroup>
                 </SidebarItems>
               </div>
